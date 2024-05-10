@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-h^bx0vxbs*k9pff%)y^wo&^a+vk)ifzcw(+&rk)a4pe!n40vu1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://jbillcliffe-django-rente-hzqu84wj3t.us1.codeanyapp.com/']
-
+ALLOWED_HOSTS = ['8000-jbillcliffe-django-rente-hzqu84wj3t.us1.codeanyapp.com']
 
 # Application definition
 
@@ -38,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'item_listing',
+    'menu',
     'search',
 ]
 
