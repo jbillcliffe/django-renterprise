@@ -5,8 +5,8 @@ from django.urls import path
 URLs for customer navigation.
 - '' = root/customers/
 - '' is the url for customer searching
-- 'identifier/' is the url for a customer's page
-- 'identifier/order' is the url of a single order for a customer
+- 'customer_id/' is the url for a customer's page
+- 'customer_id/order_id' is the url of a single order for a customer
 """
 urlpatterns = [
     # url for customer search

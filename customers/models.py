@@ -1,10 +1,14 @@
+import uuid
 from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
 
 class Customer(models.Model):
-    unique_id = models.UUIDField()
+    customer_id = models.UUIDField(
+        primary_key=False,
+        default=uuid.uuid4,
+        editable=False)
     first_name = models.CharField(max_length=200)
     last_name = models.CharField(max_length=200)
     address = models.TextField()

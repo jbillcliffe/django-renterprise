@@ -6,4 +6,6 @@ def customer_search(request):
     """
     Function to load the customer search feature
     """
+    
+    
     return HttpResponse('Hello Customer Search!')
