@@ -1,25 +1,20 @@
 """
 URL configuration for renterprise project.
 
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.2/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+- Sets the admin panel url and accounts (Django auth)
+- "customers" urls in place so the urls start "project.com"/customers/,
+url data after this point relates to adding/editing customers.
+- "items" urls in place so the urls start "project.com"/items/,
+url data after this point relates to adding/editing items.
+
+More URL explainations within each urls.py file.
 """
 from django.contrib import admin
 from django.urls import path, include
- 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('customers/', include('customers.urls'), name='customers-urls'),
     path('items/', include('items.urls'), name='items-urls'),
-    path('search/', include('search.urls'), name='search-urls'),
     path('', include('menu.urls'), name='menu-urls'),
 ]

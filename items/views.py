@@ -2,9 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
-def get_items(request):
+def item_search(request):
     """
-    function to display the full listing of items
-    available to hire.
+    function to display the item search feature
     """
-    return HttpResponse('Hello Items.')
+    return HttpResponse('Hello Item Search.')
