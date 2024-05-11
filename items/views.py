@@ -7,4 +7,4 @@ def get_items(request):
     function to display the full listing of items
     available to hire.
     """
-    return HttpResponse('Hello Item Listing.')
+    return HttpResponse('Hello Items.')
