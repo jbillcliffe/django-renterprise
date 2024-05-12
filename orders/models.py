@@ -34,3 +34,12 @@ class OrderNote(models.Model):
     created_by = models.ForeignKey(
         User, on_delete=models.PROTECT, related_name="ordernote_created_by"
     )
+
+class Invoice(models.Model):
+    order = models.ForeignKey(
+        Order, on_delete=models.CASCADE, related_name="invoice_order"
+    )
+    created_on = models.DateField(auto_now_add=True)
+    amount_paid = models.DecimalField(max_digits=6, decimal_places=2)
+    note = models.TextField()
+    status = models.BooleanField(default=False)
