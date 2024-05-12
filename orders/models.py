@@ -1,8 +1,8 @@
 import uuid
 from django.db import models
 from django.contrib.auth.models import User
-from items import Item
-from customers import Customer
+from items.models import Item
+from customers.models import Customer
 
 # Create your models here.
 class Order(models.Model):
@@ -11,10 +11,10 @@ class Order(models.Model):
         default=uuid.uuid4,
         editable=False)
     customer = models.ForeignKey(
-        Customer, on_delete=models.CASCADE, related_name="customer"
+        Customer, on_delete=models.CASCADE, related_name="order_customer"
     )
     item = models.ForeignKey(
-        Item, on_delete=models.PROTECT, related_name="item"
+        Item, on_delete=models.PROTECT, related_name="order_item"
     )
     cost_initial = models.DecimalField(max_digits=6, decimal_places=2)
     cost_week = models.DecimalField(max_digits=6, decimal_places=2)
@@ -22,7 +22,7 @@ class Order(models.Model):
     end_date = models.DateField()
     created_on = models.DateTimeField(auto_now_add=True)
     created_by = models.ForeignKey(
-        User, on_delete=models.PROTECT, related_name="created_by"
+        User, on_delete=models.PROTECT, related_name="order_created_by"
     )
 
 class OrderNote(models.Model):
@@ -32,5 +32,5 @@ class OrderNote(models.Model):
     note = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     created_by = models.ForeignKey(
-        User, on_delete=models.PROTECT, related_name="created_by"
+        User, on_delete=models.PROTECT, related_name="ordernote_created_by"
     )
