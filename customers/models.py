@@ -17,10 +17,11 @@ class Customer(models.Model):
 
 class CustomerNote(models.Model):
     customer = models.ForeignKey(
-        Customer, on_delete=models.PROTECT, related_name="customer"
+        Customer, on_delete=models.CASCADE, related_name="customer"
     )
     note = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     created_by = models.ForeignKey(
         User, on_delete=models.PROTECT, related_name="created_by"
     )
+
