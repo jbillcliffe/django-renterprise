@@ -22,7 +22,7 @@ class Item(models.Model):
     item_type = models.ForeignKey(
         ItemType, on_delete=models.CASCADE, related_name="item_type"
     )
-    delivery_date = models.DateTime(null=True, blank=True)
-    collect_date = models.DateTime(null=True, blank=True)
-    repair_date = models.DateTime(null=True, blank=True)
+    delivery_date = models.DateField(null=True, blank=True)
+    collect_date = models.DateField(null=True, blank=True)
+    repair_date = models.DateField(null=True, blank=True)
     income = models.DecimalField(max_digits=6, decimal_places=2, default=Decimal('0.00'))
