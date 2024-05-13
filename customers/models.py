@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class Customer(models.Model):
-    customer_id = models.UUIDField(
+    customer_token = models.UUIDField(
         primary_key=False,
         default=uuid.uuid4,
         editable=False)
@@ -14,6 +14,9 @@ class Customer(models.Model):
     address = models.TextField()
     postcode = models.CharField(max_length=8)
     created_on = models.DateTimeField(auto_now_add=True)
+
+    def full_name(self):
+        return f"{self.first_name} {self.last_name}"
 
 class CustomerNote(models.Model):
     customer = models.ForeignKey(
@@ -25,3 +28,5 @@ class CustomerNote(models.Model):
         User, on_delete=models.PROTECT, related_name="created_by"
     )
 
+    def full_name(self):
+        return f"{self.customer.first_name} {self.customer.last_name}"
