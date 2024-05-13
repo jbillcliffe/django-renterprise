@@ -15,7 +15,7 @@ Models for ItemType and Item.
 # Create your models here.
 class ItemType(models.Model):
     name = models.CharField(max_length=200)
-    category = models.CharField(max_length=200, default="Category"))
+    category = models.CharField(max_length=200, default="Category")
     cost_initial = models.DecimalField(max_digits=6, decimal_places=2)
     cost_week = models.DecimalField(max_digits=6, decimal_places=2)
 
