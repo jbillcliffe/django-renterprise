@@ -15,7 +15,7 @@ Models for ItemType and Item.
 # Create your models here.
 class ItemType(models.Model):
     name = models.CharField(max_length=200)
-    category = models.CharField(max_length=200)
+    category = models.CharField(max_length=200, default="Category"))
     cost_initial = models.DecimalField(max_digits=6, decimal_places=2)
     cost_week = models.DecimalField(max_digits=6, decimal_places=2)
 
@@ -23,7 +23,7 @@ class Item(models.Model):
     item_type = models.ForeignKey(
         ItemType, on_delete=models.CASCADE, related_name="item_type"
     )
-    item_serial = models.CharField(max_length=200)
+    item_serial = models.CharField(max_length=200, default="SerialNumber")
     delivery_date = models.DateField(null=True, blank=True)
     collect_date = models.DateField(null=True, blank=True)
     repair_date = models.DateField(null=True, blank=True)
