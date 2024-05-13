@@ -21,6 +21,12 @@ class Order(models.Model):
         User, on_delete=models.PROTECT, related_name="order_created_by"
     )
 
+    def order_customer_name(self):
+        return f"{self.customer.first_name} {self.customer.last_name}"
+
+    def order_item_name(self):
+        return f"{self.item.item_type.name}"
+
 class OrderNote(models.Model):
     order = models.ForeignKey(
         Order, on_delete=models.CASCADE, related_name="order"
@@ -30,6 +36,11 @@ class OrderNote(models.Model):
     created_by = models.ForeignKey(
         User, on_delete=models.PROTECT, related_name="ordernote_created_by"
     )
+
+    def order_note_full_name(self):
+        return f"{self.order.customer.first_name} {self.order.customer.last_name}"
+
+    
 
 class Invoice(models.Model):
     order = models.ForeignKey(
