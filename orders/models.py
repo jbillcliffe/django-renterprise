@@ -6,10 +6,6 @@ from customers.models import Customer
 
 # Create your models here.
 class Order(models.Model):
-    order_id = models.UUIDField(
-        primary_key=False,
-        default=uuid.uuid4,
-        editable=False)
     customer = models.ForeignKey(
         Customer, on_delete=models.CASCADE, related_name="order_customer"
     )
