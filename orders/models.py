@@ -40,8 +40,6 @@ class OrderNote(models.Model):
     def order_note_full_name(self):
         return f"{self.order.customer.first_name} {self.order.customer.last_name}"
 
-    
-
 class Invoice(models.Model):
     order = models.ForeignKey(
         Order, on_delete=models.CASCADE, related_name="invoice_order"
