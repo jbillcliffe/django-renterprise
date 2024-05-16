@@ -1,5 +1,6 @@
 {% load static %}
 
+{% url 'menu' as menu_url %}
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
@@ -50,20 +51,26 @@
             <label class="burger-icon" for="burger-btn" id="burger-icon"><span class="burger-class"><i
                         class="fa-solid fa-bars" aria-hidden="true"></i></span></label>
             <!-- Unordered list for the menu options, each list item is a link to its respective page -->
-            <ul>
+            <ul class="navigation-list">
                 <li>
-                <!-- https://docs.djangoproject.com/en/5.0/topics/http/urls/#introduction
-                     URL Namespaces-->
-                    <a href="{% url 'menu:menu' %}">Home <i class="fa-solid fa-house"></i></a>
+                    <!-- https://docs.djangoproject.com/en/5.0/topics/http/urls/#introduction
+                    URL Namespaces-->
+                    <a href="{% url 'menu:menu' %}"> Home <i class="fa-solid fa-house"></i></a>
                 </li>
 
-                <li>
-                    <a href="#">Sign Up <i class="fa-solid fa-house"></i></a>
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}"> Logout <i class="fa-solid fa-user-slash"></i></a>
                 </li>
-                <li>
-                    <a href="#">Sign In <i class="fa-solid fa-house"></i></a>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
+                        href="{% url 'account_signup' %}"> Register <i class="fa-solid fa-user-plus"></i></a>
                 </li>
-                
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}"> Login <i class="fa-solid fa-user-pen"></i></a>
+                </li>
+                {% endif %} 
         </nav>
     </header>
 
