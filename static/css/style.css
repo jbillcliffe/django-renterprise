@@ -28,6 +28,7 @@ main {
 (multiple box shadows) to make it pop out, encouraging a click.*/
 .button {
     height: auto;
+    width: 200px;
     border-radius: 15px;
     background-color: #7785AC;
     box-shadow: 5px 5px 10px #C9F0FF inset, 5px 5px 10px #393D3F;
@@ -154,7 +155,6 @@ footer {
     justify-content: center;
     background-color: #1D5D40;
     box-shadow: 0px -3px 1px 0px rgba(57, 61, 63, 0.8);
-    margin-top: 25px;
 }
 
 /* social-networks ul css set the text to be centre aligned in a flex row 

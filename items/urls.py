@@ -9,6 +9,8 @@ data removed.
 - 'identifier/' is the url for a single item display
 """
 
+app_name = "items"
+
 urlpatterns = [
     path('', views.item_search, name='item_search'),
 ]

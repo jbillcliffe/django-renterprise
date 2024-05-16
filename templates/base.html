@@ -34,7 +34,7 @@
     <!--Header element for the page (to be used on all pages)-->
     <header>
         <!-- Logo to be a return link to home page (index)-->
-        <a href="/" target="_self">
+        <a href="{% url 'menu:menu' %}" target="_self">
             <img class="header-logo" src="{% static 'images/logo-100.webp' %}" alt="Renterprise"
                 aria-label="Renterprise CRM software home page">
         </a>
@@ -48,18 +48,11 @@
             <!-- Unordered list for the menu options, each list item is a link to its respective page -->
             <ul>
                 <li>
-                    <!-- active page -->
-                    <a href="/" class="active">Home <i class="fa-solid fa-house"></i></a>
+                <!-- https://docs.djangoproject.com/en/5.0/topics/http/urls/#introduction
+                     URL Namespaces-->
+                    <a href="{% url 'menu:menu' %}">Home <i class="fa-solid fa-house"></i></a>
                 </li>
-                <!--<li>
-                    <a href="product.html">Product <i class="fa-solid fa-rocket"></i></a>
-                </li>
-                <li>
-                    <a href="about.html">About <i class="fa-solid fa-circle-question"></i></a>
-                </li>
-                <li>
-                    <a href="contact.html">Enquiry <i class="fa-solid fa-envelope"></i></a>
-                </li>-->
+            </ul>
                 
         </nav>
     </header>
