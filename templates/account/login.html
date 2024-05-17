@@ -3,18 +3,18 @@
 {% load i18n %}
 {% load account socialaccount %}
 
-{% block head_title %}{% trans "Sign In" %}{% endblock %}
+{% block head_title %}{% trans "Log In" %}{% endblock %}
 
 {% block content %}
 
 <div class="container">
     <div class="row">
         <div class="col-md-8">
-            <h2 class="centre-heading">{% trans "Sign In" %}</h2>
+            <h2 class="centre-heading">{% trans "Log In" %}</h2>
             <hr class="renterprise">
             <h3>{% trans "Welcome to Renterprise" %}</h3>
             <p>{% blocktrans %}To use this application you will be
-              required to login. If you have no account then
+              required to log in. If you have no account then
               <a class="link" href="{{ signup_url }}"> create an account </a>first.
               {% endblocktrans %}</p>
         </div>
@@ -27,7 +27,7 @@
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
-                <button class="button small" type="submit">{% trans "Sign In" %}</button>
+                <button class="button small" type="submit">{% trans "Log In" %}</button>
             </form>
         </div>
     </div>

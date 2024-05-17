@@ -72,7 +72,10 @@ h3.centre-heading {
 and shadow are added.*/
 p,
 label,
-legend {
+legend,
+li,
+ol,
+ul {
     color: #FFFFFF;
     text-shadow: 0px 1px 5px #000000;
 }
@@ -338,12 +341,18 @@ of the theme.*/
 }
 
 /* FORM WARNING RESTYLE FROM ALLAUTH */
-.errorlist.nonfield {
+.errorlist {
     color: red;
     font-weight:bold;
     background: #FFFFFF;
     border-radius: 0.5rem;
     box-shadow: 0 0 4px 0 red;
+}
+
+.errorlist>li {
+    color: red;
+    background: #FFFFFF;
+    text-shadow:none;
 }
 
 .row { 

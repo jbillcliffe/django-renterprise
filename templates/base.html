@@ -60,7 +60,7 @@
 
                 {% if user.is_authenticated %}
                 <li class="nav-item">
-                    <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}"> Logout <i class="fa-solid fa-user-slash"></i></a>
+                    <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}"> Log Out <i class="fa-solid fa-user-slash"></i></a>
                 </li>
                 {% else %}
                 <li class="nav-item">
@@ -68,7 +68,7 @@
                         href="{% url 'account_signup' %}"> Register <i class="fa-solid fa-user-plus"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}"> Login <i class="fa-solid fa-user-pen"></i></a>
+                    <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}"> Log In <i class="fa-solid fa-user-pen"></i></a>
                 </li>
                 {% endif %} 
         </nav>
