@@ -60,6 +60,14 @@ h3 {
     font-size: 120%;
 }
 
+/* a general css style to have centre aligned h tags */
+h1.centre-heading,
+h2.centre-heading,
+h3.centre-heading {
+    display: flex; 
+    justify-content: center;
+}
+
 /* Default font for p, label and legend. Font is already created globally. Colour
 and shadow are added.*/
 p,
@@ -129,6 +137,11 @@ https://www.w3schools.com/howto/howto_css_animate_buttons.asp */
     font-size: 180%;
     cursor: pointer;
     text-decoration: none;
+}
+
+.button.centre-align {
+    display: flex; 
+    justify-content: center;
 }
 
 .button.small {
@@ -331,4 +344,8 @@ of the theme.*/
     background: #FFFFFF;
     border-radius: 0.5rem;
     box-shadow: 0 0 4px 0 red;
+}
+
+.row { 
+    justify-content: center !important;
 }
