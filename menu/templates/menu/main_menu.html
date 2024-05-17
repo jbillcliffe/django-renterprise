@@ -1,9 +1,12 @@
 {% extends "base.html" %}
 
-{% block content %}
 
+{% load i18n %}
+{% block head_title %}{% trans "Main Menu" %}{% endblock %}
+{% block content %}
 <!-- the content to enter into the "main" class on the "base.html"-->
 <div class="container-fluid">
+    {% if user.is_authenticated %}
     <!-- create a row per button of col-12 (max width) and centre align -->
     <div class="row">
         <div class="col-12 d-flex align-content-center flex-wrap">
@@ -25,6 +28,17 @@
             <a href="#" class="button"> Assets </a>
         </div>
     </div>
+    {% else %}
+    <div class="row">
+        <div class="col-12 d-flex align-content-center flex-wrap">
+            {% blocktrans %}
+            <p>You need to be logged in to access any of the menu items.</p>
+            <p> log in to continue using this application.</p>
+            {% endblocktrans %}
+            <a class="button small" href="{{ login_url }}">{% trans "Log In" %}</a>.
+        </div>
+    </div>
+    {% endif %}
 </div>
 
 <!-- index.html content ends here -->
