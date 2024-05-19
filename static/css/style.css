@@ -362,11 +362,27 @@ of the theme.*/
     width:100%;
 }
 
-.side-nav {
+ul.nav {
     display: flex;
     flex-direction: column;
     padding: 1rem;
     background: white;
     width: 20rem;
     height: 100%;
+}
+
+.side-bar.nav-link {
+    color:#000000;
+    text-shadow: 0px 1px 5px #000000;
+    text-decoration: none;
+}
+
+.side-bar.nav-link:hover {
+    color: #FFFFFF;
+    background-color: #1b9964;
+}
+
+.side-bar.nav-link.active {
+    color: #FFFFFF;
+    background-color: #1b9964;
 }

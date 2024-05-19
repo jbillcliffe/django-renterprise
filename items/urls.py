@@ -13,4 +13,5 @@ app_name = "items"
 
 urlpatterns = [
     path('', views.item_search, name='item_search'),
+    path('<id>/', views.item_view, name='item_view'),
 ]
