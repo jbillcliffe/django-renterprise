@@ -99,6 +99,8 @@ select>optgroup>option {
     box-shadow: 0px 0px 4px 0px black;
 }
 
+/*defaults for the tables. just to set full height and white background.*/
+
 #id_remember {
     box-shadow: 0px 0px 4px 0px black;
 }
@@ -350,9 +352,54 @@ of the theme.*/
     text-shadow:none;
 }
 
-/* centre align bootstrap rows */
+/* FOR TABLE LIKE DISPLAY INTERFACE */
+.table-holder {
+    width: 100%;
+    padding-left: 1rem;
+}
+
+/* centre align rows */
 .row { 
     justify-content: center !important;
+}
+
+.table-row {
+    display:flex;
+    flex-direction:row !important;
+    height:60px;
+    align-items: center;
+    padding:1rem;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+.table-head {
+    background-color: gray;
+    color:#FFFFFF;
+    text-shadow: 0px 1px 5px #000000;
+}
+
+.table-row:hover:not(:first-child) {
+    background-color: lightgray;
+}
+
+.button-table-view {
+    width: 40px;
+    height: 40px;
+    background-color: #dfdb00;
+    color:#000000;
+    border-radius: 10%;
+    border: 1mm outset #5c5a00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+.button-table-view:active {
+    background-color: #dfdb00;
+    border: 1mm inset #5c5a00;
 }
 
 /*STYLING FOR MAIN MENU */
@@ -367,22 +414,26 @@ ul.nav {
     flex-direction: column;
     padding: 1rem;
     background: white;
+    border: 1px solid lightgray;
     width: 20rem;
     height: 100%;
 }
 
 .side-bar.nav-link {
     color:#000000;
-    text-shadow: 0px 1px 5px #000000;
+    text-shadow: none;
     text-decoration: none;
 }
 
 .side-bar.nav-link:hover {
     color: #FFFFFF;
+    text-shadow: 0px 1px 5px #000000;
     background-color: #1b9964;
 }
 
 .side-bar.nav-link.active {
     color: #FFFFFF;
+    text-shadow: 0px 1px 5px #000000;
+
     background-color: #1b9964;
 }
