@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% block head_title %}{% trans "Search for an Item" %}{% endblock %}
+{% block content %}
+
+
+<!-- the content to enter into the "main" class on the "base.html"-->
+<div class="container-fluid" style="height: 100%; ">
+	<div id="nav-placeholder">
+		<!-- jQuery is at the bottom of base.html -->
+        {% include 'side-nav.html' %}
+	</div>
+    {% if user.is_authenticated %}
+	<div class="row">
+
+	</div>
+    {% else %}
+    <div class="row">
+        <div class="col-12">
+            {% blocktrans %}
+            <p>You need to be logged in to access the program.</p>
+            <p>Log in to continue using this application.</p>
+            {% endblocktrans %}
+            <a class="button small" href="{{ login_url }}">{% trans "Log In" %}</a>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+<!-- index.html content ends here -->
+{% endblock %}

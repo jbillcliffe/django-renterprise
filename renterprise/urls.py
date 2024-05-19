@@ -11,6 +11,7 @@ More URL explainations within each urls.py file.
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.template.loader import get_template
 
 urlpatterns = [
     path("accounts/", include("allauth.urls")),

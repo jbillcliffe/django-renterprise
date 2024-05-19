@@ -122,8 +122,12 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-# Prevent this as it will genereate errors without a proper email server
+# Prevent this as it will generate errors without a proper email server
 ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+# To prevent brute force attacks
+ACCOUNT_LOGIN_ATTEMPTS_LIMIT = 5
+ACCOUNT_LOGIN_ATTEMPTS_TIMEOUT = 86400 # 1 day in seconds
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/

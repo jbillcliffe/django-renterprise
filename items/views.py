@@ -6,4 +6,9 @@ def item_search(request):
     """
     function to display the item search feature
     """
-    return HttpResponse('Hello Item Search.')
+    template_name = "items/item_search.html"
+
+    return render(
+        request,
+        "items/item_search.html",
+    )
