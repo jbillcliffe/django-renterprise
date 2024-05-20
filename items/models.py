@@ -9,7 +9,6 @@ Models for ItemType and Item.
 - If less is inputted, the form will convert to 2 decimals before saving.
 -- Item --
 - DateFields are nullable, if null it frees up the item for booking
-
 - Income field same as ItemType reasoning for DecimalField.
 """
 
@@ -20,7 +19,9 @@ class ItemType(models.Model):
     category = models.CharField(max_length=200, default="Category")
     cost_initial = models.DecimalField(max_digits=6, decimal_places=2)
     cost_week = models.DecimalField(max_digits=6, decimal_places=2)
-    
+    # order by name 0-9 then A-Z
+    class Meta:
+        ordering = ["name"]
 
 class Item(models.Model):
     item_type = models.ForeignKey(
@@ -32,8 +33,14 @@ class Item(models.Model):
     repair_date = models.DateField(null=True, blank=True)
     income = models.DecimalField(max_digits=6, decimal_places=2, default=Decimal('0.00'))
 
+    # order by item_type name 0-9 then A-Z
+    class Meta:
+        ordering = ["item_type"]
+
+    # return a formatted string for the name of the item type
     def item_type_name(self):
         return f"{self.item_type.name}"
-
+    
+    # return a formatted string for the name of the item type category
     def item_type_category(self):
         return f"{self.item_type.category}"

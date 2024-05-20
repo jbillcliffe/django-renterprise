@@ -1,50 +1,15 @@
-
 from django.shortcuts import render, get_object_or_404, reverse
 from django.contrib import messages
 from django.views.generic import ListView
 from django.http import HttpResponseRedirect
-from django.core.paginator import Paginator
 from .models import Item, ItemType
-
-#import django_tables2 as tables
+from .forms import ItemForm
 
 # Create your views here.
-
-#class SimpleTable(tables.Table):
-#    class Meta:
-#        model = Simple
-#
-#class TableView(tables.SingleTableView):
-#   table_class = Item
-#    queryset = Item.objects.all()
-#    template_name = "items/item_search.html"
 class ItemList(ListView):
     paginate_by = 9
     model = Item
-    #queryset = Item.objects.all()
-    #page = request.GET.get('page', 1)
-    #paginator = Paginator(queryset, 9)
-    #try:
-    #    items = paginator.page(page)
-    #except PageNotAnInteger:
-    #    items = paginator.page(1)
-    #except EmptyPage:
-     #   items = paginator.page(paginator.num_pages)
-
-    #return render(request, 'items/item_search.html', { 'items': items })
-    #template_name = 'items/item_search.html'
-    #paginator = Paginator(queryset, 9)
-
-    #paginator.page(1)
-    #print(paginator.count)
-
-    #print(paginator.num_pages)
-
-    #print(paginator.page_range)
     
-    # paginate_by = 9
-
-
 # def item_search(request):
 #     """
 #     function to display the item search feature. Display and paginate
@@ -69,7 +34,34 @@ class ItemList(ListView):
     #    }
     #)
 
-
+def item_create(request):
+    """
+    Function to display the item_create.html template
+    which will allow new items to be added based on existing
+    types.
+    """
+    if request.method == "POST":
+        item_form = ItemForm(data=request.POST)
+        if item_form.is_valid():
+            item = item_form.save(commit=False)
+            item.item_type = request.item_type
+            item.item_serial = request.item_serial
+            item.delivery_date = null
+            item.collect_date = null
+            item.repair_date = null
+            item.save()
+            messages.add_message(
+                request, messages.SUCCESS,
+                'New item has been added'
+            )
+    item_form = ItemForm()
+    return render(
+        request,
+        "items/item_create.html",
+        {
+            "item_form": item_form,
+        },
+    )
 
 def item_view(request, id):
     """

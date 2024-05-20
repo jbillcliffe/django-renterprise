@@ -1,4 +1,3 @@
-<div id="side-nav-overlay"></div>
 <ul class="nav flex-column">
 	<li class="nav-item">
 		<a href="{% url 'items:item_list' %}" class="side-bar nav-link active">
@@ -6,7 +5,7 @@
 		</a>
 	</li>
 	<li class="nav-item">
-		<a href="#" class="side-bar nav-link">
+		<a href="{% url 'items:item_create' %}" class="side-bar nav-link">
 			<i class="fa-regular fa-square-plus" style="padding: 0.5rem;"></i> New Item
 		</a>
 	</li>
