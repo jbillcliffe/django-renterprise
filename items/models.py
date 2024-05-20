@@ -22,6 +22,10 @@ class ItemType(models.Model):
     # order by name 0-9 then A-Z
     class Meta:
         ordering = ["name"]
+    
+    # so the name will replace "ItemType Object" in all instances
+    def __str__(self):
+        return self.name
 
 class Item(models.Model):
     item_type = models.ForeignKey(
@@ -44,3 +48,5 @@ class Item(models.Model):
     # return a formatted string for the name of the item type category
     def item_type_category(self):
         return f"{self.item_type.category}"
+
+    

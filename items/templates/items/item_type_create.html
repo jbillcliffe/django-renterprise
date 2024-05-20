@@ -4,7 +4,7 @@
 
 
 {% load i18n %}
-{% block head_title %}{% trans "Create New Item" %}{% endblock %}
+{% block head_title %}{% trans "Create New Item Type" %}{% endblock %}
 
 {% block content %}
 
@@ -14,9 +14,10 @@
     {% include 'side-nav.html' %}
     {% if user.is_authenticated %}
     <div class="content-holder">
-        <form id="itemForm" method="post"
+        {{ item_type_categories }}
+        <form id="itemTypeForm" method="post"
             style="margin-top: 1.3em;">
-            {{ item_form | crispy }}
+            {{ item_type_form | crispy }}
             {% csrf_token %}
             <button id="submitButton" type="submit"
               class="btn btn-signup btn-lg">Submit</button>

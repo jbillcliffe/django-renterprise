@@ -1,17 +1,17 @@
 <ul class="nav flex-column">
 	<li class="nav-item">
-		<a href="{% url 'items:item_list' %}" class="side-bar nav-link active">
-			<i class="fa-solid fa-table-list" style="padding: 0.5rem;"></i>   Item List
+		<a id="item_list" href="{% url 'items:item_list' %}" class="side-bar nav-link">
+			<i class="fa-solid fa-table-list" style="padding: 0.5rem;"></i> Item List
 		</a>
-	</li>
+	</li> 
 	<li class="nav-item">
-		<a href="{% url 'items:item_create' %}" class="side-bar nav-link">
+		<a id="item_create" href="{% url 'items:item_create' %}" class="side-bar nav-link">
 			<i class="fa-regular fa-square-plus" style="padding: 0.5rem;"></i> New Item
 		</a>
 	</li>
 	<li class="nav-item">
-		<a href="#" class="side-bar nav-link">
-			<i class="fa-regular fa-square-plus" style="padding: 0.5rem;"></i>   New Item Type
+		<a id="item_type_create" href="{% url 'items:item_type_create' %}" class="side-bar nav-link"> 
+			<i class="fa-regular fa-square-plus" style="padding: 0.5rem;"></i> New Item Type
 		</a>
 	</li>
 </ul>
