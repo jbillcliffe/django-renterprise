@@ -357,6 +357,12 @@ of the theme.*/
     width: 100%;
     padding-left: 1rem;
 }
+/* CONTENT HOLDER FOR DYNAMIC WINDOWS */
+.content-holder {
+   width: 100%;
+   padding: 5rem;
+   background: dimgray;
+}
 
 /* centre align rows */
 .row { 

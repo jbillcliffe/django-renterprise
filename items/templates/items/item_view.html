@@ -5,24 +5,51 @@
 
 
 <!-- the content to enter into the "main" class on the "base.html"-->
-<div class="container-fluid" style="height: 100%; ">
+<div class="container-fluid" style="height: 100%; width:100%;">
     <!-- jQuery is at the bottom of base.html -->
     {% include 'side-nav.html' %}
     {% if user.is_authenticated %}
-	<div class="row">
-        {{ item.item_serial }}
-	</div>
-    {% else %}
-    <div class="row">
-        <div class="col-12">
-            {% blocktrans %}
-            <p>You need to be logged in to access the program.</p>
-            <p>Log in to continue using this application.</p>
-            {% endblocktrans %}
-            <a class="button small" href="{{ login_url }}">{% trans "Log In" %}</a>
+    <div class="content-holder">
+        <div class="row">
+            <p>Item : {{ item.item_type_name }}</p>
         </div>
+        <div class="row">
+            <p>Item Category : {{ item.item_type_category }}</p>
+        </div>
+        <div class="row">
+            <p>Item Serial : {{ item.item_serial }}</p>
+        </div>
+        <div class="row">
+            <hr class="renterprise">
+        </div>
+        <div class="row">
+            <p>Upcoming Delivery Date : {{ item.delivery_date }}</p>
+        </div>
+        <div class="row">
+            <p>Upcoming Collection Date : {{ item.collect_date }}</p>
+        </div>
+        <div class="row">
+            <p>Repair Started Date : {{ item.repair_date }}</p>
+        </div>
+        <div class="row">
+            <hr class="renterprise">
+        </div>
+        <div class="row">
+            <p>Item Income : £{{ item.income }}</p>
+        </div> 
+        {% else %}
+        <div class="row">
+            <div class="col-12">
+                {% blocktrans %}
+                <p>You need to be logged in to access the program.</p>
+                <p>Log in to continue using this application.</p>
+                {% endblocktrans %}
+                <a class="button small" href="{{ login_url }}">{% trans "Log In" %}</a>
+            </div>
+        </div>
+        {% endif %}
     </div>
-    {% endif %}
+	
 </div>
 
 <!-- index.html content ends here -->
