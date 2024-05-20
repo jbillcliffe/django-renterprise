@@ -37,8 +37,3 @@ class Item(models.Model):
 
     def item_type_category(self):
         return f"{self.item_type.category}"
-
-    def item_image(self):
-        return f"{self.item_type.image}"
-    
-    print(item_image)

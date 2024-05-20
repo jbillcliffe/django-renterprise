@@ -13,8 +13,8 @@
     {% if user.is_authenticated %}
     <div class="content-holder">
         <div class="row">
-            {% if "placeholder" in item.image.url %}
-            <img class="item-image" src="{% static 'images/default.jpg' %}"
+            {% if "placeholder" in item.item_type.image.url %}
+            <img class="item-image" src="{% static 'images/default.webp' %}"
                 alt="placeholder image">
             {% else %}
             <!--<img class="item-image" src="{{ item.item_type.item_image.url }}" alt="{{ item.item_type_name }}">-->
@@ -22,7 +22,7 @@
             src="https://res.cloudinary.com/dddubflsq/image/upload/v1716167766/lxxjqt0hymx3s7usdldd.webp"
             alt="{{ item.item_type_name }}">-->
             <img class="item-image" 
-            src=" {{ item.item_type.item_image.url }}"
+            src=" {{ item.item_type.image.url }}"
             alt="{{ item.item_type_name }}">
             {% endif %}
         </div>
@@ -53,7 +53,7 @@
         <div class="row">
             <p>Item Income : £{{ item.income }}</p>
         </div> 
-        {% else %}
+    {% else %}
         <div class="row">
             <div class="col-12">
                 {% blocktrans %}
@@ -63,7 +63,7 @@
                 <a class="button small" href="{{ login_url }}">{% trans "Log In" %}</a>
             </div>
         </div>
-        {% endif %}
+    {% endif %}
     </div>
 	
 </div>
