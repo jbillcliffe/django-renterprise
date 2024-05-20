@@ -13,7 +13,6 @@ data removed.
 app_name = "items"
 
 urlpatterns = [
-    path('', views.ItemList.as_view(), name='item_search'),
-    #path('', views.item_search, name='item_search'),
+    path('', views.ItemList.as_view(), name='item_list'),
     path('<id>/', views.item_view, name='item_view'),
 ]

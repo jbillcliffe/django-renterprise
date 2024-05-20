@@ -372,7 +372,7 @@ of the theme.*/
 .table-row {
     display:flex;
     flex-direction:row !important;
-    height:60px;
+    height:6vh;
     align-items: center;
     padding:1rem;
     background-color: white;
@@ -385,8 +385,24 @@ of the theme.*/
     text-shadow: 0px 1px 5px #000000;
 }
 
-.table-row:hover:not(:first-child) {
+.table-row:hover:not(:first-child):not(:last-child) {
     background-color: lightgray;
+}
+
+.paginate-foot {
+    align-items: center;
+    justify-content: center;
+}
+
+.paginate-arrows {
+    color:#FFFFFF;
+    text-shadow: 0px 1px 5px #000000;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.paginate-arrows:hover {
+    color:#C9F0FF;
 }
 
 .button-table-view {
@@ -448,4 +464,6 @@ img.item-image {
     width: 200px;
     height: auto;
     background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 3px -2px 9px 0px #000000
 }
