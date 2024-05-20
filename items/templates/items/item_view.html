@@ -17,10 +17,6 @@
             <img class="item-image" src="{% static 'images/default.webp' %}"
                 alt="placeholder image">
             {% else %}
-            <!--<img class="item-image" src="{{ item.item_type.item_image.url }}" alt="{{ item.item_type_name }}">-->
-            <!--<img class="item-image" 
-            src="https://res.cloudinary.com/dddubflsq/image/upload/v1716167766/lxxjqt0hymx3s7usdldd.webp"
-            alt="{{ item.item_type_name }}">-->
             <img class="item-image" 
             src=" {{ item.item_type.image.url }}"
             alt="{{ item.item_type_name }}">
@@ -50,6 +46,9 @@
         <div class="row">
             <p>Item Income : £{{ item.income }}</p>
         </div> 
+        <div class="row">
+            <a class="button" href="{% url 'items:item_list' %}">Return To Item List</a>
+        </div>
     {% else %}
         <div class="row">
             <div class="col-12">
