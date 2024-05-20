@@ -443,3 +443,9 @@ ul.nav {
 
     background-color: #1b9964;
 }
+
+img.item-image {
+    width: 200px;
+    height: auto;
+    background: #FFFFFF;
+}
