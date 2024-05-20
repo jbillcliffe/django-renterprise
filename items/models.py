@@ -1,5 +1,6 @@
 from django.db import models
 from decimal import Decimal
+from cloudinary.models import CloudinaryField
 
 """
 Models for ItemType and Item.
@@ -14,10 +15,12 @@ Models for ItemType and Item.
 
 # Create your models here.
 class ItemType(models.Model):
+    image = CloudinaryField('image', default="placeholder")
     name = models.CharField(max_length=200)
     category = models.CharField(max_length=200, default="Category")
     cost_initial = models.DecimalField(max_digits=6, decimal_places=2)
     cost_week = models.DecimalField(max_digits=6, decimal_places=2)
+    
 
 class Item(models.Model):
     item_type = models.ForeignKey(
