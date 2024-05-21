@@ -48,3 +48,4 @@ class Invoice(models.Model):
     amount_paid = models.DecimalField(max_digits=6, decimal_places=2)
     note = models.TextField()
     status = models.BooleanField(default=False)
+    

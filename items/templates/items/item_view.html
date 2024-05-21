@@ -15,7 +15,7 @@
             <div class="col-4">
                 <h2>{{ item.item_type_name }}</h2>
             </div>
-            <div class="col-5 item-image-holder">
+            <div class="col-4 item-image-holder">
                 {% if "placeholder" in item.item_type.image.url %}
                 <img class="item-image" src="{% static 'images/default.webp' %}"
                     alt="placeholder image">
@@ -25,7 +25,7 @@
                 alt="{{ item.item_type_name }}">
                 {% endif %}
             </div>
-            <div class="col-3">
+            <div class="col-4">
                 {% if item.status != 0 %}
                 <h2 class="item-status-text {{ item.item_css_status }}">{{ item.status_str }}</h2>
                 {% else %}
@@ -58,7 +58,11 @@
             <p>Item Income : £{{ item.income }}</p>
         </div> 
         <div class="row">
-            <a class="button" href="{% url 'items:item_list' %}">Return To Item List</a>
+            <div class="col-4"></div>
+            <div class="col-4">
+                <a class="button centre-align" href="{% url 'items:item_list' %}">Return To List</a>
+            </div>
+            <div class="col-4"></div>
         </div>
     {% else %}
         <div class="row">
@@ -67,7 +71,7 @@
                 <p>You need to be logged in to access the program.</p>
                 <p>Log in to continue using this application.</p>
                 {% endblocktrans %}
-                <a class="button small" href="{{ login_url }}">{% trans "Log In" %}</a>
+                <a class="button small centre-align" href="{{ login_url }}">{% trans "Log In" %}</a>
             </div>
         </div>
     {% endif %}
