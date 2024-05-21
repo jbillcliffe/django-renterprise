@@ -13,5 +13,6 @@ app_name = "customers"
 
 urlpatterns = [
     # url for customer search
-    path('', views.customer_search, name='customer_search'),
+    #path('', views.customer_search, name='customer_list'),
+    path('', views.CustomerList.as_view(), name='customer_list'),
 ]

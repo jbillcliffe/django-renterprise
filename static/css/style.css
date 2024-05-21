@@ -505,7 +505,7 @@ img.item-image {
     color : #0066ff;
 }
 
-.scrapped {
+.scrapped, .deceased {
     /*scrap*/
     color : #000000;
     text-shadow: 0px 1px 5px #FFFFFF;
