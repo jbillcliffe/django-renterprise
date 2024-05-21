@@ -10,29 +10,6 @@ class ItemList(ListView):
     paginate_by = 9
     model = Item
     
-# def item_search(request):
-#     """
-#     function to display the item search feature. Display and paginate
-#     all found instances under the search critera (or all can be selected)
-#     """
-#    template_name = "items/item_search.html"
-#    #item_search_form = ItemSearchForm()
-#    #paginate_by = 10
-#
-    #if request.method == "POST":
-    #    item_search_form = ItemSearchForm(data=request.POST)
-    #    if item_search_form.is_valid():
-    #        for field in Entry.objects.all():
-    #        queryset = Item.objects.filter(status=1)
-    #        post = get_object_or_404(queryset, slug=slug)
-    #
-    #return render(
-    #    request,
-    #    "items/item_search.html",
-    #    {
-    #        "item_search_form":item_search_form,
-    #    }
-    #)
 def item_view(request, id):
     """
     Function to view a singular item after being selected.

@@ -12,6 +12,8 @@ Models for ItemType and Item.
 - Income field same as ItemType reasoning for DecimalField.
 """
 
+STATUS = ((0, "Available"), (1, "Scrapped"), (2, "Lost/Stolen"))
+
 # Create your models here.
 class ItemType(models.Model):
     image = CloudinaryField('image', default="placeholder")
@@ -36,6 +38,7 @@ class Item(models.Model):
     collect_date = models.DateField(null=True, blank=True)
     repair_date = models.DateField(null=True, blank=True)
     income = models.DecimalField(max_digits=6, decimal_places=2, default=Decimal('0.00'))
+    status = models.IntegerField(choices=STATUS, default=0)
 
     # order by item_type name 0-9 then A-Z
     class Meta:

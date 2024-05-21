@@ -16,5 +16,5 @@ urlpatterns = [
     path('', views.ItemList.as_view(), name='item_list'),
     path('create/', views.item_create, name='item_create'),
     path('create/item_type/', views.item_type_create, name='item_type_create'),
-    path('<int:pk>/', views.item_view, name='item_view'),
+    path('<int:id>/', views.item_view, name='item_view'),
 ]
