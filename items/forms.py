@@ -1,3 +1,4 @@
+from dal import autocomplete
 from .models import Item, ItemType
 from django import forms
 
@@ -11,3 +12,4 @@ class ItemTypeForm(forms.ModelForm):
         model = ItemType
         fields = ('name', 'category',
             'cost_initial', 'cost_week', 'image')
+    

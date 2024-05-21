@@ -9,6 +9,7 @@ from .forms import ItemForm, ItemTypeForm
 class ItemList(ListView):
     paginate_by = 9
     model = Item
+    
 # def item_search(request):
 #     """
 #     function to display the item search feature. Display and paginate
@@ -105,8 +106,6 @@ def item_type_create(request):
         request,
         "items/item_type_create.html",
         {
-            "item_type_categories": 
-    ItemType.objects.order_by('category').values_list('category', flat=True).distinct('category'),
             "item_type_form": item_type_form,
         },
     )

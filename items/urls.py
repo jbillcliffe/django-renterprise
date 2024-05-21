@@ -17,5 +17,4 @@ urlpatterns = [
     path('create/', views.item_create, name='item_create'),
     path('create/item_type/', views.item_type_create, name='item_type_create'),
     path('<int:pk>/', views.item_view, name='item_view'),
-    
 ]
