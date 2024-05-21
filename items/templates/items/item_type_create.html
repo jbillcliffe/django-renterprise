@@ -10,7 +10,6 @@
 
 <!-- the content to enter into the "main" class on the "base.html"-->
 <div class="container-fluid" style="height: 100%; width:100%;">
-    <!-- jQuery is at the bottom of base.html -->
     {% include 'side-nav.html' %}
     {% if user.is_authenticated %}
     <div class="content-holder">

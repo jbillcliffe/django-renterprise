@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.contrib import messages
 from django.views.generic import ListView
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpRequest
 from .models import Item, ItemType
 from .forms import ItemForm, ItemTypeForm
 
@@ -9,7 +9,14 @@ from .forms import ItemForm, ItemTypeForm
 class ItemList(ListView):
     paginate_by = 9
     model = Item
-    
+    # https://stackoverflow.com/questions/37370534/django-listview-where-can-i-declare-variables-that-i-want-to-have-on-template
+    # Override original get_context_data to allow sending of the application area.
+    # This will allow DRY manipulation of the side-bar.html
+    def get_context_data(self, **kwargs):
+        context = super(ItemList, self).get_context_data(**kwargs)
+        context['class_var'] = "Items"
+        return context
+
 def item_view(request, id):
     """
     Function to view a singular item after being selected.
@@ -25,6 +32,7 @@ def item_view(request, id):
         "items/item_view.html",
         {
             "item":obj,
+            "class_var":"Items",
         },
     )
 
@@ -49,12 +57,12 @@ def item_create(request):
                 'New item has been added'
             )
     item_form = ItemForm()
-    return render_to_response(
+    return render(
         request,
         "items/item_create.html",
         {
             "item_form": item_form,
-            
+            "class_var":"Items",
         },
     )
 
@@ -79,14 +87,13 @@ def item_type_create(request):
                 'New item type has been added'
             )
     item_type_form = ItemTypeForm()
-    return render_to_response(
+    return render(
         request,
         "items/item_type_create.html",
         {
             "item_type_form": item_type_form,
+            "class_var":"Items",
         },
     )
-
-
 
     

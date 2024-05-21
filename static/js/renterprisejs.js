@@ -4,13 +4,11 @@ function setActiveSideNav(id) {
     for (let i = 0; i < sideBarButtons.length; i++) {
         if (sideBarButtons[i].href == id) {
             sideBarButtons[i].className = "side-bar nav-link active";
-            console.log("active at :"+sideBarButtons[i].id)
         } else {
             sideBarButtons[i].className = "side-bar nav-link";
         }
     }
 }
-
 
 $(document).ready(function() {
     setActiveSideNav(window.location.href);

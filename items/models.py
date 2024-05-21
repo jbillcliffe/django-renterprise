@@ -27,6 +27,8 @@ class ItemType(models.Model):
     def __str__(self):
         return self.name
 
+        
+
 class Item(models.Model):
     # Best practice for django constants :
     # https://stackoverflow.com/questions/12822847/best-practice-for-python-django-constants

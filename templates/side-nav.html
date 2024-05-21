@@ -1,6 +1,5 @@
-{% load my_tags %}
 <ul class="nav flex-column">
-    {% if {{ url_part_1 }} == 'items' %}
+	{% if class_var == "Items" %}
 	<li class="nav-item">
 		<a id="item_list" href="{% url 'items:item_list' %}" class="side-bar nav-link">
 			<i class="fa-solid fa-table-list" style="padding: 0.5rem;"></i> Item List
@@ -16,7 +15,7 @@
 			<i class="fa-regular fa-square-plus" style="padding: 0.5rem;"></i> New Item Type
 		</a>
 	</li>
-    {% elif {{ url_part_1 }} == 'customers' %}
+	{% elif class_var == "Customers" %}
     <li class="nav-item">
 		<a id="customer_list" href="{% url 'customers:customer_list' %}" class="side-bar nav-link">
 			<i class="fa-solid fa-table-list" style="padding: 0.5rem;"></i> Customer List
@@ -27,9 +26,9 @@
 			<i class="fa-solid fa-user-plus" style="padding: 0.5rem;"></i> New Customer
 		</a>
 	</li>
-    {% else %}
-    <li></li>
-    {% endif %}
+	{% else %}
+	<li></li>
+	{% endif %}
 </ul>
 
 

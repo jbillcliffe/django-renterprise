@@ -12,6 +12,13 @@ from .forms import CustomerForm
 class CustomerList(ListView):
     paginate_by = 9
     model = Customer
+    # https://stackoverflow.com/questions/37370534/django-listview-where-can-i-declare-variables-that-i-want-to-have-on-template
+    # Override original get_context_data to allow sending of the application area.
+    # This will allow DRY manipulation of the side-bar.html
+    def get_context_data(self, **kwargs):
+        context = super(CustomerList, self).get_context_data(**kwargs)
+        context['class_var'] = "Customers"
+        return context
 
 def customer_view(request, customer_token):
     """
@@ -28,6 +35,7 @@ def customer_view(request, customer_token):
         "customers/customer_view.html",
         {
             "customer":obj,
+            "class_var":"Customers",
         },
     )
 
@@ -56,7 +64,7 @@ def customer_create(request):
         "customers/customer_create.html",
         {
             "customer_form": customer_form,
-            
+            "class_var":"Customers",
         },
     )
 

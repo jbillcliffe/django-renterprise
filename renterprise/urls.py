@@ -11,7 +11,7 @@ More URL explainations within each urls.py file.
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.template.loader import get_template
+from menu import views
 
 urlpatterns = [
     path("accounts/", include("allauth.urls")),
@@ -21,5 +21,5 @@ urlpatterns = [
     path('items/', include('items.urls'), name='items-urls'),
     path('orders/', include('orders.urls'), name='orders-urls'),
     path('', include('menu.urls'), name='menu-urls'),
-    
+
 ]
