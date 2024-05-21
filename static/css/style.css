@@ -379,6 +379,29 @@ of the theme.*/
     border: 1px solid lightgray;
 }
 
+.table-row.lost_stolen {
+    /*lost/stolen*/
+    background-color :#834a00; 
+    color:#FFFFFF;
+    text-shadow: 0px 1px 5px #FFFFFF;
+}
+
+.table-row.sold {
+    /*sold*/
+    background-color : #0066ff;
+    color:#FFFFFF;
+    text-shadow: 0px 1px 5px #FFFFFF;
+}
+
+.table-row.scrapped {
+    /*scrap*/
+    background-color : #000000;
+    color:#FFFFFF;
+    text-shadow: 0px 1px 5px #FFFFFF;
+
+
+}
+
 .table-head {
     background-color: gray;
     color:#FFFFFF;
@@ -461,9 +484,29 @@ ul.nav {
 }
 
 img.item-image {
-    width: 200px;
+    width: 12rem;
     height: auto;
     background: #FFFFFF;
     border: 1px solid #000000;
     box-shadow: 3px -2px 9px 0px #000000
+}
+
+.item-image-holder {
+    justify-content: center;
+}
+
+.lost_stolen {
+    /*lost/stolen*/
+    color :#834a00; 
+}
+
+.sold {
+    /*sold*/
+    color : #0066ff;
+}
+
+.scrapped {
+    /*scrap*/
+    color : #000000;
+    text-shadow: 0px 1px 5px #FFFFFF;
 }
