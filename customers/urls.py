@@ -15,4 +15,6 @@ urlpatterns = [
     # url for customer search
     #path('', views.customer_search, name='customer_list'),
     path('', views.CustomerList.as_view(), name='customer_list'),
+    path('create/', views.customer_create, name='customer_create'),
+    path('<uuid:customer_token>/', views.customer_view, name='customer_view'),
 ]

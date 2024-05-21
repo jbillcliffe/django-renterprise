@@ -28,8 +28,8 @@
         {% for item in item_list %}
         <div class="table-row {{ customer.customer_css_status }}">
             <div class="col-3">{{ customer.full_name }}</div>
-            <div class="col-6">{{ item.address }}</div>
-            <div class="col-2">{{ item.postcode }}</div>
+            <div class="col-6">{{ customer.address }}</div>
+            <div class="col-2">{{ customer.postcode }}</div>
             <div class="col-1"><a class="button-table-view" href="{% url 'customers:customer_view' customer.customer_token%}"><i class="fa-solid fa-magnifying-glass"></i></a></div>
         </div>
         {% endfor %}

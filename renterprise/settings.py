@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     'django_summernote',
-    "django_tables2",
+    'django_tables2',
     'customers',
     'items',
     'menu',
@@ -93,8 +93,10 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                
             ],
+            'libraries': {
+                'my_tags': 'menu.templatetags.my_tags',
+            },
         },
     },
 ]

@@ -33,6 +33,13 @@ class Customer(models.Model):
     def full_name(self):
         return f"{self.first_name} {self.last_name}"
 
+    def status_str(self):
+        return self.STATUS[self.status][1]
+
+    def customer_css_status(self):
+        self = str(self.STATUS[self.status][1]).lower()
+        return self
+
 class CustomerNote(models.Model):
     customer = models.ForeignKey(
         Customer, on_delete=models.CASCADE, related_name="customer"

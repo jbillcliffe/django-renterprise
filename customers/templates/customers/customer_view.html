@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% load i18n %}
+{% block head_title %}{% trans "View Customer Details" %}{% endblock %}
+{% block content %}
+
+<!-- the content to enter into the "main" class on the "base.html"-->
+<div class="container-fluid" style="height: 100%; width:100%;">
+    <!-- jQuery is at the bottom of base.html -->
+    {% include 'side-nav.html' %}
+    {% if user.is_authenticated %}
+    <div class="content-holder">
+        <div class="row">
+            <div class="col-4">
+                <h2>{{ customer.full_name }}</h2>
+            </div>
+            <div class="col-4">
+                {% if customer.customer_css_status == "deceased" %}
+                <h2 class="{{ customer.customer_css_status }}">{{ item.status_str }}</h2>
+                {% else %}
+                <h2></h2>
+                {% endif %}
+            </div>
+            <div class="col-4">
+                <p>Created On : {{ customer.created_on }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <hr class="renterprise">
+        </div>
+        <div class="row">
+            <span><p>Address : </p><textarea>{{ customer.address }}</textarea></span>
+        </div>
+        <div class="row">
+            <p>Postcode : {{ customer.postcode }}</p>
+        </div>
+        <div class="row">
+            <hr class="renterprise">
+        </div>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <a class="button centre-align" href="{% url 'customers:customer_list' %}">Return To List</a>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    {% else %}
+        <div class="row">
+            <div class="col-12">
+                {% blocktrans %}
+                <p>You need to be logged in to access the program.</p>
+                <p>Log in to continue using this application.</p>
+                {% endblocktrans %}
+                <a class="button small centre-align" href="{{ login_url }}">{% trans "Log In" %}</a>
+            </div>
+        </div>
+    {% endif %}
+    </div>
+	
+</div>
+
+<!-- index.html content ends here -->
+{% endblock %}

@@ -27,9 +27,9 @@
             </div>
             <div class="col-4">
                 {% if item.status != 0 %}
-                <h2 class="item-status-text {{ item.item_css_status }}">{{ item.status_str }}</h2>
+                <h2 class="{{ item.item_css_status }}">{{ item.status_str }}</h2>
                 {% else %}
-                <h2 class="item-status-text"></h2>
+                <h2></h2>
                 {% endif %}
             </div>
         </div>
