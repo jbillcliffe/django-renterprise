@@ -8,11 +8,12 @@ from django.http import HttpResponseRedirect
 from .models import Customer, CustomerNote
 from .forms import CustomerForm
 
+
 # Create your views here.
 class CustomerList(ListView):
-    queryset = Customer.objects.filter(status!=2)
     paginate_by = 9
     model = Customer
+    queryset = Customer.objects.exclude(status=2)
     # https://stackoverflow.com/questions/37370534/django-listview-where-can-i-declare-variables-that-i-want-to-have-on-template
     # Override original get_context_data to allow sending of the application area.
     # This will allow DRY manipulation of the side-bar.html
