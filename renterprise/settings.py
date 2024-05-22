@@ -141,9 +141,14 @@ ACCOUNT_LOGIN_ATTEMPTS_TIMEOUT = 86400 # 1 day in seconds
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-GB'
 
 TIME_ZONE = 'UTC'
+
+DATE_FORMAT = '%d/%m/%Y'
+DATE_INPUT_FORMATS =  ['%d/%m/%Y']
+DATETIME_FORMAT = '%d/%m/%Y : %H:%M'
+DATETIME_INPUT_FORMATS =  ['%d/%m/%Y : %H:%M']
 
 USE_I18N = True
 
