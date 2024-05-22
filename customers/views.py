@@ -10,6 +10,7 @@ from .forms import CustomerForm
 
 # Create your views here.
 class CustomerList(ListView):
+    queryset = Customer.objects.filter(status!=2)
     paginate_by = 9
     model = Customer
     # https://stackoverflow.com/questions/37370534/django-listview-where-can-i-declare-variables-that-i-want-to-have-on-template
