@@ -50,7 +50,11 @@ def customer_create(request):
             customer = customer_form.save(commit=False)
             customer.first_name = request.first_name
             customer.last_name = request.last_name
-            customer.address = request.address
+            customer.address_line_one = request.address_line_one
+            customer.address_line_two = request.address_line_two
+            customer.address_line_three = request.address_line_three
+            customer.address_line_town = request.address_line_town
+            customer.address_line_county = request.address_line_county
             customer.postcode = request.postcode
             customer.save()
 
