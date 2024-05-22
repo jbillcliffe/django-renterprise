@@ -30,7 +30,7 @@ def customer_view(request, customer_token):
     # field (generated in the customer model using UUID).
     obj = get_object_or_404(Customer, customer_token=customer_token)
     # Render the template customer_view and send the found "Customer" to it.
-    return render_to_response(
+    return render(
         request,
         "customers/customer_view.html",
         {

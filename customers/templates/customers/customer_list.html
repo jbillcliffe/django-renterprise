@@ -15,20 +15,20 @@
             <div class="col-3">
                 Name
             </div>
-            <div class="col-6">
+            <div class="col-5">
                 Address
             </div>
-            <div class="col-2">
+            <div class="col-3">
                 Postcode
             </div>
             <div class="col-1">
             </div>
         </div>
-        {% for item in item_list %}
+        {% for customer in customer_list %}
         <div class="table-row {{ customer.customer_css_status }}">
             <div class="col-3">{{ customer.full_name }}</div>
-            <div class="col-6">{{ customer.address }}</div>
-            <div class="col-2">{{ customer.postcode }}</div>
+            <div class="col-5">{{ customer.address_line_one }}</div>
+            <div class="col-3">{{ customer.postcode }}</div>
             <div class="col-1"><a class="button-table-view" href="{% url 'customers:customer_view' customer.customer_token%}"><i class="fa-solid fa-magnifying-glass"></i></a></div>
         </div>
         {% endfor %}

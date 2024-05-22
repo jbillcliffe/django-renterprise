@@ -19,16 +19,16 @@ class Customer(models.Model):
         editable=False,
         unique=True)
     first_name = models.CharField(max_length=200, null=True, blank=True)
-    last_name = models.CharField(max_length=200, default='X')
-    address_line_one = models.CharField(max_length=200, default='X')
+    last_name = models.CharField(max_length=200)
+    address_line_one = models.CharField(max_length=200)
     # sometimes people only have a first line before 
     # town is the next entry
     address_line_two = models.CharField(max_length=200, null=True, blank=True)
     address_line_three = models.CharField(max_length=200, null=True, blank=True)
-    address_line_town = models.CharField(max_length=200, default='X')
-    address_line_county = models.CharField(max_length=200, default='X')
+    address_line_town = models.CharField(max_length=200)
+    address_line_county = models.CharField(max_length=200)
     # longest UK postcode would be 8 characters including a space
-    postcode = models.CharField(max_length=8, default='XX20 2XX')
+    postcode = models.CharField(max_length=8)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=CURRENT)
 
