@@ -1,9 +1,16 @@
 import uuid
 from django.db import models
 from django.contrib.auth.models import User
+import logging
+
+logger = logging.getLogger(__name__)
+
 
 # Create your models here.
 class Customer(models.Model):
+
+    null_values = [None, 'None', 'none', 'null', 'Null']
+
     CURRENT = 0
     DECEASED = 1
     ARCHIVED = 2
@@ -18,13 +25,13 @@ class Customer(models.Model):
         default=uuid.uuid4,
         editable=False,
         unique=True)
-    first_name = models.CharField(max_length=200, blank=True)
+    first_name = models.CharField(max_length=200, blank=True, null=True)
     last_name = models.CharField(max_length=200)
     address_line_one = models.CharField(max_length=200)
     # sometimes people only have a first line before 
     # town is the next entry
-    address_line_two = models.CharField(max_length=200, blank=True)
-    address_line_three = models.CharField(max_length=200, blank=True)
+    address_line_two = models.CharField(max_length=200, blank=True, null=True)
+    address_line_three = models.CharField(max_length=200, blank=True, null=True)
     address_line_town = models.CharField(max_length=200)
     address_line_county = models.CharField(max_length=200)
     # longest UK postcode would be 8 characters including a space
@@ -38,7 +45,14 @@ class Customer(models.Model):
         ordering = ["last_name", "first_name"]
 
     def full_name(self):
-        return f"{self.first_name} {self.last_name}"
+        logger.debug(self.first_name)
+        logger.debug(self.last_name)
+        logger.debug(self.null_values)
+        
+        if self.first_name in self.null_values:
+            return f"{self.last_name}"
+        else:
+            return f"{self.first_name} {self.last_name}"
 
     def status_str(self):
         return self.STATUS[self.status][1]
@@ -58,4 +72,8 @@ class CustomerNote(models.Model):
     )
 
     def full_name(self):
-        return f"{self.customer.first_name} {self.customer.last_name}"
+        if self.customer.first_name in self.null_values:
+            return f"{self.customer.last_name}"
+        else:
+            return f"{self.customer.first_name} {self.customer.last_name}"
+            

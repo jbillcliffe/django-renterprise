@@ -56,6 +56,8 @@ def customer_create(request):
             logger.debug(customer_form.is_valid())
             logger.debug(customer_form.data)
             customer = customer_form.save(commit=False)
+            #customer
+            """ 
             customer.first_name = customer_form.first_name
             customer.last_name = customer_form.last_name
             customer.address_line_one = customer_form.address_line_one
@@ -64,6 +66,8 @@ def customer_create(request):
             customer.address_line_town = customer_form.address_line_town
             customer.address_line_county = customer_form.address_line_county
             customer.postcode = customer_form.postcode
+            """
+
             customer.save()
             messages.add_message(
                 request, messages.SUCCESS,

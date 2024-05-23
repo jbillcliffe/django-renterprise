@@ -1,18 +1,28 @@
-customers.views DEBUG 2024-05-23 20:06:02,891 views 7150 140173949584960 Attempting to connect to API
-customers.views DEBUG 2024-05-23 20:06:02,892 views 7150 140173949584960 True
-customers.views DEBUG 2024-05-23 20:06:02,893 views 7150 140173949584960 <QueryDict: {'csrfmiddlewaretoken': ['yXTY9cK1mtitIJao9RETh2dKj34yA9W9lmA8odORv4C0wZ68t4BewxiwlX38LkgN'], 'first_name': [''], 'last_name': ['TEST'], 'address_line_one': ['TEST'], 'address_line_two': [''], 'address_line_three': [''], 'address_line_town': ['TEST'], 'address_line_county': ['TEST'], 'postcode': ['TEST'], 'submit': ['Submit']}>
-django.request ERROR 2024-05-23 20:06:04,019 log 7150 140173949584960 Internal Server Error: /customers/create/
-Traceback (most recent call last):
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/customers/views.py", line 59, in customer_create
-    customer.first_name = customer_form.first_name
-AttributeError: 'CustomerForm' object has no attribute 'first_name'
-django.request WARNING 2024-05-23 20:06:04,718 log 7150 140173949584960 Not Found: /favicon.ico
-django.request WARNING 2024-05-23 20:06:04,811 log 7150 140173949584960 Not Found: /customers/create/styles.css.map
-django.utils.autoreload INFO 2024-05-23 20:06:33,178 autoreload 7150 140174007282560 /workspaces/django-renterprise/customers/models.py changed, reloading.
-django.utils.autoreload INFO 2024-05-23 20:06:35,329 autoreload 7243 139728691014528 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-05-23 20:06:37,457 autoreload 7243 139728691014528 /workspaces/django-renterprise/customers/models.py changed, reloading.
-django.utils.autoreload INFO 2024-05-23 20:06:39,038 autoreload 7267 140441463393152 Watching for file changes with StatReloader
+customers.models DEBUG 2024-05-23 20:30:53,755 models 10759 140282397304384 Amelia
+customers.models DEBUG 2024-05-23 20:30:53,756 models 10759 140282397304384 Martin
+customers.models DEBUG 2024-05-23 20:30:53,756 models 10759 140282397304384 [None, 'None', 'none', 'null', 'Null']
+customers.models DEBUG 2024-05-23 20:30:53,758 models 10759 140282397304384 Logan
+customers.models DEBUG 2024-05-23 20:30:53,758 models 10759 140282397304384 Martinez
+customers.models DEBUG 2024-05-23 20:30:53,759 models 10759 140282397304384 [None, 'None', 'none', 'null', 'Null']
+customers.models DEBUG 2024-05-23 20:30:53,759 models 10759 140282397304384 James
+customers.models DEBUG 2024-05-23 20:30:53,760 models 10759 140282397304384 Miller
+customers.models DEBUG 2024-05-23 20:30:53,760 models 10759 140282397304384 [None, 'None', 'none', 'null', 'Null']
+customers.models DEBUG 2024-05-23 20:30:53,761 models 10759 140282397304384 Oliver
+customers.models DEBUG 2024-05-23 20:30:53,761 models 10759 140282397304384 Moore
+customers.models DEBUG 2024-05-23 20:30:53,761 models 10759 140282397304384 [None, 'None', 'none', 'null', 'Null']
+customers.models DEBUG 2024-05-23 20:30:53,762 models 10759 140282397304384 Evelyn
+customers.models DEBUG 2024-05-23 20:30:53,763 models 10759 140282397304384 Robinson
+customers.models DEBUG 2024-05-23 20:30:53,763 models 10759 140282397304384 [None, 'None', 'none', 'null', 'Null']
+customers.models DEBUG 2024-05-23 20:30:53,764 models 10759 140282397304384 Liam
+customers.models DEBUG 2024-05-23 20:30:53,764 models 10759 140282397304384 Smith
+customers.models DEBUG 2024-05-23 20:30:53,764 models 10759 140282397304384 [None, 'None', 'none', 'null', 'Null']
+customers.models DEBUG 2024-05-23 20:30:53,765 models 10759 140282397304384 None
+customers.models DEBUG 2024-05-23 20:30:53,766 models 10759 140282397304384 TEST
+customers.models DEBUG 2024-05-23 20:30:53,766 models 10759 140282397304384 [None, 'None', 'none', 'null', 'Null']
+customers.models DEBUG 2024-05-23 20:30:53,767 models 10759 140282397304384 Sophia
+customers.models DEBUG 2024-05-23 20:30:53,767 models 10759 140282397304384 Taylor
+customers.models DEBUG 2024-05-23 20:30:53,767 models 10759 140282397304384 [None, 'None', 'none', 'null', 'Null']
+customers.models DEBUG 2024-05-23 20:30:53,768 models 10759 140282397304384 Mia
+customers.models DEBUG 2024-05-23 20:30:53,768 models 10759 140282397304384 Thomas
+customers.models DEBUG 2024-05-23 20:30:53,769 models 10759 140282397304384 [None, 'None', 'none', 'null', 'Null']
+django.request WARNING 2024-05-23 20:30:54,370 log 10759 140282388125248 Not Found: /customers/styles.css.map
