@@ -7,7 +7,9 @@ from django.views.generic import ListView
 from django.http import HttpResponseRedirect
 from .models import Customer, CustomerNote
 from .forms import CustomerForm
+import logging
 
+logger = logging.getLogger(__name__)
 
 # Create your views here.
 class CustomerList(ListView):
@@ -46,24 +48,28 @@ def customer_create(request):
     Function to display the customer_create.html template
     which will allow new customers to be added.
     """
+    customer_form = CustomerForm(request.POST)
+    
     if request.method == "POST":
-        customer_form = CustomerForm(data=request.POST)
+        logger.debug("Attempting to connect to API")
         if customer_form.is_valid():
+            logger.debug(customer_form.is_valid())
+            logger.debug(customer_form.data)
             customer = customer_form.save(commit=False)
-            customer.first_name = request.first_name
-            customer.last_name = request.last_name
-            customer.address_line_one = request.address_line_one
-            customer.address_line_two = request.address_line_two
-            customer.address_line_three = request.address_line_three
-            customer.address_line_town = request.address_line_town
-            customer.address_line_county = request.address_line_county
-            customer.postcode = request.postcode
+            customer.first_name = customer_form.first_name
+            customer.last_name = customer_form.last_name
+            customer.address_line_one = customer_form.address_line_one
+            customer.address_line_two = customer_form.address_line_two
+            customer.address_line_three = customer_form.address_line_three
+            customer.address_line_town = customer_form.address_line_town
+            customer.address_line_county = customer_form.address_line_county
+            customer.postcode = customer_form.postcode
             customer.save()
-
             messages.add_message(
                 request, messages.SUCCESS,
-                'New item has been added'
+                'Customer has been saved'
             )
+
     customer_form = CustomerForm()
     return render(
         request,
@@ -73,7 +79,9 @@ def customer_create(request):
             "class_var":"Customers",
         },
     )
-
+        #else:
+            #for error in customer_form.errors:
+  
 
 #def customer_search(request):
 #    """

@@ -1,48 +1,44 @@
 from django import forms
 from crispy_forms.helper import FormHelper
-from crispy_forms.layout import Layout, Submit, Row, Column
-from crispy_forms.bootstrap import Accordian
+from crispy_forms.layout import Layout, Div, Fieldset, Submit, Row
+from crispy_bootstrap5.bootstrap5 import FloatingField
 from localflavor.gb.forms import GBCountySelect
+from .models import Customer
 
-class CustomerForm(forms.Form):
-    first_name = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'First Name'}))
-    last_name = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Last Name'}))
-    address_line_1 = forms.CharField(
-        label="Address",
-        widget=forms.TextInput(attrs={'placeholder': 'First Line of Address'})
-    )
-    address_line_2 = forms.CharField(label="",
-        widget=forms.TextInput(attrs={'placeholder': 'Line 2'}))
-    address_line_3 = forms.CharField(label="",
-        widget=forms.TextInput(attrs={'placeholder': 'Line 3'}))
-    address_line_town = forms.CharField(label="Town",
-        widget=forms.TextInput(attrs={'placeholder': 'Town'}))
-    address_line_county = forms.CharField(label="County", 
-        widget=GBCountySelect())
-    postcode = forms.CharField(label='Postcode')
+class CustomerForm(forms.ModelForm):
+
+    class Meta:
+        model = Customer
+        fields = ['first_name','last_name','address_line_one',
+                'address_line_two','address_line_three',
+                'address_line_town', 'address_line_county','postcode']
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper(self)
+        self.helper.label_class = 'form-float-label'
         self.helper.layout = Layout(
-            Accordion(
-                AccordionGroup(
-                    Row(
-                        Column('first_name', css_class='col-md-6'),
-                        Column('last_name', css_class='col-md-6'),
-                        css_class='form-row'
-                    ),
-                ),
-                AccordionGroup(
-                    'address_line_1',
-                    'address_line_2',
-                    'address_line_3',
-                    Row(
-                        Column('town', css_class='form-group col-md-4'),
-                        Column('county', css_class='form-group col-md-5'),
-                        Column('postcode', css_class='form-group col-md-3'),
-                        css_class='form-row'
-                    )
-                )
-            )
+            Fieldset(
+                "Add a new customer :",
+                Row(FloatingField('first_name',
+                    wrapper_class='col-md-4 mb-3 p-0'),
+                    FloatingField('last_name',
+                    wrapper_class='col-md-4 mb-3 p-0')),
+                Row(FloatingField('address_line_one',
+                    wrapper_class='col-md-8 mb-0 p-0')),
+                Row(FloatingField('address_line_two',
+                    wrapper_class='col-md-8 mb-0 p-0')),
+                Row(FloatingField('address_line_three',
+                    wrapper_class='col-md-8 mb-3 p-0')),
+                Row(FloatingField('address_line_town',
+                    wrapper_class='col-md-3 p-0'),
+                    FloatingField('address_line_county',
+                    wrapper_class='col-md-3 p-0'),
+                    FloatingField('postcode',
+                    wrapper_class='col-md-2 p-0'))
+            ),
+            Submit('submit', 'Submit',
+                wrapper_class='button centre-align'),
         )
+
+        

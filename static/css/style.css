@@ -81,6 +81,18 @@ ul {
     text-shadow: 0px 1px 5px #000000;
 }
 
+div.form-floating>label,
+.form-float-label {
+    color: #000000;
+    text-shadow:none;
+}
+ 
+
+.gbcountyselect {
+    color: #000000;
+    text-shadow:none;
+}
+
 /*Default font for inputs and selects. Font declared globalled. Colour set to black*/
 input,
 select {
@@ -364,10 +376,10 @@ of the theme.*/
    background: dimgray;
 }
 
-/* centre align rows */
+/* centre align rows 
 .row { 
     justify-content: center !important;
-}
+}*/
 
 .table-row {
     display:flex;
@@ -509,4 +521,9 @@ img.item-image {
     /*scrap*/
     color : #000000;
     text-shadow: 0px 1px 5px #FFFFFF;
+}
+
+/*CRISPY FORM STYLES BOOTSTRAP 5*/
+form>div {
+    padding-left: 0;
 }

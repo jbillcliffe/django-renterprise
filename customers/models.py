@@ -18,13 +18,13 @@ class Customer(models.Model):
         default=uuid.uuid4,
         editable=False,
         unique=True)
-    first_name = models.CharField(max_length=200, null=True, blank=True)
+    first_name = models.CharField(max_length=200, blank=True)
     last_name = models.CharField(max_length=200)
     address_line_one = models.CharField(max_length=200)
     # sometimes people only have a first line before 
     # town is the next entry
-    address_line_two = models.CharField(max_length=200, null=True, blank=True)
-    address_line_three = models.CharField(max_length=200, null=True, blank=True)
+    address_line_two = models.CharField(max_length=200, blank=True)
+    address_line_three = models.CharField(max_length=200, blank=True)
     address_line_town = models.CharField(max_length=200)
     address_line_county = models.CharField(max_length=200)
     # longest UK postcode would be 8 characters including a space

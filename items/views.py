@@ -42,8 +42,9 @@ def item_create(request):
     which will allow new items to be added based on existing
     types.
     """
+    item_form = ItemForm(data=request.POST)
+    item_type = ItemType
     if request.method == "POST":
-        item_form = ItemForm(data=request.POST)
         if item_form.is_valid():
             item = item_form.save(commit=False)
             item.item_type = request.item_type
