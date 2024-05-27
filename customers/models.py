@@ -1,10 +1,6 @@
 import uuid
 from django.db import models
 from django.contrib.auth.models import User
-import logging
-
-logger = logging.getLogger(__name__)
-
 
 # Create your models here.
 class Customer(models.Model):
@@ -44,11 +40,7 @@ class Customer(models.Model):
     class Meta:
         ordering = ["last_name", "first_name"]
 
-    def full_name(self):
-        logger.debug(self.first_name)
-        logger.debug(self.last_name)
-        logger.debug(self.null_values)
-        
+    def full_name(self):      
         if self.first_name in self.null_values:
             return f"{self.last_name}"
         else:
@@ -76,4 +68,6 @@ class CustomerNote(models.Model):
             return f"{self.customer.last_name}"
         else:
             return f"{self.customer.first_name} {self.customer.last_name}"
-            
+
+        class Meta:
+            ordering = ["created_by"]

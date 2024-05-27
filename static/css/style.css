@@ -300,6 +300,13 @@ a.link:hover {
     text-decoration:underline;
 }
 
+.renterprise-alert {
+    position: fixed;
+    top: 0;
+    left:auto;
+    right:auto;
+}
+
 /* Footer styling */
 /*Full page width, fixed 100px height (height matches header). Flex row display
 with centred content and the background colour in line with the theme top shadow 
@@ -440,24 +447,32 @@ of the theme.*/
     color:#C9F0FF;
 }
 
-.button-table-view {
+.button-table {
     width: 40px;
     height: 40px;
-    background-color: #dfdb00;
-    color:#000000;
     border-radius: 10%;
-    border: 1mm outset #5c5a00;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     font-weight:bold;
+    color:#000000;
 }
 
-.button-table-view:active {
+.button-table.view {
+    border: 1mm outset #5c5a00;
+    background-color: #dfdb00;
+}
+
+.button-table.add {
+    background-color: #00a82a;
+    border: 1mm outset #005716;
+}
+
+/*.button-table.view:active {
     background-color: #dfdb00;
     border: 1mm inset #5c5a00;
-}
+}*/
 
 /*STYLING FOR MAIN MENU */
 /*Ensures buttons are in a column, not a row*/
@@ -526,4 +541,12 @@ img.item-image {
 /*CRISPY FORM STYLES BOOTSTRAP 5*/
 form>div {
     padding-left: 0;
+}
+
+.customer_details_container {
+    width:40%;
+}
+
+.customer_details_notes {
+    width:60%
 }

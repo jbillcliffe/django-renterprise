@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% load i18n %}
+{% block head_title %}{% trans "View Customer Notes" %}{% endblock %}
+{% block content %}
+
+<div class="table-holder">
+    <div class="table-row table-head">
+        <div class="col-3">
+            Date
+        </div>
+        <div class="col-8">
+        </div>
+        <div class="col-1">
+        </div>
+    </div>
+    {% for note in note_list %}
+    <div class="table-row">
+        <div class="col-3">{{ note.created }}</div>
+        <div class="col-8">{{ note.note }}</div>
+        <div class="col-1"><a class="button-table view" href="{% url 'customers:customer_notes' customer.customer_token %}"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+    </div>
+    {% endfor %}
+    {% include 'paginate.html' %}
+</div>
+
+<!-- index.html content ends here -->
+{% endblock %}

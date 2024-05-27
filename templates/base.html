@@ -77,7 +77,12 @@
                 {% endif %} 
         </nav>
     </header>
-
+    {% for message in messages %}
+    <div class="alert alert-dismissible renterprise-alert {{ message.tags }}" role="alert">
+        <div>{{ message | safe }}</div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
     <!-- the main window which will hold the variable application content -->
     <main class="flex-shrink-0 main-bg">
 

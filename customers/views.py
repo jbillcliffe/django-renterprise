@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, reverse
 from django.contrib import messages
 from django.views.generic import ListView
+from django.views.generic.detail import SingleObjectMixin
 from django.http import HttpResponseRedirect
 from .models import Customer, CustomerNote
 from .forms import CustomerForm
@@ -33,6 +34,7 @@ def customer_view(request, customer_token):
     # Find a singular Customer object. Look in "Customer" table in the token
     # field (generated in the customer model using UUID).
     obj = get_object_or_404(Customer, customer_token=customer_token)
+
     # Render the template customer_view and send the found "Customer" to it.
     return render(
         request,
@@ -51,23 +53,8 @@ def customer_create(request):
     customer_form = CustomerForm(request.POST)
     
     if request.method == "POST":
-        logger.debug("Attempting to connect to API")
         if customer_form.is_valid():
-            logger.debug(customer_form.is_valid())
-            logger.debug(customer_form.data)
             customer = customer_form.save(commit=False)
-            #customer
-            """ 
-            customer.first_name = customer_form.first_name
-            customer.last_name = customer_form.last_name
-            customer.address_line_one = customer_form.address_line_one
-            customer.address_line_two = customer_form.address_line_two
-            customer.address_line_three = customer_form.address_line_three
-            customer.address_line_town = customer_form.address_line_town
-            customer.address_line_county = customer_form.address_line_county
-            customer.postcode = customer_form.postcode
-            """
-
             customer.save()
             messages.add_message(
                 request, messages.SUCCESS,
@@ -83,10 +70,26 @@ def customer_create(request):
             "class_var":"Customers",
         },
     )
-        #else:
-            #for error in customer_form.errors:
-  
 
+def customer_notes(request, customer_token):
+
+    template_name = "customers/customer_notes.html"
+
+    get_customer = get_object_or_404(Customer, customer_token=customer_token)
+    #customer_notes = Custome rNotes.get_customer.all().order_by("-created_on")
+    customer_notes = CustomerNote.objects.filter(customer=get_customer)
+   # notes_count = customer_notes.count()
+
+    return render (
+        request,
+        "customers/customer_notes.html",
+        {
+            "class_var":"Customers",
+        },
+    )
+
+def view_customer_note(request):
+    print("Hello note")
 #def customer_search(request):
 #    """
 #    Function to load the customer search feature

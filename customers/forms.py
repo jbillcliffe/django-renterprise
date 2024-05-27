@@ -3,7 +3,9 @@ from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Div, Fieldset, Submit, Row
 from crispy_bootstrap5.bootstrap5 import FloatingField
 from localflavor.gb.forms import GBCountySelect
-from .models import Customer
+from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
+    
+from .models import Customer, CustomerNote
 
 class CustomerForm(forms.ModelForm):
 
@@ -36,6 +38,29 @@ class CustomerForm(forms.ModelForm):
                     wrapper_class='col-md-3 p-0'),
                     FloatingField('postcode',
                     wrapper_class='col-md-2 p-0'))
+            ),
+            Submit('submit', 'Submit',
+                wrapper_class='button centre-align'),
+        )
+
+class CustomerNoteForm(forms.ModelForm):
+    class Meta:
+        model = CustomerNote
+        fields = ['note']
+        widgets = {
+            'note_widget': SummernoteWidget(),
+            'note_inline_widget': SummernoteInplaceWidget(),
+        }
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.helper = FormHelper(self)
+        self.helper.label_class = 'form-label'
+        
+        self.helper.layout = Layout(
+            Fieldset(
+                "Add a customer note :",
+                note_widget = SummernoteTextField()
             ),
             Submit('submit', 'Submit',
                 wrapper_class='button centre-align'),

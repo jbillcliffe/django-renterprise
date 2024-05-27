@@ -10,6 +10,7 @@
     {% include 'side-nav.html' %}
     {% if user.is_authenticated %}
     <div class="content-holder">
+        <p style="display:none;"> {{ customer.customer_token }} </p>
         <div class="row">
             <div class="col-4">
                 <h2>{{ customer.full_name }}</h2>
@@ -28,21 +29,45 @@
         <div class="row">
             <hr class="renterprise">
         </div>
-        <div class="row">
-            <span><p>Address : </p><textarea>{{ customer.address }}</textarea></span>
+        <div class="customer_details_container">
+            <h2>Address :</h2>
+            <div class="row">
+                <p>{{ customer.address_line_one }}</p>
+            </div>
+            {% if customer.address_line_two %}
+            <div class="row">
+                <p>{{ customer.address_line_two }}</p>
+            </div>
+            {% endif %}
+            {% if customer.address_line_three %}
+            <div class="row">
+                <p>{{ customer.address_line_three }}</p>
+            </div>
+            {% endif %}
+            <div class="row">
+                <p>{{ customer.address_line_town }}</p>
+            </div>
+            <div class="row">
+                <p>{{ customer.address_line_county }}</p>
+            </div>
+            <div class="row">
+                <p>{{ customer.postcode }}</p>
+            </div>
         </div>
-        <div class="row">
-            <p>Postcode : {{ customer.postcode }}</p>
+        <div class="customer_details_notes">
+            
         </div>
         <div class="row">
             <hr class="renterprise">
         </div>
         <div class="row">
             <div class="col-4"></div>
+                <a class="button centre-align" href="{% url 'customers:customer_notes' customer.customer_token %}">Customer Notes</a>
+            <div class="col-4">
+            </div>
             <div class="col-4">
                 <a class="button centre-align" href="{% url 'customers:customer_list' %}">Return To List</a>
             </div>
-            <div class="col-4"></div>
         </div>
     {% else %}
         <div class="row">
@@ -56,6 +81,7 @@
         </div>
     {% endif %}
     </div>
+    
 	
 </div>
 
