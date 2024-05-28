@@ -1,12 +1,15 @@
 from django import forms
+from django.db.models import CharField
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Div, Fieldset, Submit, Row
 from crispy_bootstrap5.bootstrap5 import FloatingField
 from localflavor.gb.forms import GBCountySelect
 from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
-    
+from django_summernote.fields import SummernoteTextField
+from .admin import CustomerNoteAdmin
 from .models import Customer, CustomerNote
 
+# https://stackoverflow.com/questions/73789407/django-summernote-clean-got-an-unexpected-keyword-argument-styles-in-djangof
 class CustomerForm(forms.ModelForm):
 
     class Meta:
@@ -46,24 +49,21 @@ class CustomerForm(forms.ModelForm):
 class CustomerNoteForm(forms.ModelForm):
     class Meta:
         model = CustomerNote
-        fields = ['note']
-        widgets = {
-            'note_widget': SummernoteWidget(),
-            'note_inline_widget': SummernoteInplaceWidget(),
-        }
+        fields = ('note',)
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.helper = FormHelper(self)
-        self.helper.label_class = 'form-label'
-        
-        self.helper.layout = Layout(
-            Fieldset(
-                "Add a customer note :",
-                note_widget = SummernoteTextField()
-            ),
-            Submit('submit', 'Submit',
-                wrapper_class='button centre-align'),
-        )
+    #def __init__(self, *args, **kwargs):
+    #    super().__init__(*args, **kwargs)
+    #    self.helper = FormHelper(self)
+    #    self.helper.label_class = 'form-label'
+        #note = forms.CharField(widget=SummernoteInplaceWidget())
+    #    self.helper.layout = Layout(
+    #        Fieldset(
+    #            "Add a customer note :",
+                #forms.CharField(widget=SummernoteInplaceWidget())
+    #            Row(CharField('note') )
+    #        ),
+    #        Submit('submit', 'Submit',
+    #            wrapper_class='button centre-align'),
+    #    )
 
         

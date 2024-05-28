@@ -2,6 +2,7 @@ import uuid
 from django.db import models
 from django.contrib.auth.models import User
 from datetime import datetime, date, time, timezone
+from django_summernote.fields import SummernoteTextField
 
 # Create your models here.
 class Customer(models.Model):
@@ -61,7 +62,7 @@ class CustomerNote(models.Model):
     customer = models.ForeignKey(
         Customer, on_delete=models.CASCADE, related_name="customer"
     )
-    note = models.TextField()
+    note = SummernoteTextField()
     created_on = models.DateTimeField(auto_now_add=True)
     created_by = models.ForeignKey(
         User, on_delete=models.PROTECT, related_name="created_by"

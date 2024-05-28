@@ -7,7 +7,7 @@ from django.views.generic import ListView
 from django.views.generic.detail import SingleObjectMixin
 from django.http import HttpResponseRedirect
 from .models import Customer, CustomerNote
-from .forms import CustomerForm
+from .forms import CustomerForm, CustomerNoteForm
 import logging
 
 logger = logging.getLogger(__name__)
@@ -90,21 +90,24 @@ class CustomerNotesList(ListView):
         context = super(CustomerNotesList, self).get_context_data(**kwargs)
         context['class_var'] = "Customers"
         context['note_list'] = self.get_queryset
+        context['customer_token_value'] = self.customer.customer_token
         return context
 
 def view_customer_note(request, customer_token, id):
     print("Hello note")
 
-def customer_add_notes(request):
+def customer_add_notes(request, customer_token):
     """
     Function to display the customer_add_notes.html template
     which will allow new customer notes to be added.
     """
-    customer_note_form = CustomerNoteForm(request.POST)
-    
     if request.method == "POST":
+        customer = get_object_or_404(Customer, customer_token=customer_token)
+        customer_note_form = CustomerNoteForm(data=request.POST)
         if customer_note_form.is_valid():
             customer_note = customer_note_form.save(commit=False)
+            customer_note.customer = customer
+            customer_note.created_by = request.user
             customer_note.save()
             messages.add_message(
                 request, messages.SUCCESS,
@@ -119,4 +122,4 @@ def customer_add_notes(request):
             "customer_note_form": customer_note_form,
             "class_var":"Customers",
         },
-    )
+    )  

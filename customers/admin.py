@@ -11,4 +11,3 @@ class CustomerAdmin(SummernoteModelAdmin):
 class CustomerNoteAdmin(SummernoteModelAdmin):
     list_display = ('full_name', 'created_on', 'created_by')
     summernote_fields = ('note',)
-

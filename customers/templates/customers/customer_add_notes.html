@@ -12,8 +12,15 @@
     {% include 'side-nav.html' %}
     {% if user.is_authenticated %}
     <div class="content-holder">
-        {% crispy customer_note_form %}
-        {% csrf_token %}
+        <h2>Add a customer note :</h2>
+        <hr class="renterprise">
+        <form id="addNoteForm" method="post"
+            style="margin-top: 1.3em;">
+            {{ customer_note_form | crispy }}
+            {% csrf_token %}
+            <button id="submitButton" type="submit"
+                class="button centre-align">Submit</button>
+        </form>
     </div>
     {% endif %}
 </div>
