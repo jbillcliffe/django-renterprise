@@ -1,0 +1,22 @@
+{% extends "base.html" %} 
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% block head_title %}{% trans "Add New Customer Note" %}{% endblock %}
+
+{% block content %}
+
+<!-- the content to enter into the "main" class on the "base.html"-->
+<div class="container-fluid" style="height: 100%; width:100%;">
+    {% include 'side-nav.html' %}
+    {% if user.is_authenticated %}
+    <div class="content-holder">
+        {% crispy customer_note_form %}
+        {% csrf_token %}
+    </div>
+    {% endif %}
+</div>
+
+<!-- index.html content ends here -->
+{% endblock %}

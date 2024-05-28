@@ -1998,3 +1998,1606 @@ django.utils.autoreload INFO 2024-05-27 00:12:27,626 autoreload 8508 14052124454
 django.request WARNING 2024-05-27 00:12:39,084 log 8508 140521186846272 Not Found: /customers/c7d83c33-a064-4016-a16d-4004b9120002/styles.css.map
 django.request WARNING 2024-05-27 00:12:42,379 log 8508 140521186846272 Not Found: /customers/c7d83c33-a064-4016-a16d-4004b9120002/styles.css.map
 django.request WARNING 2024-05-27 00:12:42,797 log 8508 140521186846272 Not Found: /customers/c7d83c33-a064-4016-a16d-4004b9120002/customer_notes/styles.css.map
+django.utils.autoreload INFO 2024-05-27 22:36:51,875 autoreload 645 140217451387776 Watching for file changes with StatReloader
+django.request WARNING 2024-05-27 22:37:22,247 log 645 140217326499392 Not Found: /customers/styles.css.map
+django.request WARNING 2024-05-27 22:38:40,556 log 645 140217326499392 Not Found: /customers/styles.css.map
+django.request WARNING 2024-05-27 22:38:43,658 log 645 140217326499392 Not Found: /customers/styles.css.map
+django.request WARNING 2024-05-27 22:38:43,870 log 645 140217326499392 Not Found: /customers/c7d83c33-a064-4016-a16d-4004b9120002/styles.css.map
+django.request WARNING 2024-05-27 22:38:51,460 log 645 140217326499392 Not Found: /customers/c7d83c33-a064-4016-a16d-4004b9120002/styles.css.map
+django.request WARNING 2024-05-27 22:38:52,044 log 645 140217326499392 Not Found: /customers/c7d83c33-a064-4016-a16d-4004b9120002/customer_notes/styles.css.map
+django.utils.autoreload INFO 2024-05-27 23:22:55,774 autoreload 3714 140518517918592 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:36:07,774 autoreload 4088 140651143224192 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:36:55,550 autoreload 4247 140401103231872 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:37:22,162 autoreload 4376 139997898341248 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:39:13,339 autoreload 4672 140304741772160 Watching for file changes with StatReloader
+django.request WARNING 2024-05-27 23:39:45,781 log 4672 140304684074560 Not Found: /favicon.ico
+django.utils.autoreload INFO 2024-05-27 23:43:24,974 autoreload 5303 140174834305920 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:44:02,548 autoreload 5441 140160337841024 Watching for file changes with StatReloader
+django.request WARNING 2024-05-27 23:44:43,268 log 5441 140160280143424 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/styles.css.map
+django.utils.autoreload INFO 2024-05-27 23:45:49,043 autoreload 5441 140160337841024 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-27 23:45:50,675 autoreload 5741 140679423814528 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:45:54,860 autoreload 5741 140679423814528 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-27 23:45:56,532 autoreload 5775 140105651653504 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:46:08,538 autoreload 5775 140105651653504 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-27 23:46:10,455 autoreload 5825 140263435934592 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:46:12,553 autoreload 5825 140263435934592 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-27 23:46:13,872 autoreload 5855 139891743337344 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:46:21,472 autoreload 5855 139891743337344 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-27 23:46:23,062 autoreload 5909 140056561163136 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:46:24,417 autoreload 5909 140056561163136 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-27 23:46:26,049 autoreload 5928 140397235092352 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:46:30,552 autoreload 5928 140397235092352 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-27 23:46:32,155 autoreload 5968 140324541049728 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:46:34,577 autoreload 5968 140324541049728 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-27 23:46:36,058 autoreload 5987 139665155562368 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:46:53,063 autoreload 5987 139665155562368 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-27 23:46:54,769 autoreload 6027 140633013021568 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:46:57,214 autoreload 6027 140633013021568 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-27 23:46:58,826 autoreload 6057 139716455627648 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:47:02,147 autoreload 6057 139716455627648 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-27 23:47:03,930 autoreload 6084 139694971624320 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:47:06,348 autoreload 6084 139694971624320 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-27 23:47:07,939 autoreload 6111 140058341317504 Watching for file changes with StatReloader
+django.request WARNING 2024-05-27 23:47:16,274 log 6111 140058212431424 Not Found: /styles.css.map
+django.request WARNING 2024-05-27 23:47:17,232 log 6111 140058212431424 Not Found: /favicon.ico
+django.request WARNING 2024-05-27 23:47:18,253 log 6111 140058204038720 Not Found: /admin/styles.css.map
+django.utils.autoreload INFO 2024-05-27 23:48:45,556 autoreload 6111 140058341317504 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-27 23:48:47,335 autoreload 6323 140701018053504 Watching for file changes with StatReloader
+django.request WARNING 2024-05-27 23:48:52,159 log 6323 140700960355904 Not Found: /styles.css.map
+django.request WARNING 2024-05-27 23:49:03,751 log 6323 140700960355904 Not Found: /styles.css.map
+django.request WARNING 2024-05-27 23:49:03,968 log 6323 140700960355904 Not Found: /customers/styles.css.map
+django.request WARNING 2024-05-27 23:49:06,676 log 6323 140700960355904 Not Found: /customers/styles.css.map
+django.request WARNING 2024-05-27 23:49:06,898 log 6323 140700960355904 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-05-27 23:49:09,346 log 6323 140700960355904 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-05-27 23:49:09,753 log 6323 140700960355904 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/styles.css.map
+django.utils.autoreload INFO 2024-05-27 23:51:43,459 autoreload 6323 140701018053504 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-27 23:51:45,571 autoreload 6498 140061794487168 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:51:50,843 autoreload 6498 140061794487168 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-27 23:51:52,526 autoreload 6561 140361472289664 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:51:55,479 autoreload 6561 140361472289664 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-27 23:51:57,246 autoreload 6591 140472743099264 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:52:09,255 autoreload 6591 140472743099264 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-27 23:52:11,276 autoreload 6645 140251801799552 Watching for file changes with StatReloader
+django.request ERROR 2024-05-27 23:52:28,687 log 6645 140251744101952 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspaces/django-renterprise/customers/views.py", line 83, in customer_notes
+    return render (
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'customer_notes' with arguments '('',)' not found. 1 pattern(s) tried: ['customers/(?P<customer_token>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/customer_notes/\\Z']
+django.request WARNING 2024-05-27 23:52:29,429 log 6645 140251744101952 Not Found: /favicon.ico
+django.request WARNING 2024-05-27 23:52:29,724 log 6645 140251744101952 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/styles.css.map
+django.request WARNING 2024-05-27 23:56:54,815 log 6645 140251744101952 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/styles.css.map
+django.request WARNING 2024-05-27 23:56:55,060 log 6645 140251744101952 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-05-27 23:56:58,846 log 6645 140251733612096 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request ERROR 2024-05-27 23:57:01,386 log 6645 140251733612096 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspaces/django-renterprise/customers/views.py", line 83, in customer_notes
+    return render (
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'customer_note' not found. 'customer_note' is not a valid view function or pattern name.
+django.request WARNING 2024-05-27 23:57:01,571 log 6645 140251733612096 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-05-27 23:57:02,252 log 6645 140251733612096 Not Found: /favicon.ico
+django.request WARNING 2024-05-27 23:57:02,458 log 6645 140251733612096 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/styles.css.map
+django.request WARNING 2024-05-27 23:58:27,545 log 6645 140251733612096 Not Found: /admin/styles.css.map
+django.request ERROR 2024-05-27 23:58:29,374 log 6645 140251744101952 Internal Server Error: /admin/customers/customernote/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/options.py", line 681, in get_field
+    return self.fields_map[field_name]
+KeyError: 'full_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/contrib/admin/utils.py", line 272, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/contrib/admin/utils.py", line 303, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: CustomerNote has no field named 'full_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/contrib/admin/templatetags/admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/contrib/admin/templatetags/admin_list.py", line 312, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/contrib/admin/templatetags/admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/contrib/admin/templatetags/admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/contrib/admin/utils.py", line 285, in lookup_field
+    value = attr()
+  File "/workspaces/django-renterprise/customers/models.py", line 67, in full_name
+    if self.customer.first_name in self.null_values:
+AttributeError: 'CustomerNote' object has no attribute 'null_values'
+django.utils.autoreload INFO 2024-05-27 23:59:33,583 autoreload 6645 140251801799552 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-27 23:59:35,579 autoreload 6991 140272915131264 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-27 23:59:59,393 autoreload 6991 140272915131264 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:00:01,146 autoreload 7048 139730444462976 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:00:30,053 autoreload 7048 139730444462976 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:00:31,967 autoreload 7102 139930864999296 Watching for file changes with StatReloader
+django.request WARNING 2024-05-28 00:00:40,745 log 7102 139930571372096 Not Found: /favicon.ico
+django.request WARNING 2024-05-28 00:01:20,947 log 7102 139930571372096 Not Found: /customers/styles.css.map
+django.request WARNING 2024-05-28 00:01:38,195 log 7102 139930571372096 Not Found: /customers/styles.css.map
+django.request WARNING 2024-05-28 00:01:38,380 log 7102 139930571372096 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request ERROR 2024-05-28 00:01:41,260 log 7102 139930571372096 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspaces/django-renterprise/customers/views.py", line 83, in customer_notes
+    return render (
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 1389, in url
+    args.append(parser.compile_filter(value))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{' from '{{'
+django.request WARNING 2024-05-28 00:01:41,557 log 7102 139930571372096 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-05-28 00:01:42,275 log 7102 139930571372096 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/styles.css.map
+django.request ERROR 2024-05-28 00:02:44,286 log 7102 139930571372096 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspaces/django-renterprise/customers/views.py", line 83, in customer_notes
+    return render (
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'view_customer_note' with arguments '(10,)' not found. 1 pattern(s) tried: ['customers/(?P<customer_token>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/customer_notes/(?P<pk>[0-9]+)\\Z']
+django.request WARNING 2024-05-28 00:02:45,053 log 7102 139930571372096 Not Found: /favicon.ico
+django.request WARNING 2024-05-28 00:02:45,070 log 7102 139930807301696 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/styles.css.map
+django.request ERROR 2024-05-28 00:04:19,864 log 7102 139930807301696 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspaces/django-renterprise/customers/views.py", line 83, in customer_notes
+    return render (
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'view_customer_note' with arguments '('', 10)' not found. 1 pattern(s) tried: ['customers/(?P<customer_token>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/customer_notes/(?P<pk>[0-9]+)\\Z']
+django.request WARNING 2024-05-28 00:04:20,580 log 7102 139930807301696 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/styles.css.map
+django.request WARNING 2024-05-28 00:04:20,692 log 7102 139930807301696 Not Found: /favicon.ico
+django.utils.autoreload INFO 2024-05-28 00:05:21,375 autoreload 7102 139930864999296 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:05:23,327 autoreload 7611 139997326166912 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:05:47,947 autoreload 7611 139997326166912 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:05:49,822 autoreload 7672 139778182466432 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:05:51,879 autoreload 7672 139778182466432 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:05:53,730 autoreload 7702 140718751935360 Watching for file changes with StatReloader
+django.request ERROR 2024-05-28 00:06:00,259 log 7702 140718627092032 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspaces/django-renterprise/customers/views.py", line 83, in customer_notes
+    return render (
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 1387, in url
+    kwargs[name] = parser.compile_filter(value)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ',' from 'customer.customer_token,'
+django.request WARNING 2024-05-28 00:06:01,063 log 7702 140718627092032 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/styles.css.map
+django.request WARNING 2024-05-28 00:06:01,166 log 7702 140718627092032 Not Found: /favicon.ico
+django.request ERROR 2024-05-28 00:06:33,743 log 7702 140718627092032 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspaces/django-renterprise/customers/views.py", line 83, in customer_notes
+    return render (
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'view_customer_note' with arguments '('', 10)' not found. 1 pattern(s) tried: ['customers/(?P<customer_token>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/customer_notes/(?P<id>[0-9]+)\\Z']
+django.request WARNING 2024-05-28 00:06:34,470 log 7702 140718627092032 Not Found: /favicon.ico
+django.request WARNING 2024-05-28 00:06:34,669 log 7702 140718627092032 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/styles.css.map
+django.request ERROR 2024-05-28 00:07:36,373 log 7702 140718627092032 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspaces/django-renterprise/customers/views.py", line 83, in customer_notes
+    return render (
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'view_customer_note' with keyword arguments '{'customer_token': '', 'id': 10}' not found. 1 pattern(s) tried: ['customers/(?P<customer_token>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/customer_notes/(?P<id>[0-9]+)\\Z']
+django.request WARNING 2024-05-28 00:07:37,191 log 7702 140718627092032 Not Found: /favicon.ico
+django.request WARNING 2024-05-28 00:07:37,255 log 7702 140718627092032 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/styles.css.map
+django.request WARNING 2024-05-28 00:08:41,566 log 7702 140718627092032 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/styles.css.map
+django.request ERROR 2024-05-28 00:08:50,083 log 7702 140718627092032 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/14
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view customers.views.view_customer_note didn't return an HttpResponse object. It returned None instead.
+django.request WARNING 2024-05-28 00:08:50,391 log 7702 140718627092032 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/styles.css.map
+django.request WARNING 2024-05-28 00:08:50,771 log 7702 140718627092032 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/styles.css.map
+django.request WARNING 2024-05-28 00:08:51,158 log 7702 140718627092032 Not Found: /favicon.ico
+django.request WARNING 2024-05-28 00:08:55,624 log 7702 140718627092032 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/styles.css.map
+django.request WARNING 2024-05-28 00:08:56,071 log 7702 140718627092032 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/styles.css.map
+django.utils.autoreload INFO 2024-05-28 00:10:02,395 autoreload 7702 140718751935360 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:10:04,230 autoreload 8080 139785907772288 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:10:08,317 autoreload 8080 139785907772288 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:10:10,246 autoreload 8117 140025257401216 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:10:12,138 autoreload 8117 140025257401216 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:10:13,947 autoreload 8138 140305247189888 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:10:15,758 autoreload 8138 140305247189888 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:10:17,399 autoreload 8168 139836540124032 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:10:23,654 autoreload 8168 139836540124032 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:10:25,328 autoreload 8211 139633455295360 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:10:31,456 autoreload 8211 139633455295360 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:10:33,173 autoreload 8254 139849571097472 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:10:37,102 autoreload 8254 139849571097472 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:10:38,665 autoreload 8284 140071367109504 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:10:40,561 autoreload 8284 140071367109504 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:10:42,467 autoreload 8311 139877561908096 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:14:23,839 autoreload 8512 139891054390144 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:14:55,602 autoreload 8512 139891054390144 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:14:57,449 autoreload 8590 140095883221888 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:15:30,444 autoreload 8774 140517460310912 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:15:49,031 autoreload 8774 140517460310912 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:15:51,230 autoreload 8837 140514969979776 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:16:44,859 autoreload 8985 139774927743872 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:18:57,669 autoreload 8985 139774927743872 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:18:59,474 autoreload 9061 140291844414336 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:19:27,663 autoreload 9061 140291844414336 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:19:29,539 autoreload 9118 140437046688640 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:19:53,133 autoreload 9118 140437046688640 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:19:54,950 autoreload 9177 140261040827264 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:20:18,889 autoreload 9177 140261040827264 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:20:21,255 autoreload 9232 140001489492864 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:22:02,336 autoreload 9232 140001489492864 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:22:04,339 autoreload 9289 140018365283200 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:22:07,492 autoreload 9289 140018365283200 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:22:09,071 autoreload 9319 140717118516096 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:22:26,385 autoreload 9319 140717118516096 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:22:28,357 autoreload 9376 140504776567680 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:22:35,753 autoreload 9376 140504776567680 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:22:37,384 autoreload 9433 139798977039232 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:22:42,557 autoreload 9433 139798977039232 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:22:44,524 autoreload 9476 140572208810880 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:22:47,379 autoreload 9476 140572208810880 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:22:49,281 autoreload 9505 139915300768640 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:22:54,552 autoreload 9505 139915300768640 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:22:56,233 autoreload 9548 139864024517504 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:23:39,932 autoreload 9548 139864024517504 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:23:41,930 autoreload 9602 140656167295872 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:23:49,363 autoreload 9602 140656167295872 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:23:51,058 autoreload 9659 140372830653312 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:25:25,572 autoreload 9865 139782051957632 Watching for file changes with StatReloader
+django.request WARNING 2024-05-28 00:25:32,356 log 9865 139781925238336 Not Found: /customers/styles.css.map
+django.request WARNING 2024-05-28 00:25:33,367 log 9865 139781925238336 Not Found: /customers/styles.css.map
+django.request WARNING 2024-05-28 00:25:35,710 log 9865 139781925238336 Not Found: /customers/styles.css.map
+django.request WARNING 2024-05-28 00:25:36,058 log 9865 139781925238336 Not Found: /customers/bd0cb6e3-a9db-44e9-a257-258a63aba5d8/styles.css.map
+django.request WARNING 2024-05-28 00:25:37,907 log 9865 139781925238336 Not Found: /customers/bd0cb6e3-a9db-44e9-a257-258a63aba5d8/styles.css.map
+django.request WARNING 2024-05-28 00:25:38,147 log 9865 139781925238336 Not Found: /customers/styles.css.map
+django.request WARNING 2024-05-28 00:25:41,354 log 9865 139781925238336 Not Found: /customers/styles.css.map
+django.request WARNING 2024-05-28 00:25:41,376 log 9865 139781925238336 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request ERROR 2024-05-28 00:25:44,625 log 9865 139781925238336 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/views/generic/list.py", line 174, in get
+    context = self.get_context_data()
+  File "/workspaces/django-renterprise/customers/views.py", line 106, in get_context_data
+    context = super(CustomerNoteList, self).get_context_data(**kwargs)
+NameError: name 'CustomerNoteList' is not defined
+django.request WARNING 2024-05-28 00:25:45,156 log 9865 139781925238336 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-05-28 00:25:45,178 log 9865 139781925238336 Not Found: /favicon.ico
+django.request WARNING 2024-05-28 00:25:45,253 log 9865 139781925238336 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.utils.autoreload INFO 2024-05-28 00:26:35,954 autoreload 9865 139782051957632 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:26:38,064 autoreload 10034 139630208166784 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:26:42,269 autoreload 10034 139630208166784 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:26:43,984 autoreload 10081 140260818865024 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:26:47,295 autoreload 10081 140260818865024 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:26:49,167 autoreload 10110 139646619732864 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:26:51,357 autoreload 10110 139646619732864 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:26:53,146 autoreload 10126 139967691803520 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:26:57,867 autoreload 10126 139967691803520 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:26:59,707 autoreload 10175 140376312261504 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:27:07,915 autoreload 10175 140376312261504 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:27:09,754 autoreload 10220 140218703948672 Watching for file changes with StatReloader
+django.request WARNING 2024-05-28 00:27:17,468 log 10220 140218646251072 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.request WARNING 2024-05-28 00:27:17,749 log 10220 140218646251072 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-05-28 00:27:22,556 log 10220 140218646251072 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-05-28 00:27:22,875 log 10220 140218646251072 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.utils.autoreload INFO 2024-05-28 00:29:11,975 autoreload 10220 140218703948672 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:29:14,055 autoreload 10330 140516407155584 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:29:26,822 autoreload 10330 140516407155584 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:29:29,037 autoreload 10387 140520263383936 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:29:39,481 autoreload 10387 140520263383936 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:29:41,443 autoreload 10444 139831025388416 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:30:06,381 autoreload 10444 139831025388416 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:30:08,440 autoreload 10509 140705479383936 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:30:13,739 autoreload 10509 140705479383936 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:30:15,553 autoreload 10566 140114987211648 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:30:18,564 autoreload 10566 140114987211648 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:30:20,634 autoreload 10596 140689326586752 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:30:23,756 autoreload 10596 140689326586752 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:30:25,577 autoreload 10626 140200400173952 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:30:30,804 autoreload 10626 140200400173952 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:30:32,686 autoreload 10656 140448646478720 Watching for file changes with StatReloader
+django.request ERROR 2024-05-28 00:30:38,702 log 10656 140448517584448 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/views/generic/list.py", line 174, in get
+    context = self.get_context_data()
+  File "/workspaces/django-renterprise/customers/views.py", line 108, in get_context_data
+    context['note_list'] = get_queryset
+NameError: name 'get_queryset' is not defined
+django.request WARNING 2024-05-28 00:30:39,574 log 10656 140448517584448 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.request WARNING 2024-05-28 00:30:39,770 log 10656 140448517584448 Not Found: /favicon.ico
+django.utils.autoreload INFO 2024-05-28 00:30:51,348 autoreload 10656 140448646478720 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:30:53,382 autoreload 10742 140077150743424 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:30:55,642 autoreload 10742 140077150743424 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:30:57,372 autoreload 10772 139653353151360 Watching for file changes with StatReloader
+django.request WARNING 2024-05-28 00:31:25,656 log 10772 139653286012480 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.request ERROR 2024-05-28 00:31:35,119 log 10772 139653286012480 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/10
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view customers.views.view_customer_note didn't return an HttpResponse object. It returned None instead.
+django.request WARNING 2024-05-28 00:31:35,552 log 10772 139653286012480 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.request WARNING 2024-05-28 00:31:35,952 log 10772 139653286012480 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/styles.css.map
+django.request WARNING 2024-05-28 00:31:36,068 log 10772 139653286012480 Not Found: /favicon.ico
+django.request WARNING 2024-05-28 00:31:39,057 log 10772 139653286012480 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes/styles.css.map
+django.request WARNING 2024-05-28 00:31:39,607 log 10772 139653286012480 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.utils.autoreload INFO 2024-05-28 00:32:57,868 autoreload 10772 139653353151360 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:32:59,992 autoreload 10939 140117316082560 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:33:38,481 autoreload 10939 140117316082560 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:33:40,431 autoreload 11005 140317674175360 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:33:41,939 autoreload 11005 140317674175360 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:33:43,723 autoreload 11035 140510540413824 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:33:46,262 autoreload 11035 140510540413824 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:33:47,859 autoreload 11065 139886879050624 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:33:50,310 autoreload 11065 139886879050624 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:33:52,067 autoreload 11084 140017203657600 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:33:53,491 autoreload 11084 140017203657600 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:33:55,288 autoreload 11097 140228464073600 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:34:05,229 autoreload 11097 140228464073600 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:34:07,187 autoreload 11151 140414969826176 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:34:12,791 autoreload 11151 140414969826176 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:34:14,540 autoreload 11208 140462531988352 Watching for file changes with StatReloader
+django.request ERROR 2024-05-28 00:34:25,635 log 11208 140462407022144 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    current = current()
+  File "/workspaces/django-renterprise/customers/models.py", line 76, in created_on_by
+    return f"{self.created_on|date:'d-m-Y'} by {self.created_by.username}"
+NameError: name 'date' is not defined
+django.request WARNING 2024-05-28 00:34:26,149 log 11208 140462407022144 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.request WARNING 2024-05-28 00:34:26,367 log 11208 140462407022144 Not Found: /favicon.ico
+django.request WARNING 2024-05-28 00:34:26,670 log 11208 140462407022144 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.utils.autoreload INFO 2024-05-28 00:34:37,712 autoreload 11208 140462531988352 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:34:39,822 autoreload 11315 140201501834112 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:34:45,360 autoreload 11315 140201501834112 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:34:47,330 autoreload 11372 140646024600448 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:36:09,139 autoreload 11372 140646024600448 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:36:11,039 autoreload 11426 140287003175808 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:36:18,757 autoreload 11426 140287003175808 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:36:20,834 autoreload 11483 139789025581952 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:36:30,985 autoreload 11483 139789025581952 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:36:32,985 autoreload 11540 140422562388864 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:36:35,247 autoreload 11540 140422562388864 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:36:36,938 autoreload 11570 139706214026112 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:37:02,206 autoreload 11570 139706214026112 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:37:04,243 autoreload 11624 139766491822976 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:37:10,965 autoreload 11624 139766491822976 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:37:12,738 autoreload 11681 140501796633472 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:37:16,182 autoreload 11681 140501796633472 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:37:17,847 autoreload 11711 140586931932032 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:37:28,996 autoreload 11711 140586931932032 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:37:31,324 autoreload 11768 139775042993024 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:37:36,978 autoreload 11768 139775042993024 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:37:38,577 autoreload 11822 139985828232064 Watching for file changes with StatReloader
+django.request ERROR 2024-05-28 00:37:48,924 log 11822 139985770534464 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    current = current()
+  File "/workspaces/django-renterprise/customers/models.py", line 76, in created_on_by
+    create_date = strftime(self.created_on, '%d-%m-%Y')
+NameError: name 'strftime' is not defined
+django.request WARNING 2024-05-28 00:37:50,052 log 11822 139985770534464 Not Found: /favicon.ico
+django.request WARNING 2024-05-28 00:37:50,073 log 11822 139985760044608 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.utils.autoreload INFO 2024-05-28 00:38:10,162 autoreload 11822 139985828232064 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:38:11,970 autoreload 11934 140407249910656 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:38:14,206 autoreload 11934 140407249910656 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:38:15,998 autoreload 11961 140305328036736 Watching for file changes with StatReloader
+django.request ERROR 2024-05-28 00:38:26,460 log 11961 140305270339136 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    current = current()
+  File "/workspaces/django-renterprise/customers/models.py", line 77, in created_on_by
+    create_date = strftime(self.created_on, '%d-%m-%Y')
+NameError: name 'strftime' is not defined
+django.request WARNING 2024-05-28 00:38:27,302 log 11961 140305270339136 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.request WARNING 2024-05-28 00:38:27,566 log 11961 140305270339136 Not Found: /favicon.ico
+django.utils.autoreload INFO 2024-05-28 00:39:23,473 autoreload 11961 140305328036736 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:39:25,542 autoreload 12080 139809131355008 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:39:31,137 autoreload 12080 139809131355008 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:39:32,972 autoreload 12137 140558341413760 Watching for file changes with StatReloader
+django.request WARNING 2024-05-28 00:39:39,034 log 12137 140558283716160 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.utils.autoreload INFO 2024-05-28 00:43:59,561 autoreload 12137 140558341413760 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:44:01,564 autoreload 12222 140080186952576 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:44:04,850 autoreload 12222 140080186952576 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:44:06,801 autoreload 12252 139754351426432 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:44:14,484 autoreload 12252 139754351426432 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:44:16,464 autoreload 12309 140642994576256 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:44:29,790 autoreload 12309 140642994576256 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:44:31,847 autoreload 12366 139623327693696 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:44:39,643 autoreload 12366 139623327693696 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:44:42,043 autoreload 12423 140377860725632 Watching for file changes with StatReloader
+django.request ERROR 2024-05-28 00:44:56,673 log 12423 140377803028032 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    current = current()
+  File "/workspaces/django-renterprise/customers/models.py", line 78, in created_on_by
+    date_to_string = DATETIME_FORMAT(date_to_string)
+NameError: name 'DATETIME_FORMAT' is not defined
+django.request WARNING 2024-05-28 00:44:57,493 log 12423 140377803028032 Not Found: /favicon.ico
+django.request WARNING 2024-05-28 00:44:57,749 log 12423 140377803028032 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.utils.autoreload INFO 2024-05-28 00:45:30,572 autoreload 12423 140377860725632 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:45:32,547 autoreload 12533 140605540600704 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:45:36,954 autoreload 12533 140605540600704 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:45:39,158 autoreload 12576 140375521373056 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:45:44,687 autoreload 12576 140375521373056 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:45:46,779 autoreload 12619 140033434950528 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:45:49,028 autoreload 12619 140033434950528 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:45:50,776 autoreload 12649 139914980297600 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:45:53,144 autoreload 12649 139914980297600 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:45:55,047 autoreload 12679 140242203589504 Watching for file changes with StatReloader
+django.request ERROR 2024-05-28 00:46:04,324 log 12679 140242145891904 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    current = current()
+  File "/workspaces/django-renterprise/customers/models.py", line 79, in created_on_by
+    return f"Created on : {self.date_to_string} By : {self.created_by.username}"
+AttributeError: 'CustomerNote' object has no attribute 'date_to_string'
+django.request WARNING 2024-05-28 00:46:05,155 log 12679 140242145891904 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.request WARNING 2024-05-28 00:46:05,256 log 12679 140242145891904 Not Found: /favicon.ico
+django.utils.autoreload INFO 2024-05-28 00:46:45,468 autoreload 12679 140242203589504 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:46:47,536 autoreload 12762 140492369189760 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:46:52,067 autoreload 12762 140492369189760 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:46:53,869 autoreload 12805 139648497355648 Watching for file changes with StatReloader
+django.request WARNING 2024-05-28 00:46:58,844 log 12805 139648440444480 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.utils.autoreload INFO 2024-05-28 00:47:59,747 autoreload 12805 139648497355648 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:48:01,858 autoreload 12890 139946928872320 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:49:24,846 autoreload 12890 139946928872320 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:49:27,027 autoreload 12990 140321686186880 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:49:33,503 autoreload 12990 140321686186880 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:49:35,147 autoreload 13047 139820388920192 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:49:49,946 autoreload 13047 139820388920192 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:49:52,081 autoreload 13101 139692364671872 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:49:53,941 autoreload 13101 139692364671872 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:49:55,653 autoreload 13131 139647328533376 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:50:06,341 autoreload 13131 139647328533376 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:50:08,179 autoreload 13188 140202978102144 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:50:17,578 autoreload 13188 140202978102144 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:50:19,958 autoreload 13245 140612238142336 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:51:00,442 autoreload 13245 140612238142336 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:51:02,488 autoreload 13342 139727594457984 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:51:05,552 autoreload 13342 139727594457984 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:51:07,437 autoreload 13372 140281903401856 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:51:12,720 autoreload 13372 140281903401856 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:51:14,531 autoreload 13429 140394513283968 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:51:17,657 autoreload 13429 140394513283968 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:51:19,653 autoreload 13459 139727296408448 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:51:30,369 autoreload 13459 139727296408448 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:51:32,432 autoreload 13489 140393271618432 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:51:36,555 autoreload 13489 140393271618432 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:51:38,439 autoreload 13532 140250727336832 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:52:30,930 autoreload 13532 140250727336832 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:52:33,069 autoreload 13605 140124164017024 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:52:39,617 autoreload 13605 140124164017024 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:52:41,167 autoreload 13662 140537139141504 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:52:47,546 autoreload 13662 140537139141504 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:52:49,551 autoreload 13705 140520312454016 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:52:59,369 autoreload 13705 140520312454016 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:53:01,463 autoreload 13748 140130232355712 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:53:03,450 autoreload 13748 140130232355712 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:53:05,428 autoreload 13778 140329470892928 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:53:15,260 autoreload 13778 140329470892928 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:53:17,266 autoreload 13835 139651543182208 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:53:20,523 autoreload 13835 139651543182208 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:53:22,784 autoreload 13865 140453746080640 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:56:58,139 autoreload 14118 140337947741056 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 00:57:33,763 autoreload 14118 140337947741056 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:57:35,852 autoreload 14188 140241917934464 Watching for file changes with StatReloader
+django.request WARNING 2024-05-28 00:57:49,566 log 14188 140241860236864 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-05-28 00:57:50,144 log 14188 140241860236864 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request ERROR 2024-05-28 00:57:56,947 log 14188 140241860236864 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'customer_add_notes' with keyword arguments '{'customer_token': ''}' not found. 1 pattern(s) tried: ['customers/(?P<customer_token>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/notes/create/\\Z']
+django.request WARNING 2024-05-28 00:57:57,152 log 14188 140241860236864 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-05-28 00:57:57,612 log 14188 140241860236864 Not Found: /favicon.ico
+django.request WARNING 2024-05-28 00:57:58,065 log 14188 140241860236864 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.request ERROR 2024-05-28 00:58:48,636 log 14188 140241860236864 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'customer_add_notes' with no arguments not found. 1 pattern(s) tried: ['customers/(?P<customer_token>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/notes/create/\\Z']
+django.request WARNING 2024-05-28 00:58:49,574 log 14188 140241860236864 Not Found: /favicon.ico
+django.request WARNING 2024-05-28 00:58:49,627 log 14188 140241851057728 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.utils.autoreload INFO 2024-05-28 00:59:00,362 autoreload 14458 140095474948992 Watching for file changes with StatReloader
+django.request ERROR 2024-05-28 00:59:11,151 log 14458 140095417251392 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'customer_add_notes' with no arguments not found. 1 pattern(s) tried: ['customers/(?P<customer_token>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/notes/create/\\Z']
+django.request WARNING 2024-05-28 00:59:11,984 log 14458 140095417251392 Not Found: /favicon.ico
+django.request WARNING 2024-05-28 00:59:12,052 log 14458 140095417251392 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.utils.autoreload INFO 2024-05-28 00:59:54,251 autoreload 14458 140095474948992 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 00:59:56,294 autoreload 14588 140040567577472 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 01:00:04,164 autoreload 14588 140040567577472 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 01:00:05,888 autoreload 14645 140174059076480 Watching for file changes with StatReloader
+django.request ERROR 2024-05-28 01:00:21,951 log 14645 140174001378880 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'customer_add_notes' with no arguments not found. 1 pattern(s) tried: ['customers/(?P<customer_token>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/customer_notes_list/create/\\Z']
+django.request WARNING 2024-05-28 01:00:22,777 log 14645 140174001378880 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.request WARNING 2024-05-28 01:00:22,867 log 14645 140174001378880 Not Found: /favicon.ico
+django.utils.autoreload INFO 2024-05-28 01:00:55,576 autoreload 14645 140174059076480 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 01:00:57,550 autoreload 14755 140023709907840 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 01:00:59,733 autoreload 14755 140023709907840 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 01:01:01,564 autoreload 14785 139960205908864 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 01:01:04,999 autoreload 14785 139960205908864 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 01:01:06,753 autoreload 14815 139743715003264 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 01:01:41,045 autoreload 14815 139743715003264 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 01:01:43,049 autoreload 14880 139828008336256 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 01:01:48,661 autoreload 14880 139828008336256 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 01:01:50,943 autoreload 14941 140683351718784 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-28 01:01:55,168 autoreload 14941 140683351718784 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-28 01:01:57,049 autoreload 14971 140672242391936 Watching for file changes with StatReloader
+django.request ERROR 2024-05-28 01:02:41,714 log 14971 140672184694336 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'customer_add_notes' with keyword arguments '{'customer_token': ''}' not found. 1 pattern(s) tried: ['customers/(?P<customer_token>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/customer_notes_list/create/\\Z']
+django.request WARNING 2024-05-28 01:02:42,343 log 14971 140672184694336 Not Found: /favicon.ico
+django.request WARNING 2024-05-28 01:02:42,550 log 14971 140672184694336 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.request ERROR 2024-05-28 01:05:20,995 log 14971 140672184694336 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'customer_add_notes' with no arguments not found. 1 pattern(s) tried: ['customers/(?P<customer_token>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/customer_notes_list/create/\\Z']
+django.request WARNING 2024-05-28 01:05:21,854 log 14971 140672184694336 Not Found: /favicon.ico
+django.request WARNING 2024-05-28 01:05:21,955 log 14971 140672184694336 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.request ERROR 2024-05-28 01:06:23,068 log 14971 140672184694336 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'customer_add_notes' with keyword arguments '{'customer_token': ''}' not found. 1 pattern(s) tried: ['customers/(?P<customer_token>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/customer_notes_list/create/\\Z']
+django.request WARNING 2024-05-28 01:06:23,859 log 14971 140672184694336 Not Found: /favicon.ico
+django.request WARNING 2024-05-28 01:06:23,879 log 14971 140672173942336 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.request ERROR 2024-05-28 01:06:45,425 log 14971 140672173942336 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'customer_add_notes' with no arguments not found. 1 pattern(s) tried: ['customers/(?P<customer_token>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/customer_notes_list/create/\\Z']
+django.request WARNING 2024-05-28 01:06:46,557 log 14971 140672173942336 Not Found: /favicon.ico
+django.request WARNING 2024-05-28 01:06:46,665 log 14971 140672173942336 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.request ERROR 2024-05-28 01:08:05,542 log 14971 140672173942336 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/create/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: customer_add_notes() got an unexpected keyword argument 'customer_token'
+django.request WARNING 2024-05-28 01:08:06,065 log 14971 140672173942336 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/create/styles.css.map
+django.utils.autoreload INFO 2024-05-28 01:08:49,227 autoreload 14971 140672242391936 /workspaces/django-renterprise/customers/views.py changed, reloading.

@@ -71,29 +71,52 @@ def customer_create(request):
         },
     )
 
-def customer_notes(request, customer_token):
+class CustomerNotesList(ListView):
+    paginate_by = 9
+    model = CustomerNote
+    #get_customer = get_object_or_404(Customer, customer_token=customer_token)
+    #queryset = CustomerNote.objects.filter(customer__customer_token=self.kwargs.get('customer_token'))
+    # https://stackoverflow.com/questions/37370534/django-listview-where-can-i-declare-variables-that-i-want-to-have-on-template
+    # Override original get_context_data to allow sending of the application area.
+    # This will allow DRY manipulation of the side-bar.html
 
-    template_name = "customers/customer_notes.html"
+    template_name = "customers/customer_notes_list.html"
 
-    get_customer = get_object_or_404(Customer, customer_token=customer_token)
-    #customer_notes = Custome rNotes.get_customer.all().order_by("-created_on")
-    customer_notes = CustomerNote.objects.filter(customer=get_customer)
-   # notes_count = customer_notes.count()
+    def get_queryset(self):
+        self.customer = get_object_or_404(Customer, customer_token=self.kwargs["customer_token"])
+        return CustomerNote.objects.filter(customer=self.customer)
 
-    return render (
+    def get_context_data(self, **kwargs):
+        context = super(CustomerNotesList, self).get_context_data(**kwargs)
+        context['class_var'] = "Customers"
+        context['note_list'] = self.get_queryset
+        return context
+
+def view_customer_note(request, customer_token, id):
+    print("Hello note")
+
+def customer_add_notes(request):
+    """
+    Function to display the customer_add_notes.html template
+    which will allow new customer notes to be added.
+    """
+    customer_note_form = CustomerNoteForm(request.POST)
+    
+    if request.method == "POST":
+        if customer_note_form.is_valid():
+            customer_note = customer_note_form.save(commit=False)
+            customer_note.save()
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Customer note has been saved'
+            )
+
+    customer_note_form = CustomerNoteForm()
+    return render(
         request,
-        "customers/customer_notes.html",
+        "customers/customer_add_notes.html",
         {
+            "customer_note_form": customer_note_form,
             "class_var":"Customers",
         },
     )
-
-def view_customer_note(request):
-    print("Hello note")
-#def customer_search(request):
-#    """
-#    Function to load the customer search feature
-#    """
-#    
-#    
-#    return HttpResponse('Hello Customer Search!')

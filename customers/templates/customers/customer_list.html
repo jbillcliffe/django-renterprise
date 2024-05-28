@@ -22,6 +22,7 @@
                 Postcode
             </div>
             <div class="col-1">
+                <a class="button-table add" href="{% url 'customers:customer_create' %}"> Add New Customer <i class="fa-solid fa-plus"></i></a>
             </div>
         </div>
         {% for customer in customer_list %}
@@ -29,7 +30,7 @@
             <div class="col-3">{{ customer.full_name }}</div>
             <div class="col-5">{{ customer.address_line_one }}</div>
             <div class="col-3">{{ customer.postcode }}</div>
-            <div class="col-1"><a class="button-table-view" href="{% url 'customers:customer_view' customer.customer_token%}"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+            <div class="col-1"><a class="button-table view" href="{% url 'customers:customer_view' customer.customer_token %}"><i class="fa-solid fa-magnifying-glass"></i></a></div>
         </div>
         {% endfor %}
         {% include 'paginate.html' %}

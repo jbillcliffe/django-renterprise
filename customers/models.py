@@ -1,6 +1,7 @@
 import uuid
 from django.db import models
 from django.contrib.auth.models import User
+from datetime import datetime, date, time, timezone
 
 # Create your models here.
 class Customer(models.Model):
@@ -54,6 +55,9 @@ class Customer(models.Model):
         return self
 
 class CustomerNote(models.Model):
+
+    null_values = [None, 'None', 'none', 'null', 'Null']
+
     customer = models.ForeignKey(
         Customer, on_delete=models.CASCADE, related_name="customer"
     )
@@ -69,5 +73,11 @@ class CustomerNote(models.Model):
         else:
             return f"{self.customer.first_name} {self.customer.last_name}"
 
-        class Meta:
-            ordering = ["created_by"]
+    def created_on_by(self):
+
+        date_to_string = self.created_on.strftime("%d-%m-%Y")
+        return f"Created on : {date_to_string}, By : {self.created_by.username}"
+
+
+    class Meta:
+        ordering = ["created_by"]
