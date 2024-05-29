@@ -81,6 +81,17 @@ ul {
     text-shadow: 0px 1px 5px #000000;
 }
 
+/*Need to have black text in the tables otherwise it is illegible*/
+#customer-note-row>p {
+    color: #000000;
+    text-shadow: none;
+}
+/*Then to give the height to stop misplaced notes*/
+#customer-note-row {
+    height:-webkit-fill-available;
+}
+
+
 div.form-floating>label,
 .form-float-label {
     color: #000000;

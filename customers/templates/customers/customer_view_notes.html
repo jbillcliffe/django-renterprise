@@ -12,7 +12,7 @@
     {% include 'side-nav.html' %}
     {% if user.is_authenticated %}
     <div class="content-holder">
-        <h2>Add a customer note :</h2>
+        <h2>View/Edit a customer note :</h2>
         <hr class="renterprise">
         <form id="addNoteForm" method="post"
             style="margin-top: 1.3em;">
@@ -23,15 +23,15 @@
         </form>
     </div>
     {% else %}
-    <div class="row">
-        <div class="col-12">
-            {% blocktrans %}
-            <p>You need to be logged in to access the program.</p>
-            <p>Log in to continue using this application.</p>
-            {% endblocktrans %}
-            <a class="button small" href="{{ login_url }}">{% trans "Log In" %}</a>
+        <div class="row">
+            <div class="col-12">
+                {% blocktrans %}
+                <p>You need to be logged in to access the program.</p>
+                <p>Log in to continue using this application.</p>
+                {% endblocktrans %}
+                <a class="button small centre-align" href="{{ login_url }}">{% trans "Log In" %}</a>
+            </div>
         </div>
-    </div>
     {% endif %}
 </div>
 
