@@ -11,17 +11,22 @@
 <div class="container-fluid" style="height: 100%; width:100%;">
     {% include 'side-nav.html' %}
     {% if user.is_authenticated %}
-    <div class="content-holder">
-        <h2>View/Edit a customer note :</h2>
-        <hr class="renterprise">
-        <form id="addNoteForm" method="post"
-            style="margin-top: 1.3em;">
-            {{ customer_note_form | crispy }}
-            {% csrf_token %}
-            <button id="submitButton" type="submit"
-                class="button centre-align">Submit</button>
-        </form>
-    </div>
+        <div class="content-holder">
+        {% if perms.customer.customer_note %}
+            <h2>View/Edit a customer note :</h2>
+            <hr class="renterprise">
+            <form id="updateNoteForm" method="post"
+                style="margin-top: 1.3em;">
+                {{ customer_note_form | crispy }}
+                {% csrf_token %}
+                <button id="submitButton" type="submit"
+                    class="button centre-align">Update</button>
+            </form>
+        </div>
+        {% else %}
+            <p> Please log in as a user with change permissions.</p>
+            <a class="button small centre-align" href="{{ customer_view }}">Return to customer</a>
+        {% endif %}
     {% else %}
         <div class="row">
             <div class="col-12">

@@ -50,20 +50,3 @@ class CustomerNoteForm(forms.ModelForm):
     class Meta:
         model = CustomerNote
         fields = ('note',)
-
-    #def __init__(self, *args, **kwargs):
-    #    super().__init__(*args, **kwargs)
-    #    self.helper = FormHelper(self)
-    #    self.helper.label_class = 'form-label'
-        #note = forms.CharField(widget=SummernoteInplaceWidget())
-    #    self.helper.layout = Layout(
-    #        Fieldset(
-    #            "Add a customer note :",
-                #forms.CharField(widget=SummernoteInplaceWidget())
-    #            Row(CharField('note') )
-    #        ),
-    #        Submit('submit', 'Submit',
-    #            wrapper_class='button centre-align'),
-    #    )
-
-        
