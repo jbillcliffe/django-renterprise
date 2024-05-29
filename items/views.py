@@ -47,11 +47,11 @@ def item_create(request):
     if request.method == "POST":
         if item_form.is_valid():
             item = item_form.save(commit=False)
-            item.item_type = request.item_type
-            item.item_serial = request.item_serial
-            item.delivery_date = null
-            item.collect_date = null
-            item.repair_date = null
+            #item.item_type = request.item_type
+            #item.item_serial = request.item_serial
+            item.delivery_date = None
+            item.collect_date = None
+            item.repair_date = None
             item.save()
             messages.add_message(
                 request, messages.SUCCESS,
@@ -74,14 +74,9 @@ def item_type_create(request):
     types.
     """
     if request.method == "POST":
-        item_type_form = ItemTypeForm(data=request.POST)
+        item_type_form = ItemTypeForm(request.POST, request.FILES)
         if item_type_form.is_valid():
             item_type = item_type_form.save(commit=False)
-            item_type.name = request.name
-            item_type.category = request.category
-            item_type.cost_initial = request.cost_initial
-            item_type.cost_week = request.cost_week
-            item_type.image = request.image
             item_type.save()
             messages.add_message(
                 request, messages.SUCCESS,

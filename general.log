@@ -625,3 +625,255 @@ django.utils.autoreload INFO 2024-05-29 21:00:32,368 autoreload 10163 1396942290
 django.utils.autoreload INFO 2024-05-29 21:00:34,808 autoreload 10184 139995270683520 Watching for file changes with StatReloader
 django.utils.autoreload INFO 2024-05-29 21:00:37,194 autoreload 10184 139995270683520 /workspaces/django-renterprise/customers/views.py changed, reloading.
 django.utils.autoreload INFO 2024-05-29 21:00:39,351 autoreload 10208 139975275096960 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 21:05:40,453 autoreload 10599 140073504828288 Watching for file changes with StatReloader
+django.request ERROR 2024-05-29 21:06:28,623 log 10599 140073377986112 Internal Server Error: /items/create/item_type/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspaces/django-renterprise/items/views.py", line 80, in item_type_create
+    item_type.name = request.name
+AttributeError: 'WSGIRequest' object has no attribute 'name'
+django.request WARNING 2024-05-29 21:06:29,164 log 10599 140073377986112 Not Found: /favicon.ico
+django.utils.autoreload INFO 2024-05-29 21:08:45,981 autoreload 10599 140073504828288 /workspaces/django-renterprise/items/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:08:48,147 autoreload 10787 140103594847104 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 21:08:58,011 autoreload 10787 140103594847104 /workspaces/django-renterprise/items/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:09:00,245 autoreload 10830 140464873675648 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 21:09:04,891 autoreload 10830 140464873675648 /workspaces/django-renterprise/items/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:09:06,941 autoreload 10875 139850094795648 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 21:09:10,268 autoreload 10875 139850094795648 /workspaces/django-renterprise/items/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:09:12,085 autoreload 10899 139722615733120 Watching for file changes with StatReloader
+django.request ERROR 2024-05-29 21:09:45,589 log 10899 139722556110400 Internal Server Error: /items/create/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspaces/django-renterprise/items/views.py", line 52, in item_create
+    item.delivery_date = null
+NameError: name 'null' is not defined
+django.utils.autoreload INFO 2024-05-29 21:10:13,678 autoreload 10899 139722615733120 /workspaces/django-renterprise/items/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:10:15,946 autoreload 11054 139854728125312 Watching for file changes with StatReloader
+django.request WARNING 2024-05-29 21:14:31,864 log 11054 139854601254464 Not Found: /items/56/styles.css.map
+django.utils.autoreload INFO 2024-05-29 21:16:34,101 autoreload 11054 139854728125312 /workspaces/django-renterprise/items/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:16:36,366 autoreload 11422 140232205446016 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 21:16:43,171 autoreload 11422 140232205446016 /workspaces/django-renterprise/items/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:16:45,055 autoreload 11467 140145863699328 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 21:19:11,598 autoreload 11467 140145863699328 /workspaces/django-renterprise/items/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:19:13,656 autoreload 11520 139896185654144 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 21:20:29,498 autoreload 11520 139896185654144 /workspaces/django-renterprise/items/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:20:31,789 autoreload 11565 139875614747520 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 21:20:35,161 autoreload 11565 139875614747520 /workspaces/django-renterprise/items/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:20:37,372 autoreload 11589 140247091534720 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 21:22:58,965 autoreload 11589 140247091534720 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:23:01,046 autoreload 11638 140355570899840 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 21:23:03,292 autoreload 11638 140355570899840 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:23:05,175 autoreload 11662 139959378340736 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 21:41:46,598 autoreload 11662 139959378340736 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:41:48,588 autoreload 11707 139861214915456 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 21:42:04,187 autoreload 11707 139861214915456 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:42:06,787 autoreload 11749 140615390354304 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 21:42:11,080 autoreload 11749 140615390354304 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:42:12,888 autoreload 11791 139702380440448 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 21:42:51,285 autoreload 11791 139702380440448 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:42:53,371 autoreload 11836 140288124210048 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 21:42:58,994 autoreload 11836 140288124210048 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:43:00,978 autoreload 11878 139955041205120 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 21:43:19,587 autoreload 11878 139955041205120 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:43:21,648 autoreload 11923 139812893272960 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 21:43:36,122 autoreload 11923 139812893272960 /workspaces/django-renterprise/env.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:55:03,989 autoreload 12172 139860240092032 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 21:55:35,559 autoreload 12172 139860240092032 /workspaces/django-renterprise/items/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 21:55:37,665 autoreload 12226 140567886519168 Watching for file changes with StatReloader
+django.request WARNING 2024-05-29 21:55:47,787 log 12226 140567799883328 Not Found: /favicon.ico
+django.request WARNING 2024-05-29 21:55:48,128 log 12226 140567816668736 Not Found: /admin/styles.css.map
+django.request WARNING 2024-05-29 21:55:49,490 log 12226 140567799883328 Not Found: /admin/styles.css.map
+django.request WARNING 2024-05-29 21:56:52,444 log 12226 140567799883328 Not Found: /styles.css.map
+django.request WARNING 2024-05-29 21:56:56,056 log 12226 140567799883328 Not Found: /styles.css.map
+django.request WARNING 2024-05-29 21:56:56,458 log 12226 140567799883328 Not Found: /items/styles.css.map
+django.request WARNING 2024-05-29 21:56:58,867 log 12226 140567799883328 Not Found: /items/styles.css.map
+django.request WARNING 2024-05-29 21:56:59,248 log 12226 140567799883328 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-05-29 21:57:25,970 log 12226 140567799883328 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-05-29 21:58:14,297 log 12226 140567799883328 Not Found: /admin/styles.css.map
+django.utils.autoreload INFO 2024-05-29 22:02:00,074 autoreload 12226 140567886519168 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:02:02,282 autoreload 12784 139957246495616 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:02:35,475 autoreload 12784 139957246495616 /workspaces/django-renterprise/renterprise/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:02:37,485 autoreload 12831 139997885647744 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:02:40,611 autoreload 12831 139997885647744 /workspaces/django-renterprise/renterprise/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:02:42,585 autoreload 12855 140699659402112 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:02:46,809 autoreload 12855 140699659402112 /workspaces/django-renterprise/renterprise/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:02:48,942 autoreload 12890 140209384844160 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:02:51,083 autoreload 12890 140209384844160 /workspaces/django-renterprise/renterprise/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:02:53,047 autoreload 12902 139780369574784 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:02:55,878 autoreload 12902 139780369574784 /workspaces/django-renterprise/renterprise/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:02:58,293 autoreload 12926 139688189782912 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:05:11,778 autoreload 12926 139688189782912 /workspaces/django-renterprise/renterprise/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:05:13,692 autoreload 12984 140227882183552 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:05:15,363 autoreload 12984 140227882183552 /workspaces/django-renterprise/renterprise/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:05:17,282 autoreload 13008 139924871117696 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:05:21,381 autoreload 13008 139924871117696 /workspaces/django-renterprise/renterprise/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:05:23,266 autoreload 13032 139789768780672 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:05:29,608 autoreload 13032 139789768780672 /workspaces/django-renterprise/renterprise/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:05:31,856 autoreload 13074 139634358193024 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:05:38,099 autoreload 13074 139634358193024 /workspaces/django-renterprise/renterprise/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:05:40,100 autoreload 13112 140421067033472 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:05:43,061 autoreload 13112 140421067033472 /workspaces/django-renterprise/renterprise/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:05:45,059 autoreload 13135 140234176949120 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:08:53,405 autoreload 13135 140234176949120 /workspaces/django-renterprise/renterprise/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:08:55,649 autoreload 13165 139947068615552 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:09:02,463 autoreload 13165 139947068615552 /workspaces/django-renterprise/renterprise/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:09:04,601 autoreload 13210 140630261324672 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:09:06,490 autoreload 13210 140630261324672 /workspaces/django-renterprise/renterprise/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:09:08,743 autoreload 13240 140059182627712 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:09:15,400 autoreload 13240 140059182627712 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:13:04,659 autoreload 13383 140021713308544 Watching for file changes with StatReloader
+django.request WARNING 2024-05-29 22:13:17,568 log 13383 140021570991680 Not Found: /styles.css.map
+django.request WARNING 2024-05-29 22:13:18,254 log 13383 140021562598976 Not Found: /styles.css.map
+django.request WARNING 2024-05-29 22:13:21,662 log 13383 140021562598976 Not Found: /styles.css.map
+django.request WARNING 2024-05-29 22:13:21,876 log 13383 140021562598976 Not Found: /items/styles.css.map
+django.request WARNING 2024-05-29 22:13:24,166 log 13383 140021562598976 Not Found: /items/styles.css.map
+django.request WARNING 2024-05-29 22:13:24,467 log 13383 140021562598976 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-05-29 22:14:01,348 log 13383 140021562598976 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-05-29 22:14:11,946 log 13383 140021562598976 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-05-29 22:14:14,955 log 13383 140021562598976 Not Found: /items/create/item_type/styles.css.map
+django.utils.autoreload INFO 2024-05-29 22:17:29,550 autoreload 13383 140021713308544 /workspaces/django-renterprise/items/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:17:31,997 autoreload 13654 140109641616256 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:19:28,850 autoreload 13654 140109641616256 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:19:31,401 autoreload 13703 140543593728896 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:19:47,971 autoreload 13703 140543593728896 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:19:49,961 autoreload 13748 140491467688832 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:20:35,108 autoreload 13748 140491467688832 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:20:37,589 autoreload 13790 140149558619008 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:20:44,340 autoreload 13790 140149558619008 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:20:46,880 autoreload 13835 139887153453952 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:20:51,268 autoreload 13835 139887153453952 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:20:53,665 autoreload 13870 139849754844032 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:21:09,509 autoreload 13870 139849754844032 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:21:12,145 autoreload 13922 140532408363904 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:21:16,453 autoreload 13922 140532408363904 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:21:18,569 autoreload 13966 140235997793152 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-05-29 22:23:46,892 connectionpool 13966 140235936290368 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-05-29 22:23:47,349 connectionpool 13966 140235936290368 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 404 0
+django.request WARNING 2024-05-29 22:23:49,559 log 13966 140235936290368 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-05-29 22:24:05,159 log 13966 140235936290368 Not Found: /favicon.ico
+django.request WARNING 2024-05-29 22:24:06,254 log 13966 140235936290368 Not Found: /admin/styles.css.map
+django.request WARNING 2024-05-29 22:24:29,763 log 13966 140235926586944 Not Found: /items/itemtype/
+django.request WARNING 2024-05-29 22:24:30,251 log 13966 140235926586944 Not Found: /items/itemtype/styles.css.map
+django.request WARNING 2024-05-29 22:24:44,967 log 13966 140235936290368 Not Found: /items/item_type_create/
+django.request WARNING 2024-05-29 22:24:45,365 log 13966 140235936290368 Not Found: /items/item_type_create/styles.css.map
+django.request WARNING 2024-05-29 22:24:50,746 log 13966 140235936290368 Not Found: /styles.css.map
+django.request WARNING 2024-05-29 22:24:54,084 log 13966 140235936290368 Not Found: /items/styles.css.map
+django.request WARNING 2024-05-29 22:24:56,654 log 13966 140235936290368 Not Found: /items/create/item_type/styles.css.map
+django.request ERROR 2024-05-29 22:25:09,496 log 13966 140235936290368 Internal Server Error: /items/create/item_type/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspaces/django-renterprise/items/views.py", line 87, in item_type_create
+    item_type.save()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1821, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1745, in as_sql
+    value_rows = [
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1746, in <listcomp>
+    [
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1695, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/cloudinary/models.py", line 112, in pre_save
+    instance_value = uploader.upload_resource(value, **options)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/cloudinary/uploader.py", line 64, in upload_resource
+    result = upload_func(file, **options)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/cloudinary/uploader.py", line 45, in upload
+    return call_cacheable_api("upload", params, file=file, **options)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/cloudinary/uploader.py", line 462, in call_cacheable_api
+    result = call_api(action, params, http_headers, return_error, unsigned, file, timeout, **options)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/cloudinary/uploader.py", line 487, in call_api
+    params = utils.sign_request(params, options)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/cloudinary/utils.py", line 620, in sign_request
+    raise ValueError("Must supply api_secret")
+ValueError: Must supply api_secret
+django.request WARNING 2024-05-29 22:25:10,379 log 13966 140235936290368 Not Found: /items/create/item_type/styles.css.map
+django.utils.autoreload INFO 2024-05-29 22:29:21,270 autoreload 13966 140235997793152 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:29:23,843 autoreload 14323 140621489351552 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:31:52,759 autoreload 14323 140621489351552 /workspaces/django-renterprise/items/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:31:55,183 autoreload 14376 140178341149568 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:32:38,732 autoreload 14376 140178341149568 /workspaces/django-renterprise/items/views.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:32:40,961 autoreload 14453 140237340617600 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-05-29 22:32:56,067 connectionpool 14453 140237279114816 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-05-29 22:32:56,349 connectionpool 14453 140237279114816 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 404 0
+django.request WARNING 2024-05-29 22:32:58,581 log 14453 140237279114816 Not Found: /items/create/item_type/styles.css.map
+django.request ERROR 2024-05-29 22:33:02,498 log 14453 140237279114816 Internal Server Error: /items/create/item_type/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspaces/django-renterprise/items/views.py", line 80, in item_type_create
+    item_type.save()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1821, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1745, in as_sql
+    value_rows = [
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1746, in <listcomp>
+    [
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1695, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/cloudinary/models.py", line 112, in pre_save
+    instance_value = uploader.upload_resource(value, **options)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/cloudinary/uploader.py", line 64, in upload_resource
+    result = upload_func(file, **options)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/cloudinary/uploader.py", line 45, in upload
+    return call_cacheable_api("upload", params, file=file, **options)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/cloudinary/uploader.py", line 462, in call_cacheable_api
+    result = call_api(action, params, http_headers, return_error, unsigned, file, timeout, **options)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/cloudinary/uploader.py", line 487, in call_api
+    params = utils.sign_request(params, options)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/cloudinary/utils.py", line 620, in sign_request
+    raise ValueError("Must supply api_secret")
+ValueError: Must supply api_secret
+django.request WARNING 2024-05-29 22:33:03,480 log 14453 140237279114816 Not Found: /items/create/item_type/styles.css.map
+django.utils.autoreload INFO 2024-05-29 22:36:42,488 autoreload 14453 140237340617600 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:36:44,845 autoreload 14585 139915735862144 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:36:53,565 autoreload 14585 139915735862144 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:36:56,244 autoreload 14630 140694597598080 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-05-29 22:36:58,481 autoreload 14630 140694597598080 /workspaces/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:37:01,088 autoreload 14654 140672245001088 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-05-29 22:37:53,663 connectionpool 14654 140672183498304 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-05-29 22:37:53,723 connectionpool 14654 140672183498304 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 404 0
+django.request WARNING 2024-05-29 22:37:55,518 log 14654 140672183498304 Not Found: /items/create/item_type/styles.css.map
+urllib3.connectionpool DEBUG 2024-05-29 22:38:02,909 connectionpool 14654 140672183498304 Starting new HTTPS connection (1): api.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-05-29 22:38:03,797 connectionpool 14654 140672183498304 https://api.cloudinary.com:443 "POST /v1_1/dddubflsq/image/upload HTTP/1.1" 200 None
+django.request WARNING 2024-05-29 22:38:04,842 log 14654 140672183498304 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-05-29 22:38:13,578 log 14654 140672183498304 Not Found: /admin/styles.css.map
+django.utils.autoreload INFO 2024-05-29 22:38:40,800 autoreload 14654 140672245001088 /workspaces/django-renterprise/env.py changed, reloading.
+django.utils.autoreload INFO 2024-05-29 22:38:43,440 autoreload 14869 139641968941952 Watching for file changes with StatReloader

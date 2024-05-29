@@ -15,7 +15,7 @@
     <div class="content-holder">
         {{ item_type_categories }}
         <form id="itemTypeForm" method="post"
-            style="margin-top: 1.3em;">
+            style="margin-top: 1.3em;" enctype="multipart/form-data">
             {{ item_type_form | crispy }}
             {% csrf_token %}
             <button id="submitButton" type="submit"
