@@ -12,6 +12,7 @@
     {% include 'side-nav.html' %}
     {% if user.is_authenticated %}
     <div class="content-holder">
+        
         {% crispy order_form %}
         {% csrf_token %}
     </div>

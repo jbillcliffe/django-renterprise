@@ -3,7 +3,8 @@ from django.db import models
 from django.contrib.auth.models import User
 from datetime import datetime, date, time, timezone
 from django_summernote.fields import SummernoteTextField
-
+#from localflavor.gb.forms import GBCountySelect
+from localflavor.gb.gb_regions import GB_REGION_CHOICES
 # Create your models here.
 class Customer(models.Model):
 
@@ -31,7 +32,7 @@ class Customer(models.Model):
     address_line_two = models.CharField(max_length=200, blank=True, null=True)
     address_line_three = models.CharField(max_length=200, blank=True, null=True)
     address_line_town = models.CharField(max_length=200)
-    address_line_county = models.CharField(max_length=200)
+    address_line_county = models.CharField(choices=GB_REGION_CHOICES)
     # longest UK postcode would be 8 characters including a space
     postcode = models.CharField(max_length=8)
     created_on = models.DateTimeField(auto_now_add=True)

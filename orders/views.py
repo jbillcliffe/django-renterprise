@@ -5,6 +5,7 @@ from django.views.generic import ListView
 from django.views.generic.detail import SingleObjectMixin
 from django.http import HttpResponse, HttpResponseRedirect
 from customers.models import Customer
+from items.models import Item
 from .models import Order, OrderNote, Invoice
 from .forms import OrderForm
 from .urls import *
@@ -28,8 +29,10 @@ def order_create(request, customer_token):
             order = order_form.save(commit=False)
             order.customer = customer
             order.created_by = request.user
-
             order.save()
+            #item = request.POST.get('item', '')
+            #item.delivery_date = order.start_date
+            #item.collect_date = order.end_date
             messages.add_message(
                 request, messages.SUCCESS,
                 'Order has been saved'
