@@ -14,6 +14,8 @@ full_item_hidden.style.display = "none";
 const prices_div = document.getElementById("order-form-prices");
 const initial_cost_field = document.getElementById("id_cost_initial");
 const week_cost_field = document.getElementById("id_cost_week");
+//Available Items Area
+const available_items_div = document.getElementById("available-items");
 
 let end_date;
 let start_date
@@ -73,6 +75,23 @@ function removeOptions(selectElement) {
        selectElement.remove(i);
     }
 }
+
+/**
+ * 
+ * @param {string} stringToJson 
+ * @returns JSON.parse ready string
+ * 
+ * A function to run through several RegEx replace patterns. Removing and replacing bad JSON
+ * parse data. Requires a string that resembles a JSON object eg. { 'key1':'value1' }
+ */
+function removeBadJson(stringToJson) {
+    stringToJson = stringToJson.replace(/'/g, "\"");
+    stringToJson = stringToJson.replace(/Decimal/g,"");
+    stringToJson = stringToJson.replace(/datetime.date/g,"\"");
+    stringToJson = stringToJson.replace(/None/g,"\"None\"");
+    stringToJson = stringToJson.replace(/[()]/g, "");
+    return stringToJson;
+}
 /**
   * Function to determine the actions of the drop down menu where an item is chosen
   * after a change is detected in the item category drop down.
@@ -105,9 +124,7 @@ id_item_type_field.onchange = function() {
         //https://stackoverflow.com/questions/15585569/simple-regex-replace-brackets
         //https://stackoverflow.com/questions/36038454/parsing-string-as-json-with-single-quotes
         let jsonItem = itemTypeObject.options[i].value;
-        jsonItem = jsonItem.replace(/'/g, "\"");
-        jsonItem = jsonItem.replace(/Decimal/g,"");
-        jsonItem = jsonItem.replace(/[()]/g, "");
+        jsonItem = removeBadJson(jsonItem)
         jsonItem = JSON.parse(jsonItem);
 
         if (jsonItem.category == selectedCategory)
@@ -115,8 +132,8 @@ id_item_type_field.onchange = function() {
             var option = document.createElement("option");
             option.value = `{ "id": "${jsonItem.id}",
                               "name": "${jsonItem.name}",
-                              "cost_initial": "${jsonItem.cost_initial}",
-                              "cost_week": "${jsonItem.cost_week}"
+                              "cost_initial": "${jsonItem.cost_initial_str}",
+                              "cost_week": "${jsonItem.cost_week_str}"
                             }`;
             option.text = jsonItem.name;
             item_field.appendChild(option);
@@ -134,8 +151,11 @@ id_item_type_field.onchange = function() {
     }
 }
 
+/**
+ * Function to set the initial pricing and display the pricing div when
+ * an item has been chosen. It will then show the available items that can be chosen.
+ */
 function chosenItem() {
-
     if (item_field.value == "")
     {
         prices_div.style.display = "none";
@@ -148,4 +168,25 @@ function chosenItem() {
         week_cost_field.value = itemJson.cost_week;
     }
     
+    let getSelectedItemTypeData = JSON.parse(item_field.value);
+    let getSelectedItemId = getSelectedItemTypeData.id;
+    let itemListObject = full_item_hidden;
+    let validItems = [];
+    //go through each option in the hidden items. Turn it to JSON. Check for a value.
+    //starts at 1 as the first (0) is a blank value. It will then return these values to
+    //a new JSON Object Array.
+    for (var i=1; i<itemListObject.length; i++) {
+        let jsonItem = itemListObject.options[i].value;
+        console.log(jsonItem);
+        jsonItem = removeBadJson(jsonItem);
+        console.log(jsonItem);
+        jsonItem = JSON.parse(jsonItem);
+
+        if(jsonItem.item_type == parseInt(getSelectedItemId)) {
+            validItems.push(jsonItem);
+        }  
+    }
+
+    console.log(validItems);
+        
 }
