@@ -30,7 +30,7 @@
             <div class="col-4">{{ item.item_type_name }} {% if item.status_str != "Available" %}({{ item.status_str }}){% endif %}</div>
             <div class="col-4">{{ item.item_type_category }}</div>
             <div class="col-3">{{ item.item_serial }}</div>
-            <div class="col-1"><a class="button-table-view" href="{% url 'items:item_view' item.pk%}"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+            <div class="col-1"><a class="button-table view" href="{% url 'items:item_view' item.pk%}"><i class="fa-solid fa-magnifying-glass"></i></a></div>
         </div>
         {% endfor %}
         {% include 'paginate.html' %}

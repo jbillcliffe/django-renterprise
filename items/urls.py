@@ -17,4 +17,6 @@ urlpatterns = [
     path('create/', views.item_create, name='item_create'),
     path('create/item_type/', views.item_type_create, name='item_type_create'),
     path('<int:id>/', views.item_view, name='item_view'),
+    path('<int:id>/status_change/<int:status>',
+         views.item_status_change, name='item_status_change'),
 ]

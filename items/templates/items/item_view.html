@@ -1,9 +1,8 @@
 {% extends "base.html" %}
-{% load static %}
-
-{% load i18n %}
-{% block head_title %}{% trans "View Item Details" %}{% endblock %}
 {% block content %}
+{% load static %}
+{% load i18n %}
+
 
 <!-- the content to enter into the "main" class on the "base.html"-->
 <div class="container-fluid" style="height: 100%; width:100%;">
@@ -32,30 +31,55 @@
                 {% endif %}
             </div>
         </div>
-        <div class="row">
-            <p>Item Category : {{ item.item_type_category }}</p>
+        <hr class="renterprise">
+        <div class="item_details_container">
+            <div class="item_details_container_split">
+                <div class="row">
+                    <p>Item Category : {{ item.item_type_category }}</p>
+                </div>
+                <div class="row">
+                    <p>Item Serial : {{ item.item_serial }}</p>
+                </div>
+                <hr class="renterprise" style="width:50%">
+                <div class="row">
+                    <p>Upcoming Delivery Date : {{ item.delivery_date }}</p>
+                </div>
+                <div class="row">
+                    <p>Upcoming Collection Date : {{ item.collect_date }}</p>
+                </div>
+                <div class="row">
+                    <p>Repair Started Date : {{ item.repair_date }}</p>
+                </div>
+                <hr class="renterprise" style="width:50%">
+                <div class="row">
+                    <p>Item Income : £{{ item.income }}</p>
+                </div>
+            </div>
+            
+            <div class="item_details_container_split stack">
+                {% if perms.items %}
+                    <h2>Change Item Status</h2>
+                    <!--available-->
+                    {% if item.status != 0 %}
+                    <a class="status_button available" status_value="0" item_id="{{ item.id }}" modal_inner_text="Available">Available</a>
+                    {% endif %}
+                    {% if item.status != 3 %}
+                    <!--sold-->
+                    <a class="status_button sold" status_value="3" item_id="{{ item.id }}" modal_inner_text="Sold">Sold</a>
+                    {% endif %}
+                    {% if item.status != 1 %}
+                    <!--scrap-->
+                    <a class="status_button scrapped" status_value="1" item_id="{{ item.id }}" modal_inner_text="Scrapped">Scrap</a>
+                    {% endif %}
+                    {% if item.status != 2 %}
+                    <!--lost/stolen-->
+                    <a class="status_button lost_stolen" status_value="2" item_id="{{ item.id }}" modal_inner_text="Lost/Stolen">Lost/Stolen</a>
+                    {% endif %}
+                {% else %}
+                {% endif %}
+            </div>
+            
         </div>
-        <div class="row">
-            <p>Item Serial : {{ item.item_serial }}</p>
-        </div>
-        <div class="row">
-            <hr class="renterprise">
-        </div>
-        <div class="row">
-            <p>Upcoming Delivery Date : {{ item.delivery_date }}</p>
-        </div>
-        <div class="row">
-            <p>Upcoming Collection Date : {{ item.collect_date }}</p>
-        </div>
-        <div class="row">
-            <p>Repair Started Date : {{ item.repair_date }}</p>
-        </div>
-        <div class="row">
-            <hr class="renterprise">
-        </div>
-        <div class="row">
-            <p>Item Income : £{{ item.income }}</p>
-        </div> 
         <div class="row">
             <div class="col-4"></div>
             <div class="col-4">
@@ -75,8 +99,33 @@
         </div>
     {% endif %}
     </div>
-	
 </div>
 
+<!-- Status change modal -->
+<div class="modal fade" id="statusModal" tabindex="-1" z-index="25"
+  aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"
+          id="modalLabel">Status Change</h5>
+        <button type="button" class="btn-close"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div id="modalBody" class="modal-body">
+        Are you sure that you wish to change the status to ?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary"
+          data-bs-dismiss="modal">Close</button>
+        <a id="statusConfirm" href="#" class="btn
+          btn-success">Change</a>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- index.html content ends here -->
+{% endblock content %}
+{% block extras %}
+<script src="{% static 'js/items.js' %}"></script>
 {% endblock %}
