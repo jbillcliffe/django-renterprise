@@ -71,3 +71,6 @@ class Item(models.Model):
     def item_css_status(self):
         self = str(self.STATUS[self.status][1]).replace('/','_').lower()
         return self
+
+    def __str__(self):
+        return self.item_type.name

@@ -55,6 +55,12 @@ class Customer(models.Model):
         self = str(self.STATUS[self.status][1]).lower()
         return self
 
+    def __str__(self):
+        if self.first_name in self.null_values:
+            return f"{self.last_name}"
+        else:
+            return f"{self.first_name} {self.last_name}"
+
 class CustomerNote(models.Model):
 
     null_values = [None, 'None', 'none', 'null', 'Null']

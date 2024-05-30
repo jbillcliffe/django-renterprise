@@ -57,6 +57,8 @@ def item_create(request):
                 request, messages.SUCCESS,
                 'New item has been added'
             )
+            return redirect('items:item_view', id=item.pk)
+
     item_form = ItemForm()
     return render(
         request,
@@ -82,6 +84,7 @@ def item_type_create(request):
                 request, messages.SUCCESS,
                 'New item type has been added'
             )
+            return redirect('items:item_list')
     item_type_form = ItemTypeForm()
     return render(
         request,

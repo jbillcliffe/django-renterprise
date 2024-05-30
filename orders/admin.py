@@ -9,7 +9,7 @@ from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(Order)
 class OrderAdmin(SummernoteModelAdmin):
-    list_display = ('id', 'order_customer_name', 'order_item_name', 'start_date', 'end_date')
+    list_display = ('id', 'order_item_name', 'start_date', 'end_date')
 
 @admin.register(OrderNote)
 class OrderNoteAdmin(SummernoteModelAdmin):

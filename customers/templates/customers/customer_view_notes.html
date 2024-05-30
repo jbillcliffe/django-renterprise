@@ -16,16 +16,24 @@
             <h2>View/Edit a customer note :</h2>
             <hr class="renterprise">
             <form id="updateNoteForm" method="post"
-                style="margin-top: 1.3em;">
+                style="margin-top: 1.3em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;">
                 {{ customer_note_form | crispy }}
                 {% csrf_token %}
-                <button id="submitButton" type="submit"
-                    class="button centre-align">Update</button>
+                <div class="row" 
+                style="flex-wrap: nowrap;
+                justify-content: center;">
+                    <a class="button centre-align" href="{{request.META.HTTP_REFERER|escape}}">Return To Notes</a>
+                    <button id="submitButton" type="submit"
+                        class="button centre-align">Update</button>
+                </div>
             </form>
         </div>
         {% else %}
             <p> Please log in as a user with change permissions.</p>
-            <a class="button small centre-align" href="{{ customer_view }}">Return to customer</a>
+            <a class="button small centre-align" href="{{request.META.HTTP_REFERER|escape}}">Return</a>
         {% endif %}
     {% else %}
         <div class="row">

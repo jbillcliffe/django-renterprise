@@ -1,0 +1,32 @@
+{% extends "base.html" %} 
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% block head_title %}{% trans "Create New Order" %}{% endblock %}
+
+{% block content %}
+
+<!-- the content to enter into the "main" class on the "base.html"-->
+<div class="container-fluid" style="height: 100%; ">
+    {% include 'side-nav.html' %}
+    {% if user.is_authenticated %}
+    <div class="content-holder">
+        {% crispy order_form %}
+        {% csrf_token %}
+    </div>
+    {% else %}
+    <div class="row">
+        <div class="col-12">
+            {% blocktrans %}
+            <p>You need to be logged in to access the program.</p>
+            <p>Log in to continue using this application.</p>
+            {% endblocktrans %}
+            <a class="button small" href="{{ login_url }}">{% trans "Log In" %}</a>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+<!-- index.html content ends here -->
+{% endblock %}

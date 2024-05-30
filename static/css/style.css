@@ -602,18 +602,28 @@ form>div {
     padding-left: 0;
 }
 
-.customer_details_container, .item_details_container {
+.customer_details_container  {
     width:100%;
     display:flex;
-}
-
-.customer_details_container_split, .item_details_container_split {
-    width:50%;
-}
-
-.item_details_container_split.stack {
-    display: flex;
     flex-direction: column;
+}
+
+.item_details_container  {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+}
+
+
+.customer_details_container.split, .item_details_container.split {
+    width:50%;
+    display:flex;
+    flex-direction: column;
+}
+
+.item_details_container.split.stack {
     justify-content: center;
     align-items: center;
+    display:flex;
+    flex-direction: column;
 }

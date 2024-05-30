@@ -26,6 +26,12 @@
 			<i class="fa-solid fa-user-plus" style="padding: 0.5rem;"></i> New Customer
 		</a>
 	</li>
+	{% elif class_var == "Orders" %}
+	<li class="nav-item">
+		<a id="order_list" href="#" class="side-bar nav-link">
+			<i class="fa-solid fa-table-list" style="padding: 0.5rem;"></i> Order List
+		</a>
+	</li> 
 	{% else %}
 	<li></li>
 	{% endif %}

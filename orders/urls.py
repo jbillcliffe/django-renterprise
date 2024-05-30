@@ -12,5 +12,5 @@ data removed.
 app_name = "orders"
 
 urlpatterns = [
-    path('', views.view_orders, name='view_orders'),
+    path('<uuid:customer_token>/order_create', views.order_create, name='order_create'),
 ]
