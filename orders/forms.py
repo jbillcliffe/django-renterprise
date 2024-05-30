@@ -10,13 +10,6 @@ from items.models import Item, ItemType
 
 # https://stackoverflow.com/questions/73789407/django-summernote-clean-got-an-unexpected-keyword-argument-styles-in-djangof
 class OrderForm(forms.ModelForm):
-    #item_type_query = ItemType.objects.values_list("category", flat=True).order_by("category").distinct("category")
-    #item_type_field = forms.ModelChoiceField(item_type_query)
-    #items_query = Item.objects.values("id", "item_type", "item_type", "delivery_date", "collect_date")
-    #item_field = forms.ModelChoiceField(items_query)
-    #item = forms.ModelChoiceField(queryset=Item.objects.all())
-
-    #item_type_query = ItemType.objects.all()
     item_type_categories = ItemType.objects.values_list("category", flat=True).order_by("category").distinct("category")
     item_type_field = forms.ModelChoiceField(item_type_categories, label="Item Category")
 
