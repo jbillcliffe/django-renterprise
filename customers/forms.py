@@ -20,6 +20,16 @@ class CustomerForm(forms.ModelForm):
         fields = ['first_name','last_name','address_line_one',
                 'address_line_two','address_line_three',
                 'address_line_town', 'address_line_county','postcode']
+        labels = {
+            "first_name": "First Name",
+            "last_name": "Last Name",
+            "address_line_one": "First Line of Address",
+            "address_line_two": "Second Line of Address",
+            "address_line_three": "Third Line of Address",
+            "address_line_town": "Town",
+            "address_line_county": "County",
+            "postcode": "Postcode"
+        }
 
     #address_line_county = forms.ChoiceField(choices = GBCountySelect(),  widget=forms.TextInput(attrs={'class': "form-control"})))
     def __init__(self, *args, **kwargs):
@@ -54,3 +64,6 @@ class CustomerNoteForm(forms.ModelForm):
     class Meta:
         model = CustomerNote
         fields = ('note',)
+        labels = {
+            "note": "Note"
+        }

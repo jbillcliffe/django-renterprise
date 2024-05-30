@@ -12,8 +12,30 @@
     {% include 'side-nav.html' %}
     {% if user.is_authenticated %}
     <div class="content-holder">
-        
-        {% crispy order_form %}
+        <h2>Create New Order :</h2>
+        <hr class="renterprise">
+        <div id="order-form-dates" style="width: 10%;">
+            <!--id="id_start_date"-->
+            {{ order_form.start_date|as_crispy_field }}
+            <!--id="id_end_date"-->
+            {{ order_form.end_date|as_crispy_field }}
+        </div>
+        <div id="order-form-item" style="width: 20%; display:none;">
+            <!--id="id_item_type_field"-->
+            {{ order_form.item_type_field|as_crispy_field }}
+            <!--id="id_item"-->
+            {{ order_form.item_field|as_crispy_field }}
+            {{ order_form.item_field_hidden }}
+
+            {{ order_form.full_item_hidden }}
+            
+        </div>
+        <div id="order-form-prices" style="width: 10%; display:none;">
+            <!--id="id_cost_initial"-->
+            {{ order_form.cost_initial|as_crispy_field }}
+            <!--id="id_cost_week"-->
+            {{ order_form.cost_week|as_crispy_field }}
+        </div>
         {% csrf_token %}
     </div>
     {% else %}
@@ -30,4 +52,7 @@
 </div>
 
 <!-- index.html content ends here -->
+{% endblock content %}
+{% block extras %}
+<script src="{% static 'js/orders.js' %}"></script>
 {% endblock %}
