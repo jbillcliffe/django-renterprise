@@ -85,7 +85,7 @@ ul {
 }
 
 /*Need to have black text in the tables otherwise it is illegible*/
-#customer-note-row>p {
+#customer-note-row>p, #order_ {
     color: #000000;
     text-shadow: none;
 }
@@ -398,11 +398,6 @@ of the theme.*/
    padding: 3rem;
    background: dimgray;
 }
-
-/* centre align rows 
-.row { 
-    justify-content: center !important;
-}*/
 
 .table-row {
     display:flex;

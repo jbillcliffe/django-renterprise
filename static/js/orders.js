@@ -5,17 +5,21 @@ const end_date_field = document.getElementById("id_end_date");
 const item_div = document.getElementById("order-form-item");
 const item_type_field = document.getElementById("id_item_type_field");
 const item_field = document.getElementById("id_item_field");
-const item_field_hidden = document.getElementById("id_item_field_hidden");
-const full_item_hidden = document.getElementById("id_full_item_hidden");
 item_field.disabled = true;
-item_field_hidden.style.display = "none";
-full_item_hidden.style.display = "none";
 //Prices/PriceDiv
 const prices_div = document.getElementById("order-form-prices");
 const initial_cost_field = document.getElementById("id_cost_initial");
 const week_cost_field = document.getElementById("id_cost_week");
 //Available Items Area
 const available_items_div = document.getElementById("available-items");
+//Hidden Fields
+const item_field_hidden = document.getElementById("id_item_field_hidden");
+const full_item_hidden = document.getElementById("id_full_item_hidden");
+const orders_hidden = document.getElementById("id_orders_hidden");
+
+item_field_hidden.style.display = "none";
+full_item_hidden.style.display = "none";
+orders_hidden.style.display = "none";
 
 let end_date;
 let start_date
@@ -70,7 +74,7 @@ function validateDates() {
  * https://stackoverflow.com/questions/3364493/how-do-i-clear-all-options-in-a-dropdown-box
  */
 function removeOptions(selectElement) {
-    var i, L = selectElement.options.length - 1;
+    let i, L = selectElement.options.length - 1;
     for(i = L; i >= 0; i--) {
        selectElement.remove(i);
     }
@@ -86,8 +90,6 @@ function removeOptions(selectElement) {
  */
 function removeBadJson(stringToJson) {
     stringToJson = stringToJson.replace(/'/g, "\"");
-    stringToJson = stringToJson.replace(/Decimal/g,"");
-    stringToJson = stringToJson.replace(/datetime.date/g,"\"");
     stringToJson = stringToJson.replace(/None/g,"\"None\"");
     stringToJson = stringToJson.replace(/[()]/g, "");
     return stringToJson;
@@ -116,7 +118,7 @@ id_item_type_field.onchange = function() {
         defaultOption.selected = true;
         item_field.appendChild(defaultOption);
 
-    for (var i=1; i<itemTypeObject.length; i++) {
+    for (let i = 1; i < itemTypeObject.length; i++) {
         //BUGFIX - Turns out single quoutes (') causes an error.
         //so the above process replaces them with double quotes (")
         //Then removes the Decimal text and brackets ( and ).
@@ -129,7 +131,7 @@ id_item_type_field.onchange = function() {
 
         if (jsonItem.category == selectedCategory)
         {
-            var option = document.createElement("option");
+            let option = document.createElement("option");
             option.value = `{ "id": "${jsonItem.id}",
                               "name": "${jsonItem.name}",
                               "cost_initial": "${jsonItem.cost_initial_str}",
@@ -175,18 +177,42 @@ function chosenItem() {
     //go through each option in the hidden items. Turn it to JSON. Check for a value.
     //starts at 1 as the first (0) is a blank value. It will then return these values to
     //a new JSON Object Array.
-    for (var i=1; i<itemListObject.length; i++) {
+    for (let i = 1; i < itemListObject.length; i++) {
         let jsonItem = itemListObject.options[i].value;
-        console.log(jsonItem);
         jsonItem = removeBadJson(jsonItem);
-        console.log(jsonItem);
         jsonItem = JSON.parse(jsonItem);
 
         if(jsonItem.item_type == parseInt(getSelectedItemId)) {
             validItems.push(jsonItem);
         }  
     }
-
     console.log(validItems);
-        
+    for (let i = 0; i < validItems.length; i++) {
+        /*
+        id:57,
+        item_serial:"CHEESE-SERIAL",
+        item_type:25,
+        status:0*/
+        const tableRow = document.createElement("div");
+        tableRow.classList.add("table-row");
+        const serialDiv = document.createElement("div");
+        serialDiv.classList.add("col-8");
+        const serialP = document.createElement("p");
+        serialP.innerHTML = validItems[i].item_serial;
+        const radioDiv = document.createElement("div");
+        radioDiv.classList.add("col-4");
+        const radioElement = document.createElement("input");
+        radioElement.setAttribute("type", "radio");
+        radioElement.setAttribute("id", validItems[i].id);
+        radioElement.setAttribute("name", "order_item_radio");
+
+        serialDiv.appendChild(serialP);
+        radioDiv.appendChild(radioElement);
+        tableRow.appendChild(serialDiv);
+        tableRow.appendChild(radioDiv);
+
+        available_items_div.appendChild(tableRow);
+
+    }
+    //available_items_div.appendChild("{% include 'paginate.html' %}");
 }

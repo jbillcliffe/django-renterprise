@@ -16,6 +16,7 @@ class Order(models.Model):
     )
     cost_initial = models.DecimalField(max_digits=6, decimal_places=2)
     cost_week = models.DecimalField(max_digits=6, decimal_places=2)
+    
     start_date = models.DateField()
     end_date = models.DateField()
     created_on = models.DateTimeField(auto_now_add=True)
