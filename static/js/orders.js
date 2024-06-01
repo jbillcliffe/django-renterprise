@@ -22,6 +22,10 @@ const orders_hidden = document.getElementById("id_orders_hidden");
 const table_paginator = document.getElementById("table-paginator");
 const validationArray = ['']
 
+//Submit Button
+const submitButton = document.getElementById("submitButton");
+submitButton.style.display = "none";
+
 selected_item_hidden.disabled = true;
 available_items_div.style.display = "none";
 selected_item_hidden.style.display = "none";
@@ -269,7 +273,7 @@ function chosenItem() {
             //make is straight forward for form submission.
             radioElement.onclick = function() {
                 selected_item_hidden.value = validOrderableItems[i].id;
-                console.log(selected_item_hidden.value);
+                submitButton.style.display = 'block';
             }
             //add elements to divs
             serialDiv.appendChild(serialP);
@@ -283,6 +287,15 @@ function chosenItem() {
     }
     available_items_div.style.display = "block";
 }
+/*
+function testFormSubmit() {
+
+    console.log(document.getElementById("id_item").value);
+    console.log(document.getElementById("id_cost_initial").value);
+    console.log(document.getElementById("id_cost_week").value);
+    console.log(document.getElementById("id_start_date").value);
+    console.log(document.getElementById("id_end_date").value);
+}*/
 
 /**
  * Function to empty the items available to order so the table doesnt fill up with duplicates
@@ -293,6 +306,7 @@ function chosenItem() {
  */
 function clearAvailableItems() {
     selected_item_hidden.value = "";
+    submitButton.style.display = 'none';
     rowList = document.getElementsByClassName("order-table-row");
     while (rowList.length > 0)
     {
@@ -306,6 +320,7 @@ function clearAvailableAndPriceDiv() {
     week_cost_field.value = "";
     available_items_div.style.display = "none";
     selected_item_hidden.value = "";
+    submitButton.style.display = 'none';
 }
 
 /**

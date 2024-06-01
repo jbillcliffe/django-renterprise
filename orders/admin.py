@@ -15,3 +15,8 @@ class OrderAdmin(SummernoteModelAdmin):
 class OrderNoteAdmin(SummernoteModelAdmin):
     list_display = ('order_note_full_name', 'created_on', 'created_by')
     summernote_fields = ('note',)
+
+@admin.register(Invoice)
+class InvoiceAdmin(SummernoteModelAdmin):
+    list_display = ('order', 'created_on', 'amount_paid', 'status')
+    summernote_fields = ('note',)

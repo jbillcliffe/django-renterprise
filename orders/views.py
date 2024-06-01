@@ -26,6 +26,13 @@ def order_create(request, customer_token):
             order.customer = customer
             order.created_by = request.user
             order.save()
+
+            invoice = model.Invoice
+            invoice.order = order
+            invoice.amount_paid = order.cost_initial
+            invoice.note = "Initial hire cost"
+            invoice.status = False
+            invoice.save()
             #item = request.POST.get('item', '')
             #item.delivery_date = order.start_date
             #item.collect_date = order.end_date
