@@ -85,13 +85,15 @@ ul {
 }
 
 /*Need to have black text in the tables otherwise it is illegible*/
-#customer-note-row>p, #order_ {
+.note-row>p {
     color: #000000;
     text-shadow: none;
 }
 /*Then to give the height to stop misplaced notes*/
-#customer-note-row {
+.note-row {
     height:-webkit-fill-available;
+    color: #000000;
+    text-shadow: none;
 }
 
 
@@ -428,8 +430,10 @@ of the theme.*/
     background-color : #000000;
     color:#FFFFFF;
     text-shadow: 0px 1px 5px #FFFFFF;
+}
 
-
+.table-row.order-table-row {
+    align-items: baseline;
 }
 
 .table-head {
@@ -621,4 +625,9 @@ form>div {
     align-items: center;
     display:flex;
     flex-direction: column;
+}
+
+#available-items {
+    width: 20%;
+    margin: 5rem 0 0 2vw;
 }

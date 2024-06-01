@@ -25,8 +25,7 @@ class OrderForm(forms.ModelForm):
     #https://stackoverflow.com/questions/17085898/conversion-of-datetime-field-to-string-in-django-queryset-values-list
     #Casting the datetime.date fields to strings so they can be parsed into JSON
     full_item_list = Item.objects.values("id", "item_type", "item_serial", "status")
-
-    item_type_field = forms.ModelChoiceField(item_type_categories, label="Item Category")
+    item_type_field = forms.ModelChoiceField(item_type_categories, label="Category")
     item_field = forms.ModelChoiceField(item_type_names, label="Item")
     item_field_hidden = forms.ModelChoiceField(item_type_names_hidden)
     full_item_hidden = forms.ModelChoiceField(full_item_list)
@@ -34,20 +33,20 @@ class OrderForm(forms.ModelForm):
 
     class Meta:
         model = Order
-        fields = ['item_type_field', 'item_field',
+        fields = ['item_type_field', 'item_field', 
                 'item_field_hidden', 'full_item_hidden', 'orders_hidden',
-                'cost_initial', 'cost_week', 'start_date', 'end_date']
+                'item', 'cost_initial', 'cost_week', 'start_date', 'end_date']
         widgets = {     
             'start_date': forms.TextInput(attrs={'type': 'date'}),
             'end_date': forms.TextInput(attrs={'type': 'date'}),
         }
         labels = {
-            "start_date": "Order Start Date",
-            "end_date": "Order End Date",
+            "start_date": "Start Date",
+            "end_date": "End Date",
             "item_type_field": "Item Type",
             "item_field": "Item",
-            "cost_initial": "Initial Cost",
-            "cost_week": "Cost Per Week"
+            "cost_initial": "Initial (£)",
+            "cost_week": "Weekly (£)"
         }
 
     def __init__(self, *args, **kwargs):

@@ -7,8 +7,8 @@ class ItemForm(forms.ModelForm):
         model = Item
         fields = ['item_type', 'item_serial']
         labels = {
-            "item_type": "Item Type",
-            "item_serial": "Item Serial"
+            "item_type": "Type",
+            "item_serial": "Serial No."
         }
 
 class ItemTypeForm(forms.ModelForm):
@@ -17,10 +17,10 @@ class ItemTypeForm(forms.ModelForm):
         fields = ['name', 'category',
             'cost_initial', 'cost_week', 'image']
         labels = {
-            "name": "Item Type",
-            "category": "Item Category",
-            "cost_initial": "Initial Cost",
-            "cost_week": "Cost Per Week",
-            "image": "Item Image"
+            "name": "Type",
+            "category": "Category",
+            "cost_initial": "Initial (£)",
+            "cost_week": "Weekly (£)",
+            "image": "Image"
         }
 

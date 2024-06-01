@@ -22,9 +22,9 @@
                 </div>
             </div>
             {% endif %}
-        <div class="table-row">
+        <div class="table-row ">
             <div class="col-3">{{ note.created_on_by }}</div>
-            <div id="customer-note-row" class="col-8">{{ note.note | safe }}</div>
+            <div class="col-8 note-row" >{{ note.note | safe }}</div>
             {% if perms.customer.customer_note %}
                 <div class="col-1"><a class="button-table view" href="{% url 'customers:customer_view_notes' customer_token=note.customer.customer_token id=note.id %}"><i class="fa-solid fa-magnifying-glass"></i></a></div>
             {% else %}
