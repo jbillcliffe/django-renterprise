@@ -1,0 +1,56 @@
+{% extends "base.html" %} 
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+{% load i18n %}
+{% block head_title %}{% trans "Order List" %}{% endblock %}
+
+{% block content %}
+<!-- the content to enter into the "main" class on the "base.html"-->
+<div class="container-fluid" style="height: 100%; ">
+    {% include 'side-nav.html' %}
+    {% if user.is_authenticated %}
+    <div class="table-holder">
+        <div class="table-row table-head">
+            <div class="col-3">
+                Customer
+            </div>
+            <div class="col-4">
+                Item
+            </div>
+            <div class="col-2">
+                Delivery Date
+            </div>
+            <div class="col-2">
+                Collection Date
+            </div>
+            <div class="col-1">
+            </div>
+        </div>
+        {% for order in order_list %}
+        <div class="table-row">
+            <div class="col-3">{{ customer.full_name }}</div>
+            <div class="col-4">{{ item.item_type_name }}</div>
+            <div class="col-2">{{ start_date }}</div>
+            <div class="col-2">{{ end_date }}</div>
+            <div class="col-1"><a class="button-table view" href="{% url 'orders:order_view' order.pk%}"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+        </div>
+        {% endfor %}
+        {% include 'paginate.html' %}
+    </div>
+    {% else %}
+    <div class="row">
+        <div class="col-12">
+            {% blocktrans %}
+            <p>You need to be logged in to access the program.</p>
+            <p>Log in to continue using this application.</p>
+            {% endblocktrans %}
+            <a class="button small" href="{{ login_url }}">{% trans "Log In" %}</a>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+<!-- index.html content ends here -->
+{% endblock %}

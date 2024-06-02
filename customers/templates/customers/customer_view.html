@@ -64,7 +64,7 @@
                 <a class="button centre-align" href="{% url 'customers:customer_list' %}">Return To List</a>
             </div>
             <div class="col-4">
-                <a class="button centre-align" href="{% url 'orders:order_create' customer.customer_token%}">New Order</a>
+                <a class="button centre-align" href="{% url 'orders:order_create' customer.customer_token %}">New Order</a>
             </div>
         </div>
     {% else %}

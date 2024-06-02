@@ -26,6 +26,11 @@
 			<i class="fa-solid fa-user-plus" style="padding: 0.5rem;"></i> New Customer
 		</a>
 	</li>
+	<li class="nav-item">
+		<a id="customer_orders" href="{% url 'orders:order_customer_list' customer.customer_token %}" class="side-bar nav-link">
+			<i class="fa-solid fa-clipboard-list" style="padding: 0.5rem;"></i> Customer Orders
+		</a>
+	</li>
 	{% elif class_var == "Orders" %}
 	<li class="nav-item">
 		<a id="order_list" href="#" class="side-bar nav-link">

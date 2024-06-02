@@ -26,10 +26,12 @@ class OrderForm(forms.ModelForm):
     #Casting the datetime.date fields to strings so they can be parsed into JSON
     full_item_list = Item.objects.values("id", "item_type", "item_serial", "status")
     item_type_field = forms.ModelChoiceField(item_type_categories, label="Category")
-    item_field = forms.ModelChoiceField(item_type_names, label="Item")
-    item_field_hidden = forms.ModelChoiceField(item_type_names_hidden)
-    full_item_hidden = forms.ModelChoiceField(full_item_list)
-    orders_hidden = forms.ModelChoiceField(orders_history)
+    # Set required to False on these fields. As display:none causes error
+    # Validation occurs in JS.
+    item_field = forms.ModelChoiceField(item_type_names, label="Item", required = False)
+    item_field_hidden = forms.ModelChoiceField(item_type_names_hidden, required = False)
+    full_item_hidden = forms.ModelChoiceField(full_item_list, required = False)
+    orders_hidden = forms.ModelChoiceField(orders_history, required = False)
 
     class Meta:
         model = Order
@@ -53,6 +55,7 @@ class OrderForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper(self)
         self.helper.label_class = 'form-float-label'
+        self.helper.attrs['autocomplete'] = 'off'
         self.helper.layout = Layout(
             Fieldset(
                 "Add a new order :",
