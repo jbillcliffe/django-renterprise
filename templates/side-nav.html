@@ -1,45 +1,71 @@
 <ul class="nav flex-column">
-	{% if class_var == "Items" %}
+	{% with request.resolver_match.url_name as url_name %}
+	{% if '/items' in request.path %}
 	<li class="nav-item">
-		<a id="item_list" href="{% url 'items:item_list' %}" class="side-bar nav-link">
-			<i class="fa-solid fa-table-list" style="padding: 0.5rem;"></i> Item List
+		<a id="item_list" href="{% url 'items:item_list' %}" 
+		class="side-bar nav-link {% if url_name == 'item_list' %}active{% endif %}">
+		<i class="fa-solid fa-table-list" style="padding: 0.5rem;"></i> Item List
 		</a>
 	</li> 
 	<li class="nav-item">
-		<a id="item_create" href="{% url 'items:item_create' %}" class="side-bar nav-link">
-			<i class="fa-regular fa-square-plus" style="padding: 0.5rem;"></i> New Item
+		<a id="item_create" href="{% url 'items:item_create' %}" 
+		class="side-bar nav-link {% if url_name == 'item_create' %}active{% endif %}">
+		<i class="fa-regular fa-square-plus" style="padding: 0.5rem;"></i> New Item
 		</a>
 	</li>
 	<li class="nav-item">
-		<a id="item_type_create" href="{% url 'items:item_type_create' %}" class="side-bar nav-link"> 
-			<i class="fa-regular fa-square-plus" style="padding: 0.5rem;"></i> New Item Type
+		<a id="item_type_create" href="{% url 'items:item_type_create' %}" 
+		class="side-bar nav-link {% if url_name == 'item_type_create' %}active{% endif %}">
+		<i class="fa-regular fa-square-plus" style="padding: 0.5rem;"></i> New Item Type
 		</a>
 	</li>
-	{% elif class_var == "Customers" %}
+	{% elif '/customers' in request.path %}
     <li class="nav-item">
-		<a id="customer_list" href="{% url 'customers:customer_list' %}" class="side-bar nav-link">
-			<i class="fa-solid fa-table-list" style="padding: 0.5rem;"></i> Customer List
+		<a id="customer_list" href="{% url 'customers:customer_list' %}" 
+		class="side-bar nav-link {% if url_name == 'customer_list' %}active{% endif %}">
+		<i class="fa-solid fa-table-list" style="padding: 0.5rem;"></i> Customer List
 		</a>
 	</li> 
 	<li class="nav-item">
-		<a id="customer_create" href="{% url 'customers:customer_create' %}" class="side-bar nav-link">
+		<a id="customer_create" href="{% url 'customers:customer_create' %}" 
+		class="side-bar nav-link {% if url_name == 'customer_create' %}active{% endif %}">
 			<i class="fa-solid fa-user-plus" style="padding: 0.5rem;"></i> New Customer
 		</a>
 	</li>
+		{% if url_name == 'customer_order_list' %}
+		<li class="nav-item">
+			<a id="customer_order_list" href="#" 
+			class="side-bar nav-link {% if url_name == 'customer_order_list' %}active{% endif %}">
+				<i class="fa-solid fa-clipboard-list" style="padding: 0.5rem;"></i> Customer Orders
+			</a>
+		</li>
+		{% elif url_name == 'customer_view' %}
+		<li class="nav-item">
+			<a id="customer_order_list" href="{% url 'customers:customer_order_list' customer.customer_token %}" 
+			class="side-bar nav-link {% if url_name == 'customer_order_list' %}active{% endif %}">
+				<i class="fa-solid fa-clipboard-list" style="padding: 0.5rem;"></i> Customer Orders
+			</a>
+		</li>
+		{% elif url_name == 'customer_order_view' %}
+		<li class="nav-item">
+			<a id="customer_order_list" href="{% url 'customers:customer_order_list' order.customer.customer_token %}" 
+			class="side-bar nav-link {% if url_name == 'customer_order_list' %}active{% endif %}">
+				<i class="fa-solid fa-clipboard-list" style="padding: 0.5rem;"></i> Customer Orders
+			</a>
+		</li>
+		{% else %}
+		{% endif %}
+	{% elif '/orders' and not '/customers' in request.path %}
 	<li class="nav-item">
-		<a id="customer_orders" href="{% url 'orders:order_customer_list' customer.customer_token %}" class="side-bar nav-link">
-			<i class="fa-solid fa-clipboard-list" style="padding: 0.5rem;"></i> Customer Orders
-		</a>
-	</li>
-	{% elif class_var == "Orders" %}
-	<li class="nav-item">
-		<a id="order_list" href="#" class="side-bar nav-link">
+		<a id="order_list" href="#" 
+		class="side-bar nav-link {% if url_name == 'order_list' %}active{% endif %}">
 			<i class="fa-solid fa-table-list" style="padding: 0.5rem;"></i> Order List
 		</a>
 	</li> 
 	{% else %}
 	<li></li>
 	{% endif %}
+	{% endwith %}
 </ul>
 
 

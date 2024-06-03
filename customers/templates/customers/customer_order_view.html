@@ -9,9 +9,10 @@
     {% if user.is_authenticated %}
     <div class="content-holder">
         <div class="row">
-            <div class="col-4">
-                <h2>{{ item.item_type_name }}</h2>
-                <h2>{{ customer.full_name }}</h2>
+            <div class="col-4" style="flex-direction: column;">
+                <h2>{{ order.item.item_type_name }}</h2>
+                <hr class="renterprise" style="width:50%">
+                <h2>{{ order.customer.full_name }}</h2>
             </div>
             <div class="col-4 item-image-holder">
                 {% if "placeholder" in item.item_type.image.url %}
@@ -19,8 +20,8 @@
                     alt="placeholder image">
                 {% else %}
                 <img class="item-image" 
-                src="{{ item.item_type.image.url }}"
-                alt="{{ item.item_type_name }}">
+                src="{{ order.item.item_type.image.url }}"
+                alt="{{ order.item.item_type_name }}">
                 {% endif %}
             </div>
             <div class="col-4">
@@ -28,45 +29,45 @@
         </div>
         <hr class="renterprise">
         <div class="order_details_container">
-            <div class="item_details_container split">
-                <div class="row">
-                    <p>Item Category : {{ item.item_type_category }}</p>
-                </div>
-                <div class="row">
-                    <p>Item Serial : {{ item.item_serial }}</p>
-                </div>
-                <hr class="renterprise" style="width:50%">
-                <div class="row">
-                    <p>Delivery Date : {{ start_date }}</p>
-                </div>
-                <div class="row">
-                    <p>Collection Date : {{ end_date }}</p>
-                </div>
-            </div>
-            <!-- Order: cost_initial, cost_week,
-                 start_date,end_date,created_on -->
             <div class="order_details_container split">
                 <div class="row">
-                    <p>Created On : {{ created_on }}</p>
+                    <p>Created On : {{ order.created_on }}</p>
                 </div>
                 <div class="row">
-                    <p>Created By : {{ created_by }}</p>
+                    <p>Created By : {{ order.created_by }}</p>
+                </div>
+            </div>
+            <div class="order_details_container split">
+                <div class="row">
+                    <p>Item Category : {{ order.item.item_type_category }}</p>
+                </div>
+                <div class="row">
+                    <p>Item Serial : {{ order.item.item_serial }}</p>
+                </div>
+            </div>
+            <div class="order_details_container split">
+                <div class="row">
+                    <p>Delivery Date : {{ order.start_date }}</p>
+                </div>
+                <div class="row">
+                    <p>Collection Date : {{ order.end_date }}</p>
                 </div>
                 <hr class="renterprise" style="width:50%">
                 <div class="row">
-                    <p>Initial Cost : £{{ cost_initial }}</p>
+                    <p>Initial Cost : £{{ order.cost_initial }}</p>
                 </div>
                 <div class="row">
-                    <p>Weekly Cost : {{ cost_week }}</p>
+                    <p>Weekly Cost : £{{ order.cost_week }}</p>
                 </div>
             </div>
+            
         </div>
         <div class="row">
             <div class="col-4">
-                <a class="button centre-align" href="{% url 'customers:customer_view' customer.customer_token %}">Return To Customer</a>
+                <a class="button centre-align wide" href="{% url 'customers:customer_view' order.customer.customer_token %}">Return To Customer</a>
             </div>
             <div class="col-4">
-                <a class="button centre-align" href="{% url 'orders:order_list_customer' customer.customer_token %}">Return To List</a>
+                <a class="button centre-align wide" href="{% url 'customers:customer_order_list' order.customer.customer_token %}">Return To List</a>
             </div>
             <div class="col-4"></div>
         </div>
