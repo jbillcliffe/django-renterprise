@@ -1,5 +1,4 @@
 function setActiveSideNav(id) {
-    console.log(id);
     let sideBarButtons = document.getElementsByClassName('side-bar nav-link');
 
     for (let i = 0; i < sideBarButtons.length; i++) {

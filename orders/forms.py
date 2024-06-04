@@ -25,7 +25,7 @@ class OrderForm(forms.ModelForm):
     #https://stackoverflow.com/questions/17085898/conversion-of-datetime-field-to-string-in-django-queryset-values-list
     #Casting the datetime.date fields to strings so they can be parsed into JSON
     full_item_list = Item.objects.values("id", "item_type", "item_serial", "status")
-    item_type_field = forms.ModelChoiceField(item_type_categories, label="Category")
+    item_type_field = forms.ModelChoiceField(item_type_categories, label="Category", required = False)
     # Set required to False on these fields. As display:none causes error
     # Validation occurs in JS.
     item_field = forms.ModelChoiceField(item_type_names, label="Item", required = False)
@@ -35,10 +35,10 @@ class OrderForm(forms.ModelForm):
 
     class Meta:
         model = Order
-        fields = ['item_type_field', 'item_field', 
+        fields = ['item_type_field', 'item_field',
                 'item_field_hidden', 'full_item_hidden', 'orders_hidden',
                 'item', 'cost_initial', 'cost_week', 'start_date', 'end_date']
-        widgets = {     
+        widgets = {
             'start_date': forms.TextInput(attrs={'type': 'date'}),
             'end_date': forms.TextInput(attrs={'type': 'date'}),
         }

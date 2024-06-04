@@ -24,9 +24,9 @@ const validationArray = ['']
 
 //Submit Button
 const submitButton = document.getElementById("submitButton");
+const testSubmitButton  = document.getElementById("formSubmitButton");
 submitButton.style.display = "none";
 
-selected_item_hidden.disabled = true;
 available_items_div.style.display = "none";
 selected_item_hidden.style.display = "none";
 item_field_hidden.style.display = "none";
@@ -274,6 +274,7 @@ function chosenItem() {
             radioElement.onclick = function() {
                 selected_item_hidden.value = validOrderableItems[i].id;
                 submitButton.style.display = 'block';
+                testSubmitButton.style.display = 'block';
             }
             //add elements to divs
             serialDiv.appendChild(serialP);
@@ -287,14 +288,33 @@ function chosenItem() {
     }
     available_items_div.style.display = "block";
 }
-/*
-function testFormSubmit() {
 
+/*function testFormSubmit() {
+customer, item, cost_initial
+    customer = models.ForeignKey(
+        Customer, on_delete=models.CASCADE, related_name="order_customer"
+    )
+    item = models.ForeignKey(
+        Item, on_delete=models.PROTECT, related_name="order_item"
+    )
+    cost_initial = models.DecimalField(max_digits=6, decimal_places=2)
+    cost_week = models.DecimalField(max_digits=6, decimal_places=2)
+    
+    start_date = models.DateField()
+    end_date = models.DateField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    created_by = models.ForeignKey(
+        User, on_delete=models.PROTECT, related_name="order_created_by"
     console.log(document.getElementById("id_item").value);
     console.log(document.getElementById("id_cost_initial").value);
     console.log(document.getElementById("id_cost_week").value);
     console.log(document.getElementById("id_start_date").value);
     console.log(document.getElementById("id_end_date").value);
+    let item = document.getElementById("id_item");
+    let cost_initial = document.getElementById("id_cost_initial").value;
+    let cost_week = document.getElementById("id_cost_week").value
+    let start_date = document.getElementById("id_start_date").value
+    let end_date = 
 }*/
 
 /**
@@ -313,6 +333,8 @@ function clearAvailableItems() {
         rowList[0].remove();
     }
 }
+
+
 
 function clearAvailableAndPriceDiv() {
     prices_div.style.display = "none";

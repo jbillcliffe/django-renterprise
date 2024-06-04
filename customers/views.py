@@ -171,7 +171,8 @@ class CustomerOrderList(ListView):
     # https://stackoverflow.com/questions/37370534/django-listview-where-can-i-declare-variables-that-i-want-to-have-on-template
     # Override original get_context_data to allow sending of the application area.
     # This will allow DRY manipulation of the side-bar.html (class_var)
-
+    #
+    # get_context_data now used for different features. Location is assigned differently.
     template_name = "customers/customer_order_list.html"
 
     def get_queryset(self):
