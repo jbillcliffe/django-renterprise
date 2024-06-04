@@ -193,6 +193,12 @@ USE_I18N = True
 
 USE_TZ = True
 
+SUMMERNOTE_CONFIG = {
+    'summernote': {
+        # Change editor size
+        'height': '260px',
+    },
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
