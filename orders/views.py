@@ -31,10 +31,10 @@ def order_create(request, customer_token):
             order.save()
             # Invoice: order, created_on, amount_paid,
             # note, status
-            invoice = model.Invoice
+            invoice = Invoice
             invoice.order = order
             invoice.amount_paid = order.cost_initial
-            invoice.note = "Initial hire cost"
+            invoice.note = "Initial hire payment."
             invoice.status = False
             invoice.save()
 
@@ -43,7 +43,7 @@ def order_create(request, customer_token):
                 'Order has been saved'
             )
 
-            #return redirect('orders:order_view', customer_token=customer_token, id=order.id)
+            return redirect('orders:order_view', customer_token=customer.customer_token, id=order.id)
 
     order_form = OrderForm()
 
