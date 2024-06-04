@@ -60,7 +60,7 @@ def customer_create(request):
                 request, messages.SUCCESS,
                 'Customer has been saved'
             )
-            return redirect('customers:customer_view', customer_token=customer_token)
+            return redirect('customers:customer_view', customer_token=customer.customer_token)
 
     customer_form = CustomerForm()
     return render(
