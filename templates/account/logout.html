@@ -7,23 +7,15 @@
 {% block content %}
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-8">
-            <h2 class="centre-heading">{% trans "Log Out" %}</h2>
-            <hr class="renterprise">
-            <p>{% trans 'Are you sure you want to log out?' %}</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-8">
-            <form method="post" action="{% url 'account_logout' %}">
-                {% csrf_token %}
-                {% if redirect_field_value %}
-                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-                {% endif %}
-                <button class="button small centre-align" type="submit">{% trans 'Log Out' %}</button>
-            </form>
-        </div>
-    </div>
+    <h2 class="centre-heading">{% trans "Log Out" %}</h2>
+    <hr class="renterprise">
+    <p>{% trans 'Are you sure you want to log out?' %}</p>
+    <form method="post" action="{% url 'account_logout' %}">
+        {% csrf_token %}
+        {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
+        <button class="button small centre-align" type="submit">{% trans 'Log Out' %}</button>
+    </form>
 </div>
 {% endblock %}

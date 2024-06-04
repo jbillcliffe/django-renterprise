@@ -1,5 +1,11 @@
 <ul class="nav flex-column">
 	{% with request.resolver_match.url_name as url_name %}
+	<li class="nav-item">
+		<a href="{% url 'menu:menu' %}" target="_self"
+		class="side-bar nav-link">
+		<i class="fa-solid fa-house" style="padding: 0.5rem;"></i> Home
+		</a>
+	</li>
 	{% if '/items' in request.path %}
 	<li class="nav-item">
 		<a id="item_list" href="{% url 'items:item_list' %}" 

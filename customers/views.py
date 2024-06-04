@@ -72,7 +72,7 @@ def customer_create(request):
         },
     )
     
-
+"fix/customer create redirect to customer"
 class CustomerNotesList(ListView):
     paginate_by = 9
     model = CustomerNote

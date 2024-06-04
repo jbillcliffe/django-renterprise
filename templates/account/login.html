@@ -8,28 +8,20 @@
 {% block content %}
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-8">
-            <h2 class="centre-heading">{% trans "Log In" %}</h2>
-            <hr class="renterprise">
-            <h3>{% trans "Welcome to Renterprise" %}</h3>
-            <p>{% blocktrans %}To use this application you will be
-              required to log in. If you have no account then
-              <a class="link" href="{{ signup_url }}"> create an account </a>first.
-              {% endblocktrans %}</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-8">
-            <form class="login account-form" method="POST" action="{% url 'account_login' %}">
-                {% csrf_token %}
-                {{ form.as_p }}
-                {% if redirect_field_value %}
-                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-                {% endif %}
-                <button class="button small" type="submit">{% trans "Log In" %}</button>
-            </form>
-        </div>
-    </div>
+    <h2 class="centre-heading">{% trans "Log In" %}</h2>
+    <hr class="renterprise">
+    <h3>{% trans "Welcome to Renterprise" %}</h3>
+    <p>{% blocktrans %}To use this application you will be
+        required to log in. If you have no account then
+        <a class="link" href="{{ signup_url }}"> create an account </a>first.
+        {% endblocktrans %}</p>
+    <form class="login account-form" method="POST" action="{% url 'account_login' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
+        <button class="button small" type="submit">{% trans "Log In" %}</button>
+    </form>
 </div>
 {% endblock %}
