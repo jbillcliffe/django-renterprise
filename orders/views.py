@@ -51,21 +51,24 @@ def order_create(request, customer_token):
             amount_paid = order_form['cost_initial'].value(),
             note = "First rental payment",
             status = False)
+        
+        update_item = Item.objects.get(pk=item.id)
+        update_item.income += order.cost_initial
+        update_item.save()
+
 
         logger.warning("18")
         logger.warning(order_form.is_valid())
 
-        #if order_form.is_valid():
-        #    order.save()
-        #    invoice.save()
-           
-        messages.add_message(
+        # Validation occurs in JS, so at this point check if the invoice and order have
+        # been created and display success message.
+        if invoice.clean() and order.clean():
+            messages.add_message(
             request, messages.SUCCESS,
             'Order has been saved'
-        )
-            
-        return redirect('customers:customer_order_view', customer_token=order.customer.customer_token, id=order.id)
-
+            )#
+            return redirect('customers:customer_order_view', customer_token=order.customer.customer_token, id=order.id)
+       
     order_form = OrderForm()
 
     return render(
