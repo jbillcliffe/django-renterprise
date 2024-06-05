@@ -29,6 +29,7 @@ class Order(models.Model):
 
     def order_item_name(self):
         return f"{self.item.item_type.name}"
+        
 
 class OrderNote(models.Model):
     order = models.ForeignKey(

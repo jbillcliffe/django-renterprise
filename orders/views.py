@@ -24,62 +24,73 @@ def order_create(request, customer_token):
     """
     order_form = OrderForm(request.POST)
     customer = get_object_or_404(Customer, customer_token=customer_token)
-    item = get_object_or_404(Item, id=order_form.cleaned_data['item'].value())
-    logger.warning("0")
-    logger.warning(request.POST)
     logger.warning("1")
-    # logger.warning(order_form)
     logger.warning(customer)
+    
     if request.method == "POST":
-        #order = order_form.save(commit=False)
-        #invoice = Invoice
         # Order: customer, item , cost_initial, cost_week,
-        # start_date,end_date,created_on
-        start_date_date = datetime.strptime(order_form.cleaned_data['start_date'].value(), '%Y-%m-%d')
-        end_date_date = datetime.strptime(order_form.cleaned_data['end_date'].value(), '%Y-%m-%d')
-        logger.warning("1.5")
-        order = Order()
-        order.item = item
-        cost_initial = order_form.cleaned_data['cost_initial'].value()
-        cost_week = order_form.cleaned_data['cost_week'].value()
-        start_date = start_date_date,
-        end_date = end_date_date,
-        created_by = request.user,
-        logger.warning(order)
-        """
-        logger.warning(Order(customer = customer,
-                    item = item,
-                    cost_initial = order_form['cost_initial'].value(),
-                    cost_week = order_form['cost_week'].value(),
-                    start_date = start_date_date,
-                    end_date = end_date_date,
-                    created_by = request.user,
-                    created_on = datetime.now))
-        order = Order(customer = customer,
-                    item = item,
-                    cost_initial = order_form['cost_initial'].value(),
-                    cost_week = order_form['cost_week'].value(),
-                    start_date = start_date_date,
-                    end_date = end_date_date,
-                    created_by = request.user,
-                    created_on = datetime.now)
-        """
+        # start_date,end_date,created_on,created_by
+        item = get_object_or_404(Item, id=order_form['item'].value())
         logger.warning("2")
-        logger.warning(order)
-        logger.warning(request)
+        logger.warning(item)
         logger.warning("3")
-        #
-        invoice = Invoice(order = order,
-                            amount_paid = order_form['cost_initial'].value(),
-                            note = "First Rental Payment",
-                            status = False)
+        start_date_date = datetime.strptime(order_form['start_date'].value(), '%Y-%m-%d')
+        end_date_date = datetime.strptime(order_form['end_date'].value(), '%Y-%m-%d')
         logger.warning("4")
+        logger.warning(start_date_date)
+        logger.warning(end_date_date)
+
+        order = Order.objects.create(
+            customer = customer,
+            item = item,
+            cost_initial = order_form['cost_initial'].value(),
+            cost_week = order_form['cost_week'].value(),
+            start_date = start_date_date,
+            end_date = end_date_date,
+            created_by = request.user,
+            created_on = datetime.now)
+
+
+        logger.warning("5")
+        logger.warning(item)
+        logger.warning("6")
+        logger.warning(order.cost_initial)
+        logger.warning(order_form['cost_initial'].value())
+        logger.warning("7")
+        logger.warning(order.cost_week)
+        logger.warning(order_form['cost_week'].value())
+        logger.warning("8")
+        logger.warning(order.start_date)
+        logger.warning(start_date_date)
+        logger.warning("9")
+        logger.warning(order.end_date)
+        logger.warning(end_date_date)
+        logger.warning("10")
+        logger.warning(order.created_by)
+        logger.warning(request.user)
+        logger.warning("11")
+        logger.warning(order)
+        logger.warning("12")
+        logger.warning(request)
+        invoice = Invoice()
+        invoice.amount_paid = order_form['cost_initial'].value()
+        invoice.note = "First Rental Payment"
+        invoice.status = False
+
+        logger.warning("13")
         logger.warning(invoice)
+        logger.warning("14")
+        logger.warning(invoice.amount_paid)
+        logger.warning(order_form['cost_initial'].value())
+        logger.warning("15")
+        logger.warning(invoice.note)
+        logger.warning("16")
+        logger.warning(invoice.status)
+
+        logger.warning("17")
+        logger.warning(order_form.is_valid())
 
         if order_form.is_valid():
-            logger.warning("5")
-            #logger.warning(invoice)
-            #logger.warning(order)
             order.save()
             invoice.save()
             

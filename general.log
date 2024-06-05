@@ -1,382 +1,158 @@
-django.request WARNING 2024-06-04 12:25:26,752 log 2012 140188445464128 Not Found: /favicon.ico
-orders.views WARNING 2024-06-04 12:26:00,926 views 2012 140188445464128 1
-orders.views WARNING 2024-06-04 12:26:00,927 views 2012 140188445464128 First Customer
-orders.views WARNING 2024-06-04 12:26:01,144 views 2012 140188445464128 2
-orders.views WARNING 2024-06-04 12:26:01,145 views 2012 140188445464128 Order object (None)
-orders.views WARNING 2024-06-04 12:26:01,146 views 2012 140188445464128 <WSGIRequest: POST '/orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/'>
-orders.views WARNING 2024-06-04 12:26:01,146 views 2012 140188445464128 3
-orders.views WARNING 2024-06-04 12:26:01,147 views 2012 140188445464128 4
-orders.views WARNING 2024-06-04 12:26:01,148 views 2012 140188445464128 Invoice object (None)
-django.request WARNING 2024-06-04 12:26:09,478 log 2012 140188445464128 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-django.utils.autoreload INFO 2024-06-04 12:27:08,575 autoreload 2012 140188517194624 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:27:10,651 autoreload 2197 139875597101952 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:27:12,775 autoreload 2197 139875597101952 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:27:14,457 autoreload 2221 140603287804800 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:27:21,049 autoreload 2221 140603287804800 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:27:22,569 autoreload 2266 140602484812672 Watching for file changes with StatReloader
-orders.views WARNING 2024-06-04 12:27:28,146 views 2266 140602423309888 0
-orders.views WARNING 2024-06-04 12:27:28,147 views 2266 140602423309888 <WSGIRequest: POST '/orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/'>
-orders.views WARNING 2024-06-04 12:27:28,148 views 2266 140602423309888 1
-orders.views WARNING 2024-06-04 12:27:28,148 views 2266 140602423309888 First Customer
-orders.views WARNING 2024-06-04 12:27:28,389 views 2266 140602423309888 2
-orders.views WARNING 2024-06-04 12:27:28,390 views 2266 140602423309888 Order object (None)
-orders.views WARNING 2024-06-04 12:27:28,391 views 2266 140602423309888 <WSGIRequest: POST '/orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/'>
-orders.views WARNING 2024-06-04 12:27:28,391 views 2266 140602423309888 3
-orders.views WARNING 2024-06-04 12:27:28,392 views 2266 140602423309888 4
-orders.views WARNING 2024-06-04 12:27:28,393 views 2266 140602423309888 Invoice object (None)
-urllib3.connectionpool DEBUG 2024-06-04 12:27:28,741 connectionpool 2266 140602423309888 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-04 12:27:28,794 connectionpool 2266 140602423309888 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
-django.request WARNING 2024-06-04 12:27:37,224 log 2266 140602423309888 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-orders.views WARNING 2024-06-04 12:27:47,337 views 2266 140602423309888 0
-orders.views WARNING 2024-06-04 12:27:47,337 views 2266 140602423309888 <WSGIRequest: POST '/orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/'>
-orders.views WARNING 2024-06-04 12:27:47,338 views 2266 140602423309888 1
-orders.views WARNING 2024-06-04 12:27:47,338 views 2266 140602423309888 First Customer
-orders.views WARNING 2024-06-04 12:27:47,559 views 2266 140602423309888 2
-orders.views WARNING 2024-06-04 12:27:47,560 views 2266 140602423309888 Order object (None)
-orders.views WARNING 2024-06-04 12:27:47,560 views 2266 140602423309888 <WSGIRequest: POST '/orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/'>
-orders.views WARNING 2024-06-04 12:27:47,561 views 2266 140602423309888 3
-orders.views WARNING 2024-06-04 12:27:47,562 views 2266 140602423309888 4
-orders.views WARNING 2024-06-04 12:27:47,562 views 2266 140602423309888 Invoice object (None)
-django.request WARNING 2024-06-04 12:27:55,993 log 2266 140602423309888 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-django.utils.autoreload INFO 2024-06-04 12:28:20,842 autoreload 2266 140602484812672 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:28:22,533 autoreload 2395 140295216843648 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:28:24,546 autoreload 2395 140295216843648 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:28:26,270 autoreload 2419 140304114555776 Watching for file changes with StatReloader
-orders.views WARNING 2024-06-04 12:28:34,081 views 2419 140304053052992 0
-orders.views WARNING 2024-06-04 12:28:34,090 views 2419 140304053052992 <QueryDict: {'start_date': ['2024-06-05'], 'end_date': ['2024-06-16'], 'item_type_field': ['Test Category'], 'item_field': ['{ "id": "26",\r\n                              "name": "Test Type",\r\n                              "cost_initial": "35.00",\r\n                              "cost_week": "20.00"\r\n                            }'], 'cost_initial': ['35.00'], 'cost_week': ['20.00'], 'item': ['59'], 'item_field_hidden': [''], 'full_item_hidden': [''], 'orders_hidden': [''], 'csrfmiddlewaretoken': ['YExbuLFnNQW4ZhNYlsbQVObqpUCzAug65ufFkSxNt3NAL7DFxaFUr0NOVPtDoRdJ']}>
-orders.views WARNING 2024-06-04 12:28:34,090 views 2419 140304053052992 1
-orders.views WARNING 2024-06-04 12:28:34,091 views 2419 140304053052992 First Customer
-orders.views WARNING 2024-06-04 12:28:34,377 views 2419 140304053052992 2
-orders.views WARNING 2024-06-04 12:28:34,378 views 2419 140304053052992 Order object (None)
-orders.views WARNING 2024-06-04 12:28:34,378 views 2419 140304053052992 <WSGIRequest: POST '/orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/'>
-orders.views WARNING 2024-06-04 12:28:34,379 views 2419 140304053052992 3
-orders.views WARNING 2024-06-04 12:28:34,379 views 2419 140304053052992 4
-orders.views WARNING 2024-06-04 12:28:34,380 views 2419 140304053052992 Invoice object (None)
-urllib3.connectionpool DEBUG 2024-06-04 12:28:34,705 connectionpool 2419 140304053052992 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-04 12:28:34,735 connectionpool 2419 140304053052992 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
-django.request WARNING 2024-06-04 12:28:43,258 log 2419 140304042825280 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-orders.views WARNING 2024-06-04 12:28:52,847 views 2419 140304042825280 0
-orders.views WARNING 2024-06-04 12:28:52,848 views 2419 140304042825280 <QueryDict: {'start_date': ['2024-06-05'], 'end_date': ['2024-06-29'], 'item_type_field': ['Test Category'], 'item_field': ['{ "id": "26",\r\n                              "name": "Test Type",\r\n                              "cost_initial": "35.00",\r\n                              "cost_week": "20.00"\r\n                            }'], 'cost_initial': ['35.00'], 'cost_week': ['20.00'], 'item': ['59'], 'item_field_hidden': [''], 'full_item_hidden': [''], 'orders_hidden': [''], 'csrfmiddlewaretoken': ['0vgA84A65HR51RPka8G2hsi1xj1ngdqg7lY4YbswLUIBNHF1mQa6NEUp3eSr4AnT']}>
-orders.views WARNING 2024-06-04 12:28:52,848 views 2419 140304042825280 1
-orders.views WARNING 2024-06-04 12:28:52,849 views 2419 140304042825280 First Customer
-orders.views WARNING 2024-06-04 12:28:53,065 views 2419 140304042825280 2
-orders.views WARNING 2024-06-04 12:28:53,065 views 2419 140304042825280 Order object (None)
-orders.views WARNING 2024-06-04 12:28:53,065 views 2419 140304042825280 <WSGIRequest: POST '/orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/'>
-orders.views WARNING 2024-06-04 12:28:53,065 views 2419 140304042825280 3
-orders.views WARNING 2024-06-04 12:28:53,066 views 2419 140304042825280 4
-orders.views WARNING 2024-06-04 12:28:53,066 views 2419 140304042825280 Invoice object (None)
-django.request WARNING 2024-06-04 12:29:01,412 log 2419 140304042825280 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-django.utils.autoreload INFO 2024-06-04 12:30:40,097 autoreload 2419 140304114555776 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:30:42,043 autoreload 2551 140478675803008 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:30:46,148 autoreload 2551 140478675803008 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:30:47,991 autoreload 2586 140364410407808 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:30:51,105 autoreload 2586 140364410407808 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:30:53,057 autoreload 2609 140716372732800 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:30:57,980 autoreload 2609 140716372732800 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:30:59,688 autoreload 2642 139945834744704 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:31:01,598 autoreload 2642 139945834744704 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:31:03,448 autoreload 2656 139969951775616 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:31:05,591 autoreload 2656 139969951775616 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:31:07,482 autoreload 2668 140016877423488 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:31:32,488 autoreload 2668 140016877423488 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:31:34,288 autoreload 2713 139746671860608 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:31:38,578 autoreload 2713 139746671860608 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:31:40,489 autoreload 2748 140247038327680 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:31:43,619 autoreload 2748 140247038327680 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:31:45,484 autoreload 2771 140284284902272 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:31:49,717 autoreload 2771 140284284902272 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:31:51,384 autoreload 2804 140476538538880 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:31:58,804 autoreload 2804 140476538538880 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:32:00,678 autoreload 2839 140039833467776 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:32:10,573 autoreload 2839 140039833467776 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:32:12,673 autoreload 2872 140228846713728 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:32:14,586 autoreload 2872 140228846713728 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:32:16,460 autoreload 2896 139933044808576 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:32:19,460 autoreload 2896 139933044808576 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:32:21,056 autoreload 2920 140084863073152 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:32:23,651 autoreload 2920 140084863073152 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:32:25,373 autoreload 2944 140416108301184 Watching for file changes with StatReloader
-orders.views WARNING 2024-06-04 12:32:54,680 views 2944 140416046798400 0
-orders.views WARNING 2024-06-04 12:32:54,681 views 2944 140416046798400 <QueryDict: {'start_date': ['2024-06-06'], 'end_date': ['2024-06-21'], 'item_type_field': ['Test Category'], 'item_field': ['{ "id": "26",\r\n                              "name": "Test Type",\r\n                              "cost_initial": "35.00",\r\n                              "cost_week": "20.00"\r\n                            }'], 'cost_initial': ['35.00'], 'cost_week': ['20.00'], 'item': ['59'], 'item_field_hidden': [''], 'full_item_hidden': [''], 'orders_hidden': [''], 'csrfmiddlewaretoken': ['VBqhlqQugn6YfFtpR0AgQ1CoIryGtmCh2r8LbxIUWAXu1vj63I4kmdeMempKhJzU']}>
-orders.views WARNING 2024-06-04 12:32:54,682 views 2944 140416046798400 1
-orders.views WARNING 2024-06-04 12:32:54,682 views 2944 140416046798400 First Customer
-orders.views WARNING 2024-06-04 12:32:54,688 views 2944 140416046798400 1.5
-orders.views WARNING 2024-06-04 12:32:54,688 views 2944 140416046798400 2024-06-06 00:00:00
-orders.views WARNING 2024-06-04 12:32:54,689 views 2944 140416046798400 2024-06-21 00:00:00
-orders.views WARNING 2024-06-04 12:32:54,690 views 2944 140416046798400 35.00
-django.request ERROR 2024-06-04 12:32:55,190 log 2944 140416046798400 Internal Server Error: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/
+
+orders.views WARNING 2024-06-04 23:04:45,833 views 1543 140534971041344 1
+orders.views WARNING 2024-06-04 23:04:45,834 views 1543 140534971041344 First Customer
+urllib3.connectionpool DEBUG 2024-06-04 23:04:45,883 connectionpool 1543 140534971041344 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-04 23:04:45,938 connectionpool 1543 140534971041344 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+orders.views WARNING 2024-06-04 23:05:42,460 views 1543 140534971041344 1
+orders.views WARNING 2024-06-04 23:05:42,462 views 1543 140534971041344 First Customer
+orders.views WARNING 2024-06-04 23:05:42,572 views 1543 140534971041344 2
+orders.views WARNING 2024-06-04 23:05:42,572 views 1543 140534971041344 Test Type
+orders.views WARNING 2024-06-04 23:05:42,681 views 1543 140534971041344 3
+orders.views WARNING 2024-06-04 23:05:42,685 views 1543 140534971041344 4
+orders.views WARNING 2024-06-04 23:05:42,685 views 1543 140534971041344 2024-06-06 00:00:00
+orders.views WARNING 2024-06-04 23:05:42,685 views 1543 140534971041344 2024-07-07 00:00:00
+orders.views WARNING 2024-06-04 23:05:42,914 views 1543 140534971041344 5
+orders.views WARNING 2024-06-04 23:05:42,914 views 1543 140534971041344 Test Type
+orders.views WARNING 2024-06-04 23:05:42,915 views 1543 140534971041344 6
+orders.views WARNING 2024-06-04 23:05:42,915 views 1543 140534971041344 35.00
+orders.views WARNING 2024-06-04 23:05:42,915 views 1543 140534971041344 35.00
+orders.views WARNING 2024-06-04 23:05:42,915 views 1543 140534971041344 7
+orders.views WARNING 2024-06-04 23:05:42,915 views 1543 140534971041344 20.00
+orders.views WARNING 2024-06-04 23:05:42,916 views 1543 140534971041344 20.00
+orders.views WARNING 2024-06-04 23:05:42,916 views 1543 140534971041344 8
+orders.views WARNING 2024-06-04 23:05:42,916 views 1543 140534971041344 2024-06-06 00:00:00
+orders.views WARNING 2024-06-04 23:05:42,916 views 1543 140534971041344 2024-06-06 00:00:00
+orders.views WARNING 2024-06-04 23:05:42,916 views 1543 140534971041344 9
+orders.views WARNING 2024-06-04 23:05:42,917 views 1543 140534971041344 2024-07-07 00:00:00
+orders.views WARNING 2024-06-04 23:05:42,917 views 1543 140534971041344 2024-07-07 00:00:00
+orders.views WARNING 2024-06-04 23:05:42,917 views 1543 140534971041344 10
+orders.views WARNING 2024-06-04 23:05:42,917 views 1543 140534971041344 jamesb
+orders.views WARNING 2024-06-04 23:05:42,917 views 1543 140534971041344 jamesb
+orders.views WARNING 2024-06-04 23:05:42,918 views 1543 140534971041344 11
+orders.views WARNING 2024-06-04 23:05:42,918 views 1543 140534971041344 Order object (None)
+orders.views WARNING 2024-06-04 23:05:42,918 views 1543 140534971041344 12
+orders.views WARNING 2024-06-04 23:05:42,918 views 1543 140534971041344 <WSGIRequest: POST '/orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/'>
+orders.views WARNING 2024-06-04 23:05:42,919 views 1543 140534971041344 13
+orders.views WARNING 2024-06-04 23:05:42,919 views 1543 140534971041344 Invoice object (None)
+orders.views WARNING 2024-06-04 23:05:42,919 views 1543 140534971041344 14
+orders.views WARNING 2024-06-04 23:05:42,919 views 1543 140534971041344 35.00
+orders.views WARNING 2024-06-04 23:05:42,919 views 1543 140534971041344 35.00
+orders.views WARNING 2024-06-04 23:05:42,919 views 1543 140534971041344 15
+orders.views WARNING 2024-06-04 23:05:42,920 views 1543 140534971041344 First Rental Payment
+orders.views WARNING 2024-06-04 23:05:42,920 views 1543 140534971041344 16
+orders.views WARNING 2024-06-04 23:05:42,920 views 1543 140534971041344 False
+orders.views WARNING 2024-06-04 23:05:42,920 views 1543 140534971041344 17
+orders.views WARNING 2024-06-04 23:05:43,143 views 1543 140534971041344 False
+django.utils.autoreload INFO 2024-06-05 00:02:54,381 autoreload 1543 140535032019840 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:02:56,598 autoreload 1803 140167216720768 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:02:58,831 autoreload 1803 140167216720768 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:03:00,711 autoreload 1827 140113489054592 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:03:06,422 autoreload 1827 140113489054592 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:03:08,193 autoreload 1872 139730571225984 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:03:10,211 autoreload 1872 139730571225984 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:03:12,505 autoreload 1883 139882049919872 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:04:22,167 autoreload 1883 139882049919872 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:04:24,340 autoreload 1951 140462463392640 Watching for file changes with StatReloader
+orders.views WARNING 2024-06-05 00:04:46,711 views 1951 140462401889856 1
+orders.views WARNING 2024-06-05 00:04:46,712 views 1951 140462401889856 First Customer
+orders.views WARNING 2024-06-05 00:04:46,826 views 1951 140462401889856 2
+orders.views WARNING 2024-06-05 00:04:46,827 views 1951 140462401889856 Test Type
+orders.views WARNING 2024-06-05 00:04:46,939 views 1951 140462401889856 3
+orders.views WARNING 2024-06-05 00:04:46,942 views 1951 140462401889856 4
+orders.views WARNING 2024-06-05 00:04:46,943 views 1951 140462401889856 2024-06-06 00:00:00
+orders.views WARNING 2024-06-05 00:04:46,943 views 1951 140462401889856 2024-07-07 00:00:00
+django.request ERROR 2024-06-05 00:04:47,248 log 1951 140462401889856 Internal Server Error: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/
 Traceback (most recent call last):
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/orders/views.py", line 43, in order_create
-    logger.warning(cost_initial)
-NameError: name 'cost_initial' is not defined
-django.request WARNING 2024-06-04 12:32:55,863 log 2944 140415969785408 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-django.request WARNING 2024-06-04 12:32:55,866 log 2944 140416046798400 Not Found: /favicon.ico
-django.utils.autoreload INFO 2024-06-04 12:34:22,139 autoreload 2944 140416108301184 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:34:24,058 autoreload 3037 139690697202560 Watching for file changes with StatReloader
-orders.views WARNING 2024-06-04 12:34:27,189 views 3037 139690635961920 0
-orders.views WARNING 2024-06-04 12:34:27,190 views 3037 139690635961920 <QueryDict: {'start_date': ['2024-06-06'], 'end_date': ['2024-06-21'], 'item_type_field': ['Test Category'], 'item_field': ['{ "id": "26",\r\n                              "name": "Test Type",\r\n                              "cost_initial": "35.00",\r\n                              "cost_week": "20.00"\r\n                            }'], 'cost_initial': ['35.00'], 'cost_week': ['20.00'], 'item': ['59'], 'item_field_hidden': [''], 'full_item_hidden': [''], 'orders_hidden': [''], 'csrfmiddlewaretoken': ['VBqhlqQugn6YfFtpR0AgQ1CoIryGtmCh2r8LbxIUWAXu1vj63I4kmdeMempKhJzU']}>
-orders.views WARNING 2024-06-04 12:34:27,190 views 3037 139690635961920 1
-orders.views WARNING 2024-06-04 12:34:27,191 views 3037 139690635961920 First Customer
-orders.views WARNING 2024-06-04 12:34:27,195 views 3037 139690635961920 1.5
-orders.views WARNING 2024-06-04 12:34:27,195 views 3037 139690635961920 2024-06-06 00:00:00
-orders.views WARNING 2024-06-04 12:34:27,196 views 3037 139690635961920 2024-06-21 00:00:00
-orders.views WARNING 2024-06-04 12:34:27,196 views 3037 139690635961920 35.00
-django.request ERROR 2024-06-04 12:34:27,656 log 3037 139690635961920 Internal Server Error: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/
-Traceback (most recent call last):
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/orders/views.py", line 43, in order_create
-    logger.warning(request.cost_initial)
-AttributeError: 'WSGIRequest' object has no attribute 'cost_initial'
-django.request WARNING 2024-06-04 12:34:28,363 log 3037 139690635961920 Not Found: /favicon.ico
-django.request WARNING 2024-06-04 12:34:28,367 log 3037 139690625996352 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-django.utils.autoreload INFO 2024-06-04 12:35:23,279 autoreload 3037 139690697202560 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:35:25,073 autoreload 3111 139881523211136 Watching for file changes with StatReloader
-orders.views WARNING 2024-06-04 12:35:31,434 views 3111 139881461708352 0
-orders.views WARNING 2024-06-04 12:35:31,434 views 3111 139881461708352 <QueryDict: {'start_date': ['2024-06-06'], 'end_date': ['2024-06-21'], 'item_type_field': ['Test Category'], 'item_field': ['{ "id": "26",\r\n "name": "Test Type",\r\n"cost_initial": "35.00",\r\n"cost_week": "20.00"\r\n }'], 'cost_initial': ['35.00'], 'cost_week': ['20.00'], 'item': ['59'], 'item_field_hidden': [''], 'full_item_hidden': [''], 'orders_hidden': [''], 'csrfmiddlewaretoken': ['VBqhlqQugn6YfFtpR0AgQ1CoIryGtmCh2r8LbxIUWAXu1vj63I4kmdeMempKhJzU']}>
-orders.views WARNING 2024-06-04 12:35:31,434 views 3111 139881461708352 1
-orders.views WARNING 2024-06-04 12:35:31,435 views 3111 139881461708352 First Customer
-orders.views WARNING 2024-06-04 12:35:31,437 views 3111 139881461708352 1.5
-orders.views WARNING 2024-06-04 12:35:31,438 views 3111 139881461708352 2024-06-06 00:00:00
-orders.views WARNING 2024-06-04 12:35:31,438 views 3111 139881461708352 2024-06-21 00:00:00
-orders.views WARNING 2024-06-04 12:35:31,438 views 3111 139881461708352 35.00
-django.request ERROR 2024-06-04 12:35:31,845 log 3111 139881461708352 Internal Server Error: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/
-Traceback (most recent call last):
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/orders/views.py", line 43, in order_create
-    logger.warning(request.POST.cost_initial)
-AttributeError: 'QueryDict' object has no attribute 'cost_initial'
-django.request WARNING 2024-06-04 12:35:32,595 log 3111 139881380574784 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-django.request WARNING 2024-06-04 12:35:32,599 log 3111 139881461708352 Not Found: /favicon.ico
-django.utils.autoreload INFO 2024-06-04 12:37:50,979 autoreload 3111 139881523211136 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:37:53,055 autoreload 3214 140508892175232 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:39:01,781 autoreload 3214 140508892175232 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:39:03,488 autoreload 3259 140542014040960 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:41:04,676 autoreload 3259 140542014040960 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:41:06,562 autoreload 3304 139681518283648 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:41:14,154 autoreload 3304 139681518283648 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:41:15,981 autoreload 3349 140029259758464 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:41:22,510 autoreload 3349 140029259758464 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:41:24,244 autoreload 3394 140240631671680 Watching for file changes with StatReloader
-orders.views WARNING 2024-06-04 12:41:30,453 views 3394 140240570168896 0
-orders.views WARNING 2024-06-04 12:41:30,454 views 3394 140240570168896 <QueryDict: {'start_date': ['2024-06-06'], 'end_date': ['2024-06-21'], 'item_type_field': ['Test Category'], 'item_field': ['{ "id": "26",\r\n                              "name": "Test Type",\r\n                              "cost_initial": "35.00",\r\n                              "cost_week": "20.00"\r\n                            }'], 'cost_initial': ['35.00'], 'cost_week': ['20.00'], 'item': ['59'], 'item_field_hidden': [''], 'full_item_hidden': [''], 'orders_hidden': [''], 'csrfmiddlewaretoken': ['VBqhlqQugn6YfFtpR0AgQ1CoIryGtmCh2r8LbxIUWAXu1vj63I4kmdeMempKhJzU']}>
-orders.views WARNING 2024-06-04 12:41:30,455 views 3394 140240570168896 1
-orders.views WARNING 2024-06-04 12:41:30,455 views 3394 140240570168896 First Customer
-orders.views WARNING 2024-06-04 12:41:30,459 views 3394 140240570168896 1.5
-orders.views WARNING 2024-06-04 12:41:30,460 views 3394 140240570168896 2024-06-06 00:00:00
-orders.views WARNING 2024-06-04 12:41:30,460 views 3394 140240570168896 2024-06-21 00:00:00
-orders.views WARNING 2024-06-04 12:41:30,462 views 3394 140240570168896 35.00
-django.request ERROR 2024-06-04 12:41:30,916 log 3394 140240570168896 Internal Server Error: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/
-Traceback (most recent call last):
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/orders/views.py", line 43, in order_create
-    logger.warning(order = Order(customer = customer,
-TypeError: warning() missing 1 required positional argument: 'msg'
-django.request WARNING 2024-06-04 12:41:31,552 log 3394 140240570168896 Not Found: /favicon.ico
-django.request WARNING 2024-06-04 12:41:31,575 log 3394 140240560465472 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-django.utils.autoreload INFO 2024-06-04 12:42:17,447 autoreload 3394 140240631671680 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:42:19,373 autoreload 3461 140077769165696 Watching for file changes with StatReloader
-orders.views WARNING 2024-06-04 12:42:23,930 views 3461 140077707662912 0
-orders.views WARNING 2024-06-04 12:42:23,931 views 3461 140077707662912 <QueryDict: {'start_date': ['2024-06-06'], 'end_date': ['2024-06-21'], 'item_type_field': ['Test Category'], 'item_field': ['{ "id": "26",\r\n                              "name": "Test Type",\r\n                              "cost_initial": "35.00",\r\n                              "cost_week": "20.00"\r\n                            }'], 'cost_initial': ['35.00'], 'cost_week': ['20.00'], 'item': ['59'], 'item_field_hidden': [''], 'full_item_hidden': [''], 'orders_hidden': [''], 'csrfmiddlewaretoken': ['VBqhlqQugn6YfFtpR0AgQ1CoIryGtmCh2r8LbxIUWAXu1vj63I4kmdeMempKhJzU']}>
-orders.views WARNING 2024-06-04 12:42:23,932 views 3461 140077707662912 1
-orders.views WARNING 2024-06-04 12:42:23,933 views 3461 140077707662912 First Customer
-orders.views WARNING 2024-06-04 12:42:23,939 views 3461 140077707662912 1.5
-orders.views WARNING 2024-06-04 12:42:23,939 views 3461 140077707662912 2024-06-06 00:00:00
-orders.views WARNING 2024-06-04 12:42:23,940 views 3461 140077707662912 2024-06-21 00:00:00
-orders.views WARNING 2024-06-04 12:42:23,940 views 3461 140077707662912 35.00
-orders.views WARNING 2024-06-04 12:42:24,174 views 3461 140077707662912 Order object (None)
-orders.views WARNING 2024-06-04 12:42:24,175 views 3461 140077707662912 2
-orders.views WARNING 2024-06-04 12:42:24,175 views 3461 140077707662912 Order object (None)
-orders.views WARNING 2024-06-04 12:42:24,175 views 3461 140077707662912 <WSGIRequest: POST '/orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/'>
-orders.views WARNING 2024-06-04 12:42:24,175 views 3461 140077707662912 3
-orders.views WARNING 2024-06-04 12:42:24,176 views 3461 140077707662912 4
-orders.views WARNING 2024-06-04 12:42:24,176 views 3461 140077707662912 Invoice object (None)
-urllib3.connectionpool DEBUG 2024-06-04 12:42:24,468 connectionpool 3461 140077707662912 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-04 12:42:24,531 connectionpool 3461 140077707662912 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
-django.request WARNING 2024-06-04 12:42:32,996 log 3461 140077697435200 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-django.utils.autoreload INFO 2024-06-04 12:43:35,171 autoreload 3461 140077769165696 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:43:37,207 autoreload 3561 140140987521920 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:45:17,340 autoreload 3561 140140987521920 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:45:19,335 autoreload 3614 140575168473984 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:45:51,064 autoreload 3614 140575168473984 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:45:52,894 autoreload 3661 139905508711296 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:45:57,186 autoreload 3661 139905508711296 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:45:58,985 autoreload 3697 139638386711424 Watching for file changes with StatReloader
-orders.views WARNING 2024-06-04 12:46:09,599 views 3697 139638325208640 0
-orders.views WARNING 2024-06-04 12:46:09,600 views 3697 139638325208640 <QueryDict: {'start_date': ['2024-06-06'], 'end_date': ['2024-06-21'], 'item_type_field': ['Test Category'], 'item_field': ['{ "id": "26",\r\n                              "name": "Test Type",\r\n                              "cost_initial": "35.00",\r\n                              "cost_week": "20.00"\r\n                            }'], 'cost_initial': ['35.00'], 'cost_week': ['20.00'], 'item': ['59'], 'item_field_hidden': [''], 'full_item_hidden': [''], 'orders_hidden': [''], 'csrfmiddlewaretoken': ['VBqhlqQugn6YfFtpR0AgQ1CoIryGtmCh2r8LbxIUWAXu1vj63I4kmdeMempKhJzU']}>
-orders.views WARNING 2024-06-04 12:46:09,601 views 3697 139638325208640 1
-orders.views WARNING 2024-06-04 12:46:09,601 views 3697 139638325208640 First Customer
-orders.views WARNING 2024-06-04 12:46:09,605 views 3697 139638325208640 1.5
-django.request ERROR 2024-06-04 12:46:10,071 log 3697 139638325208640 Internal Server Error: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/
-Traceback (most recent call last):
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/orders/views.py", line 40, in order_create
-    logger.warning(Order(customer = customer,
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/db/models/base.py", line 567, in __init__
-    raise TypeError(
-TypeError: Order() got unexpected keyword arguments: 'create_on'
-django.request WARNING 2024-06-04 12:46:10,750 log 3697 139638325208640 Not Found: /favicon.ico
-django.request WARNING 2024-06-04 12:46:10,770 log 3697 139638245160512 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-django.utils.autoreload INFO 2024-06-04 12:46:16,058 autoreload 3697 139638386711424 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:46:17,916 autoreload 3763 139975925472128 Watching for file changes with StatReloader
-orders.views WARNING 2024-06-04 12:46:21,603 views 3763 139975863969344 0
-orders.views WARNING 2024-06-04 12:46:21,603 views 3763 139975863969344 <QueryDict: {'start_date': ['2024-06-06'], 'end_date': ['2024-06-21'], 'item_type_field': ['Test Category'], 'item_field': ['{ "id": "26",\r\n                              "name": "Test Type",\r\n                              "cost_initial": "35.00",\r\n                              "cost_week": "20.00"\r\n                            }'], 'cost_initial': ['35.00'], 'cost_week': ['20.00'], 'item': ['59'], 'item_field_hidden': [''], 'full_item_hidden': [''], 'orders_hidden': [''], 'csrfmiddlewaretoken': ['VBqhlqQugn6YfFtpR0AgQ1CoIryGtmCh2r8LbxIUWAXu1vj63I4kmdeMempKhJzU']}>
-orders.views WARNING 2024-06-04 12:46:21,604 views 3763 139975863969344 1
-orders.views WARNING 2024-06-04 12:46:21,604 views 3763 139975863969344 First Customer
-orders.views WARNING 2024-06-04 12:46:21,608 views 3763 139975863969344 1.5
-orders.views WARNING 2024-06-04 12:46:21,825 views 3763 139975863969344 Order object (None)
-orders.views WARNING 2024-06-04 12:46:21,826 views 3763 139975863969344 2
-orders.views WARNING 2024-06-04 12:46:21,826 views 3763 139975863969344 Order object (None)
-orders.views WARNING 2024-06-04 12:46:21,826 views 3763 139975863969344 <WSGIRequest: POST '/orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/'>
-orders.views WARNING 2024-06-04 12:46:21,827 views 3763 139975863969344 3
-orders.views WARNING 2024-06-04 12:46:21,827 views 3763 139975863969344 4
-orders.views WARNING 2024-06-04 12:46:21,828 views 3763 139975863969344 Invoice object (None)
-urllib3.connectionpool DEBUG 2024-06-04 12:46:22,145 connectionpool 3763 139975863969344 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-04 12:46:22,191 connectionpool 3763 139975863969344 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
-django.request WARNING 2024-06-04 12:46:30,151 log 3763 139975853741632 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-django.request WARNING 2024-06-04 12:46:30,876 log 3763 139975853741632 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-orders.views WARNING 2024-06-04 12:46:41,976 views 3763 139975853741632 0
-orders.views WARNING 2024-06-04 12:46:41,976 views 3763 139975853741632 <QueryDict: {'start_date': ['2024-06-05'], 'end_date': ['2024-06-14'], 'item_type_field': ['Test Category'], 'item_field': ['{ "id": "26",\r\n                              "name": "Test Type",\r\n                              "cost_initial": "35.00",\r\n                              "cost_week": "20.00"\r\n                            }'], 'cost_initial': ['35.00'], 'cost_week': ['20.00'], 'item': ['59'], 'item_field_hidden': [''], 'full_item_hidden': [''], 'orders_hidden': [''], 'csrfmiddlewaretoken': ['CPX0LYpJSjORDx687LUKidBUBwXIAQApJFFuB5h9ywFnpnWPjtoOOpdi7rOModx2']}>
-orders.views WARNING 2024-06-04 12:46:41,977 views 3763 139975853741632 1
-orders.views WARNING 2024-06-04 12:46:41,978 views 3763 139975853741632 First Customer
-orders.views WARNING 2024-06-04 12:46:41,981 views 3763 139975853741632 1.5
-orders.views WARNING 2024-06-04 12:46:42,203 views 3763 139975853741632 Order object (None)
-orders.views WARNING 2024-06-04 12:46:42,204 views 3763 139975853741632 2
-orders.views WARNING 2024-06-04 12:46:42,205 views 3763 139975853741632 Order object (None)
-orders.views WARNING 2024-06-04 12:46:42,205 views 3763 139975853741632 <WSGIRequest: POST '/orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/'>
-orders.views WARNING 2024-06-04 12:46:42,206 views 3763 139975853741632 3
-orders.views WARNING 2024-06-04 12:46:42,206 views 3763 139975853741632 4
-orders.views WARNING 2024-06-04 12:46:42,207 views 3763 139975853741632 Invoice object (None)
-django.request WARNING 2024-06-04 12:46:50,587 log 3763 139975853741632 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-django.utils.autoreload INFO 2024-06-04 12:56:54,600 autoreload 3763 139975925472128 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:56:56,362 autoreload 3880 139940180900736 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:56:59,026 autoreload 3880 139940180900736 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:57:00,858 autoreload 3904 140437672479616 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:57:03,082 autoreload 3904 140437672479616 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:57:04,933 autoreload 3928 140527698082688 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:57:09,942 autoreload 3928 140527698082688 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:57:11,808 autoreload 3952 139822400899968 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:57:13,776 autoreload 3952 139822400899968 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:57:15,548 autoreload 3976 140432730168192 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:58:09,345 autoreload 3976 140432730168192 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:58:11,498 autoreload 4018 140485895334784 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:58:13,543 autoreload 4018 140485895334784 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:58:15,444 autoreload 4042 140282420788096 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:58:22,667 autoreload 4042 140282420788096 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:58:24,146 autoreload 4087 140535137565568 Watching for file changes with StatReloader
-orders.views WARNING 2024-06-04 12:58:33,796 views 4087 140535076062784 0
-orders.views WARNING 2024-06-04 12:58:33,797 views 4087 140535076062784 <QueryDict: {'start_date': ['2024-06-05'], 'end_date': ['2024-06-14'], 'item_type_field': ['Test Category'], 'item_field': ['{ "id": "26",\r\n                              "name": "Test Type",\r\n                              "cost_initial": "35.00",\r\n                              "cost_week": "20.00"\r\n                            }'], 'cost_initial': ['35.00'], 'cost_week': ['20.00'], 'item': ['59'], 'item_field_hidden': [''], 'full_item_hidden': [''], 'orders_hidden': [''], 'csrfmiddlewaretoken': ['CPX0LYpJSjORDx687LUKidBUBwXIAQApJFFuB5h9ywFnpnWPjtoOOpdi7rOModx2']}>
-orders.views WARNING 2024-06-04 12:58:33,801 views 4087 140535076062784 1
-orders.views WARNING 2024-06-04 12:58:33,802 views 4087 140535076062784 First Customer
-orders.views WARNING 2024-06-04 12:58:33,807 views 4087 140535076062784 1.5
-django.request ERROR 2024-06-04 12:58:34,510 log 4087 140535076062784 Internal Server Error: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/
-Traceback (most recent call last):
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/orders/views.py", line 40, in order_create
-    order=order_form.save(commit=False)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/forms/models.py", line 533, in save
-    raise ValueError(
-ValueError: The Order could not be created because the data didn't validate.
-django.request WARNING 2024-06-04 12:58:35,176 log 4087 140535076062784 Not Found: /favicon.ico
-django.request WARNING 2024-06-04 12:58:35,190 log 4087 140535066097216 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-django.utils.autoreload INFO 2024-06-04 12:58:55,279 autoreload 4087 140535137565568 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:58:57,065 autoreload 4172 140139651926912 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:58:59,092 autoreload 4172 140139651926912 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:59:00,974 autoreload 4196 139805292391296 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:59:04,289 autoreload 4196 139805292391296 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:59:06,153 autoreload 4220 139707713952640 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:59:10,197 autoreload 4220 139707713952640 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:59:11,996 autoreload 4244 139996891687808 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:59:15,412 autoreload 4244 139996891687808 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:59:17,373 autoreload 4268 139686372633472 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:59:23,868 autoreload 4268 139686372633472 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:59:25,700 autoreload 4313 140500635573120 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:59:28,140 autoreload 4313 140500635573120 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:59:30,178 autoreload 4337 140021270973312 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:59:32,432 autoreload 4337 140021270973312 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:59:34,374 autoreload 4358 140549398248320 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:59:38,264 autoreload 4358 140549398248320 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:59:39,988 autoreload 4385 140045969247104 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 12:59:42,724 autoreload 4385 140045969247104 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 12:59:44,640 autoreload 4406 140714371689344 Watching for file changes with StatReloader
-orders.views WARNING 2024-06-04 12:59:51,823 views 4406 140714310186560 0
-orders.views WARNING 2024-06-04 12:59:51,824 views 4406 140714310186560 <QueryDict: {'start_date': ['2024-06-05'], 'end_date': ['2024-06-14'], 'item_type_field': ['Test Category'], 'item_field': ['{ "id": "26",\r\n                              "name": "Test Type",\r\n                              "cost_initial": "35.00",\r\n                              "cost_week": "20.00"\r\n                            }'], 'cost_initial': ['35.00'], 'cost_week': ['20.00'], 'item': ['59'], 'item_field_hidden': [''], 'full_item_hidden': [''], 'orders_hidden': [''], 'csrfmiddlewaretoken': ['CPX0LYpJSjORDx687LUKidBUBwXIAQApJFFuB5h9ywFnpnWPjtoOOpdi7rOModx2']}>
-orders.views WARNING 2024-06-04 12:59:51,824 views 4406 140714310186560 1
-orders.views WARNING 2024-06-04 12:59:51,825 views 4406 140714310186560 First Customer
-orders.views WARNING 2024-06-04 12:59:51,829 views 4406 140714310186560 1.5
-orders.views WARNING 2024-06-04 12:59:51,830 views 4406 140714310186560 Order object (None)
-orders.views WARNING 2024-06-04 12:59:51,831 views 4406 140714310186560 2
-orders.views WARNING 2024-06-04 12:59:51,831 views 4406 140714310186560 Order object (None)
-orders.views WARNING 2024-06-04 12:59:51,832 views 4406 140714310186560 <WSGIRequest: POST '/orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/'>
-orders.views WARNING 2024-06-04 12:59:51,832 views 4406 140714310186560 3
-orders.views WARNING 2024-06-04 12:59:51,833 views 4406 140714310186560 4
-orders.views WARNING 2024-06-04 12:59:51,833 views 4406 140714310186560 Invoice object (None)
-urllib3.connectionpool DEBUG 2024-06-04 12:59:52,178 connectionpool 4406 140714310186560 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-04 12:59:52,208 connectionpool 4406 140714310186560 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
-django.request WARNING 2024-06-04 13:00:00,857 log 4406 140714299958848 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-django.utils.autoreload INFO 2024-06-04 13:04:36,816 autoreload 4406 140714371689344 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 13:04:38,940 autoreload 4514 140029302045568 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 13:04:43,366 autoreload 4514 140029302045568 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 13:04:45,387 autoreload 4552 140628851129216 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 13:04:50,878 autoreload 4552 140628851129216 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 13:04:52,863 autoreload 4582 139640216726400 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-04 13:04:56,150 autoreload 4582 139640216726400 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 13:04:57,803 autoreload 4606 140600672918400 Watching for file changes with StatReloader
-django.request ERROR 2024-06-04 13:05:02,764 log 4606 140600611415616 Internal Server Error: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/
-Traceback (most recent call last):
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/orders/views.py", line 26, in order_create
-    item = get_object_or_404(Item, id=order_form.cleaned_data['item'].value())
-AttributeError: 'OrderForm' object has no attribute 'cleaned_data'
-django.request WARNING 2024-06-04 13:05:03,455 log 4606 140600611415616 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-django.request WARNING 2024-06-04 13:05:03,472 log 4606 140600601974336 Not Found: /favicon.ico
-django.utils.autoreload INFO 2024-06-04 13:05:28,159 autoreload 4606 140600672918400 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 13:05:30,276 autoreload 4673 140040776522624 Watching for file changes with StatReloader
-django.request ERROR 2024-06-04 13:05:34,474 log 4673 140040715019840 Internal Server Error: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/
-Traceback (most recent call last):
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/orders/views.py", line 27, in order_create
-    item = get_object_or_404(Item, id=order_form.cleaned_data['item'].value())
-AttributeError: 'OrderForm' object has no attribute 'cleaned_data'
-django.request WARNING 2024-06-04 13:05:34,690 log 4673 140040715019840 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-django.request WARNING 2024-06-04 13:05:35,156 log 4673 140040715019840 Not Found: /favicon.ico
-django.request WARNING 2024-06-04 13:05:35,261 log 4673 140040715019840 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-django.utils.autoreload INFO 2024-06-04 13:05:49,707 autoreload 4673 140040776522624 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 13:05:51,814 autoreload 4741 140003393952640 Watching for file changes with StatReloader
-django.request ERROR 2024-06-04 13:05:55,485 log 4741 140003332449856 Internal Server Error: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/
-Traceback (most recent call last):
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/orders/views.py", line 28, in order_create
-    item = get_object_or_404(Item, id=order_form.cleaned_data['item'].value())
-AttributeError: 'OrderForm' object has no attribute 'cleaned_data'
-django.request WARNING 2024-06-04 13:05:56,175 log 4741 140003332449856 Not Found: /favicon.ico
-django.request WARNING 2024-06-04 13:05:56,178 log 4741 140003250271808 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
-django.utils.autoreload INFO 2024-06-04 13:06:01,363 autoreload 4741 140003393952640 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-04 13:06:03,585 autoreload 4801 140653963299712 Watching for file changes with StatReloader
+  File "/workspaces/django-renterprise/orders/views.py", line 50, in order_create
+    order.save(commit=False)
+TypeError: save() got an unexpected keyword argument 'commit'
+django.request WARNING 2024-06-05 00:04:47,787 log 1951 140462401889856 Not Found: /favicon.ico
+django.utils.autoreload INFO 2024-06-05 00:06:54,964 autoreload 1951 140462463392640 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:06:57,127 autoreload 2061 140060918844288 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:07:01,720 autoreload 2061 140060918844288 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:07:03,704 autoreload 2098 139743187319680 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:08:21,451 autoreload 2098 139743187319680 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:08:23,620 autoreload 2150 139815017327488 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:08:32,943 autoreload 2150 139815017327488 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:08:35,215 autoreload 2195 140456807787392 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:08:40,233 autoreload 2195 140456807787392 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:08:42,389 autoreload 2240 139692311694208 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:08:46,609 autoreload 2240 139692311694208 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:08:48,727 autoreload 2264 139984001469312 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:08:54,243 autoreload 2264 139984001469312 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:08:56,461 autoreload 2299 139807606680448 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:09:01,822 autoreload 2299 139807606680448 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:09:03,732 autoreload 2332 139894492199808 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:09:05,925 autoreload 2332 139894492199808 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:09:08,165 autoreload 2356 139654413712256 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:09:12,355 autoreload 2356 139654413712256 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:09:14,394 autoreload 2380 140298332478336 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:09:17,308 autoreload 2380 140298332478336 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:09:19,339 autoreload 2404 139983038339968 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:10:38,557 autoreload 2404 139983038339968 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:10:40,912 autoreload 2449 140059163118464 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:10:42,920 autoreload 2449 140059163118464 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:10:45,008 autoreload 2473 140610181233536 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:11:01,180 autoreload 2473 140610181233536 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:11:03,390 autoreload 2518 140504742570880 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:12:27,132 autoreload 2518 140504742570880 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:12:29,233 autoreload 2560 139812132109184 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:12:33,222 autoreload 2560 139812132109184 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:12:35,157 autoreload 2595 140553983294336 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:13:06,518 autoreload 2595 140553983294336 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:13:08,510 autoreload 2628 140072190372736 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:13:12,413 autoreload 2628 140072190372736 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:13:14,598 autoreload 2661 139649555024768 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:13:55,531 autoreload 2661 139649555024768 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:13:57,716 autoreload 2695 139903217130368 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:15:12,345 autoreload 2695 139903217130368 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:15:14,754 autoreload 2748 140102036118400 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:15:23,358 autoreload 2748 140102036118400 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:15:25,599 autoreload 2793 140400272530304 Watching for file changes with StatReloader
+orders.views WARNING 2024-06-05 00:16:53,263 views 2793 140400211027520 1
+orders.views WARNING 2024-06-05 00:16:53,264 views 2793 140400211027520 First Customer
+orders.views WARNING 2024-06-05 00:16:53,378 views 2793 140400211027520 2
+orders.views WARNING 2024-06-05 00:16:53,379 views 2793 140400211027520 Test Type
+orders.views WARNING 2024-06-05 00:16:53,491 views 2793 140400211027520 3
+orders.views WARNING 2024-06-05 00:16:53,495 views 2793 140400211027520 4
+orders.views WARNING 2024-06-05 00:16:53,495 views 2793 140400211027520 2024-06-06 00:00:00
+orders.views WARNING 2024-06-05 00:16:53,496 views 2793 140400211027520 2024-07-07 00:00:00
+orders.views WARNING 2024-06-05 00:16:53,891 views 2793 140400211027520 5
+orders.views WARNING 2024-06-05 00:16:53,894 views 2793 140400211027520 Test Type
+orders.views WARNING 2024-06-05 00:16:53,896 views 2793 140400211027520 6
+orders.views WARNING 2024-06-05 00:16:53,898 views 2793 140400211027520 35.00
+orders.views WARNING 2024-06-05 00:16:53,901 views 2793 140400211027520 35.00
+orders.views WARNING 2024-06-05 00:16:53,902 views 2793 140400211027520 7
+orders.views WARNING 2024-06-05 00:16:53,902 views 2793 140400211027520 20.00
+orders.views WARNING 2024-06-05 00:16:53,903 views 2793 140400211027520 20.00
+orders.views WARNING 2024-06-05 00:16:53,903 views 2793 140400211027520 8
+orders.views WARNING 2024-06-05 00:16:53,904 views 2793 140400211027520 2024-06-06 00:00:00
+orders.views WARNING 2024-06-05 00:16:53,905 views 2793 140400211027520 2024-06-06 00:00:00
+orders.views WARNING 2024-06-05 00:16:53,905 views 2793 140400211027520 9
+orders.views WARNING 2024-06-05 00:16:53,906 views 2793 140400211027520 2024-07-07 00:00:00
+orders.views WARNING 2024-06-05 00:16:53,906 views 2793 140400211027520 2024-07-07 00:00:00
+orders.views WARNING 2024-06-05 00:16:53,907 views 2793 140400211027520 10
+orders.views WARNING 2024-06-05 00:16:53,907 views 2793 140400211027520 jamesb
+orders.views WARNING 2024-06-05 00:16:53,908 views 2793 140400211027520 jamesb
+orders.views WARNING 2024-06-05 00:16:53,908 views 2793 140400211027520 11
+orders.views WARNING 2024-06-05 00:16:53,908 views 2793 140400211027520 Order object (3)
+orders.views WARNING 2024-06-05 00:16:53,909 views 2793 140400211027520 12
+orders.views WARNING 2024-06-05 00:16:53,913 views 2793 140400211027520 <WSGIRequest: POST '/orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/'>
+orders.views WARNING 2024-06-05 00:16:53,914 views 2793 140400211027520 13
+orders.views WARNING 2024-06-05 00:16:53,914 views 2793 140400211027520 Invoice object (None)
+orders.views WARNING 2024-06-05 00:16:53,914 views 2793 140400211027520 14
+orders.views WARNING 2024-06-05 00:16:53,915 views 2793 140400211027520 35.00
+orders.views WARNING 2024-06-05 00:16:53,915 views 2793 140400211027520 35.00
+orders.views WARNING 2024-06-05 00:16:53,915 views 2793 140400211027520 15
+orders.views WARNING 2024-06-05 00:16:53,916 views 2793 140400211027520 First Rental Payment
+orders.views WARNING 2024-06-05 00:16:53,916 views 2793 140400211027520 16
+orders.views WARNING 2024-06-05 00:16:53,916 views 2793 140400211027520 False
+orders.views WARNING 2024-06-05 00:16:53,917 views 2793 140400211027520 17
+orders.views WARNING 2024-06-05 00:16:54,135 views 2793 140400211027520 False
+urllib3.connectionpool DEBUG 2024-06-05 00:16:54,215 connectionpool 2793 140400211027520 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-05 00:16:54,263 connectionpool 2793 140400211027520 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
+django.request WARNING 2024-06-05 00:17:59,556 log 2793 140400211027520 Not Found: /favicon.ico
