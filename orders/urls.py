@@ -17,4 +17,6 @@ urlpatterns = [
         views.order_view, name='order_view'),
     path('<uuid:customer_token>/create/',
         views.order_create, name='order_create'),
+    path('<uuid:customer_token>/invoices/',
+        views.OrderInvoiceList.as_view(), name='order_invoice'),
 ]

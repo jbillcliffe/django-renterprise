@@ -36,6 +36,12 @@
                 <div class="row">
                     <p>Created By : {{ order.created_by }}</p>
                 </div>
+                <div class="row">
+                    <p>Delivery Date : {{ order.start_date }}</p>
+                </div>
+                <div class="row">
+                    <p>Collection Date : {{ order.end_date }}</p>
+                </div>
             </div>
             <div class="order_details_container split">
                 <div class="row">
@@ -46,12 +52,6 @@
                 </div>
             </div>
             <div class="order_details_container split">
-                <div class="row">
-                    <p>Delivery Date : {{ order.start_date }}</p>
-                </div>
-                <div class="row">
-                    <p>Collection Date : {{ order.end_date }}</p>
-                </div>
                 <hr class="renterprise" style="width:50%">
                 <div class="row">
                     <p>Initial Cost : £{{ order.cost_initial }}</p>
@@ -59,6 +59,7 @@
                 <div class="row">
                     <p>Weekly Cost : £{{ order.cost_week }}</p>
                 </div>
+                {% include 'orders/order_invoice.html' %}
             </div>
             
         </div>
@@ -71,17 +72,17 @@
             </div>
             <div class="col-4"></div>
         </div>
-    {% else %}
-        <div class="row">
-            <div class="col-12">
+        {% else %}
+        <div class="content-holder">
+            <div class="row" style="width: 20%;">
                 {% blocktrans %}
                 <p>You need to be logged in to access the program.</p>
                 <p>Log in to continue using this application.</p>
                 {% endblocktrans %}
-                <a class="button small centre-align" href="{{ login_url }}">{% trans "Log In" %}</a>
+                <a class="button small" href="{{ login_url }}">Log In</a>
             </div>
         </div>
-    {% endif %}
+        {% endif %}
     </div>
 </div>
 
@@ -111,5 +112,7 @@
 <!-- index.html content ends here -->
 {% endblock content %}
 {% block extras %}
-<script src="{% static 'js/items.js' %}"></script>
+<script src="{% static 'js/invoices.js' %}"></script>
 {% endblock %}
+
+

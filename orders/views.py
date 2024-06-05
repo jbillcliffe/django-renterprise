@@ -108,3 +108,7 @@ def order_view(request, id):
             "class_var":"Items",
         },
     )
+
+class OrderInvoiceList(ListView):
+    paginate_by = 5
+    model = Invoice
