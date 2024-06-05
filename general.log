@@ -180,3 +180,69 @@ django.utils.autoreload INFO 2024-06-05 00:25:48,174 autoreload 3336 13982557532
 django.utils.autoreload INFO 2024-06-05 00:25:50,408 autoreload 3371 140631538572160 Watching for file changes with StatReloader
 django.utils.autoreload INFO 2024-06-05 00:25:56,446 autoreload 3371 140631538572160 /workspaces/django-renterprise/orders/views.py changed, reloading.
 django.utils.autoreload INFO 2024-06-05 00:25:58,423 autoreload 3404 140526520339328 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:56:20,825 autoreload 3900 140284090092416 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-05 00:56:27,239 connectionpool 3900 140284028589632 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-05 00:56:27,343 connectionpool 3900 140284028589632 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-05 00:56:28,524 log 3900 140284018361920 Not Found: /favicon.ico
+orders.views WARNING 2024-06-05 00:57:36,757 views 3900 140284009969216 1
+orders.views WARNING 2024-06-05 00:57:36,758 views 3900 140284009969216 First Customer
+orders.views WARNING 2024-06-05 00:58:12,915 views 3900 140284009969216 1
+orders.views WARNING 2024-06-05 00:58:12,916 views 3900 140284009969216 First Customer
+django.request ERROR 2024-06-05 00:58:13,890 log 3900 140284009969216 Internal Server Error: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspaces/django-renterprise/orders/views.py", line 56, in order_create
+    update_item.income += order.cost_initial
+TypeError: unsupported operand type(s) for +=: 'decimal.Decimal' and 'str'
+django.utils.autoreload INFO 2024-06-05 00:59:01,947 autoreload 3900 140284090092416 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:59:04,114 autoreload 4255 140341889387392 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:59:07,327 autoreload 4255 140341889387392 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:59:09,402 autoreload 4279 140175710428032 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-05 00:59:56,309 connectionpool 4279 140175581640256 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-05 00:59:56,374 connectionpool 4279 140175581640256 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.utils.autoreload INFO 2024-06-05 01:00:43,033 autoreload 4279 140175710428032 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 01:00:45,004 autoreload 4422 140530941987712 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 01:00:46,612 autoreload 4422 140530941987712 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 01:00:48,694 autoreload 4443 140688988609408 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 01:00:51,951 autoreload 4443 140688988609408 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 01:00:54,608 autoreload 4467 139646658927488 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 01:01:02,450 autoreload 4467 139646658927488 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 01:01:04,409 autoreload 4512 140061670345600 Watching for file changes with StatReloader
+orders.views WARNING 2024-06-05 01:01:27,526 views 4512 140061608842816 1
+orders.views WARNING 2024-06-05 01:01:27,527 views 4512 140061608842816 First Customer
+orders.views WARNING 2024-06-05 01:01:28,298 views 4512 140061608842816 18
+orders.views WARNING 2024-06-05 01:01:28,524 views 4512 140061608842816 False
+urllib3.connectionpool DEBUG 2024-06-05 01:01:28,719 connectionpool 4512 140061608842816 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-05 01:01:28,789 connectionpool 4512 140061608842816 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.utils.autoreload INFO 2024-06-05 01:01:48,219 autoreload 4512 140061670345600 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 01:01:50,426 autoreload 4601 139841496640384 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-05 01:02:17,241 connectionpool 4601 139841435137600 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-05 01:02:17,334 connectionpool 4601 139841435137600 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.utils.autoreload INFO 2024-06-05 01:04:45,258 autoreload 4601 139841496640384 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 01:04:47,619 autoreload 4824 140354981501824 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 01:04:53,128 autoreload 4824 140354981501824 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 01:04:55,436 autoreload 4866 139779829357440 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 01:04:58,170 autoreload 4866 139779829357440 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 01:05:00,334 autoreload 4890 140182032124800 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-05 01:05:08,478 connectionpool 4890 140181970622016 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-05 01:05:08,507 connectionpool 4890 140181970622016 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
+django.request WARNING 2024-06-05 01:05:11,051 log 4890 140181970622016 Not Found: /favicon.ico
+orders.views WARNING 2024-06-05 01:06:15,647 views 4890 140181970622016 1
+orders.views WARNING 2024-06-05 01:06:15,647 views 4890 140181970622016 First Customer
+orders.views WARNING 2024-06-05 01:06:36,160 views 4890 140181970622016 1
+orders.views WARNING 2024-06-05 01:06:36,160 views 4890 140181970622016 First Customer
+orders.views WARNING 2024-06-05 01:06:36,948 views 4890 140181970622016 18
+orders.views WARNING 2024-06-05 01:06:36,948 views 4890 140181970622016 None
+orders.views WARNING 2024-06-05 01:06:36,949 views 4890 140181970622016 None
+django.utils.autoreload INFO 2024-06-05 01:10:43,660 autoreload 4890 140182032124800 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 01:10:46,234 autoreload 5131 140587066973056 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-05 01:11:03,677 connectionpool 5131 140587005470272 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-05 01:11:03,733 connectionpool 5131 140587005470272 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+orders.views WARNING 2024-06-05 01:11:41,951 views 5131 140587005470272 1
+orders.views WARNING 2024-06-05 01:11:41,952 views 5131 140587005470272 First Customer
+orders.views WARNING 2024-06-05 01:11:42,702 views 5131 140587005470272 18
+orders.views WARNING 2024-06-05 01:11:42,703 views 5131 140587005470272 None
+orders.views WARNING 2024-06-05 01:11:42,704 views 5131 140587005470272 None

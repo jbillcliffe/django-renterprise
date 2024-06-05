@@ -1,6 +1,7 @@
 import uuid
 import logging
 from datetime import datetime, date, time, timezone
+from decimal import Decimal
 from django.conf import settings
 from django import forms
 from django.shortcuts import render, get_object_or_404, reverse, redirect
@@ -38,8 +39,8 @@ def order_create(request, customer_token):
         order = Order.objects.create(
             customer = customer,
             item = item,
-            cost_initial = order_form['cost_initial'].value(),
-            cost_week = order_form['cost_week'].value(),
+            cost_initial = Decimal(order_form['cost_initial'].value()),
+            cost_week = Decimal(order_form['cost_week'].value()),
             start_date = start_date_date,
             end_date = end_date_date,
             created_by = request.user,
@@ -56,13 +57,12 @@ def order_create(request, customer_token):
         update_item.income += order.cost_initial
         update_item.save()
 
-
         logger.warning("18")
-        logger.warning(order_form.is_valid())
-
+        logger.warning(invoice.clean())
+        logger.warning(order.clean())
         # Validation occurs in JS, so at this point check if the invoice and order have
         # been created and display success message.
-        if invoice.clean() and order.clean():
+        if invoice.clean() == None and order.clean() == None:
             messages.add_message(
             request, messages.SUCCESS,
             'Order has been saved'
