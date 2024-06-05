@@ -246,3 +246,18 @@ orders.views WARNING 2024-06-05 01:11:41,952 views 5131 140587005470272 First Cu
 orders.views WARNING 2024-06-05 01:11:42,702 views 5131 140587005470272 18
 orders.views WARNING 2024-06-05 01:11:42,703 views 5131 140587005470272 None
 orders.views WARNING 2024-06-05 01:11:42,704 views 5131 140587005470272 None
+django.utils.autoreload INFO 2024-06-05 01:15:11,748 autoreload 5498 139830357142400 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-05 01:15:18,687 connectionpool 5498 139830295639616 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-05 01:15:18,744 connectionpool 5498 139830295639616 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.utils.autoreload INFO 2024-06-05 01:16:21,834 autoreload 5498 139830357142400 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 01:16:24,233 autoreload 5578 139861859244928 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 01:16:28,847 autoreload 5578 139861859244928 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 01:16:30,922 autoreload 5623 140153988627328 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 01:16:44,243 autoreload 5623 140153988627328 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 01:16:46,510 autoreload 5665 140119052139392 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 01:16:56,548 autoreload 5665 140119052139392 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 01:16:58,836 autoreload 5710 139750885927808 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-05 01:27:10,609 connectionpool 5710 139750824425024 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-05 01:27:10,697 connectionpool 5710 139750824425024 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-05 01:28:20,040 log 5710 139750824425024 Not Found: /orders/view/8
+django.request WARNING 2024-06-05 01:28:20,261 log 5710 139750824425024 Not Found: /favicon.ico

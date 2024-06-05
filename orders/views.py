@@ -86,7 +86,7 @@ class OrderList(ListView):
     # needs to set the class var to Customers if this is 
     #from the customer and not the general order list.
     def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
+        context = super(OrderList, self).get_context_data(**kwargs)
         context['class_var'] = 'Orders'
         return context
 
