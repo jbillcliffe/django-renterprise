@@ -156,3 +156,27 @@ orders.views WARNING 2024-06-05 00:16:54,135 views 2793 140400211027520 False
 urllib3.connectionpool DEBUG 2024-06-05 00:16:54,215 connectionpool 2793 140400211027520 Starting new HTTPS connection (1): res.cloudinary.com:443
 urllib3.connectionpool DEBUG 2024-06-05 00:16:54,263 connectionpool 2793 140400211027520 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
 django.request WARNING 2024-06-05 00:17:59,556 log 2793 140400211027520 Not Found: /favicon.ico
+django.utils.autoreload INFO 2024-06-05 00:23:46,239 autoreload 3199 139659018046336 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-05 00:24:15,678 connectionpool 3199 139658956543552 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-05 00:24:15,743 connectionpool 3199 139658956543552 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+orders.views WARNING 2024-06-05 00:24:20,089 views 3199 139658956543552 1
+orders.views WARNING 2024-06-05 00:24:20,090 views 3199 139658956543552 First Customer
+orders.views WARNING 2024-06-05 00:24:20,665 views 3199 139658956543552 13
+orders.views WARNING 2024-06-05 00:24:20,666 views 3199 139658956543552 Invoice object (1)
+orders.views WARNING 2024-06-05 00:24:20,667 views 3199 139658956543552 14
+orders.views WARNING 2024-06-05 00:24:20,667 views 3199 139658956543552 35.00
+orders.views WARNING 2024-06-05 00:24:20,668 views 3199 139658956543552 35.00
+orders.views WARNING 2024-06-05 00:24:20,668 views 3199 139658956543552 15
+orders.views WARNING 2024-06-05 00:24:20,669 views 3199 139658956543552 First rental payment
+orders.views WARNING 2024-06-05 00:24:20,669 views 3199 139658956543552 16
+orders.views WARNING 2024-06-05 00:24:20,669 views 3199 139658956543552 False
+orders.views WARNING 2024-06-05 00:24:20,670 views 3199 139658956543552 17
+orders.views WARNING 2024-06-05 00:24:20,671 views 3199 139658956543552 Order object (4)
+orders.views WARNING 2024-06-05 00:24:20,671 views 3199 139658956543552 18
+orders.views WARNING 2024-06-05 00:24:20,896 views 3199 139658956543552 False
+django.utils.autoreload INFO 2024-06-05 00:25:41,541 autoreload 3199 139659018046336 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:25:44,210 autoreload 3336 139825575324544 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:25:48,174 autoreload 3336 139825575324544 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:25:50,408 autoreload 3371 140631538572160 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 00:25:56,446 autoreload 3371 140631538572160 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 00:25:58,423 autoreload 3404 140526520339328 Watching for file changes with StatReloader

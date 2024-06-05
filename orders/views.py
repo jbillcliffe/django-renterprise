@@ -30,15 +30,10 @@ def order_create(request, customer_token):
     if request.method == "POST":
         # Order: customer, item , cost_initial, cost_week,
         # start_date,end_date,created_on,created_by
+        # Invoice: order,created_on,amount_paid,note,status
         item = get_object_or_404(Item, id=order_form['item'].value())
-        logger.warning("2")
-        logger.warning(item)
-        logger.warning("3")
         start_date_date = datetime.strptime(order_form['start_date'].value(), '%Y-%m-%d')
         end_date_date = datetime.strptime(order_form['end_date'].value(), '%Y-%m-%d')
-        logger.warning("4")
-        logger.warning(start_date_date)
-        logger.warning(end_date_date)
 
         order = Order.objects.create(
             customer = customer,
@@ -49,57 +44,27 @@ def order_create(request, customer_token):
             end_date = end_date_date,
             created_by = request.user,
             created_on = datetime.now)
+        
+        invoice = Invoice.objects.create(
+            order = order,
+            created_on = datetime.now,
+            amount_paid = order_form['cost_initial'].value(),
+            note = "First rental payment",
+            status = False)
 
-
-        logger.warning("5")
-        logger.warning(item)
-        logger.warning("6")
-        logger.warning(order.cost_initial)
-        logger.warning(order_form['cost_initial'].value())
-        logger.warning("7")
-        logger.warning(order.cost_week)
-        logger.warning(order_form['cost_week'].value())
-        logger.warning("8")
-        logger.warning(order.start_date)
-        logger.warning(start_date_date)
-        logger.warning("9")
-        logger.warning(order.end_date)
-        logger.warning(end_date_date)
-        logger.warning("10")
-        logger.warning(order.created_by)
-        logger.warning(request.user)
-        logger.warning("11")
-        logger.warning(order)
-        logger.warning("12")
-        logger.warning(request)
-        invoice = Invoice()
-        invoice.amount_paid = order_form['cost_initial'].value()
-        invoice.note = "First Rental Payment"
-        invoice.status = False
-
-        logger.warning("13")
-        logger.warning(invoice)
-        logger.warning("14")
-        logger.warning(invoice.amount_paid)
-        logger.warning(order_form['cost_initial'].value())
-        logger.warning("15")
-        logger.warning(invoice.note)
-        logger.warning("16")
-        logger.warning(invoice.status)
-
-        logger.warning("17")
+        logger.warning("18")
         logger.warning(order_form.is_valid())
 
-        if order_form.is_valid():
-            order.save()
-            invoice.save()
+        #if order_form.is_valid():
+        #    order.save()
+        #    invoice.save()
+           
+        messages.add_message(
+            request, messages.SUCCESS,
+            'Order has been saved'
+        )
             
-            messages.add_message(
-                request, messages.SUCCESS,
-                'Order has been saved'
-            )
-            
-            return redirect('customers:customer_order_view', customer_token=order.customer.customer_token, id=order.id)
+        return redirect('customers:customer_order_view', customer_token=order.customer.customer_token, id=order.id)
 
     order_form = OrderForm()
 
