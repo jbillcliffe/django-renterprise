@@ -881,3 +881,101 @@ django.request WARNING 2024-06-06 16:17:10,755 log 1975 139885960218176 Not Foun
 django.request WARNING 2024-06-06 16:17:11,291 log 1975 139885960218176 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
 customers.views WARNING 2024-06-06 16:17:23,423 views 1975 139885960218176 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
 django.request WARNING 2024-06-06 16:17:25,069 log 1975 139885960218176 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 16:22:35,808 autoreload 2520 139892704140160 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 16:22:43,923 views 2520 139892642637376 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+urllib3.connectionpool DEBUG 2024-06-06 16:22:44,273 connectionpool 2520 139892642637376 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 16:22:44,321 connectionpool 2520 139892642637376 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-06 16:22:45,464 log 2520 139892642637376 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-06 16:22:45,946 log 2520 139892632409664 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 16:23:16,225 autoreload 2520 139892704140160 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:23:18,508 autoreload 2618 140026282003328 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 16:23:23,545 views 2618 140026220500544 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+urllib3.connectionpool DEBUG 2024-06-06 16:23:23,868 connectionpool 2618 140026220500544 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 16:23:23,929 connectionpool 2618 140026220500544 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-06 16:23:25,570 log 2618 140026210534976 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 16:23:56,910 autoreload 2618 140026282003328 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:23:59,199 autoreload 2692 139914108369792 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 16:24:09,064 autoreload 2692 139914108369792 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:24:11,145 autoreload 2743 140444458560384 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 16:24:15,689 autoreload 2743 140444458560384 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:24:17,562 autoreload 2778 139960381971328 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 16:25:20,284 autoreload 2778 139960381971328 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:25:22,270 autoreload 2868 139833217170304 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 16:25:26,900 views 2868 139833155667520 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+urllib3.connectionpool DEBUG 2024-06-06 16:25:27,224 connectionpool 2868 139833155667520 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 16:25:27,292 connectionpool 2868 139833155667520 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-06 16:25:28,465 log 2868 139833155667520 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-06 16:25:29,102 log 2868 139833145701952 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 16:26:01,586 autoreload 2868 139833217170304 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:26:03,992 autoreload 2950 140185881500544 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 16:26:07,482 autoreload 2950 140185881500544 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:26:09,673 autoreload 2988 140649035623296 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 16:26:11,856 autoreload 2988 140649035623296 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:26:13,900 autoreload 3000 140449621261184 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 16:26:17,422 autoreload 3000 140449621261184 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:26:19,642 autoreload 3031 140624936721280 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 16:26:30,597 autoreload 3031 140624936721280 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:26:32,497 autoreload 3073 139858740870016 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 16:26:40,346 views 3073 139858679367232 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+urllib3.connectionpool DEBUG 2024-06-06 16:26:40,762 connectionpool 3073 139858679367232 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 16:26:40,852 connectionpool 3073 139858679367232 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-06 16:26:41,989 log 3073 139858669663808 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-06 16:26:42,662 log 3073 139858679367232 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 16:29:29,298 autoreload 3073 139858740870016 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:29:31,498 autoreload 3199 139765439273856 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 16:29:33,676 autoreload 3199 139765439273856 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:29:35,742 autoreload 3223 140288258476928 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 16:29:44,965 views 3223 140288127399488 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+urllib3.connectionpool DEBUG 2024-06-06 16:29:45,292 connectionpool 3223 140288127399488 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 16:29:45,349 connectionpool 3223 140288127399488 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
+django.request WARNING 2024-06-06 16:29:47,155 log 3223 140288127399488 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 16:30:29,467 views 3223 140288127399488 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 16:30:31,279 log 3223 140288127399488 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 16:31:03,122 views 3223 140288127399488 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 16:31:04,927 log 3223 140288127399488 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 16:33:28,325 autoreload 3223 140288258476928 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:33:30,757 autoreload 3431 140303997938560 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 16:33:41,611 views 3431 140303936435776 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+urllib3.connectionpool DEBUG 2024-06-06 16:33:41,968 connectionpool 3431 140303936435776 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 16:33:42,143 connectionpool 3431 140303936435776 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-06 16:33:43,773 log 3431 140303936435776 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 16:34:01,194 views 3431 140303936435776 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 16:34:03,059 log 3431 140303936435776 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 16:35:34,693 autoreload 3431 140303997938560 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:35:36,874 autoreload 3573 140443930221440 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 16:35:42,467 autoreload 3573 140443930221440 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:35:44,300 autoreload 3618 139926175767424 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 16:35:47,774 autoreload 3618 139926175767424 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:35:49,644 autoreload 3642 139859649166208 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 16:35:51,080 autoreload 3642 139859649166208 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:35:53,374 autoreload 3656 140117312961408 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 16:36:05,287 views 3656 140117251458624 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+urllib3.connectionpool DEBUG 2024-06-06 16:36:05,671 connectionpool 3656 140117251458624 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 16:36:05,699 connectionpool 3656 140117251458624 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
+django.request WARNING 2024-06-06 16:36:07,296 log 3656 140117251458624 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 16:36:44,474 views 3656 140117251458624 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 16:36:46,359 log 3656 140117241230912 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 16:37:57,203 views 3656 140117241230912 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 16:37:58,948 log 3656 140117241230912 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 16:38:04,603 views 3656 140117241230912 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 16:38:06,460 log 3656 140117241230912 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 16:40:13,221 autoreload 3656 140117312961408 /workspaces/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:40:15,570 autoreload 3898 139916085459840 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 16:40:44,211 autoreload 3898 139916085459840 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:40:46,506 autoreload 3945 139644536818560 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 16:40:48,923 autoreload 3945 139644536818560 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:40:51,038 autoreload 3969 139871956638592 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 16:41:05,443 views 3969 139871895135808 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+urllib3.connectionpool DEBUG 2024-06-06 16:41:05,761 connectionpool 3969 139871895135808 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 16:41:05,814 connectionpool 3969 139871895135808 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-06 16:41:07,564 log 3969 139871885170240 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 16:42:02,610 views 3969 139871885170240 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 16:42:04,447 log 3969 139871885170240 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 16:42:17,032 autoreload 3969 139871956638592 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:42:19,361 autoreload 4114 140580281424768 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 16:42:21,925 autoreload 4114 140580281424768 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 16:42:23,861 autoreload 4138 139859281066880 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 16:42:37,933 views 4138 139859219564096 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+urllib3.connectionpool DEBUG 2024-06-06 16:42:38,285 connectionpool 4138 139859219564096 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 16:42:38,350 connectionpool 4138 139859219564096 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-06 16:42:39,878 log 4138 139859209598528 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map

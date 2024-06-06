@@ -86,6 +86,5 @@ class CustomerNote(models.Model):
         date_to_string = self.created_on.strftime("%d-%m-%Y")
         return f"Created on : {date_to_string}, By : {self.created_by.username}"
 
-
     class Meta:
         ordering = ["created_by"]

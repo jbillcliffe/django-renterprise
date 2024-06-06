@@ -92,6 +92,7 @@
                     </div>
                 </div>
                 {% for invoice in invoice_list %}
+                
                 <div class="table-row {{ invoice.invoice_css_status }}">
                     <div class="col-3">{{ invoice.created_on }}</div>
                     <div class="col-6">{{ invoice.note }}</div>

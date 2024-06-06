@@ -56,5 +56,12 @@ class Invoice(models.Model):
 
     #will send a string of true/false
     def invoice_css_status(self):
-        self = str(self.status).lower()
+        #if self.status == True:
+        #    self = str("paid")
+        #else :
+        #    self = str("")
+        #self = self.status
+        self = str("paid")
         return self
+
+        
