@@ -26,7 +26,6 @@ urlpatterns = [
     path('items/', include('items.urls'), name='items-urls'),
     path('orders/', include('orders.urls'), name='orders-urls'),
     path('', include('menu.urls'), name='menu-urls'),
-    path('templates/paginate/', TemplateView.as_view(template_name=paginate_file), name="paginate_template"),
 ]
 
 #dir = os.path.join(BASE_DIR, 'templates')

@@ -1,10 +1,13 @@
 import uuid
+import logging
 from datetime import datetime, date, time, timezone
 from decimal import Decimal
 from django.db import models
 from django.contrib.auth.models import User
 from items.models import Item
 from customers.models import Customer
+
+logger = logging.getLogger(__name__)
 
 # Create your models here.
 class Order(models.Model):
@@ -54,14 +57,15 @@ class Invoice(models.Model):
     note = models.TextField()
     status = models.BooleanField(default=False)
 
+    # order by item_type name 0-9 then A-Z
+    class Meta:
+        ordering = ["id"]
+
     #will send a string of true/false
     def invoice_css_status(self):
-        #if self.status == True:
-        #    self = str("paid")
-        #else :
-        #    self = str("")
-        #self = self.status
-        self = str("paid")
+        if self.status == True or self.status == "True":
+            self = str("paid")
+        else :
+            self = str("")
         return self
-
         

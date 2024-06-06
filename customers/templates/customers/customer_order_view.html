@@ -92,11 +92,11 @@
                     </div>
                 </div>
                 {% for invoice in invoice_list %}
-                
-                <div class="table-row {{ invoice.invoice_css_status }}">
+                <!--<div class="table-row {{ invoice.status_str }}">-->
+                <div class="table-row {% if invoice.status == True %}paid{% endif %}">
                     <div class="col-3">{{ invoice.created_on }}</div>
                     <div class="col-6">{{ invoice.note }}</div>
-                    <div class="col-2">{{ invoice.amount_paid }}</div>
+                    <div class="col-2">£{{ invoice.amount_paid }}</div>
                     <div class="col-1">
                         <a class="button-table view invoice" invoice-status="{{ invoice.status }}"
                             invoice-note="{{ invoice.note }}" invoice-date="{{ invoice.created_on }}"

@@ -13,6 +13,8 @@
     {% block side-nav %}{% endblock %}
     {% if user.is_authenticated %}
     <div class="content-holder">
+        <h2>Add Item To Stock</h2>
+        <hr class="renterprise">
         <form id="itemForm" method="post"
             style="margin-top: 1.3em;">
             {{ item_form | crispy }}
