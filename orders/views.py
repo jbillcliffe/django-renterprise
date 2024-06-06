@@ -25,8 +25,6 @@ def order_create(request, customer_token):
     """
     order_form = OrderForm(request.POST)
     customer = get_object_or_404(Customer, customer_token=customer_token)
-    logger.warning("1")
-    logger.warning(customer)
     
     if request.method == "POST":
         # Order: customer, item , cost_initial, cost_week,
@@ -57,16 +55,13 @@ def order_create(request, customer_token):
         update_item.income += order.cost_initial
         update_item.save()
 
-        logger.warning("18")
-        logger.warning(invoice.clean())
-        logger.warning(order.clean())
         # Validation occurs in JS, so at this point check if the invoice and order have
         # been created and display success message.
         if invoice.clean() == None and order.clean() == None:
             messages.add_message(
             request, messages.SUCCESS,
             'Order has been saved'
-            )#
+            )
             return redirect('customers:customer_order_view', customer_token=order.customer.customer_token, id=order.id)
        
     order_form = OrderForm()
@@ -108,7 +103,3 @@ def order_view(request, id):
             "class_var":"Items",
         },
     )
-
-class OrderInvoiceList(ListView):
-    paginate_by = 5
-    model = Invoice

@@ -65,6 +65,9 @@ class Item(models.Model):
     def item_type_category(self):
         return f"{self.item_type.category}"
 
+    # self.status  refers to the variable (eg. AVAILABLE),
+    # the index refers to the value this variable hold
+    # eg. 'Available'
     def status_str(self):
         return self.STATUS[self.status][1]
 

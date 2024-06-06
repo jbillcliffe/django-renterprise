@@ -24,4 +24,6 @@ urlpatterns = [
     path('<uuid:customer_token>/orders/<int:id>',
         views.customer_order_view,
         name='customer_order_view'),
+    path('<uuid:customer_token>/orders/<int:order_id>/invoice_status/<int:invoice_id>/<str:set_invoice>',
+        views.invoice_status_change, name='invoice_status_change'),
 ]

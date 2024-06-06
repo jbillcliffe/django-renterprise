@@ -7,70 +7,112 @@
 <div class="container-fluid" style="height: 100%; width:100%;">
     {% include 'side-nav.html' %}
     {% if user.is_authenticated %}
-    <div class="content-holder">
-        <div class="row">
-            <div class="col-4" style="flex-direction: column;">
-                <h2>{{ order.item.item_type_name }}</h2>
-                <hr class="renterprise" style="width:50%">
-                <h2>{{ order.customer.full_name }}</h2>
+    <div class="content-holder" style="display: flex; 
+        flex-direction: row;">
+        <div class="order-details-customer" style="width:60%;
+            display: flex;flex-direction: column;">
+            <div class="row">
+                <div class="col-6" style="flex-direction: column;">
+                    <h2>{{ order.item.item_type_name }}</h2>
+                    <hr class="renterprise" style="width:50%">
+                    <h2>{{ order.customer.full_name }}</h2>
+                </div>
+                <div class="col-6 item-image-holder">
+                    {% if "placeholder" in item.item_type.image.url %}
+                    <img class="item-image" src="{% static 'images/default.webp' %}"
+                        alt="placeholder image">
+                    {% else %}
+                    <img class="item-image" 
+                    src="{{ order.item.item_type.image.url }}"
+                    alt="{{ order.item.item_type_name }}">
+                    {% endif %}
+                </div>
             </div>
-            <div class="col-4 item-image-holder">
-                {% if "placeholder" in item.item_type.image.url %}
-                <img class="item-image" src="{% static 'images/default.webp' %}"
-                    alt="placeholder image">
-                {% else %}
-                <img class="item-image" 
-                src="{{ order.item.item_type.image.url }}"
-                alt="{{ order.item.item_type_name }}">
-                {% endif %}
+            <hr class="renterprise">
+            <div class="order_details_container" style="width:60%">
+                <div class="order_details_container split" style="width:40%">
+                    <div class="row">
+                        <p>Created On : {{ order.created_on }}</p>
+                    </div>
+                    <div class="row">
+                        <p>Created By : {{ order.created_by }}</p>
+                    </div>
+                    <hr class="renterprise" style="width:50%">
+                    <div class="row">
+                        <p>Delivery Date : {{ order.start_date }}</p>
+                    </div>
+                    <div class="row">
+                        <p>Collection Date : {{ order.end_date }}</p>
+                    </div>
+                </div>
+                <div class="order_details_container split" style="width:40%">
+                    <div class="row">
+                        <p>Item Category : {{ order.item.item_type_category }}</p>
+                    </div>
+                    <div class="row">
+                        <p>Item Serial : {{ order.item.item_serial }}</p>
+                    </div>
+                </div>
+                <div class="order_details_container split" style="width:20%">
+                    <div class="row">
+                        <p>Initial Cost : £{{ order.cost_initial }}</p>
+                    </div>
+                    <div class="row">
+                        <p>Weekly Cost : £{{ order.cost_week }}</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <a class="button centre-align wide" href="{% url 'customers:customer_view' order.customer.customer_token %}">Return To Customer</a>
+                </div>
+                <div class="col-4">
+                    <a class="button centre-align wide" href="{% url 'customers:customer_order_list' order.customer.customer_token %}">Return To List</a>
+                </div>
+                <div class="col-4"></div>
             </div>
         </div>
-        <hr class="renterprise">
-        <div class="order_details_container">
-            <div class="order_details_container split">
-                <div class="row">
-                    <p>Created On : {{ order.created_on }}</p>
+        
+        <div class="order_details_container split" style="width:40%">
+            <!-- Invoices -->
+            <div class="table-holder">
+                {% if invoice_list %}
+                <div class="table-row table-head">
+                    <div class="col-3">
+                        Invoice Date
+                    </div>
+                    <div class="col-6">
+                        <!-- Note -->
+                    </div>
+                    <div class="col-2">
+                        <!-- Amount-->
+                    </div>
+                    <div class="col-1">
+                        <!--button-->
+                    </div>
                 </div>
-                <div class="row">
-                    <p>Created By : {{ order.created_by }}</p>
+                {% for invoice in invoice_list %}
+                <div class="table-row {{ invoice.invoice_css_status }}">
+                    <div class="col-3">{{ invoice.created_on }}</div>
+                    <div class="col-6">{{ invoice.note }}</div>
+                    <div class="col-2">{{ invoice.amount_paid }}</div>
+                    <div class="col-1">
+                        <a class="button-table view invoice" invoice-status="{{ invoice.status }}"
+                            invoice-note="{{ invoice.note }}" invoice-date="{{ invoice.created_on }}"
+                            invoice-amount="{{ invoice.amount_paid }}" invoice-id="{{ invoice.id }}"
+                            href="#">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="row">
-                    <p>Delivery Date : {{ order.start_date }}</p>
-                </div>
-                <div class="row">
-                    <p>Collection Date : {{ order.end_date }}</p>
-                </div>
+                {% endfor %}
+                {% include 'paginate.html' %}
             </div>
-            <div class="order_details_container split">
-                <div class="row">
-                    <p>Item Category : {{ order.item.item_type_category }}</p>
-                </div>
-                <div class="row">
-                    <p>Item Serial : {{ order.item.item_serial }}</p>
-                </div>
+            {% else %}
+            <div class="table-holder">
+                <h3>No invoices have been generated for this order.</h3>
             </div>
-            <div class="order_details_container split">
-                <hr class="renterprise" style="width:50%">
-                <div class="row">
-                    <p>Initial Cost : £{{ order.cost_initial }}</p>
-                </div>
-                <div class="row">
-                    <p>Weekly Cost : £{{ order.cost_week }}</p>
-                </div>
-                {% include 'orders/order_invoice.html' %}
-            </div>
-            
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <a class="button centre-align wide" href="{% url 'customers:customer_view' order.customer.customer_token %}">Return To Customer</a>
-            </div>
-            <div class="col-4">
-                <a class="button centre-align wide" href="{% url 'customers:customer_order_list' order.customer.customer_token %}">Return To List</a>
-            </div>
-            <div class="col-4"></div>
+            {% endif %}
         </div>
         {% else %}
         <div class="content-holder">
@@ -86,29 +128,45 @@
     </div>
 </div>
 
-<!-- Status change modal -->
-<div class="modal fade" id="statusModal" tabindex="-1" z-index="25"
-  aria-labelledby="modalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title"
-          id="modalLabel">Status Change</h5>
-        <button type="button" class="btn-close"
-          data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div id="modalBody" class="modal-body">
-        Are you sure that you wish to change the status to ?
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary"
-          data-bs-dismiss="modal">Close</button>
-        <a id="statusConfirm" href="#" class="btn
-          btn-success">Change</a>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- Invoice details modal -->
+<div class="modal fade" id="invoiceModal" tabindex="-1" z-index="25"
+    aria-labelledby="modalLabel" aria-hidden="true" data-order-id="{{ order.id }}">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="modal-title invoice" id="modalLabel">Invoice Details</h3>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div id="modalBody" class="modal-body">
+				<div class="row">
+                    <h4 id="modal-invoice-id"></h4>
+				</div>
+                <hr>
+                <div class="row">
+                    <p id="modal-invoice-date"></p>
+                </div>
+                <hr>
+                <div class="row">
+                    <p id="modal-invoice-notes-title">Notes :</p>
+                    <p id="modal-invoice-note"></p>
+                </div>
+                <hr>
+                <div class="row">
+                    <p id="modal-invoice-amount"></p>
+                </div>
+                <div class="row">
+                    <p id="modal-invoice-text"></p>
+                </div>
+				<div class="modal-footer" style="justify-content:space-between;">
+                    <a id="invoiceCancel" href="" class="btn
+		  				btn-danger"><i class="fa-regular fa-circle-xmark"></i> Cancel</a>
+					<a id="invoiceConfirm" href="" class="btn
+		  				btn-success"><i class="fa-solid fa-sterling-sign"></i> Change</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
 <!-- index.html content ends here -->
 {% endblock content %}
 {% block extras %}

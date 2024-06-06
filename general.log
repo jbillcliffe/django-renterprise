@@ -1,605 +1,296 @@
-
-orders.views WARNING 2024-06-04 23:04:45,833 views 1543 140534971041344 1
-orders.views WARNING 2024-06-04 23:04:45,834 views 1543 140534971041344 First Customer
-urllib3.connectionpool DEBUG 2024-06-04 23:04:45,883 connectionpool 1543 140534971041344 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-04 23:04:45,938 connectionpool 1543 140534971041344 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
-orders.views WARNING 2024-06-04 23:05:42,460 views 1543 140534971041344 1
-orders.views WARNING 2024-06-04 23:05:42,462 views 1543 140534971041344 First Customer
-orders.views WARNING 2024-06-04 23:05:42,572 views 1543 140534971041344 2
-orders.views WARNING 2024-06-04 23:05:42,572 views 1543 140534971041344 Test Type
-orders.views WARNING 2024-06-04 23:05:42,681 views 1543 140534971041344 3
-orders.views WARNING 2024-06-04 23:05:42,685 views 1543 140534971041344 4
-orders.views WARNING 2024-06-04 23:05:42,685 views 1543 140534971041344 2024-06-06 00:00:00
-orders.views WARNING 2024-06-04 23:05:42,685 views 1543 140534971041344 2024-07-07 00:00:00
-orders.views WARNING 2024-06-04 23:05:42,914 views 1543 140534971041344 5
-orders.views WARNING 2024-06-04 23:05:42,914 views 1543 140534971041344 Test Type
-orders.views WARNING 2024-06-04 23:05:42,915 views 1543 140534971041344 6
-orders.views WARNING 2024-06-04 23:05:42,915 views 1543 140534971041344 35.00
-orders.views WARNING 2024-06-04 23:05:42,915 views 1543 140534971041344 35.00
-orders.views WARNING 2024-06-04 23:05:42,915 views 1543 140534971041344 7
-orders.views WARNING 2024-06-04 23:05:42,915 views 1543 140534971041344 20.00
-orders.views WARNING 2024-06-04 23:05:42,916 views 1543 140534971041344 20.00
-orders.views WARNING 2024-06-04 23:05:42,916 views 1543 140534971041344 8
-orders.views WARNING 2024-06-04 23:05:42,916 views 1543 140534971041344 2024-06-06 00:00:00
-orders.views WARNING 2024-06-04 23:05:42,916 views 1543 140534971041344 2024-06-06 00:00:00
-orders.views WARNING 2024-06-04 23:05:42,916 views 1543 140534971041344 9
-orders.views WARNING 2024-06-04 23:05:42,917 views 1543 140534971041344 2024-07-07 00:00:00
-orders.views WARNING 2024-06-04 23:05:42,917 views 1543 140534971041344 2024-07-07 00:00:00
-orders.views WARNING 2024-06-04 23:05:42,917 views 1543 140534971041344 10
-orders.views WARNING 2024-06-04 23:05:42,917 views 1543 140534971041344 jamesb
-orders.views WARNING 2024-06-04 23:05:42,917 views 1543 140534971041344 jamesb
-orders.views WARNING 2024-06-04 23:05:42,918 views 1543 140534971041344 11
-orders.views WARNING 2024-06-04 23:05:42,918 views 1543 140534971041344 Order object (None)
-orders.views WARNING 2024-06-04 23:05:42,918 views 1543 140534971041344 12
-orders.views WARNING 2024-06-04 23:05:42,918 views 1543 140534971041344 <WSGIRequest: POST '/orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/'>
-orders.views WARNING 2024-06-04 23:05:42,919 views 1543 140534971041344 13
-orders.views WARNING 2024-06-04 23:05:42,919 views 1543 140534971041344 Invoice object (None)
-orders.views WARNING 2024-06-04 23:05:42,919 views 1543 140534971041344 14
-orders.views WARNING 2024-06-04 23:05:42,919 views 1543 140534971041344 35.00
-orders.views WARNING 2024-06-04 23:05:42,919 views 1543 140534971041344 35.00
-orders.views WARNING 2024-06-04 23:05:42,919 views 1543 140534971041344 15
-orders.views WARNING 2024-06-04 23:05:42,920 views 1543 140534971041344 First Rental Payment
-orders.views WARNING 2024-06-04 23:05:42,920 views 1543 140534971041344 16
-orders.views WARNING 2024-06-04 23:05:42,920 views 1543 140534971041344 False
-orders.views WARNING 2024-06-04 23:05:42,920 views 1543 140534971041344 17
-orders.views WARNING 2024-06-04 23:05:43,143 views 1543 140534971041344 False
-django.utils.autoreload INFO 2024-06-05 00:02:54,381 autoreload 1543 140535032019840 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:02:56,598 autoreload 1803 140167216720768 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:02:58,831 autoreload 1803 140167216720768 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:03:00,711 autoreload 1827 140113489054592 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:03:06,422 autoreload 1827 140113489054592 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:03:08,193 autoreload 1872 139730571225984 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:03:10,211 autoreload 1872 139730571225984 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:03:12,505 autoreload 1883 139882049919872 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:04:22,167 autoreload 1883 139882049919872 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:04:24,340 autoreload 1951 140462463392640 Watching for file changes with StatReloader
-orders.views WARNING 2024-06-05 00:04:46,711 views 1951 140462401889856 1
-orders.views WARNING 2024-06-05 00:04:46,712 views 1951 140462401889856 First Customer
-orders.views WARNING 2024-06-05 00:04:46,826 views 1951 140462401889856 2
-orders.views WARNING 2024-06-05 00:04:46,827 views 1951 140462401889856 Test Type
-orders.views WARNING 2024-06-05 00:04:46,939 views 1951 140462401889856 3
-orders.views WARNING 2024-06-05 00:04:46,942 views 1951 140462401889856 4
-orders.views WARNING 2024-06-05 00:04:46,943 views 1951 140462401889856 2024-06-06 00:00:00
-orders.views WARNING 2024-06-05 00:04:46,943 views 1951 140462401889856 2024-07-07 00:00:00
-django.request ERROR 2024-06-05 00:04:47,248 log 1951 140462401889856 Internal Server Error: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/
+urllib3.connectionpool DEBUG 2024-06-05 23:45:42,796 connectionpool 3043 139796890515008 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-05 23:45:42,852 connectionpool 3043 139796890515008 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
+django.request WARNING 2024-06-05 23:45:44,268 log 3043 139796890515008 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-05 23:46:08,797 autoreload 3043 139797025880960 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 23:46:11,027 autoreload 3152 140319423449984 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 23:46:17,579 autoreload 3152 140319423449984 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 23:46:19,449 autoreload 3197 140343069064064 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 23:46:35,850 autoreload 3197 140343069064064 /workspaces/django-renterprise/orders/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 23:46:37,786 autoreload 3246 139700662893440 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 23:47:43,820 autoreload 3246 139700662893440 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 23:47:45,935 autoreload 3315 140018438364032 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-05 23:48:06,683 autoreload 3315 140018438364032 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 23:48:08,878 autoreload 3360 139766022249344 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-05 23:48:18,240 connectionpool 3360 139765886219840 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-05 23:48:18,314 connectionpool 3360 139765886219840 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-05 23:48:19,960 log 3360 139765877827136 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-05 23:49:13,456 autoreload 3360 139766022249344 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-05 23:49:15,365 autoreload 3463 139654580636544 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-05 23:49:19,557 connectionpool 3463 139654519133760 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-05 23:49:19,606 connectionpool 3463 139654519133760 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-05 23:49:20,568 log 3463 139654519133760 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-05 23:49:21,163 log 3463 139654509168192 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 00:05:59,538 autoreload 706 140521110023040 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-06 00:06:14,412 connectionpool 706 140521048520256 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 00:06:14,523 connectionpool 706 140521048520256 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-06 00:06:16,100 log 706 140521038816832 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 00:06:52,427 autoreload 706 140521110023040 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:06:54,315 autoreload 814 140230603598720 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:06:56,357 autoreload 814 140230603598720 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:06:58,111 autoreload 838 139803061287808 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:07:11,057 autoreload 838 139803061287808 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:07:12,705 autoreload 883 139756772223872 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:07:17,866 autoreload 883 139756772223872 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:07:19,735 autoreload 921 140680630901632 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:07:35,614 autoreload 921 140680630901632 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:07:37,442 autoreload 951 140104068791168 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:07:39,019 autoreload 951 140104068791168 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:07:40,745 autoreload 975 140297422351232 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:09:57,322 autoreload 975 140297422351232 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:09:59,309 autoreload 1020 140181184359296 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:10:01,172 autoreload 1020 140181184359296 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:10:02,928 autoreload 1044 140267268311936 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:10:07,111 autoreload 1044 140267268311936 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:10:08,720 autoreload 1068 140243803757440 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:10:10,337 autoreload 1068 140243803757440 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:10:11,987 autoreload 1092 140647128972160 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:35:05,110 autoreload 1092 140647128972160 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:35:07,209 autoreload 1116 140060887161728 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:35:10,325 autoreload 1116 140060887161728 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:35:12,209 autoreload 1140 140085400824704 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:35:19,450 autoreload 1140 140085400824704 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:35:21,411 autoreload 1185 140347190619008 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:35:30,717 autoreload 1185 140347190619008 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:35:32,690 autoreload 1230 139798099884928 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:35:35,738 autoreload 1230 139798099884928 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:35:37,658 autoreload 1254 140335484287872 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:43:07,297 autoreload 1254 140335484287872 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:43:09,525 autoreload 1334 140101028051840 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:43:19,161 autoreload 1334 140101028051840 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:43:21,172 autoreload 1379 140400973781888 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:44:25,299 autoreload 1379 140400973781888 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:44:27,506 autoreload 1464 140670795426688 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:44:29,157 autoreload 1464 140670795426688 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:44:30,789 autoreload 1488 139789749214080 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:44:34,688 autoreload 1488 139789749214080 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:44:36,337 autoreload 1512 139830476168064 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:44:37,944 autoreload 1512 139830476168064 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:44:39,805 autoreload 1536 139702040005504 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:44:42,512 autoreload 1536 139702040005504 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:44:44,666 autoreload 1560 140426180230016 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:45:06,804 autoreload 1560 140426180230016 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:45:08,850 autoreload 1584 140317059738496 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:45:15,193 autoreload 1584 140317059738496 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:45:16,919 autoreload 1629 140512467729280 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:45:48,257 autoreload 1629 140512467729280 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:45:50,205 autoreload 1680 140697884965760 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:45:53,523 autoreload 1680 140697884965760 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:45:55,633 autoreload 1704 139679935282048 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:45:57,764 autoreload 1704 139679935282048 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:45:59,933 autoreload 1728 140569780587392 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:46:03,278 autoreload 1728 140569780587392 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:46:05,120 autoreload 1752 139728659786624 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:46:11,603 autoreload 1752 139728659786624 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:46:13,455 autoreload 1797 139777326349184 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:46:21,139 autoreload 1797 139777326349184 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:46:23,042 autoreload 1839 140276917255040 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:46:47,116 autoreload 1839 140276917255040 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:46:49,211 autoreload 1892 140027560356736 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:46:53,482 autoreload 1892 140027560356736 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:46:55,339 autoreload 1928 140487458405248 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:46:58,437 autoreload 1928 140487458405248 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:47:00,402 autoreload 1950 140329802701696 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:47:10,244 autoreload 1950 140329802701696 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:47:12,195 autoreload 1985 139828955487104 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:47:38,509 autoreload 1985 139828955487104 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:47:40,598 autoreload 2042 139916554038144 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:47:50,631 autoreload 2042 139916554038144 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:47:52,737 autoreload 2087 140701508127616 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:47:54,895 autoreload 2087 140701508127616 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:47:57,055 autoreload 2111 139653530209152 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-06 00:48:05,639 connectionpool 2111 139653468706368 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 00:48:05,725 connectionpool 2111 139653468706368 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-06 00:48:06,879 log 2111 139653468706368 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-06 00:48:07,466 log 2111 139653459002944 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-06 00:48:58,261 log 2111 139653459002944 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 00:54:04,580 autoreload 2111 139653530209152 /workspaces/django-renterprise/orders/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:54:07,057 autoreload 2290 139644564327296 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:59:28,319 autoreload 2290 139644564327296 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:59:30,427 autoreload 2394 139776568404864 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 00:59:55,666 autoreload 2394 139776568404864 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 00:59:57,849 autoreload 2444 140018596203392 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 01:00:22,689 autoreload 2444 140018596203392 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 01:00:24,617 autoreload 2489 139621614160768 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 01:00:31,246 autoreload 2489 139621614160768 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 01:00:33,108 autoreload 2534 140634472684416 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 01:00:37,005 autoreload 2534 140634472684416 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 01:00:39,198 autoreload 2558 140336307989376 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 01:00:44,420 autoreload 2558 140336307989376 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 01:00:46,501 autoreload 2593 139798837787520 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 01:00:49,558 autoreload 2593 139798837787520 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 01:00:51,707 autoreload 2622 140602922318720 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 01:00:54,831 autoreload 2622 140602922318720 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 01:00:57,017 autoreload 2647 140119274670976 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 01:01:00,108 autoreload 2647 140119274670976 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 01:01:02,211 autoreload 2671 140316408597376 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 01:01:19,505 autoreload 2671 140316408597376 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 01:01:21,408 autoreload 2698 140170144041856 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 01:01:35,406 autoreload 2698 140170144041856 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 01:01:37,496 autoreload 2743 139648883243904 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 01:01:41,644 autoreload 2743 139648883243904 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 01:01:43,695 autoreload 2778 140347305356160 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 01:01:57,714 autoreload 2778 140347305356160 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 01:01:59,865 autoreload 2811 139816411270016 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 01:02:05,139 autoreload 2811 139816411270016 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 01:02:07,029 autoreload 2856 140674520996736 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 01:02:09,007 autoreload 2856 140674520996736 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 01:02:11,435 autoreload 2870 139792777182080 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 01:02:13,430 autoreload 2870 139792777182080 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 01:02:15,630 autoreload 2882 139744416029568 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 01:02:24,124 autoreload 2882 139744416029568 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 01:02:26,036 autoreload 2927 139701041724288 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 01:02:31,118 autoreload 2927 139701041724288 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 01:02:33,021 autoreload 2972 140711536057216 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 01:02:36,019 autoreload 2972 140711536057216 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 01:02:38,047 autoreload 2989 140460401912704 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 01:02:52,210 autoreload 2989 140460401912704 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 01:02:54,455 autoreload 3019 140215459117952 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 01:03:07,672 autoreload 3019 140215459117952 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 01:03:09,416 autoreload 3064 140141317458816 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-06 01:04:13,389 connectionpool 3064 140141024769600 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 01:04:13,595 connectionpool 3064 140141024769600 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
+django.utils.autoreload INFO 2024-06-06 01:15:02,610 autoreload 3514 140634316426112 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-06 01:15:21,215 connectionpool 3514 140634254923328 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 01:15:21,287 connectionpool 3514 140634254923328 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-06 01:16:24,498 log 3514 140634244957760 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 08:34:21,047 autoreload 630 139715163593600 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-06 08:34:31,528 connectionpool 630 139715102090816 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 08:34:31,588 connectionpool 630 139715102090816 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.utils.autoreload INFO 2024-06-06 08:39:38,380 autoreload 630 139715163593600 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:39:40,749 autoreload 1041 140241001159552 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 08:39:43,893 autoreload 1041 140241001159552 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:39:45,744 autoreload 1067 139740975655808 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 08:39:56,008 autoreload 1067 139740975655808 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:39:58,003 autoreload 1109 139935274474368 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 08:40:01,300 autoreload 1109 139935274474368 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:40:03,348 autoreload 1134 140192915979136 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 08:40:06,557 autoreload 1134 140192915979136 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:40:08,453 autoreload 1158 140396611304320 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 08:40:10,537 autoreload 1158 140396611304320 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:40:12,431 autoreload 1182 140454687628160 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 08:40:14,568 autoreload 1182 140454687628160 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:40:16,435 autoreload 1206 140199640316800 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 08:40:18,701 autoreload 1206 140199640316800 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:40:20,347 autoreload 1230 139830705683328 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 08:40:26,872 autoreload 1230 139830705683328 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:40:28,586 autoreload 1263 140031016319872 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 08:40:42,614 autoreload 1263 140031016319872 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:40:44,499 autoreload 1294 139912778308480 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 08:40:50,922 autoreload 1294 139912778308480 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:40:52,622 autoreload 1339 140413691194240 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 08:41:23,028 autoreload 1339 140413691194240 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:41:25,141 autoreload 1394 139861519129472 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 08:41:28,192 autoreload 1394 139861519129472 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:41:30,013 autoreload 1418 140364301085568 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 08:44:21,718 autoreload 1418 140364301085568 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:44:23,704 autoreload 1463 140331849280384 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 08:44:25,803 autoreload 1463 140331849280384 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:44:27,704 autoreload 1487 140539675028352 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 08:44:29,807 autoreload 1487 140539675028352 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:44:31,841 autoreload 1511 139875219889024 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 08:44:54,659 autoreload 1511 139875219889024 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:44:56,717 autoreload 1553 140190117673856 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 08:45:07,551 autoreload 1553 140190117673856 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:45:09,620 autoreload 1598 139662940105600 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 08:45:11,694 autoreload 1598 139662940105600 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:45:13,249 autoreload 1622 140636597681024 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 08:45:20,855 autoreload 1622 140636597681024 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 08:45:22,735 autoreload 1667 140371637492608 Watching for file changes with StatReloader
+django.request ERROR 2024-06-06 08:58:54,163 log 1667 140371575989824 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
 Traceback (most recent call last):
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/orders/views.py", line 50, in order_create
-    order.save(commit=False)
-TypeError: save() got an unexpected keyword argument 'commit'
-django.request WARNING 2024-06-05 00:04:47,787 log 1951 140462401889856 Not Found: /favicon.ico
-django.utils.autoreload INFO 2024-06-05 00:06:54,964 autoreload 1951 140462463392640 /workspaces/django-renterprise/orders/models.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:06:57,127 autoreload 2061 140060918844288 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:07:01,720 autoreload 2061 140060918844288 /workspaces/django-renterprise/orders/models.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:07:03,704 autoreload 2098 139743187319680 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:08:21,451 autoreload 2098 139743187319680 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:08:23,620 autoreload 2150 139815017327488 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:08:32,943 autoreload 2150 139815017327488 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:08:35,215 autoreload 2195 140456807787392 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:08:40,233 autoreload 2195 140456807787392 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:08:42,389 autoreload 2240 139692311694208 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:08:46,609 autoreload 2240 139692311694208 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:08:48,727 autoreload 2264 139984001469312 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:08:54,243 autoreload 2264 139984001469312 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:08:56,461 autoreload 2299 139807606680448 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:09:01,822 autoreload 2299 139807606680448 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:09:03,732 autoreload 2332 139894492199808 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:09:05,925 autoreload 2332 139894492199808 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:09:08,165 autoreload 2356 139654413712256 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:09:12,355 autoreload 2356 139654413712256 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:09:14,394 autoreload 2380 140298332478336 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:09:17,308 autoreload 2380 140298332478336 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:09:19,339 autoreload 2404 139983038339968 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:10:38,557 autoreload 2404 139983038339968 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:10:40,912 autoreload 2449 140059163118464 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:10:42,920 autoreload 2449 140059163118464 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:10:45,008 autoreload 2473 140610181233536 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:11:01,180 autoreload 2473 140610181233536 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:11:03,390 autoreload 2518 140504742570880 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:12:27,132 autoreload 2518 140504742570880 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:12:29,233 autoreload 2560 139812132109184 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:12:33,222 autoreload 2560 139812132109184 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:12:35,157 autoreload 2595 140553983294336 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:13:06,518 autoreload 2595 140553983294336 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:13:08,510 autoreload 2628 140072190372736 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:13:12,413 autoreload 2628 140072190372736 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:13:14,598 autoreload 2661 139649555024768 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:13:55,531 autoreload 2661 139649555024768 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:13:57,716 autoreload 2695 139903217130368 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:15:12,345 autoreload 2695 139903217130368 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:15:14,754 autoreload 2748 140102036118400 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:15:23,358 autoreload 2748 140102036118400 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:15:25,599 autoreload 2793 140400272530304 Watching for file changes with StatReloader
-orders.views WARNING 2024-06-05 00:16:53,263 views 2793 140400211027520 1
-orders.views WARNING 2024-06-05 00:16:53,264 views 2793 140400211027520 First Customer
-orders.views WARNING 2024-06-05 00:16:53,378 views 2793 140400211027520 2
-orders.views WARNING 2024-06-05 00:16:53,379 views 2793 140400211027520 Test Type
-orders.views WARNING 2024-06-05 00:16:53,491 views 2793 140400211027520 3
-orders.views WARNING 2024-06-05 00:16:53,495 views 2793 140400211027520 4
-orders.views WARNING 2024-06-05 00:16:53,495 views 2793 140400211027520 2024-06-06 00:00:00
-orders.views WARNING 2024-06-05 00:16:53,496 views 2793 140400211027520 2024-07-07 00:00:00
-orders.views WARNING 2024-06-05 00:16:53,891 views 2793 140400211027520 5
-orders.views WARNING 2024-06-05 00:16:53,894 views 2793 140400211027520 Test Type
-orders.views WARNING 2024-06-05 00:16:53,896 views 2793 140400211027520 6
-orders.views WARNING 2024-06-05 00:16:53,898 views 2793 140400211027520 35.00
-orders.views WARNING 2024-06-05 00:16:53,901 views 2793 140400211027520 35.00
-orders.views WARNING 2024-06-05 00:16:53,902 views 2793 140400211027520 7
-orders.views WARNING 2024-06-05 00:16:53,902 views 2793 140400211027520 20.00
-orders.views WARNING 2024-06-05 00:16:53,903 views 2793 140400211027520 20.00
-orders.views WARNING 2024-06-05 00:16:53,903 views 2793 140400211027520 8
-orders.views WARNING 2024-06-05 00:16:53,904 views 2793 140400211027520 2024-06-06 00:00:00
-orders.views WARNING 2024-06-05 00:16:53,905 views 2793 140400211027520 2024-06-06 00:00:00
-orders.views WARNING 2024-06-05 00:16:53,905 views 2793 140400211027520 9
-orders.views WARNING 2024-06-05 00:16:53,906 views 2793 140400211027520 2024-07-07 00:00:00
-orders.views WARNING 2024-06-05 00:16:53,906 views 2793 140400211027520 2024-07-07 00:00:00
-orders.views WARNING 2024-06-05 00:16:53,907 views 2793 140400211027520 10
-orders.views WARNING 2024-06-05 00:16:53,907 views 2793 140400211027520 jamesb
-orders.views WARNING 2024-06-05 00:16:53,908 views 2793 140400211027520 jamesb
-orders.views WARNING 2024-06-05 00:16:53,908 views 2793 140400211027520 11
-orders.views WARNING 2024-06-05 00:16:53,908 views 2793 140400211027520 Order object (3)
-orders.views WARNING 2024-06-05 00:16:53,909 views 2793 140400211027520 12
-orders.views WARNING 2024-06-05 00:16:53,913 views 2793 140400211027520 <WSGIRequest: POST '/orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/'>
-orders.views WARNING 2024-06-05 00:16:53,914 views 2793 140400211027520 13
-orders.views WARNING 2024-06-05 00:16:53,914 views 2793 140400211027520 Invoice object (None)
-orders.views WARNING 2024-06-05 00:16:53,914 views 2793 140400211027520 14
-orders.views WARNING 2024-06-05 00:16:53,915 views 2793 140400211027520 35.00
-orders.views WARNING 2024-06-05 00:16:53,915 views 2793 140400211027520 35.00
-orders.views WARNING 2024-06-05 00:16:53,915 views 2793 140400211027520 15
-orders.views WARNING 2024-06-05 00:16:53,916 views 2793 140400211027520 First Rental Payment
-orders.views WARNING 2024-06-05 00:16:53,916 views 2793 140400211027520 16
-orders.views WARNING 2024-06-05 00:16:53,916 views 2793 140400211027520 False
-orders.views WARNING 2024-06-05 00:16:53,917 views 2793 140400211027520 17
-orders.views WARNING 2024-06-05 00:16:54,135 views 2793 140400211027520 False
-urllib3.connectionpool DEBUG 2024-06-05 00:16:54,215 connectionpool 2793 140400211027520 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-05 00:16:54,263 connectionpool 2793 140400211027520 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
-django.request WARNING 2024-06-05 00:17:59,556 log 2793 140400211027520 Not Found: /favicon.ico
-django.utils.autoreload INFO 2024-06-05 00:23:46,239 autoreload 3199 139659018046336 Watching for file changes with StatReloader
-urllib3.connectionpool DEBUG 2024-06-05 00:24:15,678 connectionpool 3199 139658956543552 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-05 00:24:15,743 connectionpool 3199 139658956543552 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
-orders.views WARNING 2024-06-05 00:24:20,089 views 3199 139658956543552 1
-orders.views WARNING 2024-06-05 00:24:20,090 views 3199 139658956543552 First Customer
-orders.views WARNING 2024-06-05 00:24:20,665 views 3199 139658956543552 13
-orders.views WARNING 2024-06-05 00:24:20,666 views 3199 139658956543552 Invoice object (1)
-orders.views WARNING 2024-06-05 00:24:20,667 views 3199 139658956543552 14
-orders.views WARNING 2024-06-05 00:24:20,667 views 3199 139658956543552 35.00
-orders.views WARNING 2024-06-05 00:24:20,668 views 3199 139658956543552 35.00
-orders.views WARNING 2024-06-05 00:24:20,668 views 3199 139658956543552 15
-orders.views WARNING 2024-06-05 00:24:20,669 views 3199 139658956543552 First rental payment
-orders.views WARNING 2024-06-05 00:24:20,669 views 3199 139658956543552 16
-orders.views WARNING 2024-06-05 00:24:20,669 views 3199 139658956543552 False
-orders.views WARNING 2024-06-05 00:24:20,670 views 3199 139658956543552 17
-orders.views WARNING 2024-06-05 00:24:20,671 views 3199 139658956543552 Order object (4)
-orders.views WARNING 2024-06-05 00:24:20,671 views 3199 139658956543552 18
-orders.views WARNING 2024-06-05 00:24:20,896 views 3199 139658956543552 False
-django.utils.autoreload INFO 2024-06-05 00:25:41,541 autoreload 3199 139659018046336 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:25:44,210 autoreload 3336 139825575324544 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:25:48,174 autoreload 3336 139825575324544 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:25:50,408 autoreload 3371 140631538572160 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:25:56,446 autoreload 3371 140631538572160 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:25:58,423 autoreload 3404 140526520339328 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:56:20,825 autoreload 3900 140284090092416 Watching for file changes with StatReloader
-urllib3.connectionpool DEBUG 2024-06-05 00:56:27,239 connectionpool 3900 140284028589632 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-05 00:56:27,343 connectionpool 3900 140284028589632 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
-django.request WARNING 2024-06-05 00:56:28,524 log 3900 140284018361920 Not Found: /favicon.ico
-orders.views WARNING 2024-06-05 00:57:36,757 views 3900 140284009969216 1
-orders.views WARNING 2024-06-05 00:57:36,758 views 3900 140284009969216 First Customer
-orders.views WARNING 2024-06-05 00:58:12,915 views 3900 140284009969216 1
-orders.views WARNING 2024-06-05 00:58:12,916 views 3900 140284009969216 First Customer
-django.request ERROR 2024-06-05 00:58:13,890 log 3900 140284009969216 Internal Server Error: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/
+  File "/workspaces/django-renterprise/customers/views.py", line 201, in customer_order_view
+    invoice_list = Invoice.objects.filter(Invoice, invoice.order.id==id)
+NameError: name 'Invoice' is not defined
+django.request WARNING 2024-06-06 08:58:54,750 log 1667 140371575989824 Not Found: /favicon.ico
+django.utils.autoreload INFO 2024-06-06 09:01:17,199 autoreload 1667 140371637492608 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:01:19,235 autoreload 1952 140321531046784 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:01:22,375 autoreload 1952 140321531046784 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:01:24,793 autoreload 1976 139900389034880 Watching for file changes with StatReloader
+django.request ERROR 2024-06-06 09:01:31,858 log 1976 139900327532096 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
 Traceback (most recent call last):
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/orders/views.py", line 56, in order_create
-    update_item.income += order.cost_initial
-TypeError: unsupported operand type(s) for +=: 'decimal.Decimal' and 'str'
-django.utils.autoreload INFO 2024-06-05 00:59:01,947 autoreload 3900 140284090092416 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:59:04,114 autoreload 4255 140341889387392 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 00:59:07,327 autoreload 4255 140341889387392 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 00:59:09,402 autoreload 4279 140175710428032 Watching for file changes with StatReloader
-urllib3.connectionpool DEBUG 2024-06-05 00:59:56,309 connectionpool 4279 140175581640256 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-05 00:59:56,374 connectionpool 4279 140175581640256 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
-django.utils.autoreload INFO 2024-06-05 01:00:43,033 autoreload 4279 140175710428032 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 01:00:45,004 autoreload 4422 140530941987712 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 01:00:46,612 autoreload 4422 140530941987712 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 01:00:48,694 autoreload 4443 140688988609408 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 01:00:51,951 autoreload 4443 140688988609408 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 01:00:54,608 autoreload 4467 139646658927488 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 01:01:02,450 autoreload 4467 139646658927488 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 01:01:04,409 autoreload 4512 140061670345600 Watching for file changes with StatReloader
-orders.views WARNING 2024-06-05 01:01:27,526 views 4512 140061608842816 1
-orders.views WARNING 2024-06-05 01:01:27,527 views 4512 140061608842816 First Customer
-orders.views WARNING 2024-06-05 01:01:28,298 views 4512 140061608842816 18
-orders.views WARNING 2024-06-05 01:01:28,524 views 4512 140061608842816 False
-urllib3.connectionpool DEBUG 2024-06-05 01:01:28,719 connectionpool 4512 140061608842816 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-05 01:01:28,789 connectionpool 4512 140061608842816 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
-django.utils.autoreload INFO 2024-06-05 01:01:48,219 autoreload 4512 140061670345600 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 01:01:50,426 autoreload 4601 139841496640384 Watching for file changes with StatReloader
-urllib3.connectionpool DEBUG 2024-06-05 01:02:17,241 connectionpool 4601 139841435137600 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-05 01:02:17,334 connectionpool 4601 139841435137600 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
-django.utils.autoreload INFO 2024-06-05 01:04:45,258 autoreload 4601 139841496640384 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 01:04:47,619 autoreload 4824 140354981501824 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 01:04:53,128 autoreload 4824 140354981501824 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 01:04:55,436 autoreload 4866 139779829357440 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 01:04:58,170 autoreload 4866 139779829357440 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 01:05:00,334 autoreload 4890 140182032124800 Watching for file changes with StatReloader
-urllib3.connectionpool DEBUG 2024-06-05 01:05:08,478 connectionpool 4890 140181970622016 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-05 01:05:08,507 connectionpool 4890 140181970622016 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
-django.request WARNING 2024-06-05 01:05:11,051 log 4890 140181970622016 Not Found: /favicon.ico
-orders.views WARNING 2024-06-05 01:06:15,647 views 4890 140181970622016 1
-orders.views WARNING 2024-06-05 01:06:15,647 views 4890 140181970622016 First Customer
-orders.views WARNING 2024-06-05 01:06:36,160 views 4890 140181970622016 1
-orders.views WARNING 2024-06-05 01:06:36,160 views 4890 140181970622016 First Customer
-orders.views WARNING 2024-06-05 01:06:36,948 views 4890 140181970622016 18
-orders.views WARNING 2024-06-05 01:06:36,948 views 4890 140181970622016 None
-orders.views WARNING 2024-06-05 01:06:36,949 views 4890 140181970622016 None
-django.utils.autoreload INFO 2024-06-05 01:10:43,660 autoreload 4890 140182032124800 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 01:10:46,234 autoreload 5131 140587066973056 Watching for file changes with StatReloader
-urllib3.connectionpool DEBUG 2024-06-05 01:11:03,677 connectionpool 5131 140587005470272 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-05 01:11:03,733 connectionpool 5131 140587005470272 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
-orders.views WARNING 2024-06-05 01:11:41,951 views 5131 140587005470272 1
-orders.views WARNING 2024-06-05 01:11:41,952 views 5131 140587005470272 First Customer
-orders.views WARNING 2024-06-05 01:11:42,702 views 5131 140587005470272 18
-orders.views WARNING 2024-06-05 01:11:42,703 views 5131 140587005470272 None
-orders.views WARNING 2024-06-05 01:11:42,704 views 5131 140587005470272 None
-django.utils.autoreload INFO 2024-06-05 01:15:11,748 autoreload 5498 139830357142400 Watching for file changes with StatReloader
-urllib3.connectionpool DEBUG 2024-06-05 01:15:18,687 connectionpool 5498 139830295639616 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-05 01:15:18,744 connectionpool 5498 139830295639616 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
-django.utils.autoreload INFO 2024-06-05 01:16:21,834 autoreload 5498 139830357142400 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 01:16:24,233 autoreload 5578 139861859244928 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 01:16:28,847 autoreload 5578 139861859244928 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 01:16:30,922 autoreload 5623 140153988627328 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 01:16:44,243 autoreload 5623 140153988627328 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 01:16:46,510 autoreload 5665 140119052139392 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-05 01:16:56,548 autoreload 5665 140119052139392 /workspaces/django-renterprise/orders/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-05 01:16:58,836 autoreload 5710 139750885927808 Watching for file changes with StatReloader
-urllib3.connectionpool DEBUG 2024-06-05 01:27:10,609 connectionpool 5710 139750824425024 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-05 01:27:10,697 connectionpool 5710 139750824425024 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
-django.request WARNING 2024-06-05 01:28:20,040 log 5710 139750824425024 Not Found: /orders/view/8
-django.request WARNING 2024-06-05 01:28:20,261 log 5710 139750824425024 Not Found: /favicon.ico
-django.utils.autoreload INFO 2024-06-05 11:14:22,104 autoreload 731 140121825033088 Watching for file changes with StatReloader
-urllib3.connectionpool DEBUG 2024-06-05 11:14:29,961 connectionpool 731 140121696368192 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-05 11:14:29,994 connectionpool 731 140121696368192 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
-django.request WARNING 2024-06-05 11:14:54,861 log 731 140121696368192 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request ERROR 2024-06-05 11:19:29,799 log 731 140121696368192 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
-Traceback (most recent call last):
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 505, in parse
-    compile_func = self.tags[command]
-KeyError: 'blocktrans'
-
-During handling of the above exception, another exception occurred:
-
+  File "/workspaces/django-renterprise/customers/views.py", line 201, in customer_order_view
+    invoice_list = Invoice.objects.filter(Invoice, invoice.order.id==id)
+NameError: name 'Invoice' is not defined
+django.request WARNING 2024-06-06 09:01:32,339 log 1976 139900327532096 Not Found: /favicon.ico
+django.utils.autoreload INFO 2024-06-06 09:01:47,207 autoreload 1976 139900389034880 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:01:49,237 autoreload 2074 139661127977856 Watching for file changes with StatReloader
+django.request ERROR 2024-06-06 09:01:53,180 log 2074 139660995065408 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
 Traceback (most recent call last):
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/customers/views.py", line 200, in customer_order_view
-    return render(
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
-    return template.render(context, request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
-    return self.template.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
-    return self._render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 54, in render
-    result = self.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 321, in render
-    return nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 197, in render
-    template = context.template.engine.select_template(template_name)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 206, in select_template
-    return self.get_template(template_name)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 175, in get_template
-    template, origin = self.find_template(template_name)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 157, in find_template
-    template = loader.get_template(name, skip=skip)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
-    template = super().get_template(template_name, skip)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
-    return Template(
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 154, in __init__
-    self.nodelist = self.compile_nodelist()
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
-    return parser.parse()
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
-    raise self.error(token, e)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
-    compiled_result = compile_func(self, token)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 967, in do_if
-    nodelist = parser.parse(("endif",))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 507, in parse
-    self.invalid_block_tag(token, command, parse_until)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 558, in invalid_block_tag
-    raise self.error(
-django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 47: 'blocktrans', expected 'endif'. Did you forget to register or load this tag?
-django.request WARNING 2024-06-05 11:19:30,778 log 731 140121696368192 Not Found: /favicon.ico
-django.request WARNING 2024-06-05 11:19:30,931 log 731 140121696368192 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request ERROR 2024-06-05 11:20:57,788 log 731 140121696368192 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
-Traceback (most recent call last):
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 505, in parse
-    compile_func = self.tags[command]
-KeyError: 'blocktrans'
-
-During handling of the above exception, another exception occurred:
-
+  File "/workspaces/django-renterprise/customers/views.py", line 201, in customer_order_view
+    invoice_list = Invoice.objects.filter(Invoice, invoice.order.id==id)
+NameError: name 'invoice' is not defined
+django.request WARNING 2024-06-06 09:01:53,639 log 2074 139660995065408 Not Found: /favicon.ico
+django.utils.autoreload INFO 2024-06-06 09:02:13,688 autoreload 2074 139661127977856 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:02:15,762 autoreload 2143 139817528179584 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:02:27,955 autoreload 2143 139817528179584 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:02:30,018 autoreload 2189 140099784379264 Watching for file changes with StatReloader
+django.request ERROR 2024-06-06 09:02:41,303 log 2189 140099722876480 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
 Traceback (most recent call last):
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/customers/views.py", line 200, in customer_order_view
-    return render(
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
-    return template.render(context, request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
-    return self.template.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
-    return self._render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
-    return compiled_parent._render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
-    result = block.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 321, in render
-    return nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 197, in render
-    template = context.template.engine.select_template(template_name)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 206, in select_template
-    return self.get_template(template_name)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 175, in get_template
-    template, origin = self.find_template(template_name)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 157, in find_template
-    template = loader.get_template(name, skip=skip)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
-    template = super().get_template(template_name, skip)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
-    return Template(
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 154, in __init__
-    self.nodelist = self.compile_nodelist()
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
-    return parser.parse()
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
-    raise self.error(token, e)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
-    compiled_result = compile_func(self, token)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 967, in do_if
-    nodelist = parser.parse(("endif",))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 507, in parse
-    self.invalid_block_tag(token, command, parse_until)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 558, in invalid_block_tag
-    raise self.error(
-django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 47: 'blocktrans', expected 'endif'. Did you forget to register or load this tag?
-django.request WARNING 2024-06-05 11:20:58,620 log 731 140121696368192 Not Found: /favicon.ico
-django.request WARNING 2024-06-05 11:20:58,681 log 731 140121696368192 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request ERROR 2024-06-05 11:21:55,400 log 731 140121696368192 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
-Traceback (most recent call last):
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 505, in parse
-    compile_func = self.tags[command]
-KeyError: 'blocktrans'
-
-During handling of the above exception, another exception occurred:
-
+  File "/workspaces/django-renterprise/customers/views.py", line 201, in customer_order_view
+    invoice_list = Invoice.objects.filter(Invoice, order.id==obj.id)
+NameError: name 'order' is not defined
+django.request WARNING 2024-06-06 09:02:42,047 log 2189 140099722876480 Not Found: /favicon.ico
+django.utils.autoreload INFO 2024-06-06 09:04:12,422 autoreload 2189 140099784379264 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:04:14,516 autoreload 2275 140645513489280 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:04:19,906 autoreload 2275 140645513489280 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:04:21,831 autoreload 2320 140319395523456 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:04:37,133 autoreload 2320 140319395523456 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:04:38,802 autoreload 2362 140337512213376 Watching for file changes with StatReloader
+django.request ERROR 2024-06-06 09:04:43,115 log 2362 140337383470656 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
 Traceback (most recent call last):
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/customers/views.py", line 200, in customer_order_view
-    return render(
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
-    return template.render(context, request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
-    return self.template.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
-    return self._render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
-    return compiled_parent._render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
-    result = block.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 321, in render
-    return nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 197, in render
-    template = context.template.engine.select_template(template_name)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 206, in select_template
-    return self.get_template(template_name)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 175, in get_template
-    template, origin = self.find_template(template_name)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 157, in find_template
-    template = loader.get_template(name, skip=skip)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
-    template = super().get_template(template_name, skip)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
-    return Template(
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 154, in __init__
-    self.nodelist = self.compile_nodelist()
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
-    return parser.parse()
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
-    raise self.error(token, e)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
-    compiled_result = compile_func(self, token)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 967, in do_if
-    nodelist = parser.parse(("endif",))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 507, in parse
-    self.invalid_block_tag(token, command, parse_until)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 558, in invalid_block_tag
-    raise self.error(
-django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 47: 'blocktrans', expected 'endif'. Did you forget to register or load this tag?
-django.request WARNING 2024-06-05 11:21:56,255 log 731 140121696368192 Not Found: /favicon.ico
-django.request WARNING 2024-06-05 11:21:56,355 log 731 140121696368192 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request ERROR 2024-06-05 11:22:01,078 log 731 140121696368192 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
-Traceback (most recent call last):
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 505, in parse
-    compile_func = self.tags[command]
-KeyError: 'blocktrans'
-
-During handling of the above exception, another exception occurred:
-
+  File "/workspaces/django-renterprise/customers/views.py", line 201, in customer_order_view
+    invoice_list = Invoice.objects.filter(order.id==obj.id).values()
+NameError: name 'order' is not defined
+django.request WARNING 2024-06-06 09:04:43,668 log 2362 140337383470656 Not Found: /favicon.ico
+django.utils.autoreload INFO 2024-06-06 09:04:51,249 autoreload 2362 140337512213376 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:04:53,029 autoreload 2424 139964562701184 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:04:57,243 autoreload 2424 139964562701184 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:04:59,150 autoreload 2448 140130547870592 Watching for file changes with StatReloader
+django.request ERROR 2024-06-06 09:05:05,046 log 2448 140130419209792 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
 Traceback (most recent call last):
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/customers/views.py", line 200, in customer_order_view
-    return render(
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
-    return template.render(context, request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
-    return self.template.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
-    return self._render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
-    return compiled_parent._render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
-    result = block.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 321, in render
-    return nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 197, in render
-    template = context.template.engine.select_template(template_name)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 206, in select_template
-    return self.get_template(template_name)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 175, in get_template
-    template, origin = self.find_template(template_name)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 157, in find_template
-    template = loader.get_template(name, skip=skip)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
-    template = super().get_template(template_name, skip)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
-    return Template(
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 154, in __init__
-    self.nodelist = self.compile_nodelist()
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
-    return parser.parse()
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
-    raise self.error(token, e)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
-    compiled_result = compile_func(self, token)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 967, in do_if
-    nodelist = parser.parse(("endif",))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 507, in parse
-    self.invalid_block_tag(token, command, parse_until)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 558, in invalid_block_tag
-    raise self.error(
-django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 47: 'blocktrans', expected 'endif'. Did you forget to register or load this tag?
-django.request WARNING 2024-06-05 11:22:01,849 log 731 140121696368192 Not Found: /favicon.ico
-django.request WARNING 2024-06-05 11:22:01,880 log 731 140121696368192 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request ERROR 2024-06-05 11:23:11,390 log 731 140121696368192 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
+  File "/workspaces/django-renterprise/customers/views.py", line 202, in customer_order_view
+    logger.warning(invoice_list)
+NameError: name 'logger' is not defined
+django.request WARNING 2024-06-06 09:05:05,519 log 2448 140130419209792 Not Found: /favicon.ico
+django.utils.autoreload INFO 2024-06-06 09:05:38,030 autoreload 2448 140130547870592 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:05:40,053 autoreload 2513 139909497973632 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:06:09,603 autoreload 2513 139909497973632 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:06:11,712 autoreload 2566 140100105538432 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:06:13,834 autoreload 2566 140100105538432 /workspaces/django-renterprise/orders/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:06:15,597 autoreload 2590 140636324707200 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:06:24,327 autoreload 2590 140636324707200 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:06:25,882 autoreload 2639 140677885287296 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:06:31,148 autoreload 2639 140677885287296 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:06:33,196 autoreload 2674 139912493935488 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:06:41,827 autoreload 2674 139912493935488 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:06:43,844 autoreload 2725 140035574320000 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 09:06:47,450 views 2725 140035512817216 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+customers.views WARNING 2024-06-06 09:06:47,569 views 2725 140035512817216 <django.core.paginator.Paginator object at 0x7f5c8f1f3b20>
+django.request ERROR 2024-06-06 09:06:48,102 log 2725 140035512817216 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
 Traceback (most recent call last):
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 505, in parse
     compile_func = self.tags[command]
@@ -612,54 +303,16 @@ Traceback (most recent call last):
     response = get_response(request)
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/customers/views.py", line 200, in customer_order_view
+  File "/workspaces/django-renterprise/customers/views.py", line 209, in customer_order_view
     return render(
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
     content = loader.render_to_string(template_name, context, request, using=using)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
-    return template.render(context, request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
-    return self.template.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
-    return self._render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
-    return compiled_parent._render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
-    result = block.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 321, in render
-    return nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 197, in render
-    template = context.template.engine.select_template(template_name)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 206, in select_template
-    return self.get_template(template_name)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 175, in get_template
     template, origin = self.find_template(template_name)
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 157, in find_template
@@ -676,238 +329,29 @@ Traceback (most recent call last):
     raise self.error(token, e)
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
     compiled_result = compile_func(self, token)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 967, in do_if
-    nodelist = parser.parse(("endif",))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 507, in parse
-    self.invalid_block_tag(token, command, parse_until)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 558, in invalid_block_tag
-    raise self.error(
-django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 72: 'endblock', expected 'endif'. Did you forget to register or load this tag?
-django.request WARNING 2024-06-05 11:23:12,269 log 731 140121696368192 Not Found: /favicon.ico
-django.request WARNING 2024-06-05 11:23:12,368 log 731 140121696368192 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request ERROR 2024-06-05 11:23:47,385 log 731 140121696368192 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
-Traceback (most recent call last):
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
-    return self.template.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
-    return self._render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
-    return compiled_parent._render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
-    result = block.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 321, in render
-    return nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 197, in render
-    template = context.template.engine.select_template(template_name)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 212, in select_template
-    raise TemplateDoesNotExist(", ".join(not_found))
-django.template.exceptions.TemplateDoesNotExist: order_invoice.html
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/customers/views.py", line 200, in customer_order_view
-    return render(
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
-    return template.render(context, request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 63, in render
-    reraise(exc, self.backend)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 84, in reraise
-    raise new from exc
-django.template.exceptions.TemplateDoesNotExist: order_invoice.html
-django.request WARNING 2024-06-05 11:23:48,140 log 731 140121696368192 Not Found: /favicon.ico
-django.request WARNING 2024-06-05 11:23:48,179 log 731 140121696368192 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request ERROR 2024-06-05 11:24:02,062 log 731 140121696368192 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
-Traceback (most recent call last):
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
-    return self.template.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
-    return self._render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
-    return compiled_parent._render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
-    result = block.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 321, in render
-    return nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 197, in render
-    template = context.template.engine.select_template(template_name)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 212, in select_template
-    raise TemplateDoesNotExist(", ".join(not_found))
-django.template.exceptions.TemplateDoesNotExist: orders.order_invoice.html
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/customers/views.py", line 200, in customer_order_view
-    return render(
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
-    return template.render(context, request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 63, in render
-    reraise(exc, self.backend)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 84, in reraise
-    raise new from exc
-django.template.exceptions.TemplateDoesNotExist: orders.order_invoice.html
-django.request WARNING 2024-06-05 11:24:02,839 log 731 140121696368192 Not Found: /favicon.ico
-django.request WARNING 2024-06-05 11:24:02,870 log 731 140121696368192 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request WARNING 2024-06-05 11:24:06,503 log 731 140121696368192 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request WARNING 2024-06-05 11:24:06,943 log 731 140121696368192 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request WARNING 2024-06-05 11:24:18,880 log 731 140121696368192 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request ERROR 2024-06-05 11:24:22,142 log 731 140121696368192 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
-Traceback (most recent call last):
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 505, in parse
-    compile_func = self.tags[command]
-KeyError: 'endblock'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/customers/views.py", line 200, in customer_order_view
-    return render(
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
-    return template.render(context, request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
-    return self.template.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
-    return self._render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
-    return compiled_parent._render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
-    result = block.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 321, in render
-    return nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 197, in render
-    template = context.template.engine.select_template(template_name)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 206, in select_template
-    return self.get_template(template_name)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 175, in get_template
-    template, origin = self.find_template(template_name)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 157, in find_template
-    template = loader.get_template(name, skip=skip)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
-    template = super().get_template(template_name, skip)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
-    return Template(
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 154, in __init__
-    self.nodelist = self.compile_nodelist()
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
-    return parser.parse()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
     raise self.error(token, e)
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
     compiled_result = compile_func(self, token)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 967, in do_if
-    nodelist = parser.parse(("endif",))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 507, in parse
     self.invalid_block_tag(token, command, parse_until)
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 558, in invalid_block_tag
     raise self.error(
-django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 72: 'endblock', expected 'endif'. Did you forget to register or load this tag?
-django.request WARNING 2024-06-05 11:24:22,356 log 731 140121696368192 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request WARNING 2024-06-05 11:24:23,053 log 731 140121696368192 Not Found: /favicon.ico
-django.request WARNING 2024-06-05 11:24:23,094 log 731 140121696368192 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request ERROR 2024-06-05 11:27:47,134 log 731 140121696368192 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 167: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+django.request WARNING 2024-06-06 09:06:48,824 log 2725 140035512817216 Not Found: /favicon.ico
+customers.views WARNING 2024-06-06 09:08:37,580 views 2725 140035512817216 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+customers.views WARNING 2024-06-06 09:08:37,691 views 2725 140035512817216 <django.core.paginator.Paginator object at 0x7f5c913001c0>
+django.request ERROR 2024-06-06 09:08:38,209 log 2725 140035512817216 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
 Traceback (most recent call last):
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 505, in parse
     compile_func = self.tags[command]
@@ -920,54 +364,16 @@ Traceback (most recent call last):
     response = get_response(request)
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/workspaces/django-renterprise/customers/views.py", line 200, in customer_order_view
+  File "/workspaces/django-renterprise/customers/views.py", line 209, in customer_order_view
     return render(
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
     content = loader.render_to_string(template_name, context, request, using=using)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
-    return template.render(context, request)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
-    return self.template.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 175, in render
-    return self._render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
-    return compiled_parent._render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
-    result = block.nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 321, in render
-    return nodelist.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 197, in render
-    template = context.template.engine.select_template(template_name)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 206, in select_template
-    return self.get_template(template_name)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 175, in get_template
     template, origin = self.find_template(template_name)
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/engine.py", line 157, in find_template
@@ -980,18 +386,498 @@ Traceback (most recent call last):
     self.nodelist = self.compile_nodelist()
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
     return parser.parse()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/defaulttags.py", line 967, in do_if
+    nodelist = parser.parse(("endif",))
   File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 507, in parse
     self.invalid_block_tag(token, command, parse_until)
-  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 568, in invalid_block_tag
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/template/base.py", line 558, in invalid_block_tag
     raise self.error(
-django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 45: 'else'. Did you forget to register or load this tag?
-django.request WARNING 2024-06-05 11:27:47,908 log 731 140121696368192 Not Found: /favicon.ico
-django.request WARNING 2024-06-05 11:27:47,955 log 731 140121696368192 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.utils.autoreload INFO 2024-06-05 22:57:47,275 autoreload 648 140081322130304 Watching for file changes with StatReloader
-urllib3.connectionpool DEBUG 2024-06-05 23:03:48,027 connectionpool 648 140081260365376 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-05 23:03:48,101 connectionpool 648 140081260365376 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
-django.request WARNING 2024-06-05 23:03:49,173 log 648 140081260365376 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request WARNING 2024-06-05 23:03:52,963 log 648 140081260365376 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request WARNING 2024-06-05 23:03:53,264 log 648 140081260365376 Not Found: /accounts/login/styles.css.map
-django.request WARNING 2024-06-05 23:03:55,356 log 648 140081260365376 Not Found: /accounts/login/styles.css.map
-django.request WARNING 2024-06-05 23:03:55,555 log 648 140081260365376 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 108: 'else', expected 'endif'. Did you forget to register or load this tag?
+django.request WARNING 2024-06-06 09:08:38,950 log 2725 140035512817216 Not Found: /favicon.ico
+customers.views WARNING 2024-06-06 09:09:01,258 views 2725 140035512817216 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+customers.views WARNING 2024-06-06 09:09:01,373 views 2725 140035512817216 <django.core.paginator.Paginator object at 0x7f5c8f0d68e0>
+urllib3.connectionpool DEBUG 2024-06-06 09:09:01,451 connectionpool 2725 140035512817216 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 09:09:01,522 connectionpool 2725 140035512817216 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-06 09:09:05,893 log 2725 140035512817216 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 09:13:35,820 autoreload 2725 140035574320000 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:13:38,030 autoreload 2968 139700953353088 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:13:41,093 autoreload 2968 139700953353088 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:13:43,238 autoreload 2992 140379666606976 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 09:15:00,993 views 2992 140379529672256 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+customers.views WARNING 2024-06-06 09:15:01,110 views 2992 140379529672256 <django.core.paginator.Paginator object at 0x7facaca82e50>
+urllib3.connectionpool DEBUG 2024-06-06 09:15:01,200 connectionpool 2992 140379529672256 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 09:15:01,223 connectionpool 2992 140379529672256 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
+django.request WARNING 2024-06-06 09:15:02,982 log 2992 140379529672256 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 09:18:42,142 autoreload 2992 140379666606976 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:18:44,033 autoreload 3111 140640011701120 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:18:53,823 autoreload 3111 140640011701120 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:18:55,959 autoreload 3153 139766384429952 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:19:10,125 autoreload 3153 139766384429952 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:19:12,116 autoreload 3198 140546448857984 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:19:25,338 autoreload 3198 140546448857984 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:19:27,148 autoreload 3243 139865341672320 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 09:19:43,444 views 3243 139865207338560 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+customers.views WARNING 2024-06-06 09:19:43,562 views 3243 139865207338560 <django.core.paginator.Paginator object at 0x7f34ec6c4520>
+customers.views WARNING 2024-06-06 09:19:43,684 views 3243 139865207338560 range(1, 2)
+customers.views WARNING 2024-06-06 09:19:43,685 views 3243 139865207338560 1
+customers.views WARNING 2024-06-06 09:19:43,685 views 3243 139865207338560 <django.core.paginator.Paginator object at 0x7f34ec6c4520>
+urllib3.connectionpool DEBUG 2024-06-06 09:19:43,794 connectionpool 3243 139865207338560 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 09:19:43,840 connectionpool 3243 139865207338560 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-06 09:19:45,391 log 3243 139865207338560 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 09:21:29,105 autoreload 3243 139865341672320 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:21:31,205 autoreload 3348 140563874855808 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 09:21:36,543 views 3348 140563743503936 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+customers.views WARNING 2024-06-06 09:21:36,659 views 3348 140563743503936 <django.core.paginator.Paginator object at 0x7fd7903229a0>
+customers.views WARNING 2024-06-06 09:21:36,800 views 3348 140563743503936 range(1, 2)
+customers.views WARNING 2024-06-06 09:21:36,801 views 3348 140563743503936 1
+django.request ERROR 2024-06-06 09:21:37,222 log 3348 140563743503936 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspaces/django-renterprise/customers/views.py", line 210, in customer_order_view
+    logger.warning(paginate_invoice_list.num_pages[0])
+TypeError: 'int' object is not subscriptable
+django.request WARNING 2024-06-06 09:21:38,103 log 3348 140563743503936 Not Found: /favicon.ico
+django.request WARNING 2024-06-06 09:21:38,104 log 3348 140563735111232 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 09:24:44,239 autoreload 3348 140563874855808 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:24:46,340 autoreload 3462 140104797870976 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:24:51,836 autoreload 3462 140104797870976 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:24:53,739 autoreload 3507 139756349975424 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:25:07,917 autoreload 3507 139756349975424 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:25:09,936 autoreload 3549 140224338045824 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:25:28,616 autoreload 3549 140224338045824 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:25:30,797 autoreload 3591 140099782687616 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:25:35,801 autoreload 3591 140099782687616 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:25:37,645 autoreload 3636 140125000973184 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:33:23,649 autoreload 3636 140125000973184 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:33:25,913 autoreload 3678 140477208791936 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:33:32,468 autoreload 3678 140477208791936 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:33:34,334 autoreload 3723 140413911870336 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:33:38,839 autoreload 3723 140413911870336 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:33:41,112 autoreload 3747 139665334410112 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:33:54,251 autoreload 3747 139665334410112 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:33:56,434 autoreload 3792 140470527069056 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:34:00,858 autoreload 3792 140470527069056 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:34:03,017 autoreload 3827 140361123388288 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:34:14,053 autoreload 3827 140361123388288 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:34:16,052 autoreload 3878 139623930997632 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:34:28,127 autoreload 3878 139623930997632 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:34:30,137 autoreload 3920 139843111476096 Watching for file changes with StatReloader
+django.request WARNING 2024-06-06 09:34:32,000 log 3920 139843050497600 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 09:34:36,358 views 3920 139843050497600 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request ERROR 2024-06-06 09:34:36,881 log 3920 139843050497600 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspaces/django-renterprise/customers/views.py", line 209, in customer_order_view
+    page_number = paginate_invoice_list.GET.get('page')
+AttributeError: 'Paginator' object has no attribute 'GET'
+django.request WARNING 2024-06-06 09:34:37,130 log 3920 139843050497600 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-06 09:34:37,576 log 3920 139843040269888 Not Found: /favicon.ico
+django.request WARNING 2024-06-06 09:34:37,585 log 3920 139843050497600 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 09:35:03,615 autoreload 3920 139843111476096 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:35:05,434 autoreload 3987 140634488445824 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 09:35:09,021 views 3987 140634426943040 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request ERROR 2024-06-06 09:35:09,691 log 3987 140634426943040 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
+Traceback (most recent call last):
+  File "/workspaces/django-renterprise/customers/views.py", line 211, in customer_order_view
+    page_obj = p.get_page(page_number)  # returns the desired page object
+NameError: name 'p' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspaces/django-renterprise/customers/views.py", line 212, in customer_order_view
+    except PageNotAnInteger:
+NameError: name 'PageNotAnInteger' is not defined
+django.request WARNING 2024-06-06 09:35:10,355 log 3987 140634426943040 Not Found: /favicon.ico
+django.request WARNING 2024-06-06 09:35:10,383 log 3987 140634426943040 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 09:35:24,530 autoreload 3987 140634488445824 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:35:26,946 autoreload 4055 139759748647808 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 09:35:34,437 views 4055 139759687145024 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request ERROR 2024-06-06 09:35:35,108 log 4055 139759687145024 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspaces/django-renterprise/customers/views.py", line 211, in customer_order_view
+    page_obj = p.get_page(page_number)  # returns the desired page object
+NameError: name 'p' is not defined
+django.request WARNING 2024-06-06 09:35:35,763 log 4055 139759687145024 Not Found: /favicon.ico
+django.request WARNING 2024-06-06 09:35:35,849 log 4055 139759687145024 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 09:35:58,205 autoreload 4055 139759748647808 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:36:00,445 autoreload 4144 139635226241920 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:36:21,403 autoreload 4144 139635226241920 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:36:23,617 autoreload 4189 139990029863808 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:36:25,900 autoreload 4189 139990029863808 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:36:27,837 autoreload 4213 140138781092736 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:36:33,316 autoreload 4213 140138781092736 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:36:35,123 autoreload 4258 139812901456768 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:36:38,310 autoreload 4258 139812901456768 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:36:40,399 autoreload 4275 140375653796736 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 09:36:45,586 views 4275 140375592293952 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+urllib3.connectionpool DEBUG 2024-06-06 09:36:45,875 connectionpool 4275 140375592293952 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 09:36:45,918 connectionpool 4275 140375592293952 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-06 09:36:47,708 log 4275 140375592293952 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 09:39:22,788 views 4275 140375592293952 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 09:39:24,599 log 4275 140375582328384 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 09:40:08,027 views 4275 140375582328384 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 09:40:09,952 log 4275 140375592293952 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 09:40:41,361 autoreload 4275 140375653796736 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:40:43,728 autoreload 4465 140419355511680 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 09:41:06,614 views 4465 140419294008896 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+urllib3.connectionpool DEBUG 2024-06-06 09:41:07,042 connectionpool 4465 140419294008896 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 09:41:07,088 connectionpool 4465 140419294008896 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-06 09:41:08,759 log 4465 140419294008896 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 09:43:40,738 autoreload 4465 140419355511680 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:43:42,917 autoreload 4585 140428750691200 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:43:48,542 autoreload 4585 140428750691200 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:43:50,599 autoreload 4630 140484274994048 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:44:02,826 autoreload 4630 140484274994048 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:44:05,006 autoreload 4672 139698933771136 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:46:54,449 autoreload 4672 139698933771136 /workspaces/django-renterprise/items/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:46:56,718 autoreload 4721 140429634718592 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:47:01,216 autoreload 4721 140429634718592 /workspaces/django-renterprise/items/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:47:03,308 autoreload 4761 139675315972992 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:47:08,640 autoreload 4761 139675315972992 /workspaces/django-renterprise/items/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:47:10,710 autoreload 4789 140407383157632 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:47:14,084 autoreload 4789 140407383157632 /workspaces/django-renterprise/items/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:47:15,793 autoreload 4810 139944272812928 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:47:28,815 autoreload 4810 139944272812928 /workspaces/django-renterprise/items/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:47:31,301 autoreload 4855 140536785763200 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:47:35,821 autoreload 4855 140536785763200 /workspaces/django-renterprise/items/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:47:37,808 autoreload 4900 139650079579008 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:47:46,447 autoreload 4900 139650079579008 /workspaces/django-renterprise/items/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:47:48,110 autoreload 4942 140295547833216 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:47:52,443 autoreload 4942 140295547833216 /workspaces/django-renterprise/items/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:47:54,608 autoreload 4970 140285837163392 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:48:16,411 autoreload 4970 140285837163392 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:48:18,206 autoreload 5015 140091976113024 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:48:26,952 autoreload 5015 140091976113024 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:48:29,028 autoreload 5060 140151525686144 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:48:34,716 autoreload 5060 140151525686144 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:48:36,808 autoreload 5105 139756768168832 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:48:39,024 autoreload 5105 139756768168832 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:48:41,108 autoreload 5129 140027665996672 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:48:51,052 autoreload 5129 140027665996672 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:48:52,921 autoreload 5171 140445578283904 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 09:48:55,098 autoreload 5171 140445578283904 /workspaces/django-renterprise/orders/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 09:48:57,205 autoreload 5195 140485403245440 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 09:52:18,709 views 5195 140485341742656 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+urllib3.connectionpool DEBUG 2024-06-06 09:52:18,993 connectionpool 5195 140485341742656 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 09:52:19,025 connectionpool 5195 140485341742656 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
+django.request WARNING 2024-06-06 09:52:20,853 log 5195 140485341742656 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 09:53:09,006 views 5195 140485341742656 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 09:53:11,527 log 5195 140485341742656 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 11:01:14,106 autoreload 5195 140485403245440 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:01:16,336 autoreload 6285 140421010246528 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:01:21,644 autoreload 6285 140421010246528 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:01:23,845 autoreload 6330 139628336032640 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:01:36,853 autoreload 6330 139628336032640 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:01:39,108 autoreload 6382 140007054261120 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:01:41,247 autoreload 6382 140007054261120 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:01:43,891 autoreload 6404 140578586921856 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:03:22,342 autoreload 6404 140578586921856 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:03:24,746 autoreload 6488 140594673863552 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:03:29,231 autoreload 6488 140594673863552 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:03:31,603 autoreload 6525 139751556627328 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:03:34,780 autoreload 6525 139751556627328 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:03:37,122 autoreload 6553 139876504615808 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:03:39,997 autoreload 6553 139876504615808 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:03:42,337 autoreload 6577 139833098251136 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:03:45,892 autoreload 6577 139833098251136 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:03:48,215 autoreload 6601 139700043430784 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:04:31,112 autoreload 6601 139700043430784 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:04:33,608 autoreload 6646 140193188457344 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:04:37,768 autoreload 6646 140193188457344 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:04:39,913 autoreload 6682 139844342721408 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:04:47,204 autoreload 6682 139844342721408 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:04:49,007 autoreload 6714 140513285299072 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:04:51,707 autoreload 6714 140513285299072 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:04:53,989 autoreload 6738 140299353910144 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:05:16,224 autoreload 6738 140299353910144 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:05:18,716 autoreload 6791 139841900018560 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:05:23,906 autoreload 6791 139841900018560 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:05:26,005 autoreload 6836 140532001172352 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:05:29,240 autoreload 6836 140532001172352 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:05:31,462 autoreload 6860 140650528951168 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:05:33,708 autoreload 6860 140650528951168 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:05:35,707 autoreload 6884 140085424532352 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:05:47,219 autoreload 6884 140085424532352 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:05:49,525 autoreload 6908 140142741756800 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:05:53,539 autoreload 6908 140142741756800 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:05:55,830 autoreload 6943 140468721863552 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:06:00,938 autoreload 6943 140468721863552 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:06:02,535 autoreload 6976 139759657921408 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:06:05,636 autoreload 6976 139759657921408 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:06:07,722 autoreload 7000 140409735961472 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:06:11,072 autoreload 7000 140409735961472 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:06:13,106 autoreload 7024 139625676925824 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:06:23,912 autoreload 7024 139625676925824 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:06:26,125 autoreload 7070 139744004782976 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:06:39,137 autoreload 7070 139744004782976 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:06:41,807 autoreload 7123 140265697811328 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:07:40,832 autoreload 7123 140265697811328 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:07:43,791 autoreload 7191 139651009526656 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:07:47,701 autoreload 7191 139651009526656 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:07:49,897 autoreload 7243 140005054221184 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:08:15,814 autoreload 7243 140005054221184 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:08:18,888 autoreload 7276 140525321657216 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:08:23,367 autoreload 7276 140525321657216 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:08:25,404 autoreload 7321 139836655840128 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:08:28,919 autoreload 7321 139836655840128 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:08:31,043 autoreload 7345 140686953806720 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:08:36,924 autoreload 7345 140686953806720 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:08:39,134 autoreload 7380 140268299467648 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:10:56,943 autoreload 7380 140268299467648 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:10:59,329 autoreload 7483 140564711758720 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:11:03,747 autoreload 7483 140564711758720 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:11:06,124 autoreload 7528 140129626397568 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:11:12,849 autoreload 7528 140129626397568 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:11:15,195 autoreload 7560 140500764355456 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:11:26,128 autoreload 7560 140500764355456 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:11:28,411 autoreload 7595 140018162273152 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:11:31,902 autoreload 7595 140018162273152 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:11:34,204 autoreload 7619 139794006862720 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:11:38,617 autoreload 7619 139794006862720 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:11:40,706 autoreload 7664 140450263620480 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:11:43,117 autoreload 7664 140450263620480 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:11:45,522 autoreload 7686 139689379703680 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:11:55,762 autoreload 7686 139689379703680 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:11:58,190 autoreload 7730 140058048359296 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:12:04,587 autoreload 7730 140058048359296 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:12:06,454 autoreload 7775 140058203442048 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:12:11,624 autoreload 7775 140058203442048 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:12:14,019 autoreload 7799 140227116809088 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:12:19,633 autoreload 7799 140227116809088 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:12:22,334 autoreload 7844 139974656187264 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:12:56,200 autoreload 7844 139974656187264 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:12:58,646 autoreload 7902 139656370465664 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:13:04,237 autoreload 7902 139656370465664 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:13:06,207 autoreload 7947 140010038680448 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:13:10,520 autoreload 7947 140010038680448 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:13:12,908 autoreload 7971 139900338649984 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:13:15,626 autoreload 7971 139900338649984 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:13:17,827 autoreload 7995 140142080650112 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:13:21,181 autoreload 7995 140142080650112 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:13:23,032 autoreload 8019 139846749162368 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:13:32,928 autoreload 8019 139846749162368 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:13:35,791 autoreload 8068 140470491888512 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:13:48,209 autoreload 8068 140470491888512 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:13:50,810 autoreload 8121 140619294702464 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:13:53,029 autoreload 8121 140619294702464 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:13:55,531 autoreload 8145 140691386379136 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:14:00,137 autoreload 8145 140691386379136 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:14:02,407 autoreload 8187 140424037108608 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 11:14:05,025 autoreload 8187 140424037108608 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 11:14:07,531 autoreload 8211 140058725411712 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 11:14:24,890 views 8211 140058663908928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+urllib3.connectionpool DEBUG 2024-06-06 11:14:25,227 connectionpool 8211 140058663908928 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 11:14:25,319 connectionpool 8211 140058663908928 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-06 11:14:26,450 log 8211 140058663908928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-06 11:14:27,313 log 8211 140058663908928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 11:15:07,694 views 8211 140058653419072 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 11:15:09,989 log 8211 140058653419072 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 11:18:02,404 views 8211 140058653419072 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 11:18:04,206 log 8211 140058653419072 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 11:18:19,904 views 8211 140058653419072 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 11:18:21,697 log 8211 140058653419072 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 11:20:10,393 views 8211 140058653419072 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 11:20:12,719 log 8211 140058653419072 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 11:21:46,614 views 8211 140058653419072 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 11:21:48,666 log 8211 140058663908928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 11:23:20,702 views 8211 140058663908928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 11:23:22,556 log 8211 140058653419072 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 11:25:14,853 views 8211 140058653419072 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 11:25:16,845 log 8211 140058663908928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 11:25:59,262 views 8211 140058663908928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 11:26:01,143 log 8211 140058653419072 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 11:26:45,132 views 8211 140058663908928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 11:26:47,044 log 8211 140058663908928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 11:28:17,689 views 8211 140058663908928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 11:28:19,647 log 8211 140058653419072 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 13:29:57,532 autoreload 680 140065699363712 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-06 13:30:04,499 connectionpool 680 140065637860928 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 13:30:04,551 connectionpool 680 140065637860928 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+customers.views WARNING 2024-06-06 13:30:21,506 views 680 140065637860928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:30:27,257 log 680 140065637860928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:31:36,711 views 680 140065637860928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:31:38,561 log 680 140065637860928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:32:37,480 views 680 140065627371072 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:32:39,263 log 680 140065637860928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:36:08,403 views 680 140065637860928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:36:10,153 log 680 140065637860928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:42:00,611 views 680 140065637860928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:42:02,456 log 680 140065627371072 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:45:00,454 views 680 140065627371072 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:45:02,251 log 680 140065637860928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:45:44,209 views 680 140065637860928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:45:46,152 log 680 140065637860928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:46:16,593 views 680 140065637860928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:46:18,450 log 680 140065637860928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:46:34,480 views 680 140065637860928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:46:36,843 log 680 140065637860928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:47:55,126 views 680 140065637860928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:47:56,991 log 680 140065637860928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:48:43,998 views 680 140065637860928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:48:45,837 log 680 140065627371072 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:50:14,215 views 680 140065627371072 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:50:16,066 log 680 140065627371072 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:55:20,455 views 680 140065627371072 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:55:22,335 log 680 140065627371072 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:55:54,220 views 680 140065627371072 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:55:55,983 log 680 140065627371072 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:56:15,817 views 680 140065627371072 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:56:17,665 log 680 140065627371072 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:56:35,096 views 680 140065627371072 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:56:36,949 log 680 140065637860928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:56:49,440 views 680 140065637860928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:56:51,171 log 680 140065637860928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:57:19,423 views 680 140065637860928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:57:21,634 log 680 140065637860928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:57:33,283 views 680 140065637860928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:57:35,080 log 680 140065637860928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:57:58,948 views 680 140065637860928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:58:00,650 log 680 140065637860928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:58:42,162 views 680 140065637860928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:58:44,151 log 680 140065637860928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:59:10,955 views 680 140065637860928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:59:12,843 log 680 140065637860928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 13:59:21,152 views 680 140065637860928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 13:59:23,027 log 680 140065637860928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 14:00:23,401 views 680 140065637860928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 14:00:25,248 log 680 140065637860928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 14:00:51,358 views 680 140065637860928 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 14:00:53,058 log 680 140065637860928 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 15:11:47,095 autoreload 686 140609767259008 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 15:11:52,891 views 686 140609705756224 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+urllib3.connectionpool DEBUG 2024-06-06 15:11:53,351 connectionpool 686 140609705756224 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 15:11:53,460 connectionpool 686 140609705756224 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
+django.request WARNING 2024-06-06 15:11:54,942 log 686 140609679267392 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-06 15:11:55,268 log 686 140609705756224 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 15:14:37,817 views 686 140609705756224 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 15:14:39,677 log 686 140609696052800 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 15:14:59,673 views 686 140609696052800 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 15:15:01,384 log 686 140609696052800 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 15:17:49,464 views 686 140609696052800 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 15:17:51,294 log 686 140609696052800 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 15:24:08,443 views 686 140609696052800 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 15:24:10,358 log 686 140609696052800 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 15:24:22,792 views 686 140609696052800 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 15:24:24,774 log 686 140609696052800 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 15:25:48,536 views 686 140609696052800 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 15:25:50,371 log 686 140609696052800 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 15:28:05,887 views 686 140609696052800 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 15:28:07,657 log 686 140609705756224 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-06 15:28:12,400 log 686 140609705756224 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/invoice_status/5/true
+django.request WARNING 2024-06-06 15:28:12,648 log 686 140609705756224 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-06 15:28:12,741 log 686 140609705756224 Not Found: /favicon.ico
+django.request WARNING 2024-06-06 15:28:12,846 log 686 140609705756224 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/invoice_status/5/styles.css.map
+django.utils.autoreload INFO 2024-06-06 15:28:49,986 autoreload 686 140609767259008 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 15:28:51,776 autoreload 1284 139942830254976 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 15:28:57,999 views 1284 139942768752192 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+urllib3.connectionpool DEBUG 2024-06-06 15:28:58,284 connectionpool 1284 139942768752192 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 15:28:58,386 connectionpool 1284 139942768752192 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-06 15:28:59,581 log 1284 139942758786624 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-06 15:29:00,021 log 1284 139942750393920 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request ERROR 2024-06-06 15:29:17,122 log 1284 139942750393920 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/invoice_status/5/true
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: invoice_status_change() missing 1 required positional argument: 'order_id'
+django.request WARNING 2024-06-06 15:29:17,321 log 1284 139942750393920 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-06 15:29:17,647 log 1284 139942750393920 Not Found: /favicon.ico
+django.request ERROR 2024-06-06 15:29:18,900 log 1284 139942750393920 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/invoice_status/5/styles.css.map
+Traceback (most recent call last):
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/cistudent/.local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: invoice_status_change() missing 1 required positional argument: 'order_id'
+django.utils.autoreload INFO 2024-06-06 15:29:58,298 autoreload 1284 139942830254976 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 15:30:00,074 autoreload 1426 139629515205504 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 15:30:06,594 autoreload 1426 139629515205504 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 15:30:08,362 autoreload 1471 140670709115776 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 15:30:12,579 views 1471 140670580291136 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+urllib3.connectionpool DEBUG 2024-06-06 15:30:12,915 connectionpool 1471 140670580291136 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 15:30:13,003 connectionpool 1471 140670580291136 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-06 15:30:14,178 log 1471 140670580291136 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-06 15:30:14,662 log 1471 140670580291136 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-06 15:30:21,271 log 1471 140670580291136 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-06 15:30:21,473 log 1471 140670580291136 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-06-06 15:30:27,962 log 1471 140670580291136 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-06-06 15:30:28,127 log 1471 140670580291136 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 15:30:34,200 views 1471 140670580291136 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': True}]>
+django.request WARNING 2024-06-06 15:30:35,412 log 1471 140670580291136 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-06 15:30:35,634 log 1471 140670580291136 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-06 15:30:50,755 autoreload 1471 140670709115776 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 15:30:52,803 autoreload 1613 140614519958400 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 15:31:06,954 autoreload 1613 140614519958400 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 15:31:08,961 autoreload 1666 139665798257536 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 15:31:13,245 autoreload 1666 139665798257536 /workspaces/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 15:31:15,259 autoreload 1701 140681732950912 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 15:32:42,659 autoreload 1701 140681732950912 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 15:32:44,517 autoreload 1769 140406113160064 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 15:32:48,869 autoreload 1769 140406113160064 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 15:32:51,292 autoreload 1804 140279135554432 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 15:32:54,496 autoreload 1804 140279135554432 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 15:32:56,443 autoreload 1836 140370832980864 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 15:32:58,350 autoreload 1836 140370832980864 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 15:33:00,390 autoreload 1840 140615488387968 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 15:33:03,494 autoreload 1840 140615488387968 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 15:33:05,358 autoreload 1868 139838372113280 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 15:33:08,147 autoreload 1868 139838372113280 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 15:33:09,761 autoreload 1888 140561498471296 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 15:33:15,273 autoreload 1888 140561498471296 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 15:33:17,189 autoreload 1930 140038373829504 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-06 15:33:24,693 autoreload 1930 140038373829504 /workspaces/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-06 15:33:26,687 autoreload 1975 139886021196672 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-06 15:33:29,602 views 1975 139885960218176 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': True}]>
+urllib3.connectionpool DEBUG 2024-06-06 15:33:29,897 connectionpool 1975 139885960218176 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-06 15:33:29,949 connectionpool 1975 139885960218176 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-06 15:33:31,761 log 1975 139885960218176 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-06 15:33:34,981 log 1975 139885960218176 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/invoice_status/5/false
+django.request WARNING 2024-06-06 15:33:35,174 log 1975 139885960218176 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-06 15:33:35,444 log 1975 139885960218176 Not Found: /favicon.ico
+django.request WARNING 2024-06-06 15:33:35,540 log 1975 139885960218176 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/invoice_status/5/styles.css.map
+django.request WARNING 2024-06-06 16:17:01,003 log 1975 139885960218176 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-06-06 16:17:05,120 log 1975 139885960218176 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-06-06 16:17:05,324 log 1975 139885960218176 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 16:17:09,507 views 1975 139885960218176 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': True}]>
+django.request WARNING 2024-06-06 16:17:10,755 log 1975 139885960218176 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-06 16:17:11,291 log 1975 139885960218176 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-06 16:17:23,423 views 1975 139885960218176 <QuerySet [{'id': 5, 'order_id': 8, 'created_on': datetime.date(2024, 6, 5), 'amount_paid': Decimal('35.00'), 'note': 'First rental payment', 'status': False}]>
+django.request WARNING 2024-06-06 16:17:25,069 log 1975 139885960218176 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map

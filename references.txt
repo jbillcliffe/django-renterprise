@@ -1,3 +1,59 @@
 
 Back to customers etc.
 https://stackoverflow.com/questions/524992/how-to-implement-a-back-link-on-django-templates
+
+get_invoices(obj)
+    def get_invoices(obj):
+        paginate_by = 5
+        model = Invoice
+
+        #invoices = Invoice.objects.filter(order.id=order).order_by("-created_on")
+            #self.customer = get_object_or_404(Customer, customer_token=self.kwargs["customer_token"])
+            #return CustomerNote.objects.filter(customer=self.customer)
+        def get_queryset(self):
+            return Invoice.objects.filter(order=obj)
+
+        def get_context_data(self, **kwargs):
+            context['order_invoice_list'] = self.get_queryset
+            return context
+
+    <!-- the content to enter into the "main" class on the "base.html"-->
+                <div class="table-holder">
+                    {% if order_invoice_list %}
+                        <div class="table-row table-head">
+                            <div class="col-2">
+                                No.
+                            </div>
+                            <div class="col-2">
+                                Date
+                            </div>
+                            <div class="col-2">
+                                Amount
+                            </div>
+                            <div class="col-1">
+                            </div>
+                        </div>
+                        {% for invoice in order_invoice_list %}
+                        <div class="table-row">
+                            <div class="col-2">{{ invoice.id }}</div>
+                            <div class="col-2">{{ invoice.created_on }}</div>
+                            <div class="col-2">{{ invoice.amount_paid }}</div>
+                            <div class="col-1"><a class="button-table view invoice-button" invoice_id="{{ invoice.id }}"
+                                    full-data="{{ invoice }}">
+                                    <i class="fa-solid fa-magnifying-glass"></i></a></div>
+                        </div>
+                        {% endfor %}
+                        {% include 'paginate.html' %}
+                    {% else %}
+                    <div class="row">
+                        <div class="col-6" style="padding-top: 3rem;
+                                justify-content: center;">
+                            <h3> There are no invoices for associated orders with this account.</h3>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+                {% else %}
+                <div class="row">
+                </div>
+                {% endif %}

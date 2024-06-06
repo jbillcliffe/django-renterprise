@@ -32,7 +32,7 @@ main {
 
 .modal-backdrop {
     position: unset !important;
-  }
+}
 
 /* ensures flex on these bootstrap elements */
 .container-fluid, .row, div[class*="col-"] {
@@ -417,22 +417,29 @@ of the theme.*/
     border: 1px solid lightgray;
 }
 
+.table-row.paid {
+    /*Paid - invoice*/
+    background-color : #1b9964;
+    color:#FFFFFF;
+    text-shadow: 0px 1px 5px #000000;
+}
+
 .table-row.lost_stolen {
-    /*lost/stolen*/
+    /*lost/stolen - Item*/
     background-color :#834a00; 
     color:#FFFFFF;
     text-shadow: 0px 1px 5px #FFFFFF;
 }
 
 .table-row.sold {
-    /*sold*/
+    /*sold - Item */
     background-color : #0066ff;
     color:#FFFFFF;
     text-shadow: 0px 1px 5px #FFFFFF;
 }
 
 .table-row.scrapped {
-    /*scrap*/
+    /*scrap - Item */
     background-color : #000000;
     color:#FFFFFF;
     text-shadow: 0px 1px 5px #FFFFFF;
@@ -478,6 +485,7 @@ of the theme.*/
     text-decoration: none;
     font-weight:bold;
     color:#000000;
+    cursor: pointer;
 }
 
 .button-table.view {
@@ -643,4 +651,24 @@ form>div {
 #available-items {
     width: 20%;
     margin: 5rem 0 0 2vw;
+}
+
+#modal-invoice-id,
+#modal-invoice-date,
+#modal-invoice-notes-title,
+#modal-invoice-note,
+#modal-invoice-amount,
+#modal-invoice-text {
+    color: #000000;
+    text-shadow: none;
+}
+
+#modal-invoice-id,
+#modal-invoice-notes-title {
+    font-weight:bold;
+}
+
+h3.modal-title.invoice {
+    color: blue;
+    text-shadow: none;
 }
