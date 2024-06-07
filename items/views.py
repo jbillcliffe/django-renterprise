@@ -14,7 +14,6 @@ class ItemList(ListView):
     # This will allow DRY manipulation of the side-bar.html
     def get_context_data(self, **kwargs):
         context = super(ItemList, self).get_context_data(**kwargs)
-        context['class_var'] = "Items"
         return context
 
 def item_view(request, id):
@@ -32,7 +31,6 @@ def item_view(request, id):
         "items/item_view.html",
         {
             "item":obj,
-            "class_var":"Items",
         },
     )
 
@@ -65,7 +63,6 @@ def item_create(request):
         "items/item_create.html",
         {
             "item_form": item_form,
-            "class_var":"Items",
         },
     )
 
@@ -91,7 +88,6 @@ def item_type_create(request):
         "items/item_type_create.html",
         {
             "item_type_form": item_type_form,
-            "class_var":"Items",
         },
     )
 

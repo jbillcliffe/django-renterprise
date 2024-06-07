@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% load i18n %}
+{% block head_title %}{% trans "View Order Notes" %}{% endblock %}
+{% block content %}
+
+<div class="container-fluid" style="height: 100%; width:100%;">
+    {% include 'side-nav.html' %}
+    {% if user.is_authenticated %}
+    <div class="table-holder">
+        <div class="table-row table-head">
+            <div class="col-3">
+                Date
+            </div>
+            <div class="col-8">
+            </div>
+            <div class="col-1">
+                <a class="button-table add" 
+                href="{% url 'customers:add_order_notes' customer_token=customer_token_value order_id=customer_order_id %}">
+                <i class="fa-solid fa-comment-medical"></i></a>
+            </div>
+        </div>
+        {% for order_note in order_notes_list %}
+        <div class="table-row ">
+            <div class="col-3">{{ order_note.created_on_by }}</div>
+            <div class="col-8 note-row" >{{ order_note.note | safe }}</div>
+            {% if perms.order.order_note %}
+                <div class="col-1"><a class="button-table view" 
+                    href="{% url 'customers:order_view_notes' customer_token=customer_token_value order_id=customer_order_id id=order_note.id %}">
+                    <i class="fa-solid fa-magnifying-glass"></i></a></div>
+            {% else %}
+                <div class="col-1"></div>
+            {% endif %}
+        </div>
+        {% endfor %}
+        {% include 'paginate.html' %}
+        <div class="row">
+            <a class="button centre-align" href="{% url 'customers:customer_order_view' customer_token=customer_token_value id=customer_order_id %}">Return To Order</a>
+        </div>
+    </div>
+    {% else %}
+    <div class="content-holder">
+        <div class="row" style="width: 20%;">
+            {% blocktrans %}
+            <p>You need to be logged in to access the program.</p>
+            <p>Log in to continue using this application.</p>
+            {% endblocktrans %}
+            <a class="button small" href="{{ login_url }}">Log In</a>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+<!-- index.html content ends here -->
+{% endblock %}

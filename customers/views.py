@@ -9,7 +9,8 @@ from django.views.generic.detail import SingleObjectMixin
 from django.http import HttpResponse, HttpResponseRedirect
 
 from .models import Customer, CustomerNote
-from orders.models import Order, Invoice
+from orders.models import Order, OrderNote, Invoice
+from orders.forms import OrderNoteForm
 from items.models import Item
 from .forms import CustomerForm, CustomerNoteForm
 from .urls import *
@@ -26,7 +27,6 @@ class CustomerList(ListView):
     # This will allow DRY manipulation of the side-bar.html
     def get_context_data(self, **kwargs):
         context = super(CustomerList, self).get_context_data(**kwargs)
-        context['class_var'] = "Customers"
         return context
 
 def customer_view(request, customer_token):
@@ -45,8 +45,6 @@ def customer_view(request, customer_token):
         "customers/customer_view.html",
         {
             "customer":obj,
-            "order_location":"CustomerView",
-            "class_var":"Customers",
             "customer_token_value":customer_token,
             "full_name":obj.full_name,
         },
@@ -75,7 +73,6 @@ def customer_create(request):
         "customers/customer_create.html",
         {
             "customer_form": customer_form,
-            "class_var":"Customers",
         },
     )
 
@@ -85,7 +82,6 @@ class CustomerNotesList(ListView):
 
     # https://stackoverflow.com/questions/37370534/django-listview-where-can-i-declare-variables-that-i-want-to-have-on-template
     # Override original get_context_data to allow sending of the application area.
-    # This will allow DRY manipulation of the side-bar.html (class_var)
 
     template_name = "customers/customer_notes_list.html"
 
@@ -95,9 +91,7 @@ class CustomerNotesList(ListView):
 
     def get_context_data(self, **kwargs):
         context = super(CustomerNotesList, self).get_context_data(**kwargs)
-        context['class_var'] = "Customers"
         context['note_list'] = self.get_queryset
-        context['order_location'] = "CustomerView"
         context['customer_token_value'] = self.customer.customer_token
         context['full_name'] = self.customer.full_name
         return context
@@ -126,8 +120,6 @@ def customer_add_notes(request, customer_token):
         "customers/customer_add_notes.html",
         {
             "customer_note_form": customer_note_form,
-            "order_location":"CustomerView",
-            "class_var":"Customers",
             "customer_token_value": customer_token,
         },
     )
@@ -167,8 +159,6 @@ def customer_view_notes(request, customer_token, id):
         "customers/customer_view_notes.html",
         {
             "customer_note_form": customer_note_form,
-            "order_location":"CustomerView",
-            "class_var":"Customers",
             "customer_token_value": customer_token,
         },
     )
@@ -179,7 +169,6 @@ class CustomerOrderList(ListView):
 
     # https://stackoverflow.com/questions/37370534/django-listview-where-can-i-declare-variables-that-i-want-to-have-on-template
     # Override original get_context_data to allow sending of the application area.
-    # This will allow DRY manipulation of the side-bar.html (class_var)
     #
     # get_context_data now used for different features. Location is assigned differently.
     template_name = "customers/customer_order_list.html"
@@ -190,9 +179,7 @@ class CustomerOrderList(ListView):
 
     def get_context_data(self, **kwargs):
         context = super(CustomerOrderList, self).get_context_data(**kwargs)
-        context['class_var'] = "Customers"
         context['order_list'] = self.get_queryset
-        context['order_location'] = "CustomerOrderListView"
         context['customer_token_value'] = self.customer.customer_token
         context['full_name'] = self.customer.full_name
         return context
@@ -225,13 +212,12 @@ def customer_order_view(request, customer_token, id):
         request,
         "customers/customer_order_view.html",
         {
-            "order":obj,
-            "invoice_list":invoice_list,
-            "page_obj":page_obj,
-            "order_location":"OrderView",
+            "order": obj,
+            "customer_order_id": obj.id,
+            "invoice_list": invoice_list,
+            "page_obj": page_obj,
             "customer_token_value": customer_token,
             "full_name": obj.customer.full_name,
-            "class_var":"Customers",
         },
     )
 
@@ -252,3 +238,106 @@ def invoice_status_change(request, customer_token, order_id,
     return redirect('customers:customer_order_view', 
         customer_token=customer_token,
         id=order_id)
+
+class OrderNotesList(ListView):
+    paginate_by = 9
+    model = OrderNote
+
+    # https://stackoverflow.com/questions/37370534/django-listview-where-can-i-declare-variables-that-i-want-to-have-on-template
+    # Override original get_context_data to allow sending of the application area.
+
+    template_name = "customers/customer_order_notes_list.html"
+
+    def get_queryset(self):
+        self.order = get_object_or_404(Order, id=self.kwargs["order_id"])
+        logger.warning(OrderNote.objects.filter(order=self.order))
+        return OrderNote.objects.filter(order=self.order)
+
+
+    def get_context_data(self, **kwargs):
+        context = super(OrderNotesList, self).get_context_data(**kwargs)
+        context['order_notes_list'] = self.get_queryset
+        context['customer_order_id'] = self.order.id
+        context['customer_token_value'] = self.order.customer.customer_token
+        return context
+
+def add_order_notes(request, customer_token, order_id):
+    if request.method == "POST":
+        order = get_object_or_404(Order, id=order_id)
+        order_note_form = OrderNoteForm(request.POST)
+        if order_note_form.is_valid():
+            order_note = order_note_form.save(commit=False)
+            order_note.order = order
+            order_note.created_by = request.user
+            order_note.save()
+        #order,note,created_on,created_on_by
+        #logger.warning(order)
+        #logger.warning(order_note_form['note'].value())
+        #logger.warning(datetime.now)
+        #logger.warning(request.user)
+        #order_note = OrderNote.objects.create(
+        #    order = order,
+        #    note = order_note_form['note'].value(),
+        #    created_on = datetime.now,
+        #    created_by = request.user)
+#
+        # Validation occurs in JS, so at this point check if the invoice and order have
+        # been created and display success message.
+       # if order_note.clean() == None:
+            messages.add_message(
+            request, messages.SUCCESS,
+            'Order note has been saved'
+            )
+            return redirect('customers:order_notes_list', customer_token=customer_token, order_id=order.id)
+       
+    order_note_form = OrderNoteForm()
+
+    return render(
+        request,
+        "customers/customer_add_order_notes.html",
+        {
+            "order_note_form": order_note_form,
+            "customer_token_value": customer_token,
+            "customer_order_id": order_id,
+        },
+    )
+
+def order_view_notes(request, customer_token, order_id, id):
+    """
+    Function to display the customer_view_notes.html template
+    which will allow new authorised users (pre-authorised) to update notes.
+    Will also log date and user who did an update.
+    https://docs.djangoproject.com/en/5.0/ref/request-response/
+    """ 
+    # getting initial note value to send to the form
+    order_note_get = get_object_or_404(OrderNote, pk=id)
+    order_note_text = order_note_get.note
+
+    if request.method == "POST":
+        order_note_form = OrderNoteForm(data=request.POST)
+        if order_note_form.is_valid():
+            # build note/editname/editdate for records
+            newnote = request.POST.get('note', '')
+            editname = " By : "+request.user.username+")"
+            editdate = " (Edited : "+datetime.utcnow().strftime('%d-%m-%Y')
+            fullnote = ''.join([newnote, editdate, editname])
+            order_note_get.pk = id
+            order_note_get.note = fullnote
+            order_note_get.save()
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Order note has been updated'
+            )
+            #return reverse('customer_notes_list', urlconf=None, args=None, kwargs=None, current_app=None)
+            return redirect('customers:order_notes_list', customer_token=customer_token, order_id=order_id)
+    # set initial note in form to be what was previously saved
+    order_note_form = OrderNoteForm(initial={"note": order_note_text})
+    return render(
+        request,
+        "customers/customer_view_order_notes.html",
+        {
+            "order_note_form": order_note_form,
+            "customer_token_value": customer_token,
+            "customer_order_id":order_id
+        },
+    )

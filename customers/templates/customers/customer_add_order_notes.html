@@ -3,7 +3,7 @@
 {% load crispy_forms_tags %}
 
 {% load i18n %}
-{% block head_title %}{% trans "Add New Customer Note" %}{% endblock %}
+{% block head_title %}{% trans "Add An Order Note" %}{% endblock %}
 
 {% block content %}
 
@@ -12,11 +12,11 @@
     {% include 'side-nav.html' %}
     {% if user.is_authenticated %}
     <div class="content-holder">
-        <h2>Add a customer note :</h2>
+        <h2>Add an order note :</h2>
         <hr class="renterprise">
-        <form id="addNoteForm" method="post"
+        <form id="addOrderNoteForm" method="post"
             style="margin-top: 1.3em;">
-            {{ customer_note_form | crispy }}
+            {{ order_note_form | crispy }}
             {% csrf_token %}
             <div class="row">
                 <div class="col-4">

@@ -71,7 +71,6 @@ def order_create(request, customer_token):
         "orders/order_create.html",
         {
             "order_form": order_form,
-            "class_var":"Orders",
         },
     )
 
@@ -82,7 +81,6 @@ class OrderList(ListView):
     #from the customer and not the general order list.
     def get_context_data(self, **kwargs):
         context = super(OrderList, self).get_context_data(**kwargs)
-        context['class_var'] = 'Orders'
         return context
 
 def order_view(request, id):
@@ -100,6 +98,5 @@ def order_view(request, id):
         "orders/order_view.html",
         {
             "item":obj,
-            "class_var":"Items",
         },
     )

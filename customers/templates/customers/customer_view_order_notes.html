@@ -3,7 +3,7 @@
 {% load crispy_forms_tags %}
 
 {% load i18n %}
-{% block head_title %}{% trans "Add New Order Note" %}{% endblock %}
+{% block head_title %}{% trans "View Order Note" %}{% endblock %}
 
 {% block content %}
 
@@ -12,18 +12,18 @@
     {% include 'side-nav.html' %}
     {% if user.is_authenticated %}
         <div class="content-holder">
-        {% if perms.order.customer_note %}
+        {% if perms.order.order_note %}
             <h2>View/Edit an order note :</h2>
             <hr class="renterprise">
             <form id="updateNoteForm" method="post"
                 style="margin-top: 1.3em;
                 display: flex;
                 flex-direction: column;">
-                {{ customer_note_form | crispy }}
+                {{ order_note_form | crispy }}
                 {% csrf_token %}
                 <div class="row">
                     <div class="col-2">
-                        <a class="button centre-align" href="{% url 'customers:customer_notes_list' customer_token_value %}">Return To Notes</a>
+                        <a class="button centre-align" href="{% url 'customers:order_notes_list' customer_token=customer_token_value order_id=customer_order_id %}">Return To Notes</a>
                     </div>
                     <div class="col-2">
                         <button id="submitButton" type="submit" class="button centre-align">Update</button>
