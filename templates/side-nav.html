@@ -14,19 +14,59 @@
 		</a>
 	</li>
 		<!--url ends at .com/items/ (Item List)-->
-		{% if request.path == '/items/' %} 
+		{% if request.path == '/items/create/' or request.path == '/items/' %} 
 		<li class="nav-item">
 			<a id="item_create" href="{% url 'items:item_create' %}" 
 			class="side-bar nav-link {% if url_name == 'item_create' %}active{% endif %}">
 			<i class="fa-regular fa-square-plus" style="padding: 0.5rem;"></i> New Item
 			</a>
 		</li>
+		{% endif %}
+		{% if request.path == '/items/create/item_type/' or request.path == '/items/' %}
 		<li class="nav-item">
 			<a id="item_type_create" href="{% url 'items:item_type_create' %}" 
 			class="side-bar nav-link {% if url_name == 'item_type_create' %}active{% endif %}">
 			<i class="fa-regular fa-square-plus" style="padding: 0.5rem;"></i> New Item Type
 			</a>
 		</li>
+		{% endif %}
+		{% if url_name == 'item_view' %}
+			{% if perms.items %}
+				<hr style="color:black;">
+				<li class="nav-item">
+					<a class="side-bar nav-link display-only">
+						Change Item Status </a>
+				</li>
+				<!--available-->
+				{% if item.status != 0 %}
+				<li class="nav-option">
+					<a class="status_button available" status_value="0" item_id="{{ item.id }}" modal_inner_text="Available">Available</a>
+				</li>
+				{% endif %}
+				{% if item.status != 4 %}
+				<!--lost/stolen-->
+				<li class="nav-option">
+					<a class="status_button repair" status_value="4" item_id="{{ item.id }}" modal_inner_text="Needs Repairs">Needs Repairs</a>
+				</li>
+				{% if item.status != 3 %}
+				<!--sold-->
+				<li class="nav-option">
+					<a class="status_button sold" status_value="3" item_id="{{ item.id }}" modal_inner_text="Sold">Sold</a>
+				</li>
+				{% endif %}
+				{% if item.status != 1 %}
+				<!--scrap-->
+				<li class="nav-option">
+					<a class="status_button scrapped" status_value="1" item_id="{{ item.id }}" modal_inner_text="Scrapped">Scrap</a>
+				</li>
+				{% endif %}
+				{% if item.status != 2 %}
+				<!--lost/stolen-->
+				<li class="nav-option">
+					<a class="status_button lost_stolen" status_value="2" item_id="{{ item.id }}" modal_inner_text="Lost/Stolen">Lost/Stolen</a>
+				</li>
+				{% endif %}
+			{% endif %}
 		{% endif %}
 	{% elif '/customers/' in request.path %}
 		<!--url ends at .com/customers/ (Customer List)-->

@@ -548,7 +548,7 @@ ul.nav {
     color: #FFFFFF;
     text-shadow: 0px 1px 5px #000000;
     background-color: #1b9964;
-}
+} 
 
 img.item-image {
     width: 12rem;
@@ -572,6 +572,11 @@ img.item-image {
     color : #0066ff;
 }
 
+.repair {
+    /*sold*/
+    color : #cedd00;
+}
+
 .scrapped, .deceased {
     /*scrap*/
     color : #000000;
@@ -580,17 +585,17 @@ img.item-image {
 
 .status_button {
     height: auto;
-    width: 8rem;
+    display: flex;
+    width: 90%;
+    justify-content: center;
     padding: 0.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 9px #999, 5px 5px 10px #393D3F;
     margin: 0.5rem auto;
     text-align: center;
-    font-size: 120%;
+    font-size: 2vh;
     cursor: pointer;
     text-decoration: none;
-
-    
 }
 
 .status_button.available {
@@ -619,6 +624,13 @@ img.item-image {
     background-color: #000000;
     border: 1mm groove #000000;
     text-shadow: 0px 1px 5px #FFFFFF;
+}
+
+.status_button.repair {
+    color : #000000;
+    background-color: #cedd00;
+    border: 1mm groove #000000;
+    text-shadow: none;
 }
 
 /*CRISPY FORM STYLES BOOTSTRAP 5*/

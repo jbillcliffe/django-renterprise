@@ -289,3 +289,417 @@ customers.views WARNING 2024-06-07 01:50:30,534 views 20224 140046602597952 <Que
 customers.views WARNING 2024-06-07 01:50:31,215 views 20224 140046602597952 <QuerySet [<OrderNote: OrderNote object (2)>, <OrderNote: OrderNote object (3)>, <OrderNote: OrderNote object (4)>, <OrderNote: OrderNote object (5)>, <OrderNote: OrderNote object (6)>, <OrderNote: OrderNote object (7)>, <OrderNote: OrderNote object (8)>]>
 django.request WARNING 2024-06-07 01:50:32,476 log 20224 140046583977536 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
 django.request WARNING 2024-06-07 01:50:33,123 log 20224 140046583977536 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
+django.utils.autoreload INFO 2024-06-07 12:11:33,359 autoreload 5434 140585287601024 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-07 12:11:45,305 connectionpool 5434 140585151231552 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-07 12:11:45,661 connectionpool 5434 140585151231552 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.security.csrf WARNING 2024-06-07 12:12:17,564 log 5434 140585109268032 Forbidden (Origin checking failed - https://8000-jbillcliffe-djangorente-ne0lta9qb4y.ws-eu114.gitpod.io does not match any trusted origins.): /accounts/login/
+django.utils.autoreload INFO 2024-06-07 12:13:06,578 autoreload 5434 140585287601024 /workspace/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-06-07 12:13:07,305 autoreload 5516 139920203422592 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-07 12:13:14,347 connectionpool 5516 139920138241600 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-07 12:13:14,408 connectionpool 5516 139920138241600 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-07 12:13:25,501 log 5516 139919766844992 Not Found: /accounts/login/styles.css.map
+django.security.csrf WARNING 2024-06-07 12:13:27,400 log 5516 139919758452288 Forbidden (Origin checking failed - https://8000-jbillcliffe-djangorente-ne0lta9qb4y.ws-eu114.gitpod.io does not match any trusted origins.): /accounts/login/
+django.request WARNING 2024-06-07 12:13:27,562 log 5516 139919750059584 Not Found: /favicon.ico
+django.request WARNING 2024-06-07 12:13:27,578 log 5516 139919741666880 Not Found: /accounts/login/styles.css.map
+django.utils.autoreload INFO 2024-06-07 12:14:07,085 autoreload 5516 139920203422592 /workspace/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-06-07 12:14:07,895 autoreload 5593 139774192946048 Watching for file changes with StatReloader
+django.request WARNING 2024-06-07 12:14:14,279 log 5593 139774127765056 Not Found: /accounts/login/styles.css.map
+urllib3.connectionpool DEBUG 2024-06-07 12:14:15,418 connectionpool 5593 139774118307392 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-07 12:14:15,476 connectionpool 5593 139774118307392 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-07 12:14:15,730 log 5593 139774109898304 Not Found: /accounts/login/styles.css.map
+django.request WARNING 2024-06-07 12:14:17,043 log 5593 139773595346496 Not Found: /accounts/login/styles.css.map
+django.request WARNING 2024-06-07 12:14:25,537 log 5593 139773570168384 Not Found: /styles.css.map
+django.request WARNING 2024-06-07 12:14:30,523 log 5593 139773553382976 Not Found: /styles.css.map
+django.request WARNING 2024-06-07 12:14:30,734 log 5593 139773066868288 Not Found: /customers/styles.css.map
+django.request WARNING 2024-06-07 12:15:05,571 log 5593 139773050082880 Not Found: /customers/styles.css.map
+django.request WARNING 2024-06-07 12:15:05,742 log 5593 139773041690176 Not Found: /customers/c7d83c33-a064-4016-a16d-4004b9120002/styles.css.map
+django.request WARNING 2024-06-07 12:15:10,959 log 5593 139773016512064 Not Found: /customers/c7d83c33-a064-4016-a16d-4004b9120002/styles.css.map
+django.request WARNING 2024-06-07 12:15:11,145 log 5593 139772529997376 Not Found: /orders/c7d83c33-a064-4016-a16d-4004b9120002/create/styles.css.map
+django.request WARNING 2024-06-07 12:15:23,478 log 5593 139772513211968 Not Found: /orders/c7d83c33-a064-4016-a16d-4004b9120002/create/styles.css.map
+django.request WARNING 2024-06-07 12:15:23,688 log 5593 139772504819264 Not Found: /styles.css.map
+django.request WARNING 2024-06-07 12:15:26,688 log 5593 139772488033856 Not Found: /styles.css.map
+django.request WARNING 2024-06-07 12:15:26,927 log 5593 139772479641152 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:15:31,191 log 5593 139771984733760 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:15:31,426 log 5593 139771976341056 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-07 12:15:37,989 log 5593 139771959555648 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-07 12:15:38,217 log 5593 139771951162944 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:15:39,450 log 5593 139771456255552 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:15:39,674 log 5593 139771447862848 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-07 12:15:41,646 log 5593 139771431077440 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-07 12:15:41,857 log 5593 139771422684736 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:15:43,700 log 5593 139771405899328 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:15:44,021 log 5593 139770919384640 Not Found: /styles.css.map
+django.request WARNING 2024-06-07 12:15:47,159 log 5593 139770902599232 Not Found: /styles.css.map
+django.request WARNING 2024-06-07 12:15:47,390 log 5593 139770894206528 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:15:48,451 log 5593 139770877421120 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:15:48,666 log 5593 139770869028416 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-07 12:15:52,324 log 5593 139770374121024 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-07 12:15:52,544 log 5593 139770365728320 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:16:38,000 log 5593 139770348942912 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:16:38,328 log 5593 139770340550208 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-07 12:16:41,098 log 5593 139769845642816 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-07 12:16:41,262 log 5593 139769837250112 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:16:42,534 log 5593 139769820464704 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:16:42,750 log 5593 139769812072000 Not Found: /items/create/item_type/styles.css.map
+django.request ERROR 2024-06-07 12:18:40,661 log 5593 139769803679296 Internal Server Error: /items/create/item_type/
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "'/items/"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/django-renterprise/items/views.py", line 86, in item_type_create
+    return render(
+           ^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/loader_tags.py", line 197, in render
+    template = context.template.engine.select_template(template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/engine.py", line 206, in select_template
+    return self.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/defaulttags.py", line 1491, in do_with
+    nodelist = parser.parse(("endwith",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/defaulttags.py", line 952, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/defaulttags.py", line 885, in __init__
+    super().__init__(*args, **kwargs)
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/smartif.py", line 181, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/defaulttags.py", line 888, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''/items/' from ''/items/'
+django.request WARNING 2024-06-07 12:18:40,964 log 5593 139769795286592 Not Found: /favicon.ico
+django.request WARNING 2024-06-07 12:18:40,973 log 5593 139769308771904 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-07 12:18:45,088 log 5593 139769300379200 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-07 12:18:45,445 log 5593 139769291986496 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:19:11,876 log 5593 139768771900992 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:19:49,063 log 5593 139768729937472 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:19:50,258 log 5593 139768235030080 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:19:50,579 log 5593 139768226637376 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-07 12:19:52,106 log 5593 139768209851968 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-07 12:19:52,336 log 5593 139768201459264 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:19:53,105 log 5593 139768184673856 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:19:53,334 log 5593 139767698159168 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-07 12:19:55,118 log 5593 139767681373760 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-07 12:19:55,345 log 5593 139767672981056 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:19:58,578 log 5593 139767647802944 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:19:58,905 log 5593 139767161288256 Not Found: /items/38/styles.css.map
+django.request WARNING 2024-06-07 12:20:29,794 log 5593 139767144502848 Not Found: /items/38/styles.css.map
+django.request WARNING 2024-06-07 12:20:30,055 log 5593 139767136110144 Not Found: /items/styles.css.map
+django.request ERROR 2024-06-07 12:30:25,447 log 5593 139767127717440 Internal Server Error: /items/
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endwith'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/loader_tags.py", line 197, in render
+    template = context.template.engine.select_template(template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/engine.py", line 206, in select_template
+    return self.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/defaulttags.py", line 1491, in do_with
+    nodelist = parser.parse(("endwith",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 174: 'endwith', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+django.request WARNING 2024-06-07 12:30:25,693 log 5593 139767119324736 Not Found: /favicon.ico
+django.request WARNING 2024-06-07 12:30:25,754 log 5593 139767110932032 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:33:27,101 log 5593 139766590846528 Not Found: /items/styles.css.map
+django.request ERROR 2024-06-07 12:35:04,293 log 5593 139766582453824 Internal Server Error: /items/
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endwith'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/loader_tags.py", line 197, in render
+    template = context.template.engine.select_template(template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/engine.py", line 206, in select_template
+    return self.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/defaulttags.py", line 1491, in do_with
+    nodelist = parser.parse(("endwith",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 168: 'endwith', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+django.request WARNING 2024-06-07 12:35:04,582 log 5593 139766574061120 Not Found: /favicon.ico
+django.request WARNING 2024-06-07 12:35:04,593 log 5593 139766087546432 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:54:41,592 log 5593 139766045582912 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:54:52,017 log 5593 139765542282816 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-07 12:54:52,519 log 5593 139765533890112 Not Found: /items/28/styles.css.map
+django.request WARNING 2024-06-07 13:05:05,422 log 5593 139765005411904 Not Found: /items/28/styles.css.map
+django.request WARNING 2024-06-07 13:05:14,908 log 5593 139764476933696 Not Found: /items/28/styles.css.map
+django.utils.autoreload INFO 2024-06-07 13:15:07,520 autoreload 5593 139774192946048 /workspace/django-renterprise/items/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-07 13:15:08,700 autoreload 8356 140117567548288 Watching for file changes with StatReloader

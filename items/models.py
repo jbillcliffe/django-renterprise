@@ -36,11 +36,13 @@ class Item(models.Model):
     SCRAPPED = 1
     LOST_STOLEN = 2
     SOLD = 3
+    REPAIR = 4
     STATUS = (
         (AVAILABLE, 'Available'),
         (SCRAPPED, 'Scrapped'),
         (LOST_STOLEN, 'Lost/Stolen'),
         (SOLD, 'Sold'),
+        (REPAIR, 'Needs Repairs'),
     )
 
     item_type = models.ForeignKey(
