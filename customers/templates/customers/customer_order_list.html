@@ -32,10 +32,13 @@
                 <div class="col-4">{{ order.item.item_type_name }}</div>
                 <div class="col-4">{{ order.start_date }}</div>
                 <div class="col-3">{{ order.end_date }}</div>
-                <div class="col-1"><a class="button-table view" href="{% url 'customers:customer_order_view' customer_token=order.customer.customer_token id=order.id%}"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                <div class="col-1"><a class="button-table view" href="{% url 'customers:customer_order_view' customer_token=customer_token_value id=order.id%}"><i class="fa-solid fa-magnifying-glass"></i></a></div>
             </div>
             {% endfor %}
             {% include 'paginate.html' %}
+            <div class="row">
+                <a class="button centre-align" href="{% url 'customers:customer_view' customer_token_value %}">Return To Customer</a>
+            </div>
             {% else %}
             <div class="row">
                 <div class="col-6" style="padding-top: 3rem;

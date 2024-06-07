@@ -9,7 +9,7 @@
     {% include 'side-nav.html' %}
     {% if user.is_authenticated %}
     <div class="content-holder">
-        <p style="display:none;"> {{ customer.customer_token }} </p>
+        <p style="display:none;"> {{ customer_token_value }} </p>
         <div class="row">
             <div class="col-4">
                 <h2>{{ customer.full_name }}</h2>
@@ -55,17 +55,6 @@
         </div>
         <div class="row">
             <hr class="renterprise">
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <a class="button centre-align" href="{% url 'customers:customer_notes_list' customer.customer_token %}">Customer Notes</a>
-            </div>
-            <div class="col-4">
-                <a class="button centre-align" href="{% url 'customers:customer_list' %}">Return To List</a>
-            </div>
-            <div class="col-4">
-                <a class="button centre-align" href="{% url 'orders:order_create' customer.customer_token %}">New Order</a>
-            </div>
         </div>
         {% else %}
         <div class="content-holder">

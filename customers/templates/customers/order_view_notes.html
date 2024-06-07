@@ -3,7 +3,7 @@
 {% load crispy_forms_tags %}
 
 {% load i18n %}
-{% block head_title %}{% trans "Add New Customer Note" %}{% endblock %}
+{% block head_title %}{% trans "Add New Order Note" %}{% endblock %}
 
 {% block content %}
 
@@ -12,8 +12,8 @@
     {% include 'side-nav.html' %}
     {% if user.is_authenticated %}
         <div class="content-holder">
-        {% if perms.customer.customer_note %}
-            <h2>View/Edit a customer note :</h2>
+        {% if perms.order.customer_note %}
+            <h2>View/Edit an order note :</h2>
             <hr class="renterprise">
             <form id="updateNoteForm" method="post"
                 style="margin-top: 1.3em;

@@ -4,6 +4,7 @@ from datetime import datetime, date, time, timezone
 from decimal import Decimal
 from django.db import models
 from django.contrib.auth.models import User
+from django_summernote.fields import SummernoteTextField
 from items.models import Item
 from customers.models import Customer
 
@@ -38,7 +39,7 @@ class OrderNote(models.Model):
     order = models.ForeignKey(
         Order, on_delete=models.CASCADE, related_name="order"
     )
-    note = models.TextField()
+    note = SummernoteTextField()
     created_on = models.DateTimeField(auto_now_add=True)
     created_by = models.ForeignKey(
         User, on_delete=models.PROTECT, related_name="ordernote_created_by"
@@ -46,6 +47,13 @@ class OrderNote(models.Model):
 
     def order_note_full_name(self):
         return f"{self.order.customer.first_name} {self.order.customer.last_name}"
+
+    def created_on_by(self):
+        date_to_string = self.created_on.strftime("%d-%m-%Y")
+        return f"Created on : {date_to_string}, By : {self.created_by.username}"
+
+    class Meta:
+        ordering = ["created_by"]
 
 class Invoice(models.Model):
     

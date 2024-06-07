@@ -64,10 +64,10 @@
             </div>
             <div class="row">
                 <div class="col-4">
-                    <a class="button centre-align wide" href="{% url 'customers:customer_view' order.customer.customer_token %}">Return To Customer</a>
+                    <a class="button centre-align wide" href="{% url 'customers:customer_view' customer_token_value %}">Return To Customer</a>
                 </div>
                 <div class="col-4">
-                    <a class="button centre-align wide" href="{% url 'customers:customer_order_list' order.customer.customer_token %}">Return To List</a>
+                    <a class="button centre-align wide" href="{% url 'customers:customer_order_list' customer_token_value %}">Return To List</a>
                 </div>
                 <div class="col-4"></div>
             </div>

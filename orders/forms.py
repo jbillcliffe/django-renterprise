@@ -5,7 +5,9 @@ from django.db.models.functions import Cast
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Div, Fieldset, Submit, Row, Field
 from crispy_bootstrap5.bootstrap5 import FloatingField
-from .models import Order
+from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
+from django_summernote.fields import SummernoteTextField
+from .models import Order, OrderNote
 from items.models import Item, ItemType
 
 # https://stackoverflow.com/questions/73789407/django-summernote-clean-got-an-unexpected-keyword-argument-styles-in-djangof
@@ -74,3 +76,10 @@ class OrderForm(forms.ModelForm):
             )
         )
                 
+class OrderNoteForm(forms.ModelForm):
+    class Meta:
+        model = OrderNote
+        fields = ('note',)
+        labels = {
+            "note": "Note"
+        }

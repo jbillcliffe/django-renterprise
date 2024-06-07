@@ -47,6 +47,8 @@ def customer_view(request, customer_token):
             "customer":obj,
             "order_location":"CustomerView",
             "class_var":"Customers",
+            "customer_token_value":customer_token,
+            "full_name":obj.full_name,
         },
     )
 
@@ -76,8 +78,7 @@ def customer_create(request):
             "class_var":"Customers",
         },
     )
-    
-"fix/customer create redirect to customer"
+
 class CustomerNotesList(ListView):
     paginate_by = 9
     model = CustomerNote
@@ -98,6 +99,7 @@ class CustomerNotesList(ListView):
         context['note_list'] = self.get_queryset
         context['order_location'] = "CustomerView"
         context['customer_token_value'] = self.customer.customer_token
+        context['full_name'] = self.customer.full_name
         return context
 
 def customer_add_notes(request, customer_token):
@@ -126,6 +128,7 @@ def customer_add_notes(request, customer_token):
             "customer_note_form": customer_note_form,
             "order_location":"CustomerView",
             "class_var":"Customers",
+            "customer_token_value": customer_token,
         },
     )
 
@@ -166,6 +169,7 @@ def customer_view_notes(request, customer_token, id):
             "customer_note_form": customer_note_form,
             "order_location":"CustomerView",
             "class_var":"Customers",
+            "customer_token_value": customer_token,
         },
     )
 
@@ -190,6 +194,7 @@ class CustomerOrderList(ListView):
         context['order_list'] = self.get_queryset
         context['order_location'] = "CustomerOrderListView"
         context['customer_token_value'] = self.customer.customer_token
+        context['full_name'] = self.customer.full_name
         return context
 
 def customer_order_view(request, customer_token, id):
@@ -224,6 +229,8 @@ def customer_order_view(request, customer_token, id):
             "invoice_list":invoice_list,
             "page_obj":page_obj,
             "order_location":"OrderView",
+            "customer_token_value": customer_token,
+            "full_name": obj.customer.full_name,
             "class_var":"Customers",
         },
     )

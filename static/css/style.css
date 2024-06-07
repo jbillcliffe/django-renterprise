@@ -520,22 +520,33 @@ ul.nav {
     height: 100%;
 }
 
-.side-bar.nav-link {
+.side-bar.nav-link:not(.display-only) {
     color:#000000;
     text-shadow: none;
     text-decoration: none;
 }
 
-.side-bar.nav-link:hover {
+.side-bar.nav-link:hover:not(.display-only) {
     color: #FFFFFF;
     text-shadow: 0px 1px 5px #000000;
     background-color: #1b9964;
 }
 
-.side-bar.nav-link.active {
+.side-bar.nav-link.active:not(.display-only) {
     color: #FFFFFF;
     text-shadow: 0px 1px 5px #000000;
+    background-color: #1b9964;
+}
 
+.side-bar.nav-link.display-only {
+    color:#000000;
+    text-shadow: none;
+    text-decoration: underline;
+    font-weight:bold;
+}
+.side-bar.nav-link.display-only.active {
+    color: #FFFFFF;
+    text-shadow: 0px 1px 5px #000000;
     background-color: #1b9964;
 }
 

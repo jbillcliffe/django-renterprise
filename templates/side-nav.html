@@ -6,14 +6,15 @@
 		<i class="fa-solid fa-house" style="padding: 0.5rem;"></i> Home
 		</a>
 	</li>
-	{% if '/items' in request.path %}
+	{% if '/items/' in request.path %}
 	<li class="nav-item">
 		<a id="item_list" href="{% url 'items:item_list' %}" 
 		class="side-bar nav-link {% if url_name == 'item_list' %}active{% endif %}">
 		<i class="fa-solid fa-table-list" style="padding: 0.5rem;"></i> Item List
 		</a>
 	</li>
-		{% if request.path == '/items/' %} <!--url ends at .com/items/ (Item List)-->
+		<!--url ends at .com/items/ (Item List)-->
+		{% if request.path == '/items/' %} 
 		<li class="nav-item">
 			<a id="item_create" href="{% url 'items:item_create' %}" 
 			class="side-bar nav-link {% if url_name == 'item_create' %}active{% endif %}">
@@ -27,47 +28,97 @@
 			</a>
 		</li>
 		{% endif %}
-	{% elif '/customers' in request.path %}
-    <li class="nav-item">
-		<a id="customer_list" href="{% url 'customers:customer_list' %}" 
-		class="side-bar nav-link {% if url_name == 'customer_list' %}active{% endif %}">
-		<i class="fa-solid fa-table-list" style="padding: 0.5rem;"></i> Customer List
-		</a>
-	</li> 
-	<li class="nav-item">
-		<a id="customer_create" href="{% url 'customers:customer_create' %}" 
-		class="side-bar nav-link {% if url_name == 'customer_create' %}active{% endif %}">
-			<i class="fa-solid fa-user-plus" style="padding: 0.5rem;"></i> New Customer
-		</a>
-	</li>
+	{% elif '/customers/' in request.path %}
+		<!--url ends at .com/customers/ (Customer List)-->
+		{% if request.path == '/customers/' or request.path == '/customers/create/' %} 
+		<li class="nav-item">
+			<a id="customer_create" href="{% url 'customers:customer_create' %}" 
+			class="side-bar nav-link {% if url_name == 'customer_create' %}active{% endif %}">
+				<i class="fa-solid fa-user-plus" style="padding: 0.5rem;"></i> New Customer
+			</a>
+		</li>
+		{% endif %}
+		<li class="nav-item">
+			<a id="customer_list" href="{% url 'customers:customer_list' %}" 
+			class="side-bar nav-link {% if url_name == 'customer_list' %}active{% endif %}">
+			<i class="fa-solid fa-table-list" style="padding: 0.5rem;"></i> Customer List
+			</a>
+		</li>
+		
+		{% if customer.full_name %}
+			<!-- have customer name for display purposes-->
+			<hr style="color:black;">
+			<li class="nav-item">
+				<a class="side-bar nav-link display-only {% if url_name == 'customer_view' %}active{% endif %}">
+					<i class="fa-solid fa-image-portrait" 
+					style="padding: 0.5rem;"></i>{{ customer.full_name }}</a>
+			</li>
+		{% elif customer_token_value %}
+			<hr style="color:black;">
+			<li class="nav-item">
+				<a class="side-bar nav-link display-only {% if url_name == 'customer_view' %}active{% endif %}">
+					<i class="fa-solid fa-image-portrait" 
+					style="padding: 0.5rem;"></i>{{ full_name }}</a>
+			</li>
+		{% endif %}
+
 		{% if url_name == 'customer_order_list' %}
-		<li class="nav-item">
-			<a id="customer_order_list" href="#" 
-			class="side-bar nav-link {% if url_name == 'customer_order_list' %}active{% endif %}">
-				<i class="fa-solid fa-clipboard-list" style="padding: 0.5rem;"></i> Customer Orders
-			</a>
-		</li>
+			<hr style="color:black;">
+			<li class="nav-item">
+				<a id="customer_order_list" href="#" 
+				class="side-bar nav-link active">
+					<i class="fa-solid fa-folder-tree" style="padding: 0.5rem;"></i> Customer Orders
+				</a>
+			</li>
+			<li class="nav-item">
+				<a id="order_create" href="{% url 'orders:order_create' customer_token_value %}" 
+				class="side-bar nav-link">
+					<i class="fa-solid fa-folder-plus" style="padding: 0.5rem;"></i> New Order
+				</a>
+			</li>
+			
 		{% elif url_name == 'customer_view' %}
-		<li class="nav-item">
-			<a id="customer_order_list" href="{% url 'customers:customer_order_list' customer.customer_token %}" 
-			class="side-bar nav-link {% if url_name == 'customer_order_list' %}active{% endif %}">
-				<i class="fa-solid fa-clipboard-list" style="padding: 0.5rem;"></i> Customer Orders
-			</a>
-		</li>
+			<!-- Notes, Order List, New Order-->
+			<li class="nav-item">
+				<a id="customer_order_list" href="{% url 'customers:customer_notes_list' customer.customer_token %}" 
+				class="side-bar nav-link">
+				<i class="fa-solid fa-comments" style="padding: 0.5rem;"></i> Customer Notes
+				</a>
+			</li>
+			<hr style="color:black;">
+			<li class="nav-item">
+				<a id="customer_order_list" href="{% url 'customers:customer_order_list' customer.customer_token %}" 
+				class="side-bar nav-link">
+				<i class="fa-solid fa-folder-tree" style="padding: 0.5rem;"></i> Customer Orders
+				</a>
+			</li>
+			<li class="nav-item">
+				<a id="order_create" href="{% url 'orders:order_create' customer_token_value %}"
+				class="side-bar nav-link">
+					<i class="fa-solid fa-folder-plus" style="padding: 0.5rem;"></i> New Order
+				</a>
+			</li>
+
 		{% elif url_name == 'customer_order_view' %}
-		<li class="nav-item">
-			<a id="customer_order_list" href="{% url 'customers:customer_order_list' order.customer.customer_token %}" 
-			class="side-bar nav-link {% if url_name == 'customer_order_list' %}active{% endif %}">
-				<i class="fa-solid fa-clipboard-list" style="padding: 0.5rem;"></i> Customer Orders
-			</a>
-		</li>
+			<li class="nav-item">
+				<a class="side-bar nav-link display-only {% if url_name == 'customer_order_view' %}active{% endif %}">
+					<i class="fa-regular fa-folder-open" style="padding: 0.5rem;"></i>Order No. {{ order.id }}
+				</a>
+			</li>
+			<hr style="color:black;">
+			<li class="nav-item">
+				<a id="customer_order_list" href="{% url 'customers:customer_order_list' order.customer.customer_token %}" 
+				class="side-bar nav-link {% if url_name == 'customer_order_list' %}active{% endif %}">
+				<i class="fa-solid fa-folder-tree" style="padding: 0.5rem;"></i> Customer Orders
+				</a>
+			</li>
 		{% else %}
 		{% endif %}
 	{% elif '/orders' and not '/customers' in request.path %}
 	<li class="nav-item">
 		<a id="order_list" href="#" 
 		class="side-bar nav-link {% if url_name == 'order_list' %}active{% endif %}">
-			<i class="fa-solid fa-table-list" style="padding: 0.5rem;"></i> Order List
+			<i class="fa-solid fa-folder-tree" style="padding: 0.5rem;"></i> Order List
 		</a>
 	</li> 
 	{% else %}
@@ -75,3 +126,4 @@
 	{% endif %}
 	{% endwith %}
 </ul>
+<!--<a class="button small centre-align" href="{{request.META.HTTP_REFERER|escape}}">Return</a>-->
