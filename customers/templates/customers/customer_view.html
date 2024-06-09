@@ -11,17 +11,17 @@
     <div class="content-holder">
         <p style="display:none;"> {{ customer_token_value }} </p>
         <div class="row">
-            <div class="col-4">
+            <div class="col-6">
                 <h2>{{ customer.full_name }}</h2>
             </div>
-            <div class="col-4">
+            <div class="col-3">
                 {% if customer.customer_css_status == "deceased" %}
                 <h2 class="{{ customer.customer_css_status }}">{{ item.status_str }}</h2>
                 {% else %}
                 <h2></h2>
                 {% endif %}
             </div>
-            <div class="col-4">
+            <div class="col-3">
                 <p>Created On : {{ customer.created_on }}</p>
             </div>
         </div>

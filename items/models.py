@@ -34,15 +34,15 @@ class Item(models.Model):
     # https://stackoverflow.com/questions/12822847/best-practice-for-python-django-constants
     AVAILABLE = 0
     SCRAPPED = 1
-    LOST_STOLEN = 2
+    MISSING = 2
     SOLD = 3
     REPAIR = 4
     STATUS = (
         (AVAILABLE, 'Available'),
         (SCRAPPED, 'Scrapped'),
-        (LOST_STOLEN, 'Lost/Stolen'),
+        (MISSING, 'Missing'),
         (SOLD, 'Sold'),
-        (REPAIR, 'Needs Repairs'),
+        (REPAIR, 'Repair'),
     )
 
     item_type = models.ForeignKey(

@@ -198,6 +198,7 @@ SUMMERNOTE_CONFIG = {
     'summernote': {
         # Change editor size
         'height': '260px',
+        'width': '450px',
     },
 }
 

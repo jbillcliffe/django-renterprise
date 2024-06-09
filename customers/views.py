@@ -121,6 +121,7 @@ def customer_add_notes(request, customer_token):
         {
             "customer_note_form": customer_note_form,
             "customer_token_value": customer_token,
+            "full_name": customer.full_name,
         },
     )
 
@@ -160,6 +161,7 @@ def customer_view_notes(request, customer_token, id):
         {
             "customer_note_form": customer_note_form,
             "customer_token_value": customer_token,
+            "full_name": customer_note_get.customer.full_name,
         },
     )
 

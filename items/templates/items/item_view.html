@@ -42,6 +42,11 @@
                 </div>
                 <hr class="renterprise" style="width:50%">
                 <div class="row">
+                    <p>Item Income : £{{ item.income }}</p>
+                </div>
+            </div>
+            <div class="item_details_container split">
+                <div class="row">
                     <p>Upcoming Delivery Date : {{ item.delivery_date }}</p>
                 </div>
                 <div class="row">
@@ -50,35 +55,7 @@
                 <div class="row">
                     <p>Repair Started Date : {{ item.repair_date }}</p>
                 </div>
-                <hr class="renterprise" style="width:50%">
-                <div class="row">
-                    <p>Item Income : £{{ item.income }}</p>
-                </div>
             </div>
-            
-            <div class="item_details_container split stack">
-                {% if perms.items %}
-                    <h2>Change Item Status</h2>
-                    <!--available-->
-                    {% if item.status != 0 %}
-                    <a class="status_button available" status_value="0" item_id="{{ item.id }}" modal_inner_text="Available">Available</a>
-                    {% endif %}
-                    {% if item.status != 3 %}
-                    <!--sold-->
-                    <a class="status_button sold" status_value="3" item_id="{{ item.id }}" modal_inner_text="Sold">Sold</a>
-                    {% endif %}
-                    {% if item.status != 1 %}
-                    <!--scrap-->
-                    <a class="status_button scrapped" status_value="1" item_id="{{ item.id }}" modal_inner_text="Scrapped">Scrap</a>
-                    {% endif %}
-                    {% if item.status != 2 %}
-                    <!--lost/stolen-->
-                    <a class="status_button lost_stolen" status_value="2" item_id="{{ item.id }}" modal_inner_text="Lost/Stolen">Lost/Stolen</a>
-                    {% endif %}
-                {% else %}
-                {% endif %}
-            </div>
-            
         </div>
         <div class="row">
             <div class="col-4"></div>

@@ -82,18 +82,22 @@ ol,
 ul {
     color: #FFFFFF;
     text-shadow: 0px 1px 5px #000000;
+    font-size: larger;
 }
 
 /*Need to have black text in the tables otherwise it is illegible*/
 .note-row>p {
     color: #000000;
     text-shadow: none;
+    font-size: small;
 }
+
 /*Then to give the height to stop misplaced notes*/
 .note-row {
     height:-webkit-fill-available;
     color: #000000;
     text-shadow: none;
+    font-size: small;
 }
 
 
@@ -101,6 +105,7 @@ div.form-floating>label,
 .form-float-label {
     color: #000000;
     text-shadow:none;
+    font-size:1vw;
 }
  
 
@@ -158,23 +163,23 @@ https://www.w3schools.com/howto/howto_css_animate_buttons.asp */
 - Click also lowers the button placement - giving a pressed look */
 .button {
     height: auto;
-    width: 15rem;
+    width: 20%;
     padding: 0.5rem;
     border-radius: 1rem;
     background-color: #1b9964;
     box-shadow: 0 9px #999, 5px 5px 10px #393D3F;
     text-shadow: 0px 1px 5px #000000;
-    margin: 1.5rem auto;
+    margin: 0.5vh auto;
     border: 1mm groove #1b9964;
     color: #FFFFFF;
     text-align: center;
-    font-size: 180%;
+    font-size: 2.5vh;
     cursor: pointer;
     text-decoration: none;
 }
 
 .button.wide {
-    width: 25rem;
+    width: 25%;
 }
 
 .button.centre-align {
@@ -183,16 +188,15 @@ https://www.w3schools.com/howto/howto_css_animate_buttons.asp */
 }
 
 
-
 .button.small {
     
-    width: 8rem;
+    width: 15%;
     border-radius: 0.5rem;
     background-color: #1b9964;
     box-shadow: 0 9px #999, 5px 5px 10px #393D3F;
     text-shadow: 0px 1px 5px #000000;
     margin: 0.5rem auto;
-    font-size: 120%;
+    font-size: 1.8vh;
 }
 
 .button:hover {
@@ -299,6 +303,7 @@ made visible at a particular screen width resolution in media queries*/
     list-style-type: none;
     margin-right: 30px;
     display: inline;
+    font-size: x-large;
 }
 
 /* each <a> (link) within the nav menu has no purple overlay when previously
@@ -343,6 +348,7 @@ footer {
     justify-content: center;
     background-color: #1D5D40;
     box-shadow: 0px -3px 1px 0px rgba(57, 61, 63, 0.8);
+    align-items: baseline;
 }
 
 /* social-networks ul css set the text to be centre aligned in a flex row 
@@ -366,7 +372,7 @@ height of the footer*/
 /*styling for the font awesome "i" tags, setting text field size, font colour
 line height to create a centring effect*/
 .social-networks i {
-    font-size: 200%;
+    font-size: 40px;
     height: 50px;
     width: 50px;
     line-height: 50px;
@@ -402,15 +408,15 @@ of the theme.*/
 }
 /* CONTENT HOLDER FOR DYNAMIC WINDOWS */
 .content-holder {
-   width: 100%;
-   padding: 3rem;
-   background: dimgray;
+    width: 75%;
+    padding: 3rem;
+    background: dimgray;
 }
 
 .table-row {
     display:flex;
     flex-direction:row !important;
-    height:6vh;
+    height:5vh;
     align-items: center;
     padding:1rem;
     background-color: white;
@@ -476,8 +482,8 @@ of the theme.*/
 }
 
 .button-table {
-    width: 40px;
-    height: 40px;
+    width: 4vh;
+    height: 4vh;
     border-radius: 10%;
     display: flex;
     align-items: center;
@@ -485,7 +491,9 @@ of the theme.*/
     text-decoration: none;
     font-weight:bold;
     color:#000000;
+    text-shadow:none;
     cursor: pointer;
+    font-size: 2vh;
 }
 
 .button-table.view {
@@ -516,8 +524,13 @@ ul.nav {
     padding: 1rem;
     background: white;
     border: 1px solid lightgray;
-    width: 20rem;
+    width: 25%;
     height: 100%;
+    max-width: 350px;
+}
+
+.side-bar.nav-link {
+    font-size: 60%;
 }
 
 .side-bar.nav-link:not(.display-only) {
@@ -526,13 +539,9 @@ ul.nav {
     text-decoration: none;
 }
 
-.side-bar.nav-link:hover:not(.display-only) {
-    color: #FFFFFF;
-    text-shadow: 0px 1px 5px #000000;
-    background-color: #1b9964;
-}
-
-.side-bar.nav-link.active:not(.display-only) {
+.side-bar.nav-link:hover:not(.display-only),
+.side-bar.nav-link.active:not(.display-only),
+.side-bar.nav-link.display-only.active {
     color: #FFFFFF;
     text-shadow: 0px 1px 5px #000000;
     background-color: #1b9964;
@@ -544,18 +553,15 @@ ul.nav {
     text-decoration: underline;
     font-weight:bold;
 }
-.side-bar.nav-link.display-only.active {
-    color: #FFFFFF;
-    text-shadow: 0px 1px 5px #000000;
-    background-color: #1b9964;
-} 
 
 img.item-image {
     width: 12rem;
     height: auto;
     background: #FFFFFF;
     border: 1px solid #000000;
-    box-shadow: 3px -2px 9px 0px #000000
+    box-shadow: 3px -2px 9px 0px #000000;
+    /*prevents image overlapping text content either side */
+    overflow:auto;
 }
 
 .item-image-holder {
@@ -593,9 +599,11 @@ img.item-image {
     box-shadow: 0 9px #999, 5px 5px 10px #393D3F;
     margin: 0.5rem auto;
     text-align: center;
-    font-size: 2vh;
+    font-size: initial;
     cursor: pointer;
     text-decoration: none;
+    /*stops strange sized buttons*/
+    max-height: 45px;
 }
 
 .status_button.available {
@@ -605,7 +613,7 @@ img.item-image {
     text-shadow: 0px 1px 5px #000000;
 }
 
-.status_button.lost_stolen {
+.status_button.missing {
     color: #FFFFFF;
     background-color: #834a00;
     border: 1mm groove #834a00;
