@@ -3447,3 +3447,193 @@ django.request WARNING 2024-06-09 02:29:47,817 log 6557 140506717722176 Not Foun
 django.request WARNING 2024-06-09 02:29:48,297 log 6557 140506231207488 Not Found: /customers/bd0cb6e3-a9db-44e9-a257-258a63aba5d8/styles.css.map
 django.request WARNING 2024-06-09 02:29:48,511 log 6557 140506222814784 Not Found: /orders/bd0cb6e3-a9db-44e9-a257-258a63aba5d8/create/styles.css.map
 django.request WARNING 2024-06-09 02:32:18,723 log 6557 140505694336576 Not Found: /orders/bd0cb6e3-a9db-44e9-a257-258a63aba5d8/create/styles.css.map
+django.utils.autoreload INFO 2024-06-09 13:29:29,547 autoreload 1691 140535352433536 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-09 13:29:35,886 connectionpool 1691 140535220139584 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-09 13:29:36,245 connectionpool 1691 140535220139584 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-09 13:29:40,650 log 1691 140535185454656 Not Found: /styles.css.map
+django.request WARNING 2024-06-09 13:35:07,203 log 1691 140534668580416 Not Found: /styles.css.map
+django.request WARNING 2024-06-09 13:35:08,573 log 1691 140534651795008 Not Found: /styles.css.map
+django.request WARNING 2024-06-09 13:35:08,761 log 1691 140534643402304 Not Found: /accounts/login/styles.css.map
+django.request WARNING 2024-06-09 13:35:43,884 log 1691 140534131709504 Not Found: /accounts/login/styles.css.map
+django.request WARNING 2024-06-09 13:37:55,671 log 1691 140533603231296 Not Found: /accounts/login/styles.css.map
+django.request WARNING 2024-06-09 13:40:08,573 log 1691 140533569660480 Not Found: /accounts/login/styles.css.map
+django.request WARNING 2024-06-09 13:40:34,389 log 1691 140533066360384 Not Found: /accounts/signup/styles.css.map
+django.request WARNING 2024-06-09 13:40:39,204 log 1691 140533049574976 Not Found: /accounts/login/styles.css.map
+django.request WARNING 2024-06-09 13:40:43,547 log 1691 140533024396864 Not Found: /styles.css.map
+django.request WARNING 2024-06-09 13:40:46,654 log 1691 140532529489472 Not Found: /styles.css.map
+django.request WARNING 2024-06-09 13:40:46,873 log 1691 140532521096768 Not Found: /accounts/logout/styles.css.map
+django.request WARNING 2024-06-09 13:40:50,760 log 1691 140532504311360 Not Found: /accounts/logout/styles.css.map
+django.request WARNING 2024-06-09 13:40:50,978 log 1691 140532495918656 Not Found: /styles.css.map
+django.request WARNING 2024-06-09 13:41:52,182 log 1691 140531967440448 Not Found: /items/39/styles.css.map
+django.request WARNING 2024-06-09 13:43:08,768 log 1691 140531464140352 Not Found: /items/39/styles.css.map
+django.request WARNING 2024-06-09 13:43:09,382 log 1691 140531455747648 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 13:43:35,106 log 1691 140531430569536 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 13:49:14,977 log 1691 140530918876736 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 13:50:29,667 log 1691 140530885305920 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 13:50:29,876 log 1691 140530876913216 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 13:50:30,603 log 1691 140530382005824 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 13:50:30,757 log 1691 140530373613120 Not Found: /styles.css.map
+django.request WARNING 2024-06-09 13:50:31,827 log 1691 140530356827712 Not Found: /styles.css.map
+django.request WARNING 2024-06-09 13:50:32,085 log 1691 140530348435008 Not Found: /customers/styles.css.map
+django.request WARNING 2024-06-09 13:50:34,542 log 1691 140529853527616 Not Found: /customers/styles.css.map
+django.request WARNING 2024-06-09 13:50:34,766 log 1691 140529845134912 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-06-09 13:50:36,680 log 1691 140529828349504 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-06-09 13:50:36,886 log 1691 140529819956800 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.request WARNING 2024-06-09 13:52:12,637 log 1691 140529316656704 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.request WARNING 2024-06-09 13:52:13,033 log 1691 140529308264000 Not Found: /accounts/logout/styles.css.map
+django.request WARNING 2024-06-09 13:52:14,616 log 1691 140529291478592 Not Found: /accounts/logout/styles.css.map
+django.request WARNING 2024-06-09 13:52:14,842 log 1691 140529283085888 Not Found: /styles.css.map
+django.request WARNING 2024-06-09 13:52:17,451 log 1691 140529266300480 Not Found: /styles.css.map
+django.request WARNING 2024-06-09 13:52:17,683 log 1691 140528779785792 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 13:52:18,855 log 1691 140528763000384 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 13:52:19,081 log 1691 140528754607680 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 13:52:21,280 log 1691 140528737822272 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 13:52:21,500 log 1691 140528729429568 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 13:52:22,173 log 1691 140528234522176 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 13:52:22,499 log 1691 140528226129472 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:00:48,763 log 1691 140528192558656 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:01:02,691 log 1691 140527664080448 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:01:25,037 log 1691 140527143994944 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:01:34,715 log 1691 140526623909440 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:02:12,210 log 1691 140526581945920 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:03:26,539 log 1691 140526061860416 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:04:43,840 log 1691 140525541774912 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:05:18,958 log 1691 140525499811392 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:06:04,114 log 1691 140525457847872 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:06:20,713 log 1691 140525415884352 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:07:20,257 log 1691 140525373920832 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:11:12,683 log 1691 140525348742720 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:11:12,945 log 1691 140525340350016 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 14:11:14,943 log 1691 140525323564608 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 14:11:15,311 log 1691 140525315171904 Not Found: /items/17/styles.css.map
+django.request WARNING 2024-06-09 14:11:17,866 log 1691 140525298386496 Not Found: /items/17/styles.css.map
+django.request WARNING 2024-06-09 14:11:18,027 log 1691 140525289993792 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 14:11:18,957 log 1691 140525273208384 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 14:11:19,175 log 1691 140525264815680 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:11:21,487 log 1691 140525239637568 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:11:21,742 log 1691 140525231244864 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 14:11:22,560 log 1691 140525214459456 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 14:11:22,781 log 1691 140525206066752 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 14:11:50,955 log 1691 140525180888640 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 14:11:51,122 log 1691 140525172495936 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 14:11:52,796 log 1691 140525155710528 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 14:11:53,042 log 1691 140525147317824 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:13:36,844 log 1691 140525105354304 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:15:12,799 log 1691 140525063390784 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:15:54,937 log 1691 140525021427264 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:16:33,186 log 1691 140524979463744 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:17:18,007 log 1691 140524954285632 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 14:17:19,818 log 1691 140524937500224 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 14:17:25,649 log 1691 140524929107520 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 14:17:26,982 log 1691 140524903929408 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:17:29,452 log 1691 140524887144000 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 14:17:31,856 log 1691 140524870358592 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 14:17:54,267 log 1691 140524828395072 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 14:21:02,509 log 1691 140524786431552 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 14:21:41,066 log 1691 140524744468032 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 14:22:00,491 log 1691 140524702504512 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 14:22:51,414 log 1691 140524660540992 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 14:26:18,122 log 1691 140524652148288 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 14:26:20,034 log 1691 140524643755584 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 14:26:35,459 log 1691 140524618577472 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 14:26:36,448 log 1691 140524601792064 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:27:22,240 log 1691 140524585006656 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 14:27:23,261 log 1691 140524568221248 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 14:27:25,995 log 1691 140524526257728 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 14:27:50,715 log 1691 140524484294208 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 14:28:30,768 log 1691 140524442330688 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 14:29:04,187 log 1691 140524400367168 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 14:29:09,168 log 1691 140524383581760 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 14:29:13,628 log 1691 140524366796352 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:29:16,143 log 1691 140524350010944 Not Found: /styles.css.map
+django.request WARNING 2024-06-09 14:29:18,927 log 1691 140524333225536 Not Found: /customers/styles.css.map
+django.request WARNING 2024-06-09 14:29:22,574 log 1691 140524316440128 Not Found: /customers/create/styles.css.map
+django.request WARNING 2024-06-09 14:29:34,330 log 1691 140524299654720 Not Found: /styles.css.map
+django.request WARNING 2024-06-09 14:29:35,921 log 1691 140524282869312 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 14:29:37,706 log 1691 140524266083904 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-09 14:29:41,244 log 1691 140524249298496 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-09 14:29:43,098 log 1691 140524232513088 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-09 14:29:46,943 log 1691 140524215727680 Not Found: /styles.css.map
+django.request WARNING 2024-06-09 14:29:48,554 log 1691 140524198942272 Not Found: /customers/styles.css.map
+django.request WARNING 2024-06-09 14:29:51,507 log 1691 140524182156864 Not Found: /customers/create/styles.css.map
+django.utils.autoreload INFO 2024-06-09 14:31:50,981 autoreload 1691 140535352433536 /workspace/django-renterprise/customers/forms.py changed, reloading.
+django.utils.autoreload INFO 2024-06-09 14:31:51,680 autoreload 5186 139647847975808 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-09 14:31:52,353 connectionpool 5186 139647783843392 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-09 14:31:52,419 connectionpool 5186 139647783843392 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-09 14:31:53,177 log 5186 139647680235072 Not Found: /customers/create/styles.css.map
+django.utils.autoreload INFO 2024-06-09 14:32:43,797 autoreload 5186 139647847975808 /workspace/django-renterprise/customers/forms.py changed, reloading.
+django.utils.autoreload INFO 2024-06-09 14:32:44,497 autoreload 5228 140548167216000 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-09 14:32:52,308 connectionpool 5228 140548102035008 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-09 14:32:52,344 connectionpool 5228 140548102035008 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
+django.request WARNING 2024-06-09 14:32:53,118 log 5228 140548067350080 Not Found: /customers/create/styles.css.map
+django.utils.autoreload INFO 2024-06-09 14:37:54,969 autoreload 5228 140548167216000 /workspace/django-renterprise/customers/forms.py changed, reloading.
+django.utils.autoreload INFO 2024-06-09 14:37:55,716 autoreload 5463 140644656823168 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-09 14:37:57,132 connectionpool 5463 140644592690752 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-09 14:37:57,195 connectionpool 5463 140644592690752 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-09 14:37:58,082 log 5463 140644565366336 Not Found: /customers/create/styles.css.map
+django.utils.autoreload INFO 2024-06-09 14:38:15,865 autoreload 5463 140644656823168 /workspace/django-renterprise/customers/forms.py changed, reloading.
+django.utils.autoreload INFO 2024-06-09 14:38:16,600 autoreload 5495 139807358966656 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-09 14:38:21,871 connectionpool 5495 139807225280064 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-09 14:38:21,884 connectionpool 5495 139807216887360 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-09 14:38:21,918 connectionpool 5495 139807216887360 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
+urllib3.connectionpool DEBUG 2024-06-09 14:38:21,927 connectionpool 5495 139807225280064 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-09 14:38:22,342 log 5495 139807225280064 Not Found: /customers/create/styles.css.map
+django.request WARNING 2024-06-09 14:38:22,506 log 5495 139807199053376 Not Found: /customers/create/styles.css.map
+django.utils.autoreload INFO 2024-06-09 14:39:02,258 autoreload 5495 139807358966656 /workspace/django-renterprise/customers/forms.py changed, reloading.
+django.utils.autoreload INFO 2024-06-09 14:39:03,157 autoreload 5538 140654615042944 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-09 14:40:53,665 autoreload 5538 140654615042944 /workspace/django-renterprise/customers/forms.py changed, reloading.
+django.utils.autoreload INFO 2024-06-09 14:40:54,312 autoreload 5625 140343258921856 Watching for file changes with StatReloader
+django.request ERROR 2024-06-09 14:40:55,288 log 5625 140343194789440 Internal Server Error: /customers/create/
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/django-renterprise/customers/views.py", line 58, in customer_create
+    customer_form = CustomerForm(request.POST)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/django-renterprise/customers/forms.py", line 61, in __init__
+    ButtonHolder(
+    ^^^^^^^^^^^^
+NameError: name 'ButtonHolder' is not defined
+django.request WARNING 2024-06-09 14:40:55,525 log 5625 140343176922688 Not Found: /customers/create/styles.css.map
+django.request WARNING 2024-06-09 14:40:55,527 log 5625 140343185331776 Not Found: /favicon.ico
+django.utils.autoreload INFO 2024-06-09 14:41:05,996 autoreload 5625 140343258921856 /workspace/django-renterprise/customers/forms.py changed, reloading.
+django.utils.autoreload INFO 2024-06-09 14:41:06,735 autoreload 5648 139818113297280 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-09 14:41:09,009 connectionpool 5648 139818048116288 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-09 14:41:09,045 connectionpool 5648 139818048116288 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
+django.request WARNING 2024-06-09 14:41:09,344 log 5648 139817828480576 Not Found: /customers/create/styles.css.map
+django.request WARNING 2024-06-09 14:41:09,748 log 5648 139817810646592 Not Found: /customers/create/styles.css.map
+django.utils.autoreload INFO 2024-06-09 14:42:38,196 autoreload 5648 139818113297280 /workspace/django-renterprise/customers/forms.py changed, reloading.
+django.utils.autoreload INFO 2024-06-09 14:42:38,886 autoreload 5729 140330002619264 Watching for file changes with StatReloader
+django.request ERROR 2024-06-09 14:42:41,882 log 5729 140329869112896 Internal Server Error: /customers/create/
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/django-renterprise/customers/views.py", line 58, in customer_create
+    customer_form = CustomerForm(request.POST)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/django-renterprise/customers/forms.py", line 62, in __init__
+    Button('submit', 'Submit', css_class='button centre-align'),
+    ^^^^^^
+NameError: name 'Button' is not defined
+django.request WARNING 2024-06-09 14:42:42,094 log 5729 140329860720192 Not Found: /customers/create/styles.css.map
+django.request WARNING 2024-06-09 14:42:42,095 log 5729 140329852327488 Not Found: /favicon.ico
+django.utils.autoreload INFO 2024-06-09 14:42:48,649 autoreload 5729 140330002619264 /workspace/django-renterprise/customers/forms.py changed, reloading.
+django.utils.autoreload INFO 2024-06-09 14:42:49,294 autoreload 5750 139958127401856 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-09 14:42:50,914 connectionpool 5750 139958062220864 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-09 14:42:50,968 connectionpool 5750 139958062220864 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-09 14:42:51,636 log 5750 139958027535936 Not Found: /customers/create/styles.css.map
+django.utils.autoreload INFO 2024-06-09 14:43:07,295 autoreload 5750 139958127401856 /workspace/django-renterprise/customers/forms.py changed, reloading.
+django.utils.autoreload INFO 2024-06-09 14:43:07,911 autoreload 5779 140603783334784 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-09 14:43:09,535 connectionpool 5779 140603718153792 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-09 14:43:09,592 connectionpool 5779 140603718153792 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-09 14:43:10,113 log 5779 140603683468864 Not Found: /customers/create/styles.css.map
+django.utils.autoreload INFO 2024-06-09 15:04:13,782 autoreload 5779 140603783334784 /workspace/django-renterprise/customers/forms.py changed, reloading.
+django.utils.autoreload INFO 2024-06-09 15:04:14,410 autoreload 6570 140198978694016 Watching for file changes with StatReloader

@@ -1,7 +1,7 @@
 from django import forms
 from django.db.models import CharField
 from crispy_forms.helper import FormHelper
-from crispy_forms.layout import Layout, Div, Fieldset, Submit, Row
+from crispy_forms.layout import Layout, Div, Fieldset, Submit, Row, ButtonHolder
 from crispy_bootstrap5.bootstrap5 import FloatingField
 from localflavor.gb.forms import GBCountySelect
 
@@ -40,24 +40,27 @@ class CustomerForm(forms.ModelForm):
             Fieldset(
                 "Add a new customer :",
                 Row(FloatingField('first_name',
-                    wrapper_class='col-md-4 mb-3 p-0'),
+                    wrapper_class='col-md-3 mb-3 p-0'),
                     FloatingField('last_name',
                     wrapper_class='col-md-4 mb-3 p-0')),
                 Row(FloatingField('address_line_one',
-                    wrapper_class='col-md-8 mb-0 p-0')),
+                    wrapper_class='col-md-7 mb-0 p-0')),
                 Row(FloatingField('address_line_two',
-                    wrapper_class='col-md-8 mb-0 p-0')),
+                    wrapper_class='col-md-7 mb-0 p-0')),
                 Row(FloatingField('address_line_three',
-                    wrapper_class='col-md-8 mb-3 p-0')),
+                    wrapper_class='col-md-7 mb-3 p-0')),
                 Row(FloatingField('address_line_town',
                     wrapper_class='col-md-3 p-0'),
                     FloatingField('address_line_county',
-                    wrapper_class='col-md-3 p-0'),
+                    wrapper_class='col-md-2 p-0'),
                     FloatingField('postcode',
                     wrapper_class='col-md-2 p-0'))
             ),
-            Submit('submit', 'Submit',
-            wrapper_class='button centre-align'),
+            #Submit('submit', 'Submit',
+            #wrapper_class='button centre-align'),
+            ButtonHolder(
+                Submit('submit', 'Submit', css_class='button centre-align'),
+            ),
         )
 
 class CustomerNoteForm(forms.ModelForm):

@@ -105,7 +105,7 @@ div.form-floating>label,
 .form-float-label {
     color: #000000;
     text-shadow:none;
-    font-size:1vw;
+    font-size: 100%;
 }
  
 
@@ -151,6 +151,8 @@ hr.renterprise {
     opacity: 1;
     box-shadow: 0px 0px 4px 0px #000000;
 }
+
+
 
 /*Animated CSS button tutorial from
 https://www.w3schools.com/howto/howto_css_animate_buttons.asp */
@@ -408,9 +410,17 @@ of the theme.*/
 }
 /* CONTENT HOLDER FOR DYNAMIC WINDOWS */
 .content-holder {
-    width: 75%;
+    width: 100%;
     padding: 3rem;
     background: dimgray;
+}
+
+/* CONTENT HOLDER FOR AUTH RELATED WINDOWS */
+.content-holder.centre {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .table-row {
@@ -644,6 +654,17 @@ img.item-image {
 /*CRISPY FORM STYLES BOOTSTRAP 5*/
 form>div {
     padding-left: 0;
+}
+.form-centre {
+    margin-top: 1.3em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-centre.wide {
+    width:80%;
 }
 
 .customer_details_container {
