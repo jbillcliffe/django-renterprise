@@ -100,7 +100,7 @@
 		{% elif url_name == 'customer_view' %}
 			<!-- Notes, Order List, New Order-->
 			<li class="nav-item">
-				<a id="customer_order_list" href="{% url 'customers:customer_notes_list' customer.customer_token %}" 
+				<a id="customer_notes_list_id" href="{% url 'customers:customer_notes_list' customer_token_value %}" 
 				class="side-bar nav-link">
 				<i class="fa-solid fa-comments" style="padding: 0.5rem;"></i> Customer Notes
 				</a>
@@ -119,10 +119,25 @@
 				</a>
 			</li>
 
+		{% elif url_name == 'customer_notes_list' or url_name == 'customer_add_notes' %}
+			<li class="nav-item">
+				<a id="customer_notes_list" href="{% url 'customers:customer_notes_list' customer_token_value %}" 
+				class="side-bar nav-link {% if url_name == 'customer_notes_list' %}active{% endif %}">
+				<i class="fa-solid fa-comments" style="padding: 0.5rem;"></i> Customer Notes
+				</a>
+			</li>
+			<li class="nav-item">
+				<a id="customer_add_notes_id"
+				href="{% url 'customers:customer_add_notes' customer_token_value %}" 
+				class="side-bar nav-link {% if url_name == 'customer_add_notes' %}active{% endif %}">
+				<i class="fa-solid fa-comment-medical" style="padding: 0.5rem;"></i> Add Customer Note
+				</a>
+			</li>
+
 		{% elif url_name == 'customer_order_view' %}
 			<li class="nav-item">
-				<a class="side-bar nav-link display-only {% if url_name == 'customer_order_view' %}active{% endif %}">
-					<i class="fa-regular fa-folder-open" style="padding: 0.5rem;"></i>Order No. {{ order.id }}
+				<a class="side-bar nav-link display-only active">
+					<i class="fa-regular fa-folder-open" style="padding: 0.5rem;"></i>Order No. {{ customer_order_id }}
 				</a>
 			</li>
 			<li class="nav-item">
@@ -137,6 +152,26 @@
 				<a id="customer_order_list" href="{% url 'customers:customer_order_list' customer_token_value %}" 
 				class="side-bar nav-link {% if url_name == 'customer_order_list' %}active{% endif %}">
 				<i class="fa-solid fa-folder-tree" style="padding: 0.5rem;"></i> Customer Orders
+				</a>
+			</li>
+		{% elif url_name == 'order_notes_list' or url_name == 'order_view_notes' or url_name == 'add_order_notes'%}
+			<li class="nav-item">
+				<a class="side-bar nav-link display-only">
+					<i class="fa-regular fa-folder-open" style="padding: 0.5rem;"></i>Order No. {{ customer_order_id }}
+				</a>
+			</li>
+			<li class="nav-item">
+				<a id="customer_order_note_list" 
+				href="{% url 'customers:order_notes_list' customer_token=customer_token_value order_id=customer_order_id %}" 
+				class="side-bar nav-link {% if url_name == 'order_notes_list' %}active{% endif %}">
+				<i class="fa-solid fa-comments" style="padding: 0.5rem;"></i> Order Notes
+				</a>
+			</li>
+			<li class="nav-item">
+				<a id="customer_order_note_add"
+				href="{% url 'customers:add_order_notes' customer_token=customer_token_value order_id=customer_order_id %}" 
+				class="side-bar nav-link {% if url_name == 'add_order_notes' %}active{% endif %}">
+				<i class="fa-solid fa-comment-medical" style="padding: 0.5rem;"></i> Add Order Note
 				</a>
 			</li>
 		{% else %}

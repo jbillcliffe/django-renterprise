@@ -1,6 +1,7 @@
 {% extends "base.html" %} 
 {% load static %}
 {% load crispy_forms_tags %}
+{% load crispy_forms_field %}
 
 {% load i18n %}
 {% block head_title %}{% trans "Create New Customer" %}{% endblock %}
@@ -11,9 +12,13 @@
 <div class="container-fluid" style="height: 100%; ">
     {% include 'side-nav.html' %}
     {% if user.is_authenticated %}
-    <div class="content-holder">
-        {% crispy customer_form %}
-        {% csrf_token %}
+    <div class="content-holder start">
+        <h2> Create A New Customer </h2>
+        <hr class="renterprise" style="width:20%;">
+        <form id="customer_form" method="post">
+            {% crispy customer_form %}
+            {% csrf_token %}   
+        </form>
     </div>
     {% else %}
     <div class="content-holder centre">

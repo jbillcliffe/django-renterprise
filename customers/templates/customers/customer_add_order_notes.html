@@ -11,18 +11,16 @@
 <div class="container-fluid" style="height: 100%; width:100%;">
     {% include 'side-nav.html' %}
     {% if user.is_authenticated %}
-    <div class="content-holder">
-        <h2>Add an order note :</h2>
-        <hr class="renterprise">
+    <div class="content-holder centre">
+        <h2>Add an order note </h2>
+        <hr class="renterprise" style="width: 60%;">
         <form id="addOrderNoteForm" method="post"
             style="margin-top: 1.3em;">
             {{ order_note_form | crispy }}
             {% csrf_token %}
             <div class="row">
-                <div class="col-4">
-                    <button id="submitButton" type="submit"
-                    class="button centre-align">Submit</button>
-                </div>
+                <button id="submitButton" type="submit" class="button centre-align">Submit</button>
+                <a class="button centre-align" href="{% url 'customers:order_notes_list' customer_token=customer_token_value order_id=customer_order_id %}">Return To Order Notes </a>
             </div>
         </form>
     </div>

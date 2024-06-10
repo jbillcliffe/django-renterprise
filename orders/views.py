@@ -62,7 +62,7 @@ def order_create(request, customer_token):
             request, messages.SUCCESS,
             'Order has been saved'
             )
-            return redirect('customers:customer_order_view', customer_token=order.customer.customer_token, id=order.id)
+            return redirect('customers:customer_order_view', customer_token=order.customer.customer_token, order_id=order.id)
        
     order_form = OrderForm()
 

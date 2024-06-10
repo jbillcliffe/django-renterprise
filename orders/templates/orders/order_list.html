@@ -34,7 +34,7 @@
             <div class="col-4">{{ order.item.item_type_name }}</div>
             <div class="col-2">{{ order.start_date }}</div>
             <div class="col-2">{{ order.end_date }}</div>
-            <div class="col-1"><a class="button-table view" href="{% url 'customers:customer_order_view' customer_token=order.customer.customer_token id=order.id %}">
+            <div class="col-1"><a class="button-table view" href="{% url 'customers:customer_order_view' customer_token=order.customer.customer_token order_id=order.id %}">
                 <i class="fa-solid fa-magnifying-glass"></i></a></div>
         </div>
         {% endfor %}

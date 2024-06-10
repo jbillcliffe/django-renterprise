@@ -65,9 +65,8 @@ h3 {
 }
 
 /* a general css style to have centre aligned h tags */
-h1.centre-heading,
-h2.centre-heading,
-h3.centre-heading {
+/*h1/h2/h3.centre-heading*/
+.centre-heading {
     display: flex; 
     justify-content: center;
 }
@@ -178,6 +177,8 @@ https://www.w3schools.com/howto/howto_css_animate_buttons.asp */
     font-size: 2.5vh;
     cursor: pointer;
     text-decoration: none;
+    display: flex; 
+    justify-content: center;
 }
 
 .button.wide {
@@ -189,9 +190,34 @@ https://www.w3schools.com/howto/howto_css_animate_buttons.asp */
     justify-content: center;
 }
 
+.button.left-align {
+    display: flex; 
+    justify-content: flex-start;
+}
+
+
+/* For Crispy Forms to override submit default of bootstrap btn btn-primary*/
+.btn.btn-primary.centre-align {
+    all:unset;
+    height: auto;
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: #1b9964;
+    box-shadow: 0 9px #999, 5px 5px 10px #393D3F;
+    text-shadow: 0px 1px 5px #000000;
+    margin: 0.5vh auto;
+    border: 1mm groove #1b9964;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2.5vh;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex; 
+    justify-content: center;
+}
 
 .button.small {
-    
     width: 15%;
     border-radius: 0.5rem;
     background-color: #1b9964;
@@ -201,6 +227,7 @@ https://www.w3schools.com/howto/howto_css_animate_buttons.asp */
     font-size: 1.8vh;
 }
 
+.btn.btn-primary.centre-align:hover,
 .button:hover {
     background-color: #1D5D40;
     text-decoration: none;
@@ -217,6 +244,7 @@ https://www.w3schools.com/howto/howto_css_animate_buttons.asp */
     transition: all 0.3s;
 }
 
+.btn.btn-primary.centre-align:active,
 .button:active {
     background-color: #1D5D40;
     box-shadow: 0 5px #393D3F, 5px 5px 10px #393D3F;
@@ -415,12 +443,20 @@ of the theme.*/
     background: dimgray;
 }
 
-/* CONTENT HOLDER FOR AUTH RELATED WINDOWS */
+/* CONTENT HOLDER CENTRAL */
 .content-holder.centre {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+/* CONTENT HOLDER LEFT */
+.content-holder.start {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .table-row {
@@ -573,6 +609,7 @@ img.item-image {
     /*prevents image overlapping text content either side */
     overflow:auto;
     max-height:120px;
+    margin-bottom: 0.5rem;
 }
 
 .item-image-holder {
@@ -666,6 +703,11 @@ form>div {
 
 .form-centre.wide {
     width:80%;
+}
+
+#customer-form {
+    margin-top: 1.2rem;
+    width: 80%;
 }
 
 .customer_details_container {

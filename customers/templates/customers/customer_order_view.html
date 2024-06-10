@@ -11,7 +11,7 @@
         flex-direction: row;">
         <div class="order-details-customer" style="display: flex; flex-direction: column;">
             <div class="row">
-                <div class="col-7" style="flex-direction:column;">
+                <div class="col-5" style="flex-direction:column;">
                     <div class="item-image-holder">
                         {% if "placeholder" in item.item_type.image.url %}
                         <img class="item-image" src="{% static 'images/default.webp' %}" alt="placeholder image">
@@ -27,7 +27,7 @@
                         <h2>{{ order.customer.full_name }}</h2>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-7">
                     <!-- Invoices -->
                     <div class="table-holder">
                         {% if invoice_list %}
@@ -110,7 +110,7 @@
                 </div>
                 <div class="col-6">
                     <a class="button centre-align wide"
-                        href="{% url 'customers:customer_order_list' customer_token_value %}">Return To List</a>
+                        href="{% url 'customers:customer_order_list' customer_token_value %}">Return To Orders</a>
                 </div>
             </div>
         </div>
@@ -158,8 +158,8 @@
                     <p id="modal-invoice-text"></p>
                 </div>
                 <div class="modal-footer" style="justify-content:space-between;">
-                    <a id="invoiceCancel" href="" class="btn
-		  				btn-danger"><i class="fa-regular fa-circle-xmark"></i> Cancel</a>
+                    <a id="invoiceCancel" href="" class="btn btn-danger"
+                        data-bs-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i> Cancel</a>
                     <a id="invoiceConfirm" href="" class="btn
 		  				btn-success"><i class="fa-solid fa-sterling-sign"></i> Change</a>
 
