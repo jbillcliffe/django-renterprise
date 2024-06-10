@@ -3637,3 +3637,102 @@ urllib3.connectionpool DEBUG 2024-06-09 14:43:09,592 connectionpool 5779 1406037
 django.request WARNING 2024-06-09 14:43:10,113 log 5779 140603683468864 Not Found: /customers/create/styles.css.map
 django.utils.autoreload INFO 2024-06-09 15:04:13,782 autoreload 5779 140603783334784 /workspace/django-renterprise/customers/forms.py changed, reloading.
 django.utils.autoreload INFO 2024-06-09 15:04:14,410 autoreload 6570 140198978694016 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-09 23:36:29,395 autoreload 2952 140360096983936 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-09 23:36:33,186 connectionpool 2952 140360031802944 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-09 23:36:33,242 connectionpool 2952 140360031802944 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-09 23:37:08,417 log 2952 140359766095424 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
+django.utils.autoreload INFO 2024-06-09 23:38:00,832 autoreload 2952 140360096983936 /workspace/django-renterprise/customers/forms.py changed, reloading.
+django.utils.autoreload INFO 2024-06-09 23:38:01,513 autoreload 3048 140429318921088 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-09 23:38:03,839 connectionpool 3048 140429186037312 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-09 23:38:03,891 connectionpool 3048 140429186037312 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-09 23:38:04,088 log 3048 140429176596032 Not Found: /orders/8e05b134-0b51-46e4-ac9d-2e725f265a9b/create/styles.css.map
+django.request WARNING 2024-06-09 23:38:04,472 log 3048 140429168203328 Not Found: /styles.css.map
+django.request WARNING 2024-06-09 23:38:12,058 log 3048 140429151417920 Not Found: /styles.css.map
+django.request WARNING 2024-06-09 23:38:12,303 log 3048 140429143025216 Not Found: /customers/styles.css.map
+django.request WARNING 2024-06-09 23:38:13,480 log 3048 140428653360704 Not Found: /customers/styles.css.map
+django.request WARNING 2024-06-09 23:38:13,817 log 3048 140428644968000 Not Found: /customers/create/styles.css.map
+django.request WARNING 2024-06-09 23:38:15,906 log 3048 140428636575296 Not Found: /customers/create/styles.css.map
+django.request WARNING 2024-06-09 23:38:16,130 log 3048 140428628182592 Not Found: /customers/styles.css.map
+django.utils.autoreload INFO 2024-06-09 23:39:03,046 autoreload 3048 140429318921088 /workspace/django-renterprise/customers/forms.py changed, reloading.
+django.utils.autoreload INFO 2024-06-09 23:39:03,746 autoreload 3111 140152772295552 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-09 23:39:24,689 connectionpool 3111 140152634603072 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-09 23:39:24,733 connectionpool 3111 140152634603072 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
+django.request WARNING 2024-06-09 23:39:24,831 log 3111 140152626210368 Not Found: /customers/styles.css.map
+django.request WARNING 2024-06-09 23:39:25,187 log 3111 140152617817664 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-06-09 23:39:28,114 log 3111 140152601032256 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-06-09 23:39:28,351 log 3111 140152592639552 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-09 23:39:31,237 log 3111 140152089339456 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-09 23:39:32,091 log 3111 140152080946752 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-09 23:39:34,919 views 3111 140152072554048 <QuerySet [<OrderNote: OrderNote object (2)>, <OrderNote: OrderNote object (3)>, <OrderNote: OrderNote object (4)>, <OrderNote: OrderNote object (5)>, <OrderNote: OrderNote object (6)>, <OrderNote: OrderNote object (7)>, <OrderNote: OrderNote object (8)>, <OrderNote: OrderNote object (9)>]>
+customers.views WARNING 2024-06-09 23:39:35,064 views 3111 140152072554048 <QuerySet [<OrderNote: OrderNote object (2)>, <OrderNote: OrderNote object (3)>, <OrderNote: OrderNote object (4)>, <OrderNote: OrderNote object (5)>, <OrderNote: OrderNote object (6)>, <OrderNote: OrderNote object (7)>, <OrderNote: OrderNote object (8)>, <OrderNote: OrderNote object (9)>]>
+django.request WARNING 2024-06-09 23:39:35,284 log 3111 140152064161344 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-09 23:39:35,508 log 3111 140152055768640 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
+django.request WARNING 2024-06-09 23:39:39,536 log 3111 140151560861248 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
+django.request WARNING 2024-06-09 23:39:39,953 log 3111 140150998812224 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
+customers.views WARNING 2024-06-09 23:39:49,358 views 3111 140150982026816 <QuerySet [<OrderNote: OrderNote object (2)>, <OrderNote: OrderNote object (3)>, <OrderNote: OrderNote object (4)>, <OrderNote: OrderNote object (5)>, <OrderNote: OrderNote object (6)>, <OrderNote: OrderNote object (7)>, <OrderNote: OrderNote object (8)>, <OrderNote: OrderNote object (9)>]>
+customers.views WARNING 2024-06-09 23:39:49,459 views 3111 140150982026816 <QuerySet [<OrderNote: OrderNote object (2)>, <OrderNote: OrderNote object (3)>, <OrderNote: OrderNote object (4)>, <OrderNote: OrderNote object (5)>, <OrderNote: OrderNote object (6)>, <OrderNote: OrderNote object (7)>, <OrderNote: OrderNote object (8)>, <OrderNote: OrderNote object (9)>]>
+django.request WARNING 2024-06-09 23:39:49,651 log 3111 140150973634112 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
+django.request WARNING 2024-06-09 23:39:49,998 log 3111 140150487119424 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
+django.request WARNING 2024-06-09 23:39:51,961 log 3111 140150470334016 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
+django.request WARNING 2024-06-09 23:39:52,104 log 3111 140150461941312 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-10 01:25:08,406 autoreload 2682 140019924331392 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-10 01:25:22,320 connectionpool 2682 140019859150400 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-10 01:25:22,355 connectionpool 2682 140019859150400 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
+django.request WARNING 2024-06-10 01:27:37,272 log 2682 140019616441920 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:29:26,686 log 2682 140019020854848 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:31:15,199 log 2682 140018970498624 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:38:24,909 log 2682 140018442020416 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:39:54,473 log 2682 140017913542208 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:39:55,512 log 2682 140017385064000 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:40:55,290 log 2682 140016856585792 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:41:01,091 log 2682 140016831407680 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:41:01,332 log 2682 140016823014976 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:41:02,797 log 2682 140016319714880 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:41:02,988 log 2682 140016311322176 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-10 01:43:58,993 autoreload 2682 140019924331392 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-10 01:43:59,888 autoreload 3669 139975505714048 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-10 01:44:02,448 connectionpool 3669 139975440533056 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-10 01:44:02,513 connectionpool 3669 139975440533056 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-10 01:44:03,061 log 3669 139975056156224 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:44:07,776 log 3669 139975039370816 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:44:08,109 log 3669 139975030978112 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:44:09,463 log 3669 139975014192704 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:44:09,802 log 3669 139974527678016 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:44:11,331 log 3669 139974510892608 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:44:11,571 log 3669 139974502499904 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:48:46,570 log 3669 139973974021696 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:48:48,266 log 3669 139973957236288 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:48:48,646 log 3669 139973948843584 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-10 01:51:07,522 autoreload 3669 139975505714048 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-10 01:51:08,111 autoreload 4027 140634771274624 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-10 01:51:12,226 connectionpool 4027 140634706093632 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-10 01:51:12,280 connectionpool 4027 140634706093632 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-10 01:51:12,739 log 4027 140634459461184 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:51:15,085 log 4027 140634442675776 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:51:15,414 log 4027 140634434283072 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:51:16,547 log 4027 140633872266816 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:51:16,878 log 4027 140633863874112 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-10 01:52:54,592 autoreload 4027 140634771274624 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-10 01:52:55,180 autoreload 4130 139803110120320 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-10 01:53:11,908 connectionpool 4130 139803044939328 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-10 01:53:11,959 connectionpool 4130 139803044939328 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-10 01:53:12,415 log 4130 139802661877312 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:53:14,923 log 4130 139802645091904 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:53:15,246 log 4130 139802636699200 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:53:16,419 log 4130 139802619913792 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:53:16,758 log 4130 139802611521088 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-10 01:53:33,923 autoreload 4130 139803110120320 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-10 01:53:34,585 autoreload 4190 140458474883968 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-10 01:53:37,466 connectionpool 4190 140458409702976 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-10 01:53:37,606 connectionpool 4190 140458409702976 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4103
+django.request WARNING 2024-06-10 01:53:38,026 log 4190 140458164475456 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:56:25,210 log 4190 140457568888384 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:57:24,714 log 4190 140457040410176 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:57:41,123 log 4190 140456990053952 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 01:59:43,608 log 4190 140456461575744 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 02:05:33,737 log 4190 140455933097536 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 02:06:24,672 log 4190 140455404619328 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 02:06:26,510 log 4190 140454876141120 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-10 02:07:03,049 log 4190 140454347662912 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-10 02:07:56,545 autoreload 4190 140458474883968 /workspace/django-renterprise/orders/forms.py changed, reloading.
+django.utils.autoreload INFO 2024-06-10 02:07:57,169 autoreload 4908 139790725372800 Watching for file changes with StatReloader

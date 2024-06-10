@@ -181,7 +181,7 @@ https://www.w3schools.com/howto/howto_css_animate_buttons.asp */
 }
 
 .button.wide {
-    width: 25%;
+    width: 100%;
 }
 
 .button.centre-align {
@@ -565,13 +565,14 @@ ul.nav {
 }
 
 img.item-image {
-    width: 12rem;
-    height: auto;
+    width: auto;
+    height: 15vw;
     background: #FFFFFF;
     border: 1px solid #000000;
     box-shadow: 3px -2px 9px 0px #000000;
     /*prevents image overlapping text content either side */
     overflow:auto;
+    max-height:120px;
 }
 
 .item-image-holder {
@@ -673,6 +674,12 @@ form>div {
     flex-direction: column;
 }
 
+.order-details-customer {
+    display: flex; 
+    flex-direction: column;
+    width:100%;
+}
+
 .item_details_container,
 .order_details_container {
     width:100%;
@@ -691,6 +698,7 @@ form>div {
     width:33%;
     display:flex;
     flex-direction: column;
+    margin: 1rem;
 }
 
 .item_details_container.split.stack {

@@ -60,7 +60,7 @@ class OrderForm(forms.ModelForm):
         self.helper.attrs['autocomplete'] = 'off'
         self.helper.layout = Layout(
             Fieldset(
-                "Add a new order :",
+                "Add a new order",
                 FloatingField('start_date',
                 wrapper_class='col-md-3 mb-3 p-0'),
                 FloatingField('end_date',

@@ -36,9 +36,10 @@ class CustomerForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper(self)
         self.helper.label_class = 'form-float-label'
+        self.helper.attrs['autocomplete'] = 'off'
         self.helper.layout = Layout(
             Fieldset(
-                "Add a new customer :",
+                "Add a new customer",
                 Row(FloatingField('first_name',
                     wrapper_class='col-md-3 mb-3 p-0'),
                     FloatingField('last_name',
