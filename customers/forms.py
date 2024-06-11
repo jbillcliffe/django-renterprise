@@ -45,23 +45,23 @@ class CustomerForm(forms.ModelForm):
         self.helper.attrs['autocomplete'] = 'off'
         self.helper.layout = Layout(
             Row(FloatingField('first_name',
-            wrapper_class='col-md-4 mb-1 p-0'),
+            wrapper_class='col-md-5 mb-1 p-0'),
             FloatingField('last_name',
-            wrapper_class='col-md-6 mb-1 p-0')),
+            wrapper_class='col-md-7 mb-1 p-0')),
             Row(FloatingField('address_line_one',
-            wrapper_class='col-md-10 mb-1 p-0')),
+            wrapper_class='col-md-12 mb-1 p-0')),
             Row(FloatingField('address_line_two',
-            wrapper_class='col-md-10 mb-1 p-0')),
+            wrapper_class='col-md-12 mb-1 p-0')),
             Row(FloatingField('address_line_three',
-            wrapper_class='col-md-10 mb-1 p-0')),
+            wrapper_class='col-md-12 mb-1 p-0')),
             Row(FloatingField('address_line_town',
             wrapper_class='col-md-4 mb-1 p-0'),
             FloatingField('address_line_county',
-            wrapper_class='col-md-4 mb-1 p-0'),
+            wrapper_class='col-md-5 mb-1 p-0'),
             FloatingField('postcode',
-            wrapper_class='col-md-2 mb-1 p-0')),
-            Row(HTML('<input class="button col-md-10" type="submit" name="submit" value="Submit" id="submit-id-submit">'),
-                HTML('<a class="button centre-align col-md-10" style="margin-top: 1.5vh; margin-left: 8px;" href="{% url \'customers:customer_list\' %}">Return To Customer List </a>')),
+            wrapper_class='col-md-3 mb-1 p-0')),
+            Row(HTML('<input class="button col-md-12" type="submit" name="submit" value="Submit" id="submit-id-submit">'),
+                HTML('<a class="button centre-align col-md-12" style="margin-top: 1.5vh; margin-left: 8px;" href="{% url \'customers:customer_list\' %}">Return To Customer List </a>')),
         )
 
 

@@ -31,13 +31,15 @@
                 </div>
             </div>
             {% csrf_token %}
-            <button id="submitButton" type="submit"
-                class="button centre-align">Submit</button>
+            <div class="row">
+                <button id="submitButton" type="submit" class="button centre-align">Submit</button>
+                <a class="button centre-align" href="{% url 'items:item_list' %}">Return To Item List </a>
+            </div>
         </form>
     </div>  
     {% else %}
     <div class="content-holder centre">
-        <div class="row" style="width: 20%;">
+        <div class="row" style="width: 60%;">
             {% blocktrans %}
             <p>You need to be logged in to access the program.</p>
             <p>Log in to continue using this application.</p>

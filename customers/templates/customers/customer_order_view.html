@@ -71,22 +71,14 @@
                 </div>
             </div>
             <hr class="renterprise">
-            <div class="order_details_container" style="width:100%">
-                <div class="order_details_container split" style="width:40%">
-                    <div class="row">
-                        <p>Created On : {{ order.created_on }}</p>
-                    </div>
-                    <div class="row">
-                        <p>Created By : {{ order.created_by }}</p>
-                    </div>
+            <div class="order_details_container">
+                <div class="order_details_container split">
                     <div class="row">
                         <p>Delivery Date : {{ order.start_date }}</p>
                     </div>
                     <div class="row">
                         <p>Collection Date : {{ order.end_date }}</p>
                     </div>
-                </div>
-                <div class="order_details_container split" style="width:40%">
                     <div class="row">
                         <p>Item Category : {{ order.item.item_type_category }}</p>
                     </div>
@@ -94,21 +86,27 @@
                         <p>Item Serial : {{ order.item.item_serial }}</p>
                     </div>
                 </div>
-                <div class="order_details_container split" style="width:20%">
+                <div class="order_details_container split-end">
                     <div class="row">
                         <p>Initial Cost : £{{ order.cost_initial }}</p>
                     </div>
                     <div class="row">
                         <p>Weekly Cost : £{{ order.cost_week }}</p>
                     </div>
+                    <div class="row">
+                        <p>Created On : {{ order.created_on }}</p>
+                    </div>
+                    <div class="row">
+                        <p>Created By : {{ order.created_by }}</p>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-6">
+            <div class="row" style="justify-content: center;">
+                <div class="col-3">
                     <a class="button centre-align wide"
                         href="{% url 'customers:customer_view' customer_token_value %}">Return To Customer</a>
                 </div>
-                <div class="col-6">
+                <div class="col-3">
                     <a class="button centre-align wide"
                         href="{% url 'customers:customer_order_list' customer_token_value %}">Return To Orders</a>
                 </div>

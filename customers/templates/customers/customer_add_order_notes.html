@@ -12,10 +12,10 @@
     {% include 'side-nav.html' %}
     {% if user.is_authenticated %}
     <div class="content-holder centre">
-        <h2>Add an order note </h2>
+        <h2>Add An Order Note To Order : {{ customer_order_id }} </h2>
         <hr class="renterprise" style="width: 60%;">
-        <form id="addOrderNoteForm" method="post"
-            style="margin-top: 1.3em;">
+        <form id="add-order-note-form" method="post"
+            class="note-form">
             {{ order_note_form | crispy }}
             {% csrf_token %}
             <div class="row">
@@ -26,7 +26,7 @@
     </div>
     {% else %}
     <div class="content-holder centre">
-        <div class="row" style="width: 20%;">
+        <div class="row" style="width: 60%;">
             {% blocktrans %}
             <p>You need to be logged in to access the program.</p>
             <p>Log in to continue using this application.</p>

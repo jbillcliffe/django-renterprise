@@ -45,7 +45,7 @@
                     <p>Item Income : £{{ item.income }}</p>
                 </div>
             </div>
-            <div class="item_details_container split">
+            <div class="item_details_container split-end">
                 <div class="row">
                     <p>Upcoming Delivery Date : {{ item.delivery_date }}</p>
                 </div>
@@ -58,15 +58,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4">
-                <a class="button centre-align" href="{% url 'items:item_list' %}">Return To List</a>
-            </div>
-            <div class="col-4"></div>
-        </div>
+            <a class="button centre-align" style="width:20%;" href="{% url 'items:item_list' %}">Return To Item List</a>
+        </div>        
         {% else %}
         <div class="content-holder centre">
-            <div class="row" style="width: 20%;">
+            <div class="row" style="width: 30%;">
                 {% blocktrans %}
                 <p>You need to be logged in to access the program.</p>
                 <p>Log in to continue using this application.</p>
