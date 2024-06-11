@@ -31,8 +31,14 @@
 		</li>
 		{% endif %}
 		{% if url_name == 'item_view' %}
+		<hr style="color:black;">
+		<li class="nav-item">
+			<a class="side-bar nav-link display-only">
+				Current Status :</a>
+			<a class="side-bar nav-link display-only status">
+				{{ item.status_str }} </a>
+		</li>
 			{% if perms.items %}
-				<hr style="color:black;">
 				<li class="nav-item">
 					<a class="side-bar nav-link display-only">
 						Change Item Status </a>
@@ -41,7 +47,7 @@
 				{% for key, value in item.STATUS %}	
 					{% if key|add:"0" != item.status|add:"0" %}
 					<li class="nav-option">
-						<a class="status_button {{ value | lower }}" status_value="{{ key }}" item_id="{{ item.id }}" 
+						<a class="status_button {{ value | lower }}" status_value="{{ key }}"
 						modal_inner_text="{{ value }}">{{ value }}</a>
 					</li>
 					{% endif %}
@@ -90,12 +96,14 @@
 					<i class="fa-solid fa-folder-tree" style="padding: 0.5rem;"></i> Customer Orders
 				</a>
 			</li>
+			{% if customer.status == 0 %}
 			<li class="nav-item">
 				<a id="order_create" href="{% url 'orders:order_create' customer_token_value %}" 
 				class="side-bar nav-link">
 					<i class="fa-solid fa-folder-plus" style="padding: 0.5rem;"></i> New Order
 				</a>
 			</li>
+			{% endif %}
 			
 		{% elif url_name == 'customer_view' %}
 			<!-- Notes, Order List, New Order-->
@@ -112,29 +120,37 @@
 				<i class="fa-solid fa-folder-tree" style="padding: 0.5rem;"></i> Customer Orders
 				</a>
 			</li>
+			{% if customer.status == 0 %}
 			<li class="nav-item">
 				<a id="order_create" href="{% url 'orders:order_create' customer_token_value %}"
 				class="side-bar nav-link">
 					<i class="fa-solid fa-folder-plus" style="padding: 0.5rem;"></i> New Order
 				</a>
 			</li>
-			{% if perms.items %}
-				<hr style="color:black;">
-				<li class="nav-item">
-					<a class="side-bar nav-link display-only">
-						Customer Status </a>
-				</li>
-				<!--available-->
-				{% for key, value in customer.STATUS %}	
-					{% if key|add:"0" != customer.status|add:"0" %}
-					<li class="nav-option">
-						<a class="status_button {{ value | lower }}" status_value="{{ key }}" item_id="{{ item.id }}" 
-						modal_inner_text="{{ value }}">{{ value }}</a>
-					</li>
-					{% endif %}
-				{% endfor %}
 			{% endif %}
-
+			<hr style="color:black;">
+			<li class="nav-item">
+				<a class="side-bar nav-link display-only">
+					Current Status :</a>
+				<a class="side-bar nav-link display-only status" id="customer-status-id">{{ customer.status_str }}</a>
+			</li>
+			{% if customer.status != 2 %}
+				{% if perms.customers %}
+					<li class="nav-item">
+						<a class="side-bar nav-link display-only">
+							Customer Status </a>
+					</li>
+					
+					{% for key, value in customer.STATUS %}	
+						{% if key|add:"0" != customer.status|add:"0" %}
+						<li class="nav-option">
+							<a class="status_button {{ value | lower }}" status_value="{{ key }}"
+							modal_inner_text="{{ value }}">{{ value }}</a>
+						</li>
+						{% endif %}
+					{% endfor %}
+				{% endif %}
+			{% endif %}
 		{% elif url_name == 'customer_notes_list' or url_name == 'customer_add_notes' %}
 			<li class="nav-item">
 				<a id="customer_notes_list" href="{% url 'customers:customer_notes_list' customer_token_value %}" 

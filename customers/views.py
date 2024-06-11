@@ -21,6 +21,7 @@ logger = logging.getLogger(__name__)
 class CustomerList(ListView):
     paginate_by = 9
     model = Customer
+    #Exclude archived customers
     queryset = Customer.objects.exclude(status=2)
     # https://stackoverflow.com/questions/37370534/django-listview-where-can-i-declare-variables-that-i-want-to-have-on-template
     # Override original get_context_data to allow sending of the application area.
@@ -49,6 +50,17 @@ def customer_view(request, customer_token):
             "full_name":obj.full_name,
         },
     )
+
+def customer_status_change(request, customer_token, status):
+    customer = get_object_or_404(Customer, customer_token=customer_token)
+    customer.status = status
+    customer.save()
+    messages.add_message(
+        request, messages.SUCCESS,
+    'Customer status has been updated'
+    )
+    
+    return redirect('customers:customer_view', customer_token=customer_token)
 
 def customer_create(request):
     """
@@ -184,6 +196,7 @@ class CustomerOrderList(ListView):
         context['order_list'] = self.get_queryset
         context['customer_token_value'] = self.customer.customer_token
         context['full_name'] = self.customer.full_name
+        context['customer_status'] = self.customer.status
         return context
 
 def customer_order_view(request, customer_token, order_id):

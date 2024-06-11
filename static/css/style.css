@@ -67,6 +67,7 @@ h3 {
 /* a general css style to have centre aligned h tags */
 /*h1/h2/h3.centre-heading*/
 .centre-heading {
+    width: 100%;
     display: flex; 
     align-items: center;
     flex-direction: column;
@@ -119,7 +120,7 @@ input,
 select {
     margin-left: 0.5rem !important;
     color: #000000;
-    box-shadow: 0px 0px 4px 0px black;
+    box-shadow: 0px 0px 4px 0px #000000;
 
 }
 
@@ -129,13 +130,13 @@ select>optgroup,
 select>optgroup>option {
     margin-left: 0.5rem !important;
     font-size: 85%;
-    box-shadow: 0px 0px 4px 0px black;
+    box-shadow: 0px 0px 4px 0px #000000;
 }
 
 /*defaults for the tables. just to set full height and white background.*/
 
 #id_remember {
-    box-shadow: 0px 0px 4px 0px black;
+    box-shadow: 0px 0px 4px 0px #000000;
 }
 
 #id_remember, label[for=id_remember] {
@@ -146,7 +147,7 @@ select>optgroup>option {
 hr.renterprise {
     clear: both;
     margin: 1rem 0;
-    border: 3px solid white;
+    border: 3px solid #FFFFFF;
     border-radius: 1px;
     opacity: 1;
     box-shadow: 0px 0px 4px 0px #000000;
@@ -169,7 +170,7 @@ https://www.w3schools.com/howto/howto_css_animate_buttons.asp */
     padding: 0.5rem;
     border-radius: 1rem;
     background-color: #1b9964;
-    box-shadow: 0 9px #999, 5px 5px 10px #393D3F;
+    box-shadow: 0 9px #999999, 5px 5px 10px #393D3F;
     text-shadow: 0px 1px 5px #000000;
     margin: 0.5vh auto;
     border: 1mm groove #1b9964;
@@ -194,6 +195,15 @@ https://www.w3schools.com/howto/howto_css_animate_buttons.asp */
 .button.left-align {
     display: flex; 
     justify-content: flex-start;
+}
+
+.button.red {
+    background-color: #FF0000;
+    box-shadow: 0 9px #999999, 5px 5px 10px #393D3F;
+    text-shadow: 0px 1px 5px #FFFFFF;
+    margin: 0.5vh auto;
+    border: 1mm groove #FF0000;
+    color: #FFFFFF;
 }
 
 
@@ -253,6 +263,21 @@ https://www.w3schools.com/howto/howto_css_animate_buttons.asp */
     transition: all 0.2s;
 }
 
+.button.red:hover {
+
+    background-color: #640000;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 1mm groove #e92222;
+    transition: all 0.3s;
+}
+
+.button.red:active {
+    background-color: #640000;
+    box-shadow: 0 5px #393D3F, 5px 5px 10px #393D3F;
+    transform: translateY(4px);
+    transition: all 0.2s;
+}
 /* HEADER STYLING */
 
 /*Set colour theme in BG, full page width and a shadow at the bottom 
@@ -419,15 +444,15 @@ of the theme.*/
 
 /* FORM WARNING RESTYLE FROM ALLAUTH */
 .errorlist {
-    color: red;
+    color: #FF0000;
     font-weight:bold;
     background: #FFFFFF;
     border-radius: 0.5rem;
-    box-shadow: 0 0 4px 0 red;
+    box-shadow: 0 0 4px 0 #FF0000;
 }
 
 .errorlist>li {
-    color: red;
+    color: #FF0000;
     background: #FFFFFF;
     text-shadow:none;
 }
@@ -444,7 +469,13 @@ of the theme.*/
 .content-holder {
     width: 100%;
     padding: 3rem;
-    background: dimgray;
+    background: #696969;
+}
+
+.content-holder.black {
+    width: 100%;
+    padding: 3rem;
+    background: #000000;
 }
 
 /* CONTENT HOLDER CENTRAL */
@@ -469,8 +500,8 @@ of the theme.*/
     height:5vh;
     align-items: center;
     padding:1rem;
-    background-color: white;
-    border: 1px solid lightgray;
+    background-color: #FFFFFF;
+    border: 1px solid #D3D3D3;;
 }
 
 .table-row.paid {
@@ -494,7 +525,14 @@ of the theme.*/
     text-shadow: 0px 1px 5px #FFFFFF;
 }
 
-.table-row.scrapped {
+.table-row.repair {
+    /*repair*/
+    background-color : #cedd00;
+    color : #000000;
+    text-shadow: none;
+}
+
+.table-row.scrapped, .table-row.deceased {
     /*scrap - Item */
     background-color : #000000;
     color:#FFFFFF;
@@ -506,13 +544,13 @@ of the theme.*/
 }
 
 .table-head {
-    background-color: gray;
+    background-color: #808080;
     color:#FFFFFF;
     text-shadow: 0px 1px 5px #000000;
 }
 
 .table-row:hover:not(:first-child):not(:last-child) {
-    background-color: lightgray;
+    background-color: #D3D3D3;;
 }
 
 .paginate-foot {
@@ -572,8 +610,8 @@ ul.nav {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    background: white;
-    border: 1px solid lightgray;
+    background: #FFFFFF;
+    border: 1px solid #D3D3D3;
     width: 25%;
     height: 100%;
     max-width: 350px;
@@ -603,6 +641,13 @@ ul.nav {
     text-decoration: underline;
     font-weight:bold;
 }
+.side-bar.nav-link.display-only.status {
+    color:#0000FF;
+    text-shadow: none;
+    text-decoration: none;
+    font-weight:bolder;
+    text-transform: uppercase;
+}
 
 img.item-image {
     width: auto;
@@ -631,7 +676,7 @@ img.item-image {
 }
 
 .repair {
-    /*sold*/
+    /*repair*/
     color : #cedd00;
 }
 
@@ -648,7 +693,7 @@ img.item-image {
     justify-content: center;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    box-shadow: 0 9px #999, 5px 5px 10px #393D3F;
+    box-shadow: 0 9px #999999, 5px 5px 10px #393D3F;
     margin: 0.5rem auto;
     text-align: center;
     font-size: initial;
@@ -658,7 +703,7 @@ img.item-image {
     max-height: 45px;
 }
 
-.status_button.available {
+.status_button.available, .status_button.current {
     color: #FFFFFF;
     background-color: #1b9964;
     border: 1mm groove #1b9964;
@@ -677,6 +722,13 @@ img.item-image {
     background-color: #0066ff;
     border: 1mm groove #0066ff;
     text-shadow: 0px 1px 5px #000000;
+}
+
+.status_button.archived {
+    color : #FFFFFF;
+    background-color: #FF0000;
+    border: 1mm groove #000000;
+    text-shadow: none;
 }
 
 .status_button.scrapped, .status_button.deceased {
@@ -774,22 +826,27 @@ form>div {
     margin: 5rem 0 0 2vw;
 }
 
-#modal-invoice-id,
-#modal-invoice-date,
-#modal-invoice-notes-title,
-#modal-invoice-note,
-#modal-invoice-amount,
-#modal-invoice-text {
+#modal-id,
+#modal-date,
+#modal-notes-title,
+#modal-note,
+#modal-amount,
+#modal-text {
     color: #000000;
     text-shadow: none;
 }
 
-#modal-invoice-id,
-#modal-invoice-notes-title {
+#modal-id,
+#modal-notes-title {
     font-weight:bold;
 }
 
-h3.modal-title.invoice {
-    color: blue;
+h3.modal-title {
+    color: #0000FF;
     text-shadow: none;
+}
+
+.bold-warning-text {
+    font-weight:bold;
+    color: #FF0000;
 }

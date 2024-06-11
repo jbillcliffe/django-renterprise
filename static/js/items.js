@@ -5,7 +5,6 @@ const statusConfirm = document.getElementById("statusConfirm");
 
 for (let button of statusButtons) {
     button.addEventListener("click", (e) => {
-        let itemId = e.target.getAttribute("item_id");
         let modalInnerText = e.target.getAttribute("modal_inner_text");
         let statusValue = e.target.getAttribute("status_value");
         modalContent.innerHTML = "Are you sure that you wish to change the status to "+modalInnerText+"?";

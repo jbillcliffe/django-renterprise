@@ -2,6 +2,9 @@
 Back to customers etc.
 https://stackoverflow.com/questions/524992/how-to-implement-a-back-link-on-django-templates
 
+How to toggle class
+//https://www.w3schools.com/howto/howto_js_toggle_class.asp
+
 get_invoices(obj)
     def get_invoices(obj):
         paginate_by = 5

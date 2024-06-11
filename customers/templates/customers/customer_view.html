@@ -8,69 +8,108 @@
 <div class="container-fluid" style="height: 100%; width:100%;">
     {% include 'side-nav.html' %}
     {% if user.is_authenticated %}
-    <div class="content-holder">
-        <p style="display:none;"> {{ customer_token_value }} </p>
-        <div class="row">
-            <div class="col-6">
-                <h2>{{ customer.full_name }}</h2>
-            </div>
-            <div class="col-3">
-                {% if customer.customer_css_status == "deceased" %}
-                <h2 class="{{ customer.customer_css_status }}">{{ item.status_str }}</h2>
-                {% else %}
-                <h2></h2>
-                {% endif %}
-            </div>
-            <div class="col-3">
-                <p>Created On : {{ customer.created_on }}</p>
-            </div>
-        </div>
-        <div class="row">
-            <hr class="renterprise">
-        </div>
-        <div class="customer_details_container">
-            <h2>Address :</h2>
-            <div class="row">
-                <p>{{ customer.address_line_one }}</p>
-            </div>
-            {% if customer.address_line_two %}
-            <div class="row">
-                <p>{{ customer.address_line_two }}</p>
-            </div>
-            {% endif %}
-            {% if customer.address_line_three %}
-            <div class="row">
-                <p>{{ customer.address_line_three }}</p>
-            </div>
-            {% endif %}
-            <div class="row">
-                <p>{{ customer.address_line_town }}</p>
-            </div>
-            <div class="row">
-                <p>{{ customer.address_line_county }}</p>
-            </div>
-            <div class="row">
-                <p>{{ customer.postcode }}</p>
-            </div>
-        </div>
-        <div class="row">
-            <hr class="renterprise">
-        </div>
+        {% if customer.status == 2 %}
+        <div class="content-holder centre black">
+            {% blocktrans %}
+            <h3 class="centre-heading bold-warning-text">Access to archived users from the front end is forbidden.</p>
+            <h3 class="centre-heading bold-warning-text">Please contact an administrator</p>
+            {% endblocktrans %}
+            <a class="button centre-align red" style="margin-top:1.5vh;" href="{% url 'menu:menu' %}">Main Menu</a>
         {% else %}
-        <div class="content-holder centre">
-            <div class="row" style="width: 20%;">
-                {% blocktrans %}
-                <p>You need to be logged in to access the program.</p>
-                <p>Log in to continue using this application.</p>
-                {% endblocktrans %}
-                <a class="button" href="{{ login_url }}">Log In</a>
+        <div class="content-holder">
+            <p style="display:none;"> {{ customer_token_value }} </p>
+            <div class="row">
+                <div class="col-6">
+                    <h2>{{ customer.full_name }}</h2>
+                </div>
+                <div class="col-3">
+                    {% if customer.customer_css_status == "deceased" %}
+                    <h2 class="{{ customer.customer_css_status }}">{{ item.status_str }}</h2>
+                    {% else %}
+                    <h2></h2>
+                    {% endif %}
+                </div>
+                <div class="col-3">
+                    <p>Created On : {{ customer.created_on }}</p>
+                </div>
             </div>
-        </div>
+            <div class="row">
+                <hr class="renterprise">
+            </div>
+            <div class="customer_details_container">
+                <h2>Address :</h2>
+                <div class="row">
+                    <p>{{ customer.address_line_one }}</p>
+                </div>
+                {% if customer.address_line_two %}
+                <div class="row">
+                    <p>{{ customer.address_line_two }}</p>
+                </div>
+                {% endif %}
+                {% if customer.address_line_three %}
+                <div class="row">
+                    <p>{{ customer.address_line_three }}</p>
+                </div>
+                {% endif %}
+                <div class="row">
+                    <p>{{ customer.address_line_town }}</p>
+                </div>
+                <div class="row">
+                    <p>{{ customer.address_line_county }}</p>
+                </div>
+                <div class="row">
+                    <p>{{ customer.postcode }}</p>
+                </div>
+            </div>
+            <div class="row">
+                <hr class="renterprise">
+            </div>
         {% endif %}
+    {% else %}
+    <div class="content-holder centre">
+        <div class="row" style="width: 20%;">
+        {% if customer.status == 0 or customer.status == 1 %}
+            {% blocktrans %}
+            <p>You need to be logged in to access the program.</p>
+            <p>Log in to continue using this application.</p>
+            {% endblocktrans %}
+            <a class="button" href="{{ login_url }}">Log In</a>
+        {% else %}
+            {% blocktrans %}
+            <p class="bold-warning-text">Access to archived users from the front end is forbidden.</p>
+            <p class="bold-warning-text">Please contact an administrator</p>
+            {% endblocktrans %}
+            <a class="button centre-align" href="{{request.META.HTTP_REFERER|escape}}">Return</a>
+        {% endif %}
+        </div>
+    {% endif %}
     </div>
-    
-	
 </div>
 
+<!-- Status change modal -->
+<div class="modal fade" id="statusModal" tabindex="-1" z-index="25"
+  aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title"
+          id="modalLabel">Status Change</h3>
+        <button type="button" class="btn-close"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div id="modalBody" class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary"
+          data-bs-dismiss="modal">Close</button>
+        <a id="statusConfirm" href="#" class="btn
+          btn-success">Change</a>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- index.html content ends here -->
+{% endblock content %}
+{% block extras %}
+<script src="{% static 'js/customers.js' %}"></script>
 {% endblock %}
