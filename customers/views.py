@@ -223,7 +223,6 @@ def customer_order_view(request, customer_token, order_id):
     except EmptyPage:
         # if page is empty then return last page
         page_obj = paginate_invoice_list.page(paginate_invoice_list.num_pages)
-        
 
     return render(
         request,
