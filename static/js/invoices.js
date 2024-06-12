@@ -3,11 +3,11 @@ const invoiceModal = new bootstrap.Modal(document.getElementById("invoiceModal")
 
 //const modalContent = document.getElementById("modalBody");
 const modalId = document.getElementById("invoiceModal")
-const modalInvoiceId = document.getElementById("modal-invoice-id");
-const modalInvoiceDate = document.getElementById("modal-invoice-date");
-const modalInvoiceNote = document.getElementById("modal-invoice-note");
-const modalInvoiceAmount = document.getElementById("modal-invoice-amount");
-const modalInvoiceText = document.getElementById("modal-invoice-text");
+const modalInvoiceId = document.getElementById("modal-id");
+const modalInvoiceDate = document.getElementById("modal-date");
+const modalInvoiceNote = document.getElementById("modal-note");
+const modalInvoiceAmount = document.getElementById("modal-amount");
+const modalInvoiceText = document.getElementById("modal-text");
 
 const invoiceTableButtons = document.getElementsByClassName("button-table");
 const invoiceConfirm = document.getElementById("invoiceConfirm");
@@ -28,7 +28,7 @@ function populateInvoiceModal() {
     let invoiceNote = thisButton.getAttribute("invoice-note");
     let invoiceAmount = thisButton.getAttribute("invoice-amount");
 
-    modalInvoiceId.innerHTML = "No. :"+invoiceId;
+    modalInvoiceId.innerHTML = "Invoice No. :"+invoiceId;
     modalInvoiceDate.innerHTML = "<b>Date</b>: "+invoiceDate;
     modalInvoiceNote.innerHTML = invoiceNote;
 

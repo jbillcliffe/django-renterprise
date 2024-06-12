@@ -28,6 +28,9 @@ class Order(models.Model):
         User, on_delete=models.PROTECT, related_name="order_created_by"
     )
 
+    class Meta:
+        ordering = ["id"]
+
     def order_customer_name(self):
         return f"{self.customer.first_name} {self.customer.last_name}"
 
@@ -45,6 +48,9 @@ class OrderNote(models.Model):
         User, on_delete=models.PROTECT, related_name="ordernote_created_by"
     )
 
+    class Meta:
+        ordering = ["created_by"]
+
     def order_note_full_name(self):
         return f"{self.order.customer.first_name} {self.order.customer.last_name}"
 
@@ -52,9 +58,7 @@ class OrderNote(models.Model):
         date_to_string = self.created_on.strftime("%d-%m-%Y")
         return f"Created on : {date_to_string}, By : {self.created_by.username}"
 
-    class Meta:
-        ordering = ["created_by"]
-
+    
 class Invoice(models.Model):
     
     order = models.ForeignKey(
@@ -67,7 +71,7 @@ class Invoice(models.Model):
 
     # order by item_type name 0-9 then A-Z
     class Meta:
-        ordering = ["id"]
+        ordering = ["created_on"]
 
     #will send a string of true/false
     def invoice_css_status(self):

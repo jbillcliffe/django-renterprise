@@ -825,7 +825,7 @@ form>div {
     width: 20%;
     margin: 5rem 0 0 2vw;
 }
-
+/*
 #modal-id,
 #modal-date,
 #modal-notes-title,
@@ -834,6 +834,23 @@ form>div {
 #modal-text {
     color: #000000;
     text-shadow: none;
+}
+*/
+
+/*
+all elements where id contains "modal-" within
+a div element with class "modal-content", this selector
+gets all elements in the html body part of a modal window
+and then formats text to black so it
+can be seen on white background
+*/
+
+p[id*="modal-"],
+h3[id*="modal-"],
+h4[id*="modal-"] {
+    color: #000000;
+    text-shadow: none;
+    font-size:medium;
 }
 
 #modal-id,

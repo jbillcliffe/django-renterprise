@@ -87,4 +87,4 @@ class CustomerNote(models.Model):
         return f"Created on : {date_to_string}, By : {self.created_by.username}"
 
     class Meta:
-        ordering = ["created_by"]
+        ordering = ["created_on","id"]

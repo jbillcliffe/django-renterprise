@@ -9,7 +9,7 @@
     {% include 'side-nav.html' %}
     {% if user.is_authenticated %}
 
-    {% if order_notes_list %}
+    {% if ordernote_list %}
     <div class="table-holder">
         <div class="centre-heading">
             <h2> View Order Notes For Order : {{ customer_order_id }} </h2>
@@ -27,7 +27,7 @@
                 <i class="fa-solid fa-comment-medical"></i></a>
             </div>
         </div>
-        {% for order_note in order_notes_list %}
+        {% for order_note in ordernote_list %}
         <div class="table-row ">
             <div class="col-3">{{ order_note.created_on_by }}</div>
             <div class="col-8 note-row" >{{ order_note.note | safe }}</div>
