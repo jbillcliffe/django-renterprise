@@ -1,3 +1,4 @@
+from datetime import datetime
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.contrib import messages
 from django.views.generic import ListView
@@ -95,6 +96,10 @@ def item_status_change(request, id, status):
     item = get_object_or_404(Item, pk=id)
     item.pk = id
     item.status = status
+    if status == "4" or status == "Repair" or status == 4:
+        item.repair_date = datetime.utcnow()
+    else:
+        pass
     item.save()
     messages.add_message(
         request, messages.SUCCESS,
