@@ -1,6 +1,7 @@
 
 from datetime import datetime
 import logging
+from decimal import Decimal
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.contrib import messages
 from django.views.generic import ListView
@@ -350,14 +351,47 @@ def invoice_status_change(request, customer_token, order_id,
         customer_token=customer_token,
         order_id=order_id)
 
-def invoice_create(request, customer_token, order_id):
-    logger.warning(request)
-    logger.warning(request.amount_paid)
-    
-    logger.warning(customer_token)
-    logger.warning(order_id)
+def invoice_create(request, customer_token, order_id,
+                    amount_paid, note):
 
+    #Bug zone : wsgirequest' object has no attribute 'amount_paid'
+    #change to same type as status change, to implement as posting form
+    # is causing problems. So values will be sent by URL.
+    # the form created by JS dynamically validates the fields
+    # prior to submission.
+    order = get_object_or_404(Order, pk=order_id)
+    invoice = Invoice(
+        created_on=datetime.utcnow(),
+        order=order,
+        note=note,
+        amount_paid=Decimal(amount_paid),
+        status=False)
+    invoice.save()
+    messages.add_message(
+        request, messages.SUCCESS,
+        'Invoice has been created'
+    )
+
+    return redirect('customers:customer_order_view', 
+            customer_token=customer_token,
+            order_id=order_id)
     """
+    invoice = get_object_or_404(Invoice, pk=invoice_id)
+    if (set_invoice == "false" or set_invoice == "False"):
+        invoice.status = False
+    else:
+        invoice.status = True
+    
+    invoice.save()
+    messages.add_message(
+        request, messages.SUCCESS,
+    'Invoice status has been updated'
+    )
+    return redirect('customers:customer_order_view', 
+        customer_token=customer_token,
+        order_id=order_id)
+
+    
     order_get = get_object_or_404(Order, pk=order_id)
     
     invoice_form = InvoiceForm(request.POST)

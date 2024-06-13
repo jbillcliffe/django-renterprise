@@ -37,6 +37,6 @@ urlpatterns = [
         views.add_order_notes, name='add_order_notes'),
     path('<uuid:customer_token>/orders/<int:order_id>/invoice_status/<int:invoice_id>/<str:set_invoice>',
         views.invoice_status_change, name='invoice_status_change'),
-        path('<uuid:customer_token>/orders/<int:order_id>/invoice_create/',
+    path('<uuid:customer_token>/orders/<int:order_id>/invoice_create/<str:amount_paid>/<str:note>/',
         views.invoice_create, name='invoice_create'),
 ]

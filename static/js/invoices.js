@@ -59,29 +59,30 @@ function populateInvoiceCreateModal() {
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div id="modalBody" class="modal-body">
-            <form id="invoiceForm" method="post">
+            <form id="invoice-create-form" name="invoiceForm" method="POST">
                 <input type="hidden" name="csrfmiddlewaretoken" value="${csrftoken}">
                 <div id="div_id_amount_paid" class="mb-3">
-                    <label for="id_amount_paid" class="form-label requiredField">
+                    <label for="invoice-modal-create-amount-paid" class="form-label requiredField">
                         Amount <span class="asteriskField">*</span>
                     </label>
-                    <input type="number" name="amount_paid" step="1.00" class="numberinput form-control" required="" id="id_amount_paid">   
+                    <input type="number" name="amount_paid" step="1.00" class="numberinput form-control" 
+                        required="" id="invoice-modal-create-amount-paid">   
                 </div>
                 <div id="div_id_note" class="mb-3">
-                    <label for="id_note" class="form-label requiredField">
+                    <label for="invoice-modal-create-note" class="form-label requiredField">
                         Note <span class="asteriskField">*</span>
                     </label>
-                    <input type="text" name="note" class="textinput form-control" required="" id="id_note">
+                    <input type="text" name="note" class="textinput form-control" 
+                        required="" id="invoice-modal-create-note">
                 </div>
                 <div class="modal-footer">
-                    <div class="row">
-                        <button id="submitButton" type="submit" href="${orderId}/invoice_create/" class="button centre-align">Submit</button>
-                        <a class="button centre-align" href="" data-bs-dismiss="modal">Cancel</a>
+                    <div class="row" style="width:100%;">
+                        <a id="invoiceSubmit" onclick="submitInvoiceToView()" 
+                            class="button centre-align" style="width:75%;">Submit</a>
+                        <a id="invoiceCancel" href="" class="button centre-align red"
+                            data-bs-dismiss="modal" style="width:75%; margin-top:1.3rem;">Cancel</a>
+                        <a id="hidden-invoice-create-confirm" href="" id="submit-id-submit" hidden>Submit</a>
                     </div>
-                    <a id="invoiceCancel" href="" class="btn btn-danger"
-                        data-bs-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i> Cancel </a>
-                    <a id="invoiceConfirm" href="${orderId}/invoice_create/" class="btn
-                        btn-success"><i class="fa-solid fa-sterling-sign"></i> Change </a>
                 </div>
             </form>
         </div>
@@ -149,4 +150,28 @@ function populateInvoiceDetailsModal() {
     invoiceModal.show();
 }
 
+function submitInvoiceToView() {
+    let amount_paid = document.getElementById("invoice-modal-create-amount-paid").value;
+    let note = document.getElementById("invoice-modal-create-note").value;
+
+    //trigger the form validation on required fields before submitting
+    if(document.forms["invoice-create-form"].reportValidity() == false) {
+        //do no further functions as it is not valid
+    } else {
+        //set href of hidden confirm button, after grabbing values to post
+        let paidURL = `${orderId}/invoice_create/${amount_paid}/${note}/`;
+        let submitButton = document.getElementById("hidden-invoice-create-confirm");
+        submitButton.href = paidURL;
+        submitButton.click(); 
+    }
+    //https://stackoverflow.com/questions/40772691/trigger-button-click-in-javascript
+    //document.getElementById("myButton").click(); 
+
+    //https://stackoverflow.com/questions/9855656/how-can-i-submit-a-form-using-javascript
+    //document.invoiceForm.submit();
+
+    //https://stackoverflow.com/questions/7548612/manually-triggering-form-validation-using-jquery
+    //https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/reportValidity
+    //Javascript validity
+}
 

@@ -1,28 +1,123 @@
-django.request WARNING 2024-06-13 01:45:46,455 log 7818 139640415692352 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-customers.views WARNING 2024-06-13 01:45:53,981 views 7818 139640407299648 <WSGIRequest: GET '/customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/'>
-customers.views WARNING 2024-06-13 01:45:53,981 views 7818 139640407299648 8e05b134-0b51-46e4-ac9d-2e725f265a9b
-customers.views WARNING 2024-06-13 01:45:53,982 views 7818 139640407299648 8
-django.request ERROR 2024-06-13 01:45:54,140 log 7818 139640407299648 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/
-Traceback (most recent call last):
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/base.py", line 204, in _get_response
-    self.check_response(response, callback)
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/base.py", line 332, in check_response
-    raise ValueError(
-ValueError: The view customers.views.invoice_create didn't return an HttpResponse object. It returned None instead.
-django.request WARNING 2024-06-13 01:45:54,333 log 7818 139639922882112 Not Found: /favicon.ico
-django.request WARNING 2024-06-13 01:45:54,398 log 7818 139639914489408 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/styles.css.map
-django.utils.autoreload INFO 2024-06-13 01:47:17,695 autoreload 7818 139640743861120 /workspace/django-renterprise/customers/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-13 01:47:18,316 autoreload 7944 139890667793280 Watching for file changes with StatReloader
-django.request WARNING 2024-06-13 01:47:24,276 log 7944 139890602612288 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-urllib3.connectionpool DEBUG 2024-06-13 01:47:24,812 connectionpool 7944 139890594203200 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-13 01:47:24,877 connectionpool 7944 139890594203200 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
-django.request WARNING 2024-06-13 01:47:25,785 log 7944 139890347984448 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request WARNING 2024-06-13 01:47:27,415 log 7944 139889752397376 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-customers.views WARNING 2024-06-13 01:47:31,398 views 7944 139889744004672 <WSGIRequest: GET '/customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/'>
-django.request ERROR 2024-06-13 01:47:31,553 log 7944 139889744004672 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/
+customers.views WARNING 2024-06-13 11:37:11,917 views 7577 139653644453440 1
+customers.views WARNING 2024-06-13 11:37:11,917 views 7577 139653644453440 GET
+customers.views WARNING 2024-06-13 11:37:11,917 views 7577 139653644453440 2
+customers.views WARNING 2024-06-13 11:37:11,917 views 7577 139653644453440 /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/
+customers.views WARNING 2024-06-13 11:37:11,917 views 7577 139653644453440 3
+customers.views WARNING 2024-06-13 11:37:11,918 views 7577 139653644453440 b''
+customers.views WARNING 2024-06-13 11:37:11,918 views 7577 139653644453440 4
+customers.views WARNING 2024-06-13 11:37:11,918 views 7577 139653644453440 <QueryDict: {}>
+customers.views WARNING 2024-06-13 11:37:11,918 views 7577 139653644453440 5
+customers.views WARNING 2024-06-13 11:37:11,918 views 7577 139653644453440 <QueryDict: {}>
+customers.views WARNING 2024-06-13 11:37:11,918 views 7577 139653644453440 6
+customers.views WARNING 2024-06-13 11:37:11,918 views 7577 139653644453440 {}
+customers.views WARNING 2024-06-13 11:37:12,143 views 7577 139653644453440 7
+customers.views WARNING 2024-06-13 11:37:12,144 views 7577 139653644453440 Order object (8)
+customers.views WARNING 2024-06-13 11:37:12,144 views 7577 139653644453440 8
+customers.views WARNING 2024-06-13 11:37:12,144 views 7577 139653644453440 <QueryDict: {}>
+customers.views WARNING 2024-06-13 11:37:12,144 views 7577 139653644453440 []
+customers.views WARNING 2024-06-13 11:37:12,144 views 7577 139653644453440 9
+customers.views WARNING 2024-06-13 11:37:12,144 views 7577 139653644453440 <QueryDict: {}>
+customers.views WARNING 2024-06-13 11:37:12,144 views 7577 139653644453440 []
+customers.views WARNING 2024-06-13 11:37:12,144 views 7577 139653644453440 10
+customers.views WARNING 2024-06-13 11:37:12,144 views 7577 139653644453440 {'amount_paid': <django.forms.fields.DecimalField object at 0x7f03a5f0e7b0>, 'note': <django.forms.fields.CharField object at 0x7f03a5f2e9c0>}
+customers.views WARNING 2024-06-13 11:37:12,144 views 7577 139653644453440 11
+customers.views WARNING 2024-06-13 11:37:12,144 views 7577 139653644453440 Invoice object (None)
+urllib3.connectionpool DEBUG 2024-06-13 11:37:12,522 connectionpool 7577 139653636044352 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-13 11:37:12,575 connectionpool 7577 139653636044352 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-13 11:37:13,178 log 7577 139653386585664 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-13 11:39:34,594 autoreload 7577 139653709634624 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-13 11:39:35,123 autoreload 7707 140063804161088 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-13 11:39:37,429 connectionpool 7707 140063738979904 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-13 11:39:37,475 connectionpool 7707 140063738979904 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4117
+django.request WARNING 2024-06-13 11:39:38,165 log 7707 140063488853568 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-13 11:39:42,758 views 7707 140063480460864 1
+customers.views WARNING 2024-06-13 11:39:42,758 views 7707 140063480460864 GET
+customers.views WARNING 2024-06-13 11:39:42,758 views 7707 140063480460864 2
+customers.views WARNING 2024-06-13 11:39:42,758 views 7707 140063480460864 /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/
+customers.views WARNING 2024-06-13 11:39:42,758 views 7707 140063480460864 3
+customers.views WARNING 2024-06-13 11:39:42,758 views 7707 140063480460864 b''
+customers.views WARNING 2024-06-13 11:39:42,758 views 7707 140063480460864 4
+customers.views WARNING 2024-06-13 11:39:42,758 views 7707 140063480460864 <QueryDict: {}>
+customers.views WARNING 2024-06-13 11:39:42,758 views 7707 140063480460864 5
+customers.views WARNING 2024-06-13 11:39:42,759 views 7707 140063480460864 <QueryDict: {}>
+customers.views WARNING 2024-06-13 11:39:42,759 views 7707 140063480460864 6
+customers.views WARNING 2024-06-13 11:39:42,759 views 7707 140063480460864 {}
+customers.views WARNING 2024-06-13 11:39:42,982 views 7707 140063480460864 7
+customers.views WARNING 2024-06-13 11:39:42,983 views 7707 140063480460864 Order object (8)
+customers.views WARNING 2024-06-13 11:39:42,983 views 7707 140063480460864 8
+customers.views WARNING 2024-06-13 11:39:42,983 views 7707 140063480460864 <QueryDict: {}>
+customers.views WARNING 2024-06-13 11:39:42,983 views 7707 140063480460864 []
+customers.views WARNING 2024-06-13 11:39:42,983 views 7707 140063480460864 9
+customers.views WARNING 2024-06-13 11:39:42,983 views 7707 140063480460864 <QueryDict: {}>
+customers.views WARNING 2024-06-13 11:39:42,983 views 7707 140063480460864 []
+customers.views WARNING 2024-06-13 11:39:42,983 views 7707 140063480460864 10
+customers.views WARNING 2024-06-13 11:39:42,983 views 7707 140063480460864 {'amount_paid': <django.forms.fields.DecimalField object at 0x7f632172f7a0>, 'note': <django.forms.fields.CharField object at 0x7f632172dfd0>}
+customers.views WARNING 2024-06-13 11:39:42,983 views 7707 140063480460864 <built-in method values of dict object at 0x7f63216b2d80>
+customers.views WARNING 2024-06-13 11:39:42,983 views 7707 140063480460864 11
+customers.views WARNING 2024-06-13 11:39:42,983 views 7707 140063480460864 Invoice object (None)
+django.request WARNING 2024-06-13 11:39:43,714 log 7707 140063463675456 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-13 11:41:43,700 autoreload 7707 140063804161088 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-13 11:41:44,233 autoreload 7831 140364707929152 Watching for file changes with StatReloader
+customers.views WARNING 2024-06-13 11:41:48,315 views 7831 140364642747968 1
+customers.views WARNING 2024-06-13 11:41:48,315 views 7831 140364642747968 GET
+customers.views WARNING 2024-06-13 11:41:48,315 views 7831 140364642747968 2
+customers.views WARNING 2024-06-13 11:41:48,315 views 7831 140364642747968 /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/
+customers.views WARNING 2024-06-13 11:41:48,315 views 7831 140364642747968 3
+customers.views WARNING 2024-06-13 11:41:48,315 views 7831 140364642747968 b''
+customers.views WARNING 2024-06-13 11:41:48,315 views 7831 140364642747968 4
+customers.views WARNING 2024-06-13 11:41:48,315 views 7831 140364642747968 <QueryDict: {}>
+customers.views WARNING 2024-06-13 11:41:48,315 views 7831 140364642747968 5
+customers.views WARNING 2024-06-13 11:41:48,315 views 7831 140364642747968 <QueryDict: {}>
+customers.views WARNING 2024-06-13 11:41:48,315 views 7831 140364642747968 6
+customers.views WARNING 2024-06-13 11:41:48,315 views 7831 140364642747968 {}
+customers.views WARNING 2024-06-13 11:41:48,574 views 7831 140364642747968 7
+customers.views WARNING 2024-06-13 11:41:48,574 views 7831 140364642747968 Order object (8)
+customers.views WARNING 2024-06-13 11:41:48,574 views 7831 140364642747968 8
+customers.views WARNING 2024-06-13 11:41:48,574 views 7831 140364642747968 <QueryDict: {}>
+customers.views WARNING 2024-06-13 11:41:48,574 views 7831 140364642747968 []
+customers.views WARNING 2024-06-13 11:41:48,574 views 7831 140364642747968 9
+customers.views WARNING 2024-06-13 11:41:48,574 views 7831 140364642747968 <QueryDict: {}>
+customers.views WARNING 2024-06-13 11:41:48,574 views 7831 140364642747968 []
+customers.views WARNING 2024-06-13 11:41:48,575 views 7831 140364642747968 10
+customers.views WARNING 2024-06-13 11:41:48,575 views 7831 140364642747968 {'amount_paid': <django.forms.fields.DecimalField object at 0x7fa930b520f0>, 'note': <django.forms.fields.CharField object at 0x7fa930b52150>}
+customers.views WARNING 2024-06-13 11:41:48,575 views 7831 140364642747968 <built-in method values of dict object at 0x7fa930aed040>
+customers.views WARNING 2024-06-13 11:41:48,575 views 7831 140364642747968 11
+customers.views WARNING 2024-06-13 11:41:48,575 views 7831 140364642747968 Invoice object (None)
+customers.views WARNING 2024-06-13 11:41:48,575 views 7831 140364642747968 12
+customers.views WARNING 2024-06-13 11:41:48,575 views 7831 140364642747968 {'amount_paid': <django.forms.fields.DecimalField object at 0x7fa930af8530>, 'note': <django.forms.fields.CharField object at 0x7fa930af99d0>}
+customers.views WARNING 2024-06-13 11:41:48,575 views 7831 140364642747968 <built-in method values of dict object at 0x7fa930aef200>
+customers.views WARNING 2024-06-13 11:41:48,575 views 7831 140364642747968 13
+customers.views WARNING 2024-06-13 11:41:48,575 views 7831 140364642747968 Invoice object (None)
+urllib3.connectionpool DEBUG 2024-06-13 11:41:48,889 connectionpool 7831 140364564395584 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-13 11:41:48,945 connectionpool 7831 140364564395584 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4117
+django.request WARNING 2024-06-13 11:41:49,388 log 7831 140364547610176 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-13 11:47:44,670 autoreload 7831 140364707929152 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-13 11:47:45,198 autoreload 8298 139952405261376 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-13 11:49:13,913 autoreload 8298 139952405261376 /workspace/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-13 11:49:14,447 autoreload 8406 139825720695872 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-13 11:49:29,912 autoreload 8406 139825720695872 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-13 11:49:30,447 autoreload 8452 140126071897152 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-13 11:52:23,570 autoreload 8452 140126071897152 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-13 11:52:24,096 autoreload 8663 139962304646208 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-13 11:52:57,900 autoreload 8663 139962304646208 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-13 11:52:58,460 autoreload 8809 140034436856896 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-13 12:10:12,944 autoreload 8809 140034436856896 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-13 12:10:13,447 autoreload 9627 140334920789056 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-13 12:10:33,999 autoreload 9627 140334920789056 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-13 12:10:34,528 autoreload 9661 140440852188224 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-13 12:10:49,210 connectionpool 9661 140440787007040 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-13 12:10:49,294 connectionpool 9661 140440787007040 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4117
+django.request WARNING 2024-06-13 12:10:49,990 log 9661 140440743913024 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:11:11,959 log 9661 140440221230656 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:12:11,129 log 9661 140439692752448 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:13:33,190 log 9661 140439164274240 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:13:35,906 log 9661 140439155881536 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/
+django.request WARNING 2024-06-13 12:13:35,952 log 9661 140439147488832 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:13:36,142 log 9661 140439139096128 Not Found: /favicon.ico
+django.request WARNING 2024-06-13 12:13:36,153 log 9661 140438652581440 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/styles.css.map
+django.request WARNING 2024-06-13 12:13:42,824 log 9661 140438644188736 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/styles.css.map
+django.request WARNING 2024-06-13 12:13:43,054 log 9661 140438635796032 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request ERROR 2024-06-13 12:13:51,512 log 9661 140438627403328 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/22/test/
 Traceback (most recent call last):
   File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
@@ -30,9 +125,118 @@ Traceback (most recent call last):
   File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/django-renterprise/customers/views.py", line 355, in invoice_create
-    logger.warning(request.amount_paid)
-                   ^^^^^^^^^^^^^^^^^^^
-AttributeError: 'WSGIRequest' object has no attribute 'amount_paid'
-django.request WARNING 2024-06-13 01:47:31,750 log 7944 139889735611968 Not Found: /favicon.ico
-django.request WARNING 2024-06-13 01:47:31,811 log 7944 139889727219264 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/styles.css.map
+  File "/workspace/django-renterprise/customers/views.py", line 365, in invoice_create
+    amount_paid=Decimal(amount_paid),
+                ^^^^^^^
+NameError: name 'Decimal' is not defined
+django.request WARNING 2024-06-13 12:13:51,577 log 9661 140438619010624 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:13:51,753 log 9661 140438610617920 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/22/test/styles.css.map
+django.utils.autoreload INFO 2024-06-13 12:14:54,308 autoreload 9661 140440852188224 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-13 12:14:54,858 autoreload 9940 140311752735808 Watching for file changes with StatReloader
+django.request WARNING 2024-06-13 12:14:56,093 log 9940 140311615501888 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/22/test/styles.css.map
+django.request WARNING 2024-06-13 12:14:56,347 log 9940 140311607109184 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+urllib3.connectionpool DEBUG 2024-06-13 12:14:58,045 connectionpool 9940 140311598716480 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-13 12:14:58,183 connectionpool 9940 140311598716480 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4117
+django.request WARNING 2024-06-13 12:14:58,774 log 9940 140311078630976 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request ERROR 2024-06-13 12:15:02,400 log 9940 140311070238272 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/22/Test/
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/django-renterprise/customers/views.py", line 366, in invoice_create
+    amount_paid=Decimal(amount_paid),
+                ^^^^^^^
+NameError: name 'Decimal' is not defined. Did you mean: 'decimal'?
+django.request WARNING 2024-06-13 12:15:02,473 log 9940 140311061845568 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:15:02,729 log 9940 140311045060160 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/22/Test/styles.css.map
+django.request WARNING 2024-06-13 12:15:02,730 log 9940 140311053452864 Not Found: /favicon.ico
+django.utils.autoreload INFO 2024-06-13 12:15:34,032 autoreload 9940 140311752735808 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-13 12:15:34,578 autoreload 9998 140347419515968 Watching for file changes with StatReloader
+django.request WARNING 2024-06-13 12:15:36,223 log 9998 140347354334784 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+urllib3.connectionpool DEBUG 2024-06-13 12:15:38,288 connectionpool 9998 140347344877120 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-13 12:15:38,352 connectionpool 9998 140347344877120 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4117
+django.request WARNING 2024-06-13 12:15:38,641 log 9998 140347336468032 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:15:38,949 log 9998 140346956695104 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request ERROR 2024-06-13 12:15:49,505 log 9998 140346948302400 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/23/Test/
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/django-renterprise/customers/views.py", line 362, in invoice_create
+    invoice = Invoice(
+              ^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/db/models/base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/db/models/fields/related_descriptors.py", line 266, in __set__
+    raise ValueError(
+ValueError: Cannot assign "8": "Invoice.order" must be a "Order" instance.
+django.request WARNING 2024-06-13 12:15:49,584 log 9998 140346939909696 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:15:49,795 log 9998 140346931516992 Not Found: /favicon.ico
+django.request WARNING 2024-06-13 12:15:49,811 log 9998 140346445002304 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/23/Test/styles.css.map
+django.utils.autoreload INFO 2024-06-13 12:16:27,873 autoreload 9998 140347419515968 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-13 12:16:28,412 autoreload 10089 140569549581376 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-13 12:16:32,586 autoreload 10089 140569549581376 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-13 12:16:33,108 autoreload 10102 140482536447040 Watching for file changes with StatReloader
+django.request WARNING 2024-06-13 12:16:35,617 log 10102 140482403366464 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/23/Test/styles.css.map
+django.request WARNING 2024-06-13 12:16:35,855 log 10102 140482394973760 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+urllib3.connectionpool DEBUG 2024-06-13 12:16:37,003 connectionpool 10102 140482385532480 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-13 12:16:37,062 connectionpool 10102 140482385532480 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-13 12:16:37,670 log 10102 140481870689856 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:16:44,053 log 10102 140481845511744 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:16:47,214 log 10102 140481828726336 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:16:47,489 log 10102 140481820333632 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:16:50,185 log 10102 140481325426240 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:16:50,566 log 10102 140481317033536 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:17:02,473 log 10102 140481308640832 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/
+django.request WARNING 2024-06-13 12:17:02,519 log 10102 140481300248128 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:17:02,639 log 10102 140481291855424 Not Found: /favicon.ico
+django.request WARNING 2024-06-13 12:17:02,649 log 10102 140481283462720 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/styles.css.map
+django.request WARNING 2024-06-13 12:17:06,914 log 10102 140480796948032 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/styles.css.map
+django.request WARNING 2024-06-13 12:17:07,138 log 10102 140480788555328 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:17:39,061 log 10102 140480780162624 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/
+django.request WARNING 2024-06-13 12:17:39,111 log 10102 140480771769920 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:17:39,245 log 10102 140480763377216 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/styles.css.map
+django.request WARNING 2024-06-13 12:19:32,241 log 10102 140480754984512 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/styles.css.map
+django.request WARNING 2024-06-13 12:19:32,485 log 10102 140480746591808 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:19:33,889 log 10102 140480218113600 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:19:38,778 log 10102 140479714813504 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:19:38,953 log 10102 140479698028096 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:19:43,512 log 10102 140479689635392 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/
+django.request WARNING 2024-06-13 12:19:43,565 log 10102 140479681242688 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:19:43,683 log 10102 140479672849984 Not Found: /favicon.ico
+django.request WARNING 2024-06-13 12:19:43,692 log 10102 140479186335296 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/styles.css.map
+django.request WARNING 2024-06-13 12:19:45,213 log 10102 140479169549888 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/styles.css.map
+django.request WARNING 2024-06-13 12:19:45,489 log 10102 140479161157184 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:40:14,564 log 10102 140478632678976 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:40:28,669 log 10102 140478599108160 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:40:43,712 log 10102 140478087415360 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:40:49,489 log 10102 140478070629952 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:40:49,716 log 10102 140477575722560 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:40:51,516 log 10102 140477558937152 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:40:51,668 log 10102 140477550544448 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:41:58,251 log 10102 140477525366336 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:41:58,419 log 10102 140477038851648 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:42:03,529 log 10102 140476988495424 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:42:13,216 log 10102 140476485195328 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:42:13,384 log 10102 140476468409920 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:42:15,247 log 10102 140476451624512 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:42:15,418 log 10102 140475956717120 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:42:17,452 log 10102 140475931539008 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:42:17,599 log 10102 140475923146304 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:45:57,808 log 10102 140475394668096 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:46:29,688 log 10102 140474866189888 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:46:45,942 log 10102 140474337711680 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:47:24,959 log 10102 140474304140864 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:47:25,184 log 10102 140473817626176 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:47:29,904 log 10102 140473800840768 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:47:30,222 log 10102 140473784055360 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:47:50,638 log 10102 140473272362560 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:47:50,798 log 10102 140473263969856 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:47:55,794 log 10102 140473247184448 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:47:56,034 log 10102 140473238791744 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map

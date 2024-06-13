@@ -33,7 +33,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = ['8000-jbillcliffe-django-rente-hzqu84wj3t.us1.codeanyapp.com']
 
-ALLOWED_HOSTS = [ ".codeanyapp.com", ".herokuapp.com", ".gitpod.io" ]
+ALLOWED_HOSTS = [ ".codeanyapp.com", ".herokuapp.com", ".gitpod.io", ".codeinstitute-ide.net" ]
 
 # Application definition
 
@@ -114,7 +114,8 @@ DATABASES = {
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeanyapp.com",
     "https://*.herokuapp.com",
-    "https://*.gitpod.io"
+    "https://*.gitpod.io",
+    "https://*.codeinstitute-ide.net"
 ]
 
 # Password validation
