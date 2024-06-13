@@ -240,3 +240,40 @@ django.request WARNING 2024-06-13 12:47:50,638 log 10102 140473272362560 Not Fou
 django.request WARNING 2024-06-13 12:47:50,798 log 10102 140473263969856 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
 django.request WARNING 2024-06-13 12:47:55,794 log 10102 140473247184448 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
 django.request WARNING 2024-06-13 12:47:56,034 log 10102 140473238791744 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.utils.autoreload INFO 2024-06-13 12:50:05,483 autoreload 12032 139840879955008 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-13 12:50:07,102 connectionpool 12032 139840814773824 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-13 12:50:07,166 connectionpool 12032 139840814773824 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-13 12:51:00,755 log 12032 139839890511424 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:52:01,712 log 12032 139839353640512 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:52:13,048 log 12032 139839328462400 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:52:13,454 log 12032 139839320069696 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
+django.request WARNING 2024-06-13 12:52:14,427 log 12032 139838816769600 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
+django.request WARNING 2024-06-13 12:52:14,905 log 12032 139838263113280 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/create/styles.css.map
+django.request WARNING 2024-06-13 12:53:43,220 log 12032 139837180978752 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/create/styles.css.map
+django.request WARNING 2024-06-13 12:53:45,973 log 12032 139836669285952 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/create/styles.css.map
+django.request WARNING 2024-06-13 12:53:46,325 log 12032 139836660893248 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
+django.request WARNING 2024-06-13 12:53:47,640 log 12032 139836635715136 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
+django.request WARNING 2024-06-13 12:53:47,813 log 12032 139836140807744 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:54:27,101 log 12032 139835612329536 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:55:24,532 log 12032 139835561973312 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:55:51,858 log 12032 139835033495104 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:56:55,180 log 12032 139834530195008 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 12:56:55,380 log 12032 139834521802304 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
+django.request WARNING 2024-06-13 13:21:01,565 log 12032 139834505016896 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
+django.request WARNING 2024-06-13 13:21:22,985 log 12032 139834496624192 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
+django.request WARNING 2024-06-13 13:24:10,379 log 12032 139833984931392 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
+django.request WARNING 2024-06-13 13:24:10,744 log 12032 139833968145984 Not Found: /styles.css.map
+django.request WARNING 2024-06-13 13:24:11,844 log 12032 139833414489664 Not Found: /styles.css.map
+django.request WARNING 2024-06-13 13:24:12,015 log 12032 139832902796864 Not Found: /favicon.ico
+django.request WARNING 2024-06-13 13:24:12,306 log 12032 139832894404160 Not Found: /admin/styles.css.map
+django.request WARNING 2024-06-13 13:24:17,753 log 12032 139832391104064 Not Found: /styles.css.map
+django.request WARNING 2024-06-13 13:24:17,778 log 12032 139832877618752 Not Found: /admin/styles.css.map
+django.request WARNING 2024-06-13 13:24:19,427 log 12032 139832365925952 Not Found: /styles.css.map
+django.request WARNING 2024-06-13 13:24:19,600 log 12032 139832357533248 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-13 13:24:21,743 log 12032 139832340747840 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-13 13:24:21,943 log 12032 139831854233152 Not Found: /items/create/item_type/styles.css.map
+django.utils.autoreload INFO 2024-06-13 13:25:59,048 autoreload 12032 139840879955008 /workspace/django-renterprise/items/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-13 13:25:59,624 autoreload 13549 140662189374528 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-13 13:26:00,716 connectionpool 13549 140662057989696 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-13 13:26:00,777 connectionpool 13549 140662057989696 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-13 13:26:01,481 log 13549 140662022321728 Not Found: /items/create/item_type/styles.css.map

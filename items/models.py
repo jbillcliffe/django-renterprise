@@ -16,7 +16,7 @@ Models for ItemType and Item.
 class ItemType(models.Model):
     image = CloudinaryField('image', default="placeholder")
     name = models.CharField(max_length=200)
-    category = models.CharField(max_length=200, default="Category")
+    category = models.CharField(max_length=200)
     cost_initial = models.DecimalField(max_digits=6, decimal_places=2)
     cost_week = models.DecimalField(max_digits=6, decimal_places=2)
     # order by name 0-9 then A-Z
