@@ -15,3 +15,4 @@ def main_menu(request):
         request,
         "menu/main_menu.html",
     )
+    #temp migrate to enterprise text
