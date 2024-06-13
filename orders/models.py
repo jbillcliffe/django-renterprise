@@ -12,6 +12,9 @@ logger = logging.getLogger(__name__)
 
 # Create your models here.
 class Order(models.Model):
+
+    null_values = [None, 'None', 'none', 'null', 'Null']
+
     customer = models.ForeignKey(
         Customer, on_delete=models.CASCADE, related_name="order_customer"
     )
@@ -31,14 +34,23 @@ class Order(models.Model):
     class Meta:
         ordering = ["id"]
 
+    def __str__(self):
+        return f"Order ID : {self.id} - {self.customer.last_name}"
+
     def order_customer_name(self):
-        return f"{self.customer.first_name} {self.customer.last_name}"
+        if self.customer.first_name in self.null_values:
+            return f"{self.customer.last_name}"
+        else:
+            return f"{self.customer.first_name} {self.customer.last_name}"
 
     def order_item_name(self):
         return f"{self.item.item_type.name}"
         
 
 class OrderNote(models.Model):
+
+    null_values = [None, 'None', 'none', 'null', 'Null']
+
     order = models.ForeignKey(
         Order, on_delete=models.CASCADE, related_name="order"
     )
@@ -51,8 +63,14 @@ class OrderNote(models.Model):
     class Meta:
         ordering = ["created_by"]
 
+    def __str__(self):
+        return f"Order Note ID : {self.id}"
+
     def order_note_full_name(self):
-        return f"{self.order.customer.first_name} {self.order.customer.last_name}"
+        if self.order.customer.first_name in self.null_values:
+            return f"{self.order.customer.last_name}"
+        else:
+            return f"{self.order.customer.first_name} {self.order.customer.last_name}"
 
     def created_on_by(self):
         date_to_string = self.created_on.strftime("%d-%m-%Y")
@@ -60,6 +78,8 @@ class OrderNote(models.Model):
 
     
 class Invoice(models.Model):
+
+    null_values = [None, 'None', 'none', 'null', 'Null']
     
     order = models.ForeignKey(
         Order, on_delete=models.CASCADE, related_name="invoice_order"
@@ -73,6 +93,9 @@ class Invoice(models.Model):
     class Meta:
         ordering = ["created_on"]
 
+    def __str__(self):
+        return f"Invoice ID : {self.id}"
+
     #will send a string of true/false
     def invoice_css_status(self):
         if self.status == True or self.status == "True":
@@ -80,4 +103,10 @@ class Invoice(models.Model):
         else :
             self = str("")
         return self
+    
+    def invoice_customer_name(self):
+        if self.order.customer.first_name in self.null_values:
+            return f"{self.order.customer.last_name}"
+        else:
+            return f"{self.order.customer.first_name} {self.order.customer.last_name}"
         

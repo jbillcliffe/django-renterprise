@@ -13,7 +13,7 @@ class OrderAdmin(SummernoteModelAdmin):
 
 @admin.register(OrderNote)
 class OrderNoteAdmin(SummernoteModelAdmin):
-    list_display = ('order_note_full_name', 'created_on', 'created_by')
+    list_display = ('order', 'created_on', 'created_by')
     summernote_fields = ('note',)
 
 @admin.register(Invoice)

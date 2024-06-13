@@ -75,6 +75,9 @@ class CustomerNote(models.Model):
         User, on_delete=models.PROTECT, related_name="created_by"
     )
 
+    def __str__(self):
+        return f"Customer Note : {self.id}"
+
     def full_name(self):
         if self.customer.first_name in self.null_values:
             return f"{self.customer.last_name}"
@@ -82,7 +85,6 @@ class CustomerNote(models.Model):
             return f"{self.customer.first_name} {self.customer.last_name}"
 
     def created_on_by(self):
-
         date_to_string = self.created_on.strftime("%d-%m-%Y")
         return f"Created on : {date_to_string}, By : {self.created_by.username}"
 
