@@ -43,6 +43,11 @@
                             </div>
                             <div class="col-1">
                                 <!--button-->
+                                <a id="create-invoice-load-modal"
+                                    class="button-table add invoice"
+                                    invoice-modal-type="create" href="#">
+                                    <i class="fa-solid fa-sterling-sign"></i>
+                                </a>
                             </div>
                         </div>
     
@@ -55,7 +60,8 @@
                             <div class="col-1">
                                 <a class="button-table view invoice" invoice-status="{{ invoice.status }}"
                                     invoice-note="{{ invoice.note }}" invoice-date="{{ invoice.created_on }}"
-                                    invoice-amount="{{ invoice.amount_paid }}" invoice-id="{{ invoice.id }}" href="#">
+                                    invoice-amount="{{ invoice.amount_paid }}" invoice-id="{{ invoice.id }}" 
+                                    invoice-modal-type="details" href="#">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </a>
                             </div>
@@ -126,45 +132,45 @@
     </div>
 </div>
 
-<!-- Invoice details modal -->
+<!-- Invoice modal -->
 <div class="modal fade" id="invoiceModal" tabindex="-1" z-index="25" aria-labelledby="modalLabel" aria-hidden="true"
     data-order-id="{{ order.id }}">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
+        <div id="modal-content" class="modal-content">
+            <!--<div class="modal-header">
                 <h3 class="modal-title invoice" id="modalLabel">Invoice Details</h3>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div id="modalBody" class="modal-body">
-                <div class="row">
+                <div id="modal-id-row" class="row">
                     <h4 id="modal-id"></h4>
                 </div>
                 <hr>
-                <div class="row">
+                <div id="modal-date-row" class="row">
                     <p id="modal-date"></p>
                 </div>
                 <hr>
-                <div class="row">
+                <div id="modal-notes-row" class="row">
                     <p id="modal-notes-title">Notes :</p>
                     <p id="modal-note"></p>
                 </div>
                 <hr>
-                <div class="row">
+                <div id="modal-amount-row" class="row">
                     <p id="modal-amount"></p>
                 </div>
-                <div class="row">
+                <div id="modal-text-row" class="row">
                     <p id="modal-text"></p>
                 </div>
                 <div class="modal-footer" style="justify-content:space-between;">
                     <a id="invoiceCancel" href="" class="btn btn-danger"
-                        data-bs-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i> Cancel</a>
+                        data-bs-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i> Cancel </a>
                     <a id="invoiceConfirm" href="" class="btn
-		  				btn-success"><i class="fa-solid fa-sterling-sign"></i> Change</a>
-
+                        btn-success"><i class="fa-solid fa-sterling-sign"></i> Change </a>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
+</div>
     <!-- index.html content ends here -->
     {% endblock content %}
     {% block extras %}

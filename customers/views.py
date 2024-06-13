@@ -10,7 +10,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 
 from .models import Customer, CustomerNote
 from orders.models import Order, OrderNote, Invoice
-from orders.forms import OrderNoteForm
+from orders.forms import OrderNoteForm, InvoiceForm
 from items.models import Item
 from .forms import CustomerForm, CustomerNoteForm
 from .urls import *
@@ -224,6 +224,8 @@ def customer_order_view(request, customer_token, order_id):
         # if page is empty then return last page
         page_obj = paginate_invoice_list.page(paginate_invoice_list.num_pages)
 
+    invoice_form = InvoiceForm()
+
     return render(
         request,
         "customers/customer_order_view.html",
@@ -231,29 +233,12 @@ def customer_order_view(request, customer_token, order_id):
             "order": obj,
             "customer_order_id": obj.id,
             "invoice_list": invoice_list,
+            "invoice_form": invoice_form,
             "page_obj": page_obj,
             "customer_token_value": customer_token,
             "full_name": obj.customer.full_name,
         },
     )
-
-def invoice_status_change(request, customer_token, order_id,
-                        invoice_id, set_invoice):
-
-    invoice = get_object_or_404(Invoice, pk=invoice_id)
-    if (set_invoice == "false" or set_invoice == "False"):
-        invoice.status = False
-    else:
-        invoice.status = True
-    
-    invoice.save()
-    messages.add_message(
-        request, messages.SUCCESS,
-    'Invoice status has been updated'
-    )
-    return redirect('customers:customer_order_view', 
-        customer_token=customer_token,
-        order_id=order_id)
 
 class OrderNotesList(ListView):
     paginate_by = 7
@@ -346,3 +331,50 @@ def order_view_notes(request, customer_token, order_id, id):
             "full_name": order_note_get.order.customer.full_name,
         },
     )
+
+def invoice_status_change(request, customer_token, order_id,
+                        invoice_id, set_invoice):
+
+    invoice = get_object_or_404(Invoice, pk=invoice_id)
+    if (set_invoice == "false" or set_invoice == "False"):
+        invoice.status = False
+    else:
+        invoice.status = True
+    
+    invoice.save()
+    messages.add_message(
+        request, messages.SUCCESS,
+    'Invoice status has been updated'
+    )
+    return redirect('customers:customer_order_view', 
+        customer_token=customer_token,
+        order_id=order_id)
+
+def invoice_create(request, customer_token, order_id):
+    logger.warning(request)
+    logger.warning(request.amount_paid)
+    
+    logger.warning(customer_token)
+    logger.warning(order_id)
+
+    """
+    order_get = get_object_or_404(Order, pk=order_id)
+    
+    invoice_form = InvoiceForm(request.POST)
+    if request.method == "POST":
+        logger.warning(request.method)
+        if invoice_form.is_valid():
+            logger.warning(request)
+            invoice = invoice_form.save(commit=False)
+            logger.warning(invoice)
+            invoice.order = order_id
+            logger.warning(invoice)
+            invoice.save()
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Invoice has been created'
+            )
+            return redirect('customers:customer_order_view', 
+            customer_token=customer_token,
+            order_id=order_id)
+    """

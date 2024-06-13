@@ -7,7 +7,7 @@ from crispy_forms.layout import Layout, Div, Fieldset, Submit, Row, Field
 from crispy_bootstrap5.bootstrap5 import FloatingField
 from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
 from django_summernote.fields import SummernoteTextField
-from .models import Order, OrderNote
+from .models import Order, OrderNote, Invoice
 from items.models import Item, ItemType
 
 # https://stackoverflow.com/questions/73789407/django-summernote-clean-got-an-unexpected-keyword-argument-styles-in-djangof
@@ -81,5 +81,15 @@ class OrderNoteForm(forms.ModelForm):
         model = OrderNote
         fields = ('note',)
         labels = {
+            "note": "Note"
+        }
+
+class InvoiceForm(forms.ModelForm):
+    class Meta:
+        #order, created_on and status added in function not form
+        model = Invoice
+        fields = ('amount_paid','note',)
+        labels = {
+            "amount_paid": "Amount Paid",
             "note": "Note"
         }

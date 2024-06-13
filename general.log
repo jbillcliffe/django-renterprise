@@ -1,51 +1,28 @@
-django.request ERROR 2024-06-12 00:39:17,904 log 10094 140481803580992 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/
+django.request WARNING 2024-06-13 01:45:46,455 log 7818 139640415692352 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-13 01:45:53,981 views 7818 139640407299648 <WSGIRequest: GET '/customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/'>
+customers.views WARNING 2024-06-13 01:45:53,981 views 7818 139640407299648 8e05b134-0b51-46e4-ac9d-2e725f265a9b
+customers.views WARNING 2024-06-13 01:45:53,982 views 7818 139640407299648 8
+django.request ERROR 2024-06-13 01:45:54,140 log 7818 139640407299648 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/
 Traceback (most recent call last):
   File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/views/generic/base.py", line 143, in dispatch
-    return handler(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/views/generic/list.py", line 154, in get
-    self.object_list = self.get_queryset()
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/workspace/django-renterprise/customers/views.py", line 267, in get_queryset
-    return Order.objects.filter(order=self.order).order_by("start_date")
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/db/models/query.py", line 1436, in filter
-    return self._filter_or_exclude(False, args, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
-    clone._filter_or_exclude_inplace(negate, args, kwargs)
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
-    self._query.add_q(Q(*args, **kwargs))
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1546, in add_q
-    clause, _ = self._add_q(q_object, self.used_aliases)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1577, in _add_q
-    child_clause, needed_inner = self.build_filter(
-                                 ^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1465, in build_filter
-    self.check_related_objects(join_info.final_field, value, join_info.opts)
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1276, in check_related_objects
-    self.check_query_object_type(value, opts, field)
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1253, in check_query_object_type
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/base.py", line 332, in check_response
     raise ValueError(
-ValueError: Cannot query "Order object (8)": Must be "OrderNote" instance.
-django.request WARNING 2024-06-12 00:39:18,122 log 10094 140481795188288 Not Found: /favicon.ico
-django.request WARNING 2024-06-12 00:39:18,312 log 10094 140481786795584 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
-django.utils.autoreload INFO 2024-06-12 00:39:47,010 autoreload 10094 140481938623360 /workspace/django-renterprise/customers/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-12 00:39:47,542 autoreload 10163 140203085499264 Watching for file changes with StatReloader
-django.request ERROR 2024-06-12 00:39:50,374 log 10163 140203020318272 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/
+ValueError: The view customers.views.invoice_create didn't return an HttpResponse object. It returned None instead.
+django.request WARNING 2024-06-13 01:45:54,333 log 7818 139639922882112 Not Found: /favicon.ico
+django.request WARNING 2024-06-13 01:45:54,398 log 7818 139639914489408 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/styles.css.map
+django.utils.autoreload INFO 2024-06-13 01:47:17,695 autoreload 7818 139640743861120 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-13 01:47:18,316 autoreload 7944 139890667793280 Watching for file changes with StatReloader
+django.request WARNING 2024-06-13 01:47:24,276 log 7944 139890602612288 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+urllib3.connectionpool DEBUG 2024-06-13 01:47:24,812 connectionpool 7944 139890594203200 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-13 01:47:24,877 connectionpool 7944 139890594203200 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-13 01:47:25,785 log 7944 139890347984448 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+django.request WARNING 2024-06-13 01:47:27,415 log 7944 139889752397376 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+customers.views WARNING 2024-06-13 01:47:31,398 views 7944 139889744004672 <WSGIRequest: GET '/customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/'>
+django.request ERROR 2024-06-13 01:47:31,553 log 7944 139889744004672 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/
 Traceback (most recent call last):
   File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
@@ -53,170 +30,9 @@ Traceback (most recent call last):
   File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
-    return self.dispatch(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/views/generic/base.py", line 143, in dispatch
-    return handler(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/views/generic/list.py", line 154, in get
-    self.object_list = self.get_queryset()
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/workspace/django-renterprise/customers/views.py", line 267, in get_queryset
-    return OrderNote.objects.filter(order=self.order).order_by("start_date")
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/db/models/query.py", line 1659, in order_by
-    obj.query.add_ordering(*field_names)
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/db/models/sql/query.py", line 2222, in add_ordering
-    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1725, in names_to_path
-    raise FieldError(
-django.core.exceptions.FieldError: Cannot resolve keyword 'start_date' into field. Choices are: created_by, created_by_id, created_on, id, note, order, order_id
-django.request WARNING 2024-06-12 00:39:50,635 log 10163 140203010860608 Not Found: /favicon.ico
-django.request WARNING 2024-06-12 00:39:50,651 log 10163 140203002451520 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
-django.utils.autoreload INFO 2024-06-12 00:39:58,205 autoreload 10163 140203085499264 /workspace/django-renterprise/customers/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-12 00:39:58,739 autoreload 10192 140193678310272 Watching for file changes with StatReloader
-customers.views WARNING 2024-06-12 00:40:04,345 views 10192 140193613129280 <QuerySet [<OrderNote: OrderNote object (2)>, <OrderNote: OrderNote object (3)>, <OrderNote: OrderNote object (4)>, <OrderNote: OrderNote object (5)>, <OrderNote: OrderNote object (6)>, <OrderNote: OrderNote object (7)>, <OrderNote: OrderNote object (8)>, <OrderNote: OrderNote object (9)>, <OrderNote: OrderNote object (13)>, <OrderNote: OrderNote object (14)>]>
-customers.views WARNING 2024-06-12 00:40:04,415 views 10192 140193613129280 {'paginator': <django.core.paginator.Paginator object at 0x7f815e9403b0>, 'page_obj': <Page 1 of 2>, 'is_paginated': True, 'object_list': <QuerySet [<OrderNote: OrderNote object (2)>, <OrderNote: OrderNote object (3)>, <OrderNote: OrderNote object (4)>, <OrderNote: OrderNote object (5)>, <OrderNote: OrderNote object (6)>, <OrderNote: OrderNote object (7)>, <OrderNote: OrderNote object (8)>]>, 'ordernote_list': <QuerySet [<OrderNote: OrderNote object (2)>, <OrderNote: OrderNote object (3)>, <OrderNote: OrderNote object (4)>, <OrderNote: OrderNote object (5)>, <OrderNote: OrderNote object (6)>, <OrderNote: OrderNote object (7)>, <OrderNote: OrderNote object (8)>]>, 'view': <customers.views.OrderNotesList object at 0x7f815e861c10>, 'customer_token_value': UUID('8e05b134-0b51-46e4-ac9d-2e725f265a9b'), 'full_name': <bound method Customer.full_name of <Customer: First Customer>>, 'customer_status': 0}
-urllib3.connectionpool DEBUG 2024-06-12 00:40:04,455 connectionpool 10192 140193613129280 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-12 00:40:04,508 connectionpool 10192 140193613129280 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
-django.request ERROR 2024-06-12 00:40:05,292 log 10192 140193613129280 Internal Server Error: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/
-Traceback (most recent call last):
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
-    response = response.render()
-               ^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/response.py", line 114, in render
-    self.content = self.rendered_content
-                   ^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
-    return template.render(context, self._request)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/backends/django.py", line 61, in render
-    return self.template.render(context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 175, in render
-    return self._render(context)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/loader_tags.py", line 157, in render
-    return compiled_parent._render(context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/loader_tags.py", line 63, in render
-    result = block.nodelist.render(context)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/loader_tags.py", line 208, in render
-    return template.render(context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 177, in render
-    return self._render(context)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 167, in _render
-    return self.nodelist.render(context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/defaulttags.py", line 541, in render
-    return self.nodelist.render(context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/defaulttags.py", line 321, in render
-    return nodelist.render(context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/defaulttags.py", line 321, in render
-    return nodelist.render(context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
-    return SafeString("".join([node.render_annotated(context) for node in self]))
-                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
-    return self.render(context)
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/template/defaulttags.py", line 471, in render
-    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/urls/base.py", line 88, in reverse
-    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
-    raise NoReverseMatch(msg)
-django.urls.exceptions.NoReverseMatch: Reverse for 'order_notes_list' with keyword arguments '{'customer_token': UUID('8e05b134-0b51-46e4-ac9d-2e725f265a9b'), 'order_id': ''}' not found. 1 pattern(s) tried: ['customers/(?P<customer_token>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/orders/(?P<order_id>[0-9]+)/order_notes_list/\\Z']
-django.request WARNING 2024-06-12 00:40:05,517 log 10192 140193600742976 Not Found: /favicon.ico
-django.request WARNING 2024-06-12 00:40:05,690 log 10192 140193592350272 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
-django.utils.autoreload INFO 2024-06-12 00:40:50,563 autoreload 10192 140193678310272 /workspace/django-renterprise/customers/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-12 00:40:51,116 autoreload 10292 140695920184192 Watching for file changes with StatReloader
-customers.views WARNING 2024-06-12 00:40:56,906 views 10292 140695855003200 <QuerySet [<OrderNote: OrderNote object (2)>, <OrderNote: OrderNote object (3)>, <OrderNote: OrderNote object (4)>, <OrderNote: OrderNote object (5)>, <OrderNote: OrderNote object (6)>, <OrderNote: OrderNote object (7)>, <OrderNote: OrderNote object (8)>, <OrderNote: OrderNote object (9)>, <OrderNote: OrderNote object (13)>, <OrderNote: OrderNote object (14)>]>
-customers.views WARNING 2024-06-12 00:40:56,961 views 10292 140695855003200 {'paginator': <django.core.paginator.Paginator object at 0x7ff64eacd6d0>, 'page_obj': <Page 1 of 2>, 'is_paginated': True, 'object_list': <QuerySet [<OrderNote: OrderNote object (2)>, <OrderNote: OrderNote object (3)>, <OrderNote: OrderNote object (4)>, <OrderNote: OrderNote object (5)>, <OrderNote: OrderNote object (6)>, <OrderNote: OrderNote object (7)>, <OrderNote: OrderNote object (8)>]>, 'ordernote_list': <QuerySet [<OrderNote: OrderNote object (2)>, <OrderNote: OrderNote object (3)>, <OrderNote: OrderNote object (4)>, <OrderNote: OrderNote object (5)>, <OrderNote: OrderNote object (6)>, <OrderNote: OrderNote object (7)>, <OrderNote: OrderNote object (8)>]>, 'view': <customers.views.OrderNotesList object at 0x7ff64e943290>, 'customer_token_value': UUID('8e05b134-0b51-46e4-ac9d-2e725f265a9b'), 'customer_order_id': 8, 'full_name': <bound method Customer.full_name of <Customer: First Customer>>, 'customer_status': 0}
-urllib3.connectionpool DEBUG 2024-06-12 00:40:57,003 connectionpool 10292 140695855003200 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-12 00:40:57,056 connectionpool 10292 140695855003200 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
-django.request WARNING 2024-06-12 00:40:57,671 log 10292 140695478203968 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
-customers.views WARNING 2024-06-12 00:41:01,114 views 10292 140695469811264 <QuerySet [<OrderNote: OrderNote object (2)>, <OrderNote: OrderNote object (3)>, <OrderNote: OrderNote object (4)>, <OrderNote: OrderNote object (5)>, <OrderNote: OrderNote object (6)>, <OrderNote: OrderNote object (7)>, <OrderNote: OrderNote object (8)>, <OrderNote: OrderNote object (9)>, <OrderNote: OrderNote object (13)>, <OrderNote: OrderNote object (14)>]>
-customers.views WARNING 2024-06-12 00:41:01,159 views 10292 140695469811264 {'paginator': <django.core.paginator.Paginator object at 0x7ff64e817860>, 'page_obj': <Page 2 of 2>, 'is_paginated': True, 'object_list': <QuerySet [<OrderNote: OrderNote object (9)>, <OrderNote: OrderNote object (13)>, <OrderNote: OrderNote object (14)>]>, 'ordernote_list': <QuerySet [<OrderNote: OrderNote object (9)>, <OrderNote: OrderNote object (13)>, <OrderNote: OrderNote object (14)>]>, 'view': <customers.views.OrderNotesList object at 0x7ff64e8b7140>, 'customer_token_value': UUID('8e05b134-0b51-46e4-ac9d-2e725f265a9b'), 'customer_order_id': 8, 'full_name': <bound method Customer.full_name of <Customer: First Customer>>, 'customer_status': 0}
-django.request WARNING 2024-06-12 00:41:01,318 log 10292 140695461418560 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
-django.request WARNING 2024-06-12 00:41:01,538 log 10292 140695453025856 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
-customers.views WARNING 2024-06-12 00:41:03,292 views 10292 140695444633152 <QuerySet [<OrderNote: OrderNote object (2)>, <OrderNote: OrderNote object (3)>, <OrderNote: OrderNote object (4)>, <OrderNote: OrderNote object (5)>, <OrderNote: OrderNote object (6)>, <OrderNote: OrderNote object (7)>, <OrderNote: OrderNote object (8)>, <OrderNote: OrderNote object (9)>, <OrderNote: OrderNote object (13)>, <OrderNote: OrderNote object (14)>]>
-customers.views WARNING 2024-06-12 00:41:03,337 views 10292 140695444633152 {'paginator': <django.core.paginator.Paginator object at 0x7ff64e8264e0>, 'page_obj': <Page 1 of 2>, 'is_paginated': True, 'object_list': <QuerySet [<OrderNote: OrderNote object (2)>, <OrderNote: OrderNote object (3)>, <OrderNote: OrderNote object (4)>, <OrderNote: OrderNote object (5)>, <OrderNote: OrderNote object (6)>, <OrderNote: OrderNote object (7)>, <OrderNote: OrderNote object (8)>]>, 'ordernote_list': <QuerySet [<OrderNote: OrderNote object (2)>, <OrderNote: OrderNote object (3)>, <OrderNote: OrderNote object (4)>, <OrderNote: OrderNote object (5)>, <OrderNote: OrderNote object (6)>, <OrderNote: OrderNote object (7)>, <OrderNote: OrderNote object (8)>]>, 'view': <customers.views.OrderNotesList object at 0x7ff64e8b5760>, 'customer_token_value': UUID('8e05b134-0b51-46e4-ac9d-2e725f265a9b'), 'customer_order_id': 8, 'full_name': <bound method Customer.full_name of <Customer: First Customer>>, 'customer_status': 0}
-django.request WARNING 2024-06-12 00:41:03,544 log 10292 140695436240448 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
-django.request WARNING 2024-06-12 00:41:03,878 log 10292 140695427847744 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
-customers.views WARNING 2024-06-12 00:41:06,518 views 10292 140694941333056 <QuerySet [<OrderNote: OrderNote object (2)>, <OrderNote: OrderNote object (3)>, <OrderNote: OrderNote object (4)>, <OrderNote: OrderNote object (5)>, <OrderNote: OrderNote object (6)>, <OrderNote: OrderNote object (7)>, <OrderNote: OrderNote object (8)>, <OrderNote: OrderNote object (9)>, <OrderNote: OrderNote object (13)>, <OrderNote: OrderNote object (14)>]>
-customers.views WARNING 2024-06-12 00:41:06,565 views 10292 140694941333056 {'paginator': <django.core.paginator.Paginator object at 0x7ff64e825d90>, 'page_obj': <Page 2 of 2>, 'is_paginated': True, 'object_list': <QuerySet [<OrderNote: OrderNote object (9)>, <OrderNote: OrderNote object (13)>, <OrderNote: OrderNote object (14)>]>, 'ordernote_list': <QuerySet [<OrderNote: OrderNote object (9)>, <OrderNote: OrderNote object (13)>, <OrderNote: OrderNote object (14)>]>, 'view': <customers.views.OrderNotesList object at 0x7ff64e8b4830>, 'customer_token_value': UUID('8e05b134-0b51-46e4-ac9d-2e725f265a9b'), 'customer_order_id': 8, 'full_name': <bound method Customer.full_name of <Customer: First Customer>>, 'customer_status': 0}
-django.request WARNING 2024-06-12 00:41:06,967 log 10292 140694932940352 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
-django.request WARNING 2024-06-12 00:41:07,245 log 10292 140694924547648 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
-customers.views WARNING 2024-06-12 00:41:08,890 views 10292 140694916154944 <QuerySet [<OrderNote: OrderNote object (2)>, <OrderNote: OrderNote object (3)>, <OrderNote: OrderNote object (4)>, <OrderNote: OrderNote object (5)>, <OrderNote: OrderNote object (6)>, <OrderNote: OrderNote object (7)>, <OrderNote: OrderNote object (8)>, <OrderNote: OrderNote object (9)>, <OrderNote: OrderNote object (13)>, <OrderNote: OrderNote object (14)>]>
-customers.views WARNING 2024-06-12 00:41:08,939 views 10292 140694916154944 {'paginator': <django.core.paginator.Paginator object at 0x7ff64e8174d0>, 'page_obj': <Page 1 of 2>, 'is_paginated': True, 'object_list': <QuerySet [<OrderNote: OrderNote object (2)>, <OrderNote: OrderNote object (3)>, <OrderNote: OrderNote object (4)>, <OrderNote: OrderNote object (5)>, <OrderNote: OrderNote object (6)>, <OrderNote: OrderNote object (7)>, <OrderNote: OrderNote object (8)>]>, 'ordernote_list': <QuerySet [<OrderNote: OrderNote object (2)>, <OrderNote: OrderNote object (3)>, <OrderNote: OrderNote object (4)>, <OrderNote: OrderNote object (5)>, <OrderNote: OrderNote object (6)>, <OrderNote: OrderNote object (7)>, <OrderNote: OrderNote object (8)>]>, 'view': <customers.views.OrderNotesList object at 0x7ff64e942120>, 'customer_token_value': UUID('8e05b134-0b51-46e4-ac9d-2e725f265a9b'), 'customer_order_id': 8, 'full_name': <bound method Customer.full_name of <Customer: First Customer>>, 'customer_status': 0}
-django.request WARNING 2024-06-12 00:41:09,161 log 10292 140694907762240 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
-django.request WARNING 2024-06-12 00:41:09,511 log 10292 140694899369536 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
-django.utils.autoreload INFO 2024-06-12 00:42:10,578 autoreload 10292 140695920184192 /workspace/django-renterprise/customers/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-12 00:42:11,125 autoreload 10382 140347901229952 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-06-12 00:42:22,722 autoreload 10382 140347901229952 /workspace/django-renterprise/customers/views.py changed, reloading.
-django.utils.autoreload INFO 2024-06-12 00:42:23,259 autoreload 10402 139761673866112 Watching for file changes with StatReloader
-urllib3.connectionpool DEBUG 2024-06-12 00:44:08,788 connectionpool 10402 139761608685120 Starting new HTTPS connection (1): res.cloudinary.com:443
-urllib3.connectionpool DEBUG 2024-06-12 00:44:08,841 connectionpool 10402 139761608685120 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
-django.request WARNING 2024-06-12 00:44:09,057 log 10402 139761600276032 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/order_notes_list/styles.css.map
-django.request WARNING 2024-06-12 00:44:09,440 log 10402 139761387828800 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request WARNING 2024-06-12 00:44:15,267 log 10402 139761371043392 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request WARNING 2024-06-12 00:44:15,500 log 10402 139761362650688 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request WARNING 2024-06-12 00:44:17,882 log 10402 139761345865280 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request WARNING 2024-06-12 00:44:18,108 log 10402 139761337472576 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request WARNING 2024-06-12 00:44:20,365 log 10402 139760844662336 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
-django.request WARNING 2024-06-12 00:44:20,703 log 10402 139760836269632 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/styles.css.map
+  File "/workspace/django-renterprise/customers/views.py", line 355, in invoice_create
+    logger.warning(request.amount_paid)
+                   ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'amount_paid'
+django.request WARNING 2024-06-13 01:47:31,750 log 7944 139889735611968 Not Found: /favicon.ico
+django.request WARNING 2024-06-13 01:47:31,811 log 7944 139889727219264 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/orders/8/invoice_create/styles.css.map

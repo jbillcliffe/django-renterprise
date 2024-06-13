@@ -30,6 +30,7 @@ main {
     height: 80vh;
 }
 
+/* Remove the modal background, which was intercepting the content*/
 .modal-backdrop {
     position: unset !important;
 }
@@ -585,8 +586,15 @@ of the theme.*/
 }
 
 .button-table.view {
-    border: 1mm outset #5c5a00;
     background-color: #dfdb00;
+    border: 1mm outset #5c5a00;
+}
+
+.button-table.view:hover {
+    background-color: #5c5a00;
+    border: 1mm outset #dfdb00;
+    color:#000000;
+    text-decoration: none;
 }
 
 .button-table.add {
@@ -594,10 +602,12 @@ of the theme.*/
     border: 1mm outset #005716;
 }
 
-/*.button-table.view:active {
-    background-color: #dfdb00;
-    border: 1mm inset #5c5a00;
-}*/
+.button-table.add:hover {
+    background-color: #005716;
+    border: 1mm outset #00a82a;
+    text-decoration: none;
+    color:#000000;
+}
 
 /*STYLING FOR MAIN MENU */
 /*Ensures buttons are in a column, not a row*/
