@@ -1,57 +1,52 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 {% load static %}
 {% load crispy_forms_tags %}
-
-
 {% load i18n %}
-{% block head_title %}{% trans "Item Listing" %}{% endblock %}
-
+{% block head_title %}
+    {% trans "Item Listing" %}
+{% endblock head_title %}
 {% block content %}
-<!-- the content to enter into the "main" class on the "base.html"-->
-<div class="container-fluid" style="height: 100%; ">
-    {% include "side-nav.html" %}
-    {% if user.is_authenticated %}
-    <div class="table-holder">
-        <div class="centre-heading">
-            <h2> View All Items </h2>
-            <hr class="renterprise" style="width:80%;">
-        </div>
-        <div class="table-row table-head">
-            <div class="col-4">
-                Item
+    <!-- the content to enter into the "main" class on the "base.html"-->
+    <div class="container-fluid">
+        {% include "side-nav.html" %}
+        {% if user.is_authenticated %}
+            <div class="table-holder">
+                <div class="centre-heading">
+                    <h2>View All Items</h2>
+                    <hr class="renterprise" style="width:80%;">
+                </div>
+                <div class="table-row table-head">
+                    <div class="col-4">Item</div>
+                    <div class="col-4">Category</div>
+                    <div class="col-3">Serial</div>
+                    <div class="col-1"></div>
+                </div>
+                {% for item in item_list %}
+                    <div class="table-row {{ item.item_css_status }}">
+                        <div class="col-4">
+                            {{ item.item_type_name }}
+                            {% if item.status_str != "Available" %}({{ item.status_str }}){% endif %}
+                        </div>
+                        <div class="col-4">{{ item.item_type_category }}</div>
+                        <div class="col-3">{{ item.item_serial }}</div>
+                        <div class="col-1">
+                            <a class="button-table view" href="{% url 'items:item_view' item.pk %}"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>
+                {% endfor %}
+                {% include "paginate.html" %}
             </div>
-            <div class="col-4">
-                Category
+        {% else %}
+            <div class="content-holder centre">
+                <div class="row" style="width: 20%;">
+                    {% blocktrans %}
+                        <p>You need to be logged in to access the program.</p>
+                        <p>Log in to continue using this application.</p>
+                    {% endblocktrans %}
+                    <a class="button" href="{{ login_url }}">Log In</a>
+                </div>
             </div>
-            <div class="col-3">
-                Serial
-            </div>
-            <div class="col-1">
-            </div>
-        </div>
-        {% for item in item_list %}
-        <div class="table-row {{ item.item_css_status }}">
-            <div class="col-4">{{ item.item_type_name }} {% if item.status_str != "Available" %}({{ item.status_str }}){% endif %}</div>
-            <div class="col-4">{{ item.item_type_category }}</div>
-            <div class="col-3">{{ item.item_serial }}</div>
-            <div class="col-1"><a class="button-table view" href="{% url 'items:item_view' item.pk%}"><i class="fa-solid fa-magnifying-glass"></i></a></div>
-            
-        </div>
-        {% endfor %}
-        {% include "paginate.html" %}
+        {% endif %}
     </div>
-    {% else %}
-    <div class="content-holder centre">
-        <div class="row" style="width: 60%;">
-            {% blocktrans %}
-            <p>You need to be logged in to access the program.</p>
-            <p>Log in to continue using this application.</p>
-            {% endblocktrans %}
-            <a class="button" href="{{ login_url }}">Log In</a>
-        </div>
-    </div>
-    {% endif %}
-</div>
-
-<!-- index.html content ends here -->
-{% endblock %}
+    <!-- index.html content ends here -->
+{% endblock content %}

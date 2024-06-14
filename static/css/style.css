@@ -467,6 +467,11 @@ of the theme.*/
     flex-direction: column;
     justify-content:center;
 }
+
+/* This is to ensure the navigation bar is full height */
+.container-fluid {
+    height:100%
+}
 /* CONTENT HOLDER FOR DYNAMIC WINDOWS */
 .content-holder {
     width: 100%;
@@ -618,6 +623,7 @@ of the theme.*/
 /*Ensures buttons are in a column, not a row*/
 .container-fluid.main-menu {
     flex-direction: column;
+    justify-content: center;
 }
 
 ul.nav {
@@ -776,14 +782,26 @@ form>div {
     width:80%;
 }
 
+form {
+    margin-top: 1.3rem;
+}
+
 #customer-form {
-    margin-top: 1.2rem;
     width: 80%;
 }
 
-.note-form {
-    margin-top: 1.2rem;
+.item-form-content {
+    display: flex;
+    flex-direction: row;
 }
+
+#item-type-form-costs,
+#item-type-form-name {
+    display: flex;
+    margin-right: 3rem;
+    flex-direction: column;
+}
+
 
 .customer_details_container {
     width:100%;

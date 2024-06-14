@@ -776,3 +776,24 @@ django.utils.autoreload INFO 2024-06-14 01:48:03,906 autoreload 14219 1404950046
 django.utils.autoreload INFO 2024-06-14 01:48:04,397 autoreload 14272 139998411082816 Watching for file changes with StatReloader
 django.utils.autoreload INFO 2024-06-14 01:48:10,705 autoreload 14272 139998411082816 /workspace/django-renterprise/customers/urls.py changed, reloading.
 django.utils.autoreload INFO 2024-06-14 01:48:11,189 autoreload 14304 140574864292928 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 11:36:41,679 autoreload 2680 140096613551168 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-14 11:36:44,443 connectionpool 2680 140096548226624 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-14 11:36:44,653 connectionpool 2680 140096548226624 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4117
+django.request WARNING 2024-06-14 11:36:44,847 log 2680 140096447698496 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.request WARNING 2024-06-14 11:36:45,026 log 2680 140096430913088 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.request WARNING 2024-06-14 11:39:23,638 log 2680 140095843718720 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.request WARNING 2024-06-14 11:47:24,173 log 2680 140095818540608 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.request WARNING 2024-06-14 11:47:24,331 log 2680 140095810147904 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 11:49:07,031 log 2680 140095306847808 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 11:49:07,213 log 2680 140095298455104 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-14 11:49:08,390 log 2680 140095281669696 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-14 11:49:08,642 log 2680 140095273276992 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-14 11:49:20,820 log 2680 140094753191488 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-14 11:49:52,929 log 2680 140094233105984 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-14 11:51:36,508 log 2680 140094207927872 Not Found: /items/create/item_type/styles.css.map
+django.request WARNING 2024-06-14 11:51:36,851 log 2680 140094199535168 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 11:51:37,905 log 2680 140093704627776 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 11:51:38,127 log 2680 140093696235072 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-14 11:51:41,761 log 2680 140093679449664 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-14 11:51:42,000 log 2680 140093671056960 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 11:52:04,793 log 2680 140093150971456 Not Found: /styles.css.map

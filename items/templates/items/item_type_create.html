@@ -1,54 +1,53 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 {% load static %}
 {% load crispy_forms_tags %}
-
-
 {% load i18n %}
-{% block head_title %}{% trans "Create New Item Type" %}{% endblock %}
-
+{% block head_title %}
+    {% trans "Create New Item Type" %}
+{% endblock head_title %}
 {% block content %}
-
-<!-- the content to enter into the "main" class on the "base.html"-->
-<div class="container-fluid" style="height: 100%; width:100%;">
-    {% include "side-nav.html" %}
-    {% if user.is_authenticated %}
-    <div class="content-holder centre">
-        <form id="itemTypeForm" method="post"
-            class="form-centre wide">
-            <h2>Create New Item Type</h2>
-            <hr class="renterprise" style="width:90%;">
-            <div class="item-form-content" style="display: flex; flex-direction: row;">
-                <div id="item-type-form-name " class="col-md-5" style="margin-right: 3rem; flex-direction: column;">
-                    {{ item_type_form.category|as_crispy_field }}
-                    {{ item_type_form.name|as_crispy_field }}
-                </div>
-                <div id="item-type-form-costs" class="col-md-2" style="margin-right: 3rem; flex-direction: column;">
-                    {{ item_type_form.cost_initial|as_crispy_field }}
-                    {{ item_type_form.cost_week|as_crispy_field }}
-                </div>
-                <div id="item-type-form-image" class="col-md-5 flex-direction: column;" >
-                    {{ item_type_form.image|as_crispy_field }}
+    <!-- the content to enter into the "main" class on the "base.html"-->
+    <div class="container-fluid">
+        {% include "side-nav.html" %}
+        {% if user.is_authenticated %}
+            <div class="content-holder centre">
+                <form id="itemTypeForm" method="post" class="form-centre wide">
+                    <h2>Create New Item Type</h2>
+                    <hr class="renterprise" style="width:70%;">
+                    <div class="item-form-content">
+                        <div id="item-type-form-name"
+                             class="col-md-5">
+                            {{ item_type_form.category|as_crispy_field }}
+                            {{ item_type_form.name|as_crispy_field }}
+                        </div>
+                        <div id="item-type-form-costs"
+                             class="col-md-2">
+                            {{ item_type_form.cost_initial|as_crispy_field }}
+                            {{ item_type_form.cost_week|as_crispy_field }}
+                        </div>
+                        <div id="item-type-form-image" 
+                            class="col-md-5">
+                            {{ item_type_form.image|as_crispy_field }}
+                        </div>
+                    </div>
+                    {% csrf_token %}
+                    <div class="row">
+                        <button id="submitButton" type="submit" class="button centre-align">Submit</button>
+                        <a class="button centre-align" href="{% url 'items:item_list' %}">Return To Item List</a>
+                    </div>
+                </form>
+            </div>
+        {% else %}
+            <div class="content-holder centre">
+                <div class="row" style="width: 20%;">
+                    {% blocktrans %}
+                        <p>You need to be logged in to access the program.</p>
+                        <p>Log in to continue using this application.</p>
+                    {% endblocktrans %}
+                    <a class="button" href="{{ login_url }}">Log In</a>
                 </div>
             </div>
-            {% csrf_token %}
-            <div class="row">
-                <button id="submitButton" type="submit" class="button centre-align">Submit</button>
-                <a class="button centre-align" href="{% url 'items:item_list' %}">Return To Item List </a>
-            </div>
-        </form>
-    </div>  
-    {% else %}
-    <div class="content-holder centre">
-        <div class="row" style="width: 60%;">
-            {% blocktrans %}
-            <p>You need to be logged in to access the program.</p>
-            <p>Log in to continue using this application.</p>
-            {% endblocktrans %}
-            <a class="button" href="{{ login_url }}">Log In</a>
-        </div>
+        {% endif %}
     </div>
-    {% endif %}
-</div>
-        
-<!-- index.html content ends here -->
-{% endblock %}
+    <!-- index.html content ends here -->
+{% endblock content %}
