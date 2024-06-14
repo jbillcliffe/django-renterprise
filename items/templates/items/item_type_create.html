@@ -10,7 +10,7 @@
 
 <!-- the content to enter into the "main" class on the "base.html"-->
 <div class="container-fluid" style="height: 100%; width:100%;">
-    {% include 'side-nav.html' %}
+    {% include "side-nav.html" %}
     {% if user.is_authenticated %}
     <div class="content-holder centre">
         <form id="itemTypeForm" method="post"

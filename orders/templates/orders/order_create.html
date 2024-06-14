@@ -9,7 +9,7 @@
 
 <!-- the content to enter into the "main" class on the "base.html"-->
 <div class="container-fluid" style="height: 100%; ">
-    {% include 'side-nav.html' %}
+    {% include "side-nav.html" %}
     {% if user.is_authenticated %}
     <div class="content-holder" style="display:flex; flex-direction: row;">
         <form id="createOrderForm" method="post"
@@ -52,7 +52,7 @@
                     <!--button column-->
                 </div>
             </div>
-            {% include 'paginate.html' %}
+            {% include "paginate.html" %}
         </div>
     </div>
     {% else %}

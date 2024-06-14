@@ -9,7 +9,7 @@
 {% block content %}
 <!-- the content to enter into the "main" class on the "base.html"-->
 <div class="container-fluid" style="height: 100%; ">
-    {% include 'side-nav.html' %}
+    {% include "side-nav.html" %}
     {% if user.is_authenticated %}
     <div class="table-holder">
         <div class="centre-heading">
@@ -38,7 +38,7 @@
             
         </div>
         {% endfor %}
-        {% include 'paginate.html' %}
+        {% include "paginate.html" %}
     </div>
     {% else %}
     <div class="content-holder centre">

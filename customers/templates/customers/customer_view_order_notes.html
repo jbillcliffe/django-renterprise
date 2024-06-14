@@ -1,46 +1,45 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 {% load static %}
 {% load crispy_forms_tags %}
-
 {% load i18n %}
-{% block head_title %}{% trans "View Order Note" %}{% endblock %}
-
+{% block head_title %}
+    {% trans "View Order Note" %}
+{% endblock head_title %}
 {% block content %}
-
-<!-- the content to enter into the "main" class on the "base.html"-->
-<div class="container-fluid" style="height: 100%; width:100%;">
-    {% include 'side-nav.html' %}
-    {% if user.is_authenticated %}
-    <div class="content-holder centre">
-        {% if perms.order.order_note %}
-            <h2>View/Edit An Order Note </h2>
-            <hr class="renterprise" style="width: 60%;">
-            <form id="update-order-note-form" method="post"
-                class="note-form">
-                {{ order_note_form | crispy }}
-                {% csrf_token %}
-                <div class="row">
-                    <button id="submitButton" type="submit" class="button centre-align">Submit</button>
-                    <a class="button centre-align" href="{% url 'customers:order_notes_list' customer_token=customer_token_value order_id=customer_order_id %}">Return To Order Notes </a>
+    <!-- the content to enter into the "main" class on the "base.html"-->
+    <div class="container-fluid">
+        {% include "side-nav.html" %}
+        {% if user.is_authenticated %}
+            <div class="content-holder centre">
+                {% if perms.order.order_note %}
+                    <h2>View/Edit An Order Note</h2>
+                    <hr class="renterprise" style="width: 60%;">
+                    <form id="update-order-note-form" method="post" class="note-form">
+                        {{ order_note_form | crispy }}
+                        {% csrf_token %}
+                        <div class="row">
+                            <button id="submitButton" type="submit" class="button centre-align">Submit</button>
+                            <a class="button centre-align"
+                               href="{% url 'customers:order_notes_list' customer_token=customer_token_value order_id=customer_order_id %}">Return To Order Notes </a>
+                        </div>
+                    </form>
                 </div>
-            </form>
-        </div>
+            {% else %}
+                <p>Please log in as a user with change permissions.</p>
+                <a class="button centre-align"
+                   href="{{ request.META.HTTP_REFERER|escape }}">Return</a>
+            {% endif %}
         {% else %}
-            <p> Please log in as a user with change permissions.</p>
-            <a class="button centre-align" href="{{request.META.HTTP_REFERER|escape}}">Return</a>
-        {% endif %}
-        {% else %}
-        <div class="content-holder centre">
-            <div class="row" style="width: 20%;">
-                {% blocktrans %}
-                <p>You need to be logged in to access the program.</p>
-                <p>Log in to continue using this application.</p>
-                {% endblocktrans %}
-                <a class="button" href="{{ login_url }}">Log In</a>
+            <div class="content-holder centre">
+                <div class="row" style="width: 20%;">
+                    {% blocktrans %}
+                        <p>You need to be logged in to access the program.</p>
+                        <p>Log in to continue using this application.</p>
+                    {% endblocktrans %}
+                    <a class="button" href="{{ login_url }}">Log In</a>
+                </div>
             </div>
-        </div>
         {% endif %}
-</div>
-
-<!-- index.html content ends here -->
-{% endblock %}
+    </div>
+    <!-- index.html content ends here -->
+{% endblock content %}

@@ -72,6 +72,7 @@ h3 {
     display: flex; 
     align-items: center;
     flex-direction: column;
+    margin-bottom: 1.1rem;
 }
 
 /* Default font for p, label and legend. Font is already created globally. Colour
@@ -617,7 +618,6 @@ of the theme.*/
 /*Ensures buttons are in a column, not a row*/
 .container-fluid.main-menu {
     flex-direction: column;
-    width:100%;
 }
 
 ul.nav {
@@ -672,6 +672,7 @@ img.item-image {
     /*prevents image overlapping text content either side */
     overflow:auto;
     max-height:120px;
+    max-width:120px;
     margin-bottom: 0.5rem;
 }
 
