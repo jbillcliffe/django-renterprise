@@ -633,3 +633,146 @@ django.request WARNING 2024-06-13 13:55:45,349 log 17340 140156979893824 Not Fou
 django.request WARNING 2024-06-13 13:55:45,512 log 17340 140156971501120 Not Found: /items/styles.css.map
 django.utils.autoreload INFO 2024-06-13 13:56:18,816 autoreload 17340 140157673802816 /workspace/django-renterprise/items/models.py changed, reloading.
 django.utils.autoreload INFO 2024-06-13 13:56:19,365 autoreload 17468 140142159154240 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-13 13:57:15,089 autoreload 17939 139625473379392 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-13 13:57:16,520 connectionpool 17939 139625408198208 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-13 13:57:16,597 connectionpool 17939 139625408198208 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-13 13:57:17,056 log 17939 139625398740544 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-13 13:57:17,395 log 17939 139625389282880 Not Found: /items/create/styles.css.map
+django.utils.autoreload INFO 2024-06-13 15:01:11,048 autoreload 43672 140521057365056 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 00:59:49,962 autoreload 7443 140160241728576 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-14 00:59:59,798 connectionpool 7443 140160176547392 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-14 00:59:59,884 connectionpool 7443 140160176547392 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 4117
+django.request WARNING 2024-06-14 01:00:00,289 log 7443 140159948420672 Not Found: /items/create/styles.css.map
+django.request WARNING 2024-06-14 01:00:00,539 log 7443 140159931635264 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 01:00:01,763 log 7443 140159914849856 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 01:00:02,044 log 7443 140159906457152 Not Found: /customers/styles.css.map
+django.request WARNING 2024-06-14 01:00:03,987 log 7443 140159337096768 Not Found: /customers/styles.css.map
+django.request WARNING 2024-06-14 01:00:04,159 log 7443 140159328704064 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-06-14 01:00:06,324 log 7443 140159311918656 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/styles.css.map
+django.request WARNING 2024-06-14 01:00:06,663 log 7443 140159303525952 Not Found: /customers/8e05b134-0b51-46e4-ac9d-2e725f265a9b/customer_notes_list/styles.css.map
+django.utils.autoreload INFO 2024-06-14 01:00:14,742 autoreload 7443 140160241728576 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:00:15,231 autoreload 7573 140716025416768 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:00:24,592 autoreload 7573 140716025416768 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:00:25,074 autoreload 7628 140556617301056 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:01:11,035 autoreload 7628 140556617301056 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:01:11,568 autoreload 7823 139828697259072 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:01:57,521 autoreload 7823 139828697259072 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:01:58,010 autoreload 7899 140544288889920 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:02:03,380 autoreload 7899 140544288889920 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:02:03,868 autoreload 7930 140351068793920 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:02:11,202 autoreload 7930 140351068793920 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:02:11,689 autoreload 7978 140060323114048 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:02:13,931 autoreload 7978 140060323114048 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:02:14,417 autoreload 8000 140568238353472 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:02:34,962 autoreload 8000 140568238353472 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:02:35,453 autoreload 8047 140353951349824 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:02:44,807 autoreload 8047 140353951349824 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:02:45,301 autoreload 8098 140596458978368 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:02:48,562 autoreload 8098 140596458978368 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:02:49,082 autoreload 8127 139621104573504 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:03:12,666 autoreload 8127 139621104573504 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:03:13,152 autoreload 8239 139885112376384 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:03:30,646 autoreload 8239 139885112376384 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:03:31,133 autoreload 8358 139966223232064 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:03:58,790 autoreload 8358 139966223232064 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:03:59,274 autoreload 8442 140206564228160 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:04:40,157 autoreload 8442 140206564228160 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:04:40,642 autoreload 8640 139921704598592 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:04:59,161 autoreload 8640 139921704598592 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:04:59,646 autoreload 8697 139867925388352 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:05:03,919 autoreload 8697 139867925388352 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:05:04,409 autoreload 8730 139870883343424 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:05:38,164 autoreload 8730 139870883343424 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:05:38,650 autoreload 8797 140136192203840 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:06:41,887 autoreload 8797 140136192203840 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:06:42,376 autoreload 9071 139826244189248 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:06:48,687 autoreload 9071 139826244189248 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:06:49,172 autoreload 9112 140575374830656 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:07:22,928 autoreload 9112 140575374830656 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:07:23,416 autoreload 9282 140535648918592 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:07:34,802 autoreload 9282 140535648918592 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:07:35,292 autoreload 9335 139709208947776 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:07:59,899 autoreload 9335 139709208947776 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:08:00,384 autoreload 9411 140413135313984 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:08:16,852 autoreload 9411 140413135313984 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:08:17,342 autoreload 9467 139825419533376 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:08:34,828 autoreload 9467 139825419533376 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:08:35,313 autoreload 9521 139838596717632 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:09:09,064 autoreload 9521 139838596717632 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:09:09,549 autoreload 9588 140700500520000 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:09:18,910 autoreload 9588 140700500520000 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:09:19,393 autoreload 9643 140138538024000 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:09:24,682 autoreload 9643 140138538024000 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:09:25,209 autoreload 9673 140623758404672 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:09:42,713 autoreload 9673 140623758404672 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:09:43,206 autoreload 9735 140618725923904 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:11:07,804 autoreload 9735 140618725923904 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:11:08,290 autoreload 10162 140649788468288 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:11:40,013 autoreload 10162 140649788468288 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:11:40,504 autoreload 10293 140701417434176 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:11:50,876 autoreload 10293 140701417434176 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:11:51,363 autoreload 10350 140434490702912 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:11:55,639 autoreload 10350 140434490702912 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:11:56,129 autoreload 10383 139906218056768 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:12:58,372 autoreload 10383 139906218056768 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:12:58,860 autoreload 10491 140383868726336 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:13:05,171 autoreload 10491 140383868726336 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:13:05,660 autoreload 10532 140106181209152 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:13:12,990 autoreload 10532 140106181209152 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:13:13,481 autoreload 10572 140118357605440 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:13:29,955 autoreload 10572 140118357605440 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:13:30,439 autoreload 10628 139633495907392 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:13:55,040 autoreload 10628 139633495907392 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:13:55,528 autoreload 10695 139823710514240 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:14:07,935 autoreload 10695 139823710514240 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:14:08,419 autoreload 10750 140097635900480 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:14:34,038 autoreload 10750 140097635900480 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:14:34,527 autoreload 10830 139768185855040 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:14:55,073 autoreload 10830 139768185855040 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:14:55,564 autoreload 10886 140120387411008 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:14:58,821 autoreload 10886 140120387411008 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:14:59,304 autoreload 10915 140040402586688 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:15:07,647 autoreload 10915 140040402586688 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:15:08,133 autoreload 10948 140266108222528 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:31:07,097 autoreload 10948 140266108222528 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:31:07,588 autoreload 11828 140395672529984 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:37:34,221 autoreload 11828 140395672529984 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:37:34,709 autoreload 12229 140494834658368 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:38:22,724 autoreload 12229 140494834658368 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:38:23,210 autoreload 12310 140672014130240 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:38:39,676 autoreload 12310 140672014130240 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:38:40,161 autoreload 12377 140049094757440 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:40:05,818 autoreload 12377 140049094757440 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:40:06,309 autoreload 12596 140406389734464 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:40:09,564 autoreload 12596 140406389734464 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:40:10,065 autoreload 12626 139765289286720 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:40:21,454 autoreload 12626 139765289286720 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:40:21,939 autoreload 12658 139984021548096 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:40:44,513 autoreload 12658 139984021548096 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:40:45,003 autoreload 12719 139706015673408 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:43:41,098 autoreload 12719 139706015673408 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:43:41,586 autoreload 13148 139988944243776 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:43:49,926 autoreload 13148 139988944243776 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:43:50,414 autoreload 13201 140565378665536 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:43:52,655 autoreload 13201 140565378665536 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:43:53,137 autoreload 13223 140486520024128 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:44:03,510 autoreload 13223 140486520024128 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:44:03,990 autoreload 13262 140543939259456 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:46:31,624 autoreload 13262 140543939259456 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:46:32,115 autoreload 13732 139663752879168 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:46:50,625 autoreload 13732 139663752879168 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:46:51,113 autoreload 13865 140666311994432 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:47:01,483 autoreload 13865 140666311994432 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:47:01,975 autoreload 13945 140667662801984 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:47:29,629 autoreload 13945 140667662801984 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:47:30,112 autoreload 14082 140671238691904 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:47:40,484 autoreload 14082 140671238691904 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:47:40,973 autoreload 14135 140654254242880 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:47:48,297 autoreload 14135 140654254242880 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:47:48,779 autoreload 14188 139757875092544 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:47:55,083 autoreload 14188 139757875092544 /workspace/django-renterprise/customers/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:47:55,568 autoreload 14219 140495004654656 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:48:03,906 autoreload 14219 140495004654656 /workspace/django-renterprise/customers/models.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:48:04,397 autoreload 14272 139998411082816 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 01:48:10,705 autoreload 14272 139998411082816 /workspace/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 01:48:11,189 autoreload 14304 140574864292928 Watching for file changes with StatReloader

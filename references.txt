@@ -5,58 +5,30 @@ https://stackoverflow.com/questions/524992/how-to-implement-a-back-link-on-djang
 How to toggle class
 //https://www.w3schools.com/howto/howto_js_toggle_class.asp
 
-get_invoices(obj)
-    def get_invoices(obj):
-        paginate_by = 5
-        model = Invoice
+get_context help :
+https://stackoverflow.com/questions/37370534/django-listview-where-can-i-declare-variables-that-i-want-to-have-on-template
 
-        #invoices = Invoice.objects.filter(order.id=order).order_by("-created_on")
-            #self.customer = get_object_or_404(Customer, customer_token=self.kwargs["customer_token"])
-            #return CustomerNote.objects.filter(customer=self.customer)
-        def get_queryset(self):
-            return Invoice.objects.filter(order=obj)
 
-        def get_context_data(self, **kwargs):
-            context['order_invoice_list'] = self.get_queryset
-            return context
+# A useful testing tool for debugging/testing
+import logging
+logger = logging.getLogger(__name__)
+logger.warning(trace) -> general.log
+can provide results such as : 
+customers.views WARNING 2024-06-13 11:39:42,983 views 7707 140063480460864 Order object (8)
 
-    <!-- the content to enter into the "main" class on the "base.html"-->
-                <div class="table-holder">
-                    {% if order_invoice_list %}
-                        <div class="table-row table-head">
-                            <div class="col-2">
-                                No.
-                            </div>
-                            <div class="col-2">
-                                Date
-                            </div>
-                            <div class="col-2">
-                                Amount
-                            </div>
-                            <div class="col-1">
-                            </div>
-                        </div>
-                        {% for invoice in order_invoice_list %}
-                        <div class="table-row">
-                            <div class="col-2">{{ invoice.id }}</div>
-                            <div class="col-2">{{ invoice.created_on }}</div>
-                            <div class="col-2">{{ invoice.amount_paid }}</div>
-                            <div class="col-1"><a class="button-table view invoice-button" invoice_id="{{ invoice.id }}"
-                                    full-data="{{ invoice }}">
-                                    <i class="fa-solid fa-magnifying-glass"></i></a></div>
-                        </div>
-                        {% endfor %}
-                        {% include 'paginate.html' %}
-                    {% else %}
-                    <div class="row">
-                        <div class="col-6" style="padding-top: 3rem;
-                                justify-content: center;">
-                            <h3> There are no invoices for associated orders with this account.</h3>
-                        </div>
-                    </div>
-                    {% endif %}
-                </div>
-                {% else %}
-                <div class="row">
-                </div>
-                {% endif %}
+https://github.com/django-crispy-forms/django-crispy-forms/issues/158
+Bootstrap kept overriding button style when it is unwanted.
+Have to use javascript to submit the form and keep FloatingField styles
+- A request to crispy forms to remove default bootstrap styling on form buttons.
+- It was not ideal to work around. However, it was by creating the button in raw HTML
+(customers/forms.py) lines 50/51
+
+adding pagination to a non-class ListView - "customers/customer_order_view/"
+https://www.geeksforgeeks.org/how-to-add-pagination-in-django-project/
+
+def invoice_create
+# Bug zone : wsgirequest' object has no attribute 'amount_paid'
+    # change to same type as status change, to implement as posting form
+    # is causing problems. So values will be sent by URL.
+    # the form created by JS. JS dynamically validates the fields
+    # prior to submission.
