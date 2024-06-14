@@ -797,3 +797,95 @@ django.request WARNING 2024-06-14 11:51:38,127 log 2680 140093696235072 Not Foun
 django.request WARNING 2024-06-14 11:51:41,761 log 2680 140093679449664 Not Found: /items/styles.css.map
 django.request WARNING 2024-06-14 11:51:42,000 log 2680 140093671056960 Not Found: /styles.css.map
 django.request WARNING 2024-06-14 11:52:04,793 log 2680 140093150971456 Not Found: /styles.css.map
+django.utils.autoreload INFO 2024-06-14 12:20:34,267 autoreload 9774 139630023265344 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 12:24:35,344 autoreload 9774 139630023265344 /workspace/django-renterprise/menu/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 12:24:35,828 autoreload 9981 139691043167296 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 13:27:42,083 autoreload 9981 139691043167296 /workspace/django-renterprise/menu/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:27:42,573 autoreload 12626 140299285240896 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 13:28:19,327 autoreload 12626 140299285240896 /workspace/django-renterprise/menu/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:28:19,823 autoreload 12711 139897214491712 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 13:28:41,341 autoreload 12711 139897214491712 /workspace/django-renterprise/menu/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:28:41,833 autoreload 12753 140016042863680 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 13:28:53,191 autoreload 12753 140016042863680 /workspace/django-renterprise/menu/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:28:53,690 autoreload 12768 139779674958912 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-14 13:28:59,143 connectionpool 12768 139779609634368 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-14 13:28:59,207 connectionpool 12768 139779609634368 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-14 13:28:59,566 log 12768 139779592816192 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 13:29:00,214 log 12768 139779375101504 Not Found: /styles.css.map
+django.utils.autoreload INFO 2024-06-14 13:29:32,613 autoreload 12768 139779674958912 /workspace/django-renterprise/menu/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:29:33,110 autoreload 12811 140312402291776 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-14 13:30:20,778 connectionpool 12811 140312336967232 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-14 13:30:20,828 connectionpool 12811 140312336967232 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-14 13:30:21,465 log 12811 140312302282304 Not Found: /styles.css.map
+django.utils.autoreload INFO 2024-06-14 13:30:36,475 autoreload 12811 140312402291776 /workspace/django-renterprise/menu/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:30:36,971 autoreload 12872 139926610406464 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-14 13:30:39,203 connectionpool 12872 139926477731392 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-14 13:30:39,310 connectionpool 12872 139926477731392 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-14 13:30:39,836 log 12872 139926443112000 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 13:30:42,124 log 12872 139926426326592 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 13:30:44,203 log 12872 139925932467776 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 13:30:44,787 log 12872 139925924075072 Not Found: /items/styles.css.map
+django.utils.autoreload INFO 2024-06-14 13:30:51,561 autoreload 12872 139926610406464 /workspace/django-renterprise/menu/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:30:52,063 autoreload 12908 139758964976704 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 13:31:05,494 autoreload 12908 139758964976704 /workspace/django-renterprise/menu/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:31:05,983 autoreload 12928 139632218602560 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 13:31:45,845 autoreload 12928 139632218602560 /workspace/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:31:46,336 autoreload 12966 140480126204992 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 13:31:54,682 autoreload 12966 140480126204992 /workspace/django-renterprise/customers/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:31:55,177 autoreload 12980 140501064617024 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 13:34:41,146 autoreload 12980 140501064617024 /workspace/django-renterprise/renterprise/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:34:41,649 autoreload 13160 140027661691968 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 13:36:13,425 autoreload 13160 140027661691968 /workspace/django-renterprise/renterprise/settings.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:36:13,914 autoreload 13264 140017469828160 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 13:38:45,664 autoreload 13264 140017469828160 /workspace/django-renterprise/menu/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:38:46,160 autoreload 13524 139858102082624 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 13:39:02,643 autoreload 13524 139858102082624 /workspace/django-renterprise/menu/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:39:03,137 autoreload 13550 140662343945280 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 13:39:53,177 autoreload 13550 140662343945280 /workspace/django-renterprise/menu/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:39:53,678 autoreload 13592 140132684479552 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 13:39:58,974 autoreload 13592 140132684479552 /workspace/django-renterprise/menu/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:39:59,468 autoreload 13606 139894365162560 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 13:40:01,711 autoreload 13606 139894365162560 /workspace/django-renterprise/menu/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:40:02,205 autoreload 13618 140269860678720 Watching for file changes with StatReloader
+urllib3.connectionpool DEBUG 2024-06-14 13:40:21,865 connectionpool 13618 140269795354176 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-14 13:40:21,930 connectionpool 13618 140269795354176 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-14 13:40:22,303 log 13618 140269786945088 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-14 13:40:22,635 log 13618 140269777487424 Not Found: /styles.css.map
+django.utils.autoreload INFO 2024-06-14 13:40:42,150 autoreload 13618 140269860678720 /workspace/django-renterprise/menu/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:40:42,647 autoreload 13658 140076927896640 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 13:41:07,262 autoreload 13658 140076927896640 /workspace/django-renterprise/menu/views.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:41:07,760 autoreload 13687 140280166251584 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-06-14 13:47:24,126 autoreload 13687 140280166251584 /workspace/django-renterprise/menu/urls.py changed, reloading.
+django.utils.autoreload INFO 2024-06-14 13:47:24,620 autoreload 14196 140069743828032 Watching for file changes with StatReloader
+django.request WARNING 2024-06-14 13:47:26,805 log 14196 140069678503488 Not Found: /styles.css.map
+urllib3.connectionpool DEBUG 2024-06-14 13:47:28,280 connectionpool 14196 140069669045824 Starting new HTTPS connection (1): res.cloudinary.com:443
+urllib3.connectionpool DEBUG 2024-06-14 13:47:28,382 connectionpool 14196 140069669045824 https://res.cloudinary.com:443 "GET /dddubflsq/raw/upload/v1/static/staticfiles.json HTTP/1.1" 200 None
+django.request WARNING 2024-06-14 13:47:28,768 log 14196 140069642769984 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 13:47:29,474 log 14196 140069151176256 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 13:47:33,093 log 14196 140068597519936 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 13:47:33,259 log 14196 140068563949120 Not Found: /favicon.ico
+django.request WARNING 2024-06-14 13:47:33,549 log 14196 140068077434432 Not Found: /admin/styles.css.map
+django.request WARNING 2024-06-14 13:47:34,177 log 14196 140068060649024 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 13:47:34,297 log 14196 140068069041728 Not Found: /admin/styles.css.map
+django.request WARNING 2024-06-14 13:48:22,977 log 14196 140067540563520 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 13:48:24,520 log 14196 140067523778112 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 13:48:24,803 log 14196 140067515385408 Not Found: /customers/styles.css.map
+django.request WARNING 2024-06-14 13:48:25,314 log 14196 140067506992704 Not Found: /customers/styles.css.map
+django.request WARNING 2024-06-14 13:48:25,561 log 14196 140067498600000 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 13:48:26,298 log 14196 140067003692608 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 13:48:26,453 log 14196 140066995299904 Not Found: /favicon.ico
+django.request WARNING 2024-06-14 13:48:26,733 log 14196 140066986907200 Not Found: /admin/styles.css.map
+django.request WARNING 2024-06-14 13:48:27,361 log 14196 140066970121792 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 13:48:27,441 log 14196 140066978514496 Not Found: /admin/styles.css.map
+django.request WARNING 2024-06-14 13:48:28,508 log 14196 140066953336384 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 13:48:28,772 log 14196 140066466821696 Not Found: /orders/styles.css.map
+django.request WARNING 2024-06-14 13:48:29,672 log 14196 140066458428992 Not Found: /orders/styles.css.map
+django.request WARNING 2024-06-14 13:48:30,014 log 14196 140066450036288 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 13:48:31,175 log 14196 140066433250880 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 13:48:31,602 log 14196 140066424858176 Not Found: /orders/styles.css.map
+django.request WARNING 2024-06-14 13:48:31,790 log 14196 140066416465472 Not Found: /orders/styles.css.map
+django.request WARNING 2024-06-14 13:48:31,966 log 14196 140065929950784 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 13:48:32,962 log 14196 140065913165376 Not Found: /styles.css.map
+django.request WARNING 2024-06-14 13:48:33,311 log 14196 140065904772672 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-14 13:48:33,845 log 14196 140065896379968 Not Found: /items/styles.css.map
+django.request WARNING 2024-06-14 13:48:34,166 log 14196 140065887987264 Not Found: /styles.css.map

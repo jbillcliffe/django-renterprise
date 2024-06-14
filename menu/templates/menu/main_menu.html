@@ -1,45 +1,44 @@
 {% extends "base.html" %}
-
 {% load i18n %}
-{% block head_title %}{% trans "Main Menu" %}{% endblock %}
+{% block head_title %}
+    {% trans "Main Menu" %}
+{% endblock head_title %}
 {% block content %}
-
-<!-- the content to enter into the "main" class on the "base.html"-->
-<div class="container-fluid main-menu">
-    {% if user.is_authenticated %}
-    <!-- create a row per button of col-12 (max width) and centre align -->
-    <div class="row">
-        <div class="col-12">
-            <a href="/admin/" class="button"> Admin </a>
-        </div>
+    <!-- the content to enter into the "main" class on the "base.html"-->
+    <div class="container-fluid main-menu">
+        {% if user.is_authenticated %}
+            <!-- create a row per button of col-12 (max width) and centre align -->
+            <div class="row">
+                <div class="col-12">
+                    <a href={% url 'admin:index' %} class="button">Admin</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <a href={% url 'customers:customer_list' %} class="button">Customers</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <a href={% url 'orders:order_list' %} class="button">Orders</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <a href={% url 'items:item_list' %} class="button">Items</a>
+                </div>
+            </div>
+        {% else %}
+            <div class="content-holder centre">
+                <div class="row" style="width: 20%;">
+                    {% blocktrans %}
+                        <p>You need to be logged in to access the program.</p>
+                        <p>Log in to continue using this application.</p>
+                    {% endblocktrans %}
+                    <a class="button" href="{{ login_url }}">Log In</a>
+                </div>
+            </div>
+        {% endif %}
     </div>
-    <div class="row">
-        <div class="col-12">
-            <a href="/customers/" class="button"> Customers </a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <a href="/orders" class="button"> Orders </a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <a href="/items/" class="button"> Items </a>
-        </div>
-    </div>
-    {% else %}
-    <div class="content-holder centre">
-        <div class="row" style="width: 60%;">
-            {% blocktrans %}
-            <p>You need to be logged in to access the program.</p>
-            <p>Log in to continue using this application.</p>
-            {% endblocktrans %}
-            <a class="button" href="{{ login_url }}">Log In</a>
-        </div>
-    </div>
-    {% endif %}
-</div>
-
-<!-- index.html content ends here -->
-{% endblock %}
+    <!-- index.html content ends here -->
+{% endblock content %}

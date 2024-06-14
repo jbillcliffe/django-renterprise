@@ -1,17 +1,18 @@
 
 from . import views
 from django.urls import path
-from django.http import HttpRequest
 
 """
 URLs relating to menu navigation
-- Only contains the '' path.
-- This is the root for the project and "menu" is not in the
-
-- app_name - THIS REGISTERS THE NAMESPACE FOR URLS
-URL. 
+- Contains URLs for the buttons on the main menu to navigate
+the rest of the program
+- This is the root page for the project and "menu" URLs ie.
+www.website.com/menu does not exist. To get to the menu, you
+navigate to www.website.com
 """
 app_name = "menu"
 urlpatterns = [
-    path('', views.main_menu, name='menu'),
+    path('',
+         views.main_menu,
+         name='menu'),
 ]

@@ -100,8 +100,6 @@ TEMPLATES = [
     },
 ]
 
-
-
 WSGI_APPLICATION = 'renterprise.wsgi.application'
 
 # Database
