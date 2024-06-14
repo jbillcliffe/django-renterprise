@@ -5,6 +5,8 @@ from django.urls import path
 URLs for customer and customer order navigation.
 - '' = root/customers/
 - this "blank" url loads the customer list
+- delete does not happen. Instead customers are archived to "remove" them
+from being publicly facing.
 """
 
 app_name = "customers"

@@ -2,36 +2,39 @@ from django.db import models
 from decimal import Decimal
 from cloudinary.models import CloudinaryField
 
-"""
-Models for ItemType and Item.
--- ItemType
-- DecimalField was decided due to being able to set a max number of decimals.
-- If less is inputted, the form will convert to 2 decimals before saving.
--- Item --
-- DateFields are nullable, if null it frees up the item for booking
-- Income field same as ItemType reasoning for DecimalField.
-"""
 
 # Create your models here.
 class ItemType(models.Model):
+    """
+    Fields for the ItemType model, including the CloudinaryField which
+    uses a URL for it's data, which can then be linked to an image
+    which is hosted online
+    """
     image = CloudinaryField('image', default="placeholder")
     name = models.CharField(max_length=200)
     category = models.CharField(max_length=200)
     cost_initial = models.DecimalField(max_digits=6, decimal_places=2)
     cost_week = models.DecimalField(max_digits=6, decimal_places=2)
     # order by name 0-9 then A-Z
+
     class Meta:
         ordering = ["name"]
-    
+
     # so the name will replace "ItemType Object" in all instances
     def __str__(self):
+        """
+        String representation of the item type object.
+        """
         return self.name
 
- 
 
 class Item(models.Model):
-    # Best practice for django constants :
-    # https://stackoverflow.com/questions/12822847/best-practice-for-python-django-constants
+    """
+    Fields for the Item model, this is the storage of stock, to it
+    is a list of ItemTypes with a serial number attached to it.
+    The status is also important as it will determine the availability
+    of it to hire.
+    """
     AVAILABLE = 0
     SCRAPPED = 1
     MISSING = 2
@@ -52,31 +55,46 @@ class Item(models.Model):
     delivery_date = models.DateField(null=True, blank=True)
     collect_date = models.DateField(null=True, blank=True)
     repair_date = models.DateField(null=True, blank=True)
-    income = models.DecimalField(max_digits=6, decimal_places=2, default=Decimal('0.00'))
+    income = models.DecimalField(max_digits=6,
+                                 decimal_places=2,
+                                 default=Decimal('0.00'))
     status = models.IntegerField(choices=STATUS, default=AVAILABLE)
 
-    # order by item_type name 0-9 then A-Z
     class Meta:
-        #Will always display available ones at the top
-        ordering = ["item_type","status","item_serial"]
+        # order by item_type name 0-9 then A-Z
+        ordering = ["item_type", "status", "item_serial"]
 
     # return a formatted string for the name of the item type
     def item_type_name(self):
+        """
+        Returning the item_type.name as a seperate entity as it is referred to
+        frequently and is in a different model
+        """
         return f"{self.item_type.name}"
-    
-    # return a formatted string for the name of the item type category
+
     def item_type_category(self):
+        """
+        Returning the category as a seperate entity as it is referred to
+        frequently and is in a different model
+        """
         return f"{self.item_type.category}"
 
-    # self.status  refers to the variable (eg. AVAILABLE),
-    # the index refers to the value this variable hold
-    # eg. 'Available'
     def status_str(self):
+        """
+        Returning the human readable version of status
+        """
         return self.STATUS[self.status][1]
 
     def item_css_status(self):
-        self = str(self.STATUS[self.status][1]).replace('/','_').lower()
+        """
+        Returning the css ready version of status (noteably
+        in lower case)
+        """
+        self = str(self.STATUS[self.status][1]).replace('/', '_').lower()
         return self
 
     def __str__(self):
+        """
+        String representation of the item type object.
+        """
         return self.item_type.name

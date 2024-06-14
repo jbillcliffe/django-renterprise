@@ -7,16 +7,25 @@ URLs relating to item navigation (add/edit/"delete")
 data removed.
 - '' = root/items/
 - '' is the url for item searching
-- 'identifier/' is the url for a single item display
+- '<int:id>/' is the url for a single item display
+- '<int:status' refers to the status of the object as it's key in the array
 """
-
 app_name = "items"
 
 urlpatterns = [
-    path('', views.ItemList.as_view(), name='item_list'),
-    path('create/', views.item_create, name='item_create'),
-    path('create/item_type/', views.item_type_create, name='item_type_create'),
-    path('<int:id>/', views.item_view, name='item_view'),
+    path('',
+         views.ItemList.as_view(),
+         name='item_list'),
+    path('create/',
+         views.item_create,
+         name='item_create'),
+    path('create/item_type/',
+         views.item_type_create,
+         name='item_type_create'),
+    path('<int:id>/',
+         views.item_view,
+         name='item_view'),
     path('<int:id>/status_change/<int:status>',
-         views.item_status_change, name='item_status_change'),
+         views.item_status_change,
+         name='item_status_change'),
 ]

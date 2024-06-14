@@ -28,7 +28,20 @@ https://www.geeksforgeeks.org/how-to-add-pagination-in-django-project/
 
 def invoice_create
 # Bug zone : wsgirequest' object has no attribute 'amount_paid'
-    # change to same type as status change, to implement as posting form
-    # is causing problems. So values will be sent by URL.
-    # the form created by JS. JS dynamically validates the fields
-    # prior to submission.
+# change to same type as status change, to implement as posting form
+# is causing problems. So values will be sent by URL.
+# the form created by JS. JS dynamically validates the fields
+# prior to submission.
+
+# Best practice for django constants :
+    # https://stackoverflow.com/questions/12822847/best-practice-for-python-django-constants
+
+    """
+    Models for ItemType and Item.
+    -- ItemType
+    - DecimalField was decided due to being able to set a max number of decimals.
+    - If less is inputted, the form will convert to 2 decimals before saving.
+    -- Item --
+    - DateFields are nullable, if null it frees up the item for booking
+    - Income field same as ItemType reasoning for DecimalField.
+    """

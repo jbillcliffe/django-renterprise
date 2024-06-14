@@ -53,19 +53,33 @@ class Customer(models.Model):
         ordering = ["last_name", "first_name"]
 
     def full_name(self):
+        """
+        Self contained function to get first and last name by
+        calling a function
+        """
         if self.first_name in self.null_values:
             return f"{self.last_name}"
         else:
             return f"{self.first_name} {self.last_name}"
 
     def status_str(self):
+        """
+        Returning the human readable version of status
+        """
         return self.STATUS[self.status][1]
 
     def customer_css_status(self):
+        """
+        Returning the css ready version of status (noteably
+        in lower case)
+        """
         self = str(self.STATUS[self.status][1]).lower()
         return self
 
     def __str__(self):
+        """
+        String representation of the customer object.
+        """
         if self.first_name in self.null_values:
             return f"{self.last_name}"
         else:
@@ -92,15 +106,26 @@ class CustomerNote(models.Model):
     )
 
     def __str__(self):
+        """
+        String representation of the customer note object.
+        """
         return f"Customer Note : {self.id}"
 
     def full_name(self):
+        """
+        Self contained function to get first and last name by
+        calling a function
+        """
         if self.customer.first_name in self.null_values:
             return f"{self.customer.last_name}"
         else:
             return f"{self.customer.first_name} {self.customer.last_name}"
 
     def created_on_by(self):
+        """
+        Self contained function to convert the saved datetime to a way
+        that is preferred to display in the UK
+        """
         date_to_string = self.created_on.strftime("%d-%m-%Y")
 
         return f"Created on : {date_to_string}, By : "

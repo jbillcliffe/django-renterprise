@@ -6,7 +6,13 @@ from .models import Customer, CustomerNote
 
 
 class CustomerForm(forms.ModelForm):
-
+    """
+    Defining the CustomerForm, assigning correctly formatted
+    labels to the fields and declaring the fields to display
+    for creation.
+    Also providing the layout to initialise FloatingFields to
+    save screen space as it is a larger form
+    """
     class Meta:
         model = Customer
         fields = ['first_name', 'last_name', 'address_line_one',
@@ -56,6 +62,11 @@ class CustomerForm(forms.ModelForm):
 
 
 class CustomerNoteForm(forms.ModelForm):
+    """
+    Defining the CustomerNoteForm, assigning correctly formatted
+    labels to the fields and declaring the fields to display
+    for creation.
+    """
     class Meta:
         model = CustomerNote
         fields = ('note',)
