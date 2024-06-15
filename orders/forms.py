@@ -7,6 +7,7 @@ from crispy_forms.layout import Layout, Div, Fieldset, Submit, Row, Field
 from crispy_bootstrap5.bootstrap5 import FloatingField
 from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
 from django_summernote.fields import SummernoteTextField
+from django.core.paginator import Paginator
 from .models import Order, OrderNote, Invoice
 from items.models import Item, ItemType
 
@@ -27,6 +28,10 @@ class OrderForm(forms.ModelForm):
     #https://stackoverflow.com/questions/17085898/conversion-of-datetime-field-to-string-in-django-queryset-values-list
     #Casting the datetime.date fields to strings so they can be parsed into JSON
     full_item_list = Item.objects.values("id", "item_type", "item_serial", "status")
+    items_paginator = Paginator(full_item_list, 4)
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+
     item_type_field = forms.ModelChoiceField(item_type_categories, label="Category", required = False)
     # Set required to False on these fields. As display:none causes error
     # Validation occurs in JS.
@@ -75,7 +80,7 @@ class OrderForm(forms.ModelForm):
                 wrapper_class='col-md-5 mb-3 p-0')
             )
         )
-                
+
 class OrderNoteForm(forms.ModelForm):
     class Meta:
         model = OrderNote

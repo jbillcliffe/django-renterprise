@@ -208,6 +208,11 @@ https://www.w3schools.com/howto/howto_css_animate_buttons.asp */
     color: #FFFFFF;
 }
 
+.button.order-form {
+    height: auto;
+    width: 100%;
+    font-size: 0.8vw;
+}
 
 /* For Crispy Forms to override submit default of bootstrap btn btn-primary*/
 .btn.btn-primary.centre-align {
@@ -501,6 +506,12 @@ of the theme.*/
     align-items: flex-start;
 }
 
+/* CONTENT HOLDER ORDER CREATE */
+.content-holder.order-create {
+    display: flex;
+    flex-direction: column;
+}
+
 .table-row {
     display:flex;
     flex-direction:row !important;
@@ -766,10 +777,10 @@ img.item-image {
     text-shadow: none;
 }
 
-/*CRISPY FORM STYLES BOOTSTRAP 5*/
+/*CRISPY FORM STYLES BOOTSTRAP 5
 form>div {
     padding-left: 0;
-}
+}*/
 .form-centre {
     margin-top: 1.3em;
     width: 50%;
@@ -790,9 +801,39 @@ form {
     width: 80%;
 }
 
-.item-form-content {
+#create-order-form {
+    width: 90%;
     display: flex;
     flex-direction: row;
+}
+
+.order-form-column {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 3rem;
+}
+
+.item-form-content,
+.order-form-content {
+    display: flex;
+    flex-direction: row;
+}
+
+#order-form-dates {
+    width: 100%;
+    margin-right: 3rem;
+}
+
+#order-form-item {
+    width: 100%;
+    margin-right: 3rem;
+    display:none;
+}
+
+#order-form-prices {
+    width: 100%;
+    display:none;
 }
 
 #item-type-form-costs,
@@ -803,10 +844,18 @@ form {
 }
 
 
-.customer_details_container {
+.customer-details-container {
     width:100%;
     display:flex;
     flex-direction: column;
+}
+
+.item-details-container,
+.order-details-container {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .order-details-customer {
@@ -815,31 +864,16 @@ form {
     width:100%;
 }
 
-.item_details_container,
-.order_details_container {
-    width:100%;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.customer_details_container.split
- {
-    width:50%;
-    display:flex;
-    flex-direction: column;
-}
-
-.item_details_container.split,
-.order_details_container.split {
+.item-details-container.split,
+.order-details-container.split {
     width:30%;
     display:flex;
     flex-direction: column;
     margin: 1rem;
 }
 
-.item_details_container.split-end,
-.order_details_container.split-end {
+.item-details-container.split-end,
+.order-details-container.split-end {
     width:30%;
     display:flex;
     flex-direction: column;
@@ -847,7 +881,7 @@ form {
     margin: 1rem;
 }
 
-.item_details_container.split.stack {
+.item-details-container.split.stack {
     justify-content: center;
     align-items: center;
     display:flex;
@@ -855,8 +889,9 @@ form {
 }
 
 #available-items {
-    width: 20%;
-    margin: 5rem 0 0 2vw;
+    width: 100%;
+    margin-top: 1.8rem;
+    display:none;
 }
 /*
 #modal-id,

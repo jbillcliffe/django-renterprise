@@ -7,9 +7,7 @@
         {% include "side-nav.html" %}
         {% if user.is_authenticated %}
             <div class="content-holder" style="display: flex; flex-direction: row;">
-                <div class="order-details-customer"
-                     style="display: flex;
-                            flex-direction: column">
+                <div class="order-details-customer">
                     <div class="row">
                         <div class="col-5" style="flex-direction:column;">
                             <div class="item-image-holder">
@@ -82,8 +80,8 @@
                         </div>
                     </div>
                     <hr class="renterprise">
-                    <div class="order_details_container">
-                        <div class="order_details_container split">
+                    <div class="order-details-container">
+                        <div class="order-details-container split">
                             <div class="row">
                                 <p>Delivery Date : {{ order.start_date }}</p>
                             </div>
@@ -97,7 +95,7 @@
                                 <p>Item Serial : {{ order.item.item_serial }}</p>
                             </div>
                         </div>
-                        <div class="order_details_container split-end">
+                        <div class="order-details-container split-end">
                             <div class="row">
                                 <p>Initial Cost : £{{ order.cost_initial }}</p>
                             </div>

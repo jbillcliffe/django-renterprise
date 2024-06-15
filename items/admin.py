@@ -11,4 +11,5 @@ class ItemTypeAdmin(SummernoteModelAdmin):
 
 @admin.register(Item)
 class ItemAdmin(SummernoteModelAdmin):
+    model = Item
     list_display = ('item_type_name', 'item_type_category', 'item_serial')

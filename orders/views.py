@@ -11,9 +11,10 @@ from django.views.generic.detail import SingleObjectMixin
 from django.http import HttpResponse, HttpResponseRedirect
 from customers.models import Customer
 from items.models import Item
-from .models import Order, OrderNote, Invoice
+
+from .models import Order, Invoice
 from .forms import OrderForm
-from .urls import *
+
 
 logger = logging.getLogger(__name__)
 
@@ -25,7 +26,7 @@ def order_create(request, customer_token):
     """
     order_form = OrderForm(request.POST)
     customer = get_object_or_404(Customer, customer_token=customer_token)
-    
+
     if request.method == "POST":
         # Order: customer, item , cost_initial, cost_week,
         # start_date,end_date,created_on,created_by
@@ -43,14 +44,14 @@ def order_create(request, customer_token):
             end_date = end_date_date,
             created_by = request.user,
             created_on = datetime.now)
-        
+
         invoice = Invoice.objects.create(
             order = order,
             created_on = datetime.now,
             amount_paid = order_form['cost_initial'].value(),
             note = "First rental payment",
             status = False)
-        
+
         update_item = Item.objects.get(pk=item.id)
         update_item.income += order.cost_initial
         update_item.save()
@@ -63,13 +64,14 @@ def order_create(request, customer_token):
             'Order has been saved'
             )
             return redirect('customers:customer_order_view', customer_token=order.customer.customer_token, order_id=order.id)
-       
+
     order_form = OrderForm()
 
     return render(
         request,
         "orders/order_create.html",
         {
+            "customer_token_value": customer_token,
             "order_form": order_form,
         },
     )

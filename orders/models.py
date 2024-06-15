@@ -1,5 +1,6 @@
 import uuid
 import logging
+from django.core.paginator import Paginator
 from datetime import datetime, date, time, timezone
 from decimal import Decimal
 from django.db import models
