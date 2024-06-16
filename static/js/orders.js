@@ -14,13 +14,14 @@ const week_cost_field = document.getElementById("id_cost_week");
 const available_items_div = document.getElementById("available-items");
 //Hidden Fields
 const selected_item_hidden = document.getElementById("id_item");
-
 const item_field_hidden = document.getElementById("id_item_field_hidden");
 const full_item_hidden = document.getElementById("id_full_item_hidden");
 const orders_hidden = document.getElementById("id_orders_hidden");
+
 //Paginator Area
 const table_paginator = document.getElementById("table-paginator");
-const validationArray = ['']
+let itemsPage = 1;
+let maxPages = 1;
 
 //Submit Button
 const submitButton = document.getElementById("submitButton");
@@ -164,6 +165,9 @@ id_item_type_field.onchange = function() {
  * - Item(s) stored with json string {id,item_type,item_serial,status}
  * - full list of Order(s)) stored in orders_hidden(element id/id_orders_hidden)
  * - Order(s) stored with json string {item_id,start_date_str,end_date_str}
+ * 
+ * Due to the nature of the search/filter. Pages need to be implemented in JS
+ * in the validItems/validOrderableItems section. 
  */
 function chosenItem() {
 
@@ -246,33 +250,69 @@ function chosenItem() {
         }
     }
 
-    for (let i = 0; i < validOrderableItems.length; i++) {
+    //eg. 12 results would send a remainder of 2
+    let pageRemainder = validOrderableItems.length % 5;
+    // wholepages = 12 - 2 = 10, then divide by 5 = 2.
+    //There will always be this number of pages + 1.
+    let wholeDivisor = (validOrderableItems.length - pageRemainder)/5;
+    console.log("R:"+pageRemainder);
+    console.log("W:"+wholeDivisor);
+    maxPages = wholeDivisor + 1;
+
+    createOrderableItemsTable(validOrderableItems);
+    available_items_div.style.display = "block";
+    
+}
+
+function createOrderableItemsTable(validItemsArray) {
+    console.log(validItemsArray);
+    clearAvailableItems();
+
+    // 0*5 = 0, 1*5 = 5, 2*5 = 10, 15 .....
+    let thisStart = (itemsPage-1) * 5;
+    let thisEnd;
+    
+    
+    if ( thisStart+5 > validItemsArray.length) {
+        //eg. 5 + 5 > 7
+        thisEnd = validItemsArray.length;
+    } else {
+        //eg. 5 + 5 > 15
+        thisEnd = thisStart + 5;
+    }
+
+    //let thisEnd = thisStart + 5;
+    console.log(itemsPage);
+    console.log(thisStart);
+    console.log(thisEnd);
+    //0-4, 5-9, 10-14, 15-19 ......
+    for (let i = thisStart; i < thisEnd; i++) {
         /*  
             id:int,
             item_serial:string,
             item_type:int,
             status:int
         */
-        if (validOrderableItems[i].status == 0) {
+        if (validItemsArray[i].status == 0) {
             const tableRow = document.createElement("div");
             tableRow.classList.add("table-row", "order-table-row");
             tableRow.id = "order-row-number-"+i;
             const serialDiv = document.createElement("div");
             serialDiv.classList.add("col-8", "note-row");
             const serialP = document.createElement("p");
-            serialP.innerHTML = validOrderableItems[i].item_serial;
+            serialP.innerHTML = validItemsArray[i].item_serial;
             const radioDiv = document.createElement("div");
             radioDiv.classList.add("col-4");
             const radioElement = document.createElement("input");
 
             radioElement.setAttribute("type", "radio");
-            radioElement.setAttribute("id", validOrderableItems[i].id);
+            radioElement.setAttribute("id", validItemsArray[i].id);
             radioElement.setAttribute("name", "order_item_radio");
 
             //create a function to change the hidden item <select> this will
             //make is straight forward for form submission.
             radioElement.onclick = function() {
-                selected_item_hidden.value = validOrderableItems[i].id;
+                selected_item_hidden.value = validItemsArray[i].id;
                 submitButton.style.display = 'block';
                 testSubmitButton.style.display = 'block';
             }
@@ -286,36 +326,98 @@ function chosenItem() {
             available_items_div.insertBefore(tableRow, table_paginator);
         }
     }
-    available_items_div.style.display = "block";
+
+    updatePaginator(validItemsArray);
 }
 
-/*function testFormSubmit() {
-customer, item, cost_initial
-    customer = models.ForeignKey(
-        Customer, on_delete=models.CASCADE, related_name="order_customer"
-    )
-    item = models.ForeignKey(
-        Item, on_delete=models.PROTECT, related_name="order_item"
-    )
-    cost_initial = models.DecimalField(max_digits=6, decimal_places=2)
-    cost_week = models.DecimalField(max_digits=6, decimal_places=2)
+function updatePaginator(itemsArray) {
+    //paginator-page-text = page X of X/Y
+    //table-paginator = holder of << < > >>
+    //paginate every 4 items.
+    //itemsPage is a global var which determines current page selection, default page 1]
+    //itemsPage = 1;
+
+    let paginatorText = document.getElementById("paginator-page-text");
+    let arrowList = table_paginator.getElementsByClassName("paginate-arrows");
     
-    start_date = models.DateField()
-    end_date = models.DateField()
-    created_on = models.DateTimeField(auto_now_add=True)
-    created_by = models.ForeignKey(
-        User, on_delete=models.PROTECT, related_name="order_created_by"
-    console.log(document.getElementById("id_item").value);
-    console.log(document.getElementById("id_cost_initial").value);
-    console.log(document.getElementById("id_cost_week").value);
-    console.log(document.getElementById("id_start_date").value);
-    console.log(document.getElementById("id_end_date").value);
-    let item = document.getElementById("id_item");
-    let cost_initial = document.getElementById("id_cost_initial").value;
-    let cost_week = document.getElementById("id_cost_week").value
-    let start_date = document.getElementById("id_start_date").value
-    let end_date = 
-}*/
+    console.log(itemsPage);
+    console.log(maxPages);
+
+    while (arrowList.length > 0)
+    {
+        arrowList[0].remove();
+    }
+
+    if (itemsArray.length < 5) {
+        // 1 page
+        paginatorText.innerHTML = "Page 1 of 1";
+    
+    } else if (itemsArray.length <= 0) {
+        // 0 items
+        paginatorText.innerHTML = "No Items";
+
+    } else {
+        //Enough items for more than one page.
+
+        // for javascript it will be simpler and more reliable to just use one step pages
+        // also for the feature requirement only one step is necessary
+        const aNearLeft = document.createElement("a");
+        const aNearRight = document.createElement("a");
+
+        aNearLeft.onclick = function() {
+            console.log("B:"+itemsPage);
+            itemsPage--;
+            console.log("A:"+itemsPage);
+            createOrderableItemsTable(itemsArray);
+        };
+
+        aNearRight.onclick = function() {
+            console.log("B:"+itemsPage);
+            itemsPage++;
+            console.log("A:"+itemsPage);
+            createOrderableItemsTable(itemsArray);
+        };
+
+        aNearLeft.classList.add("paginate-arrows");
+        aNearRight.classList.add("paginate-arrows");
+
+        aNearLeft.innerHTML = `<i class="fa-solid fa-angle-left"></i>`;
+        aNearRight.innerHTML = `<i class="fa-solid fa-angle-right"></i>`;
+
+        //<a href="?page=1" class="paginate-arrows" style="display:none;"><i class="fa-solid fa-angles-left"></i></a>
+        //<a href="?page={{ page_obj.next_page_number }}" class="paginate-arrows"><i class="fa-solid fa-angle-right"></i></a>
+
+        
+
+        if (itemsPage == 1) {
+            aNearLeft.style.display = "none";
+            aNearRight.style.display = "block";
+
+            //aNearLeft.href = "#";
+            //aNearRight.href = "?page=2";
+
+        } else if (itemsPage == maxPages) {
+            aNearLeft.style.display = "block";
+            aNearRight.style.display = "none";
+
+            //aNearLeft.href = "?page="+(maxPages-1);
+            //aNearRight.href = "#";
+        } else {
+            aNearLeft.style.display = "block";
+            aNearRight.style.display = "block";
+
+            //aNearLeft.href = "?page="+(itemsPage-1);
+            //aNearRight.href = "?page="+(itemsPage+1);
+        }
+
+        paginatorText.innerHTML = `Page ${itemsPage} of ${maxPages}`;
+
+        table_paginator.insertBefore(aNearLeft, paginatorText);
+        table_paginator.appendChild(aNearRight);
+        console.log(aNearLeft);
+        console.log(aNearRight);
+    }
+}
 
 /**
  * Function to empty the items available to order so the table doesnt fill up with duplicates

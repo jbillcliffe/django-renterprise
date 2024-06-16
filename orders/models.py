@@ -1,15 +1,9 @@
-import uuid
-import logging
-from django.core.paginator import Paginator
-from datetime import datetime, date, time, timezone
-from decimal import Decimal
 from django.db import models
 from django.contrib.auth.models import User
 from django_summernote.fields import SummernoteTextField
 from items.models import Item
 from customers.models import Customer
 
-logger = logging.getLogger(__name__)
 
 # Create your models here.
 class Order(models.Model):

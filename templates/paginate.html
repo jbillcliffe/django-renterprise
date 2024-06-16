@@ -5,10 +5,10 @@
         <a href="?page={{ page_obj.previous_page_number }}" class="paginate-arrows"><i class="fa-solid fa-angle-left"></i></a>
 
     {% endif %}
-    <span style="padding: 1rem;">
+    <span id="paginator-page-text" style="padding: 1rem;">
         Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
     </span>
-    {% if page_obj.has_next %}
+    {% if page_obj.has_next %} 
 
         <a href="?page={{ page_obj.next_page_number }}" class="paginate-arrows"><i class="fa-solid fa-angle-right"></i></a>
         <a href="?page={{ page_obj.paginator.num_pages }}" class="paginate-arrows"><i class="fa-solid fa-angles-right"></i></a>
