@@ -22,17 +22,17 @@
             {% else %}
                 <div class="content-holder">
                     <p style="display:none;">{{ customer_token_value }}</p>
-                    <div class="row">
-                        <div class="col-6">
+                    <div id="customer-view-data" class="row">
+                        <div class="col-5">
                             <h2>{{ customer.full_name }}</h2>
                         </div>
-                        <div class="col-3">
+                        <div class="col-2">
                             {% if customer.customer_css_status == "deceased" %}
                                 <h2 class="{{ customer.customer_css_status }}">{{ item.status_str }}</h2>
                             {% endif %}
                         </div>
-                        <div class="col-3">
-                            <p>Created On : {{ customer.created_on }}</p>
+                        <div class="col-5">
+                            <p>Created On : {{ customer.created_on|date:"jS M Y" }}</p>
                         </div>
                     </div>
                     <div class="row">

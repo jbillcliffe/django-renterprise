@@ -37,7 +37,7 @@ main {
 
 /* ensures flex on these bootstrap elements */
 .container-fluid, .row, div[class*="col-"] {
-    display:flex !important;
+    display:flex;
 } 
 
 /* H TAG STYLING */
@@ -203,7 +203,6 @@ https://www.w3schools.com/howto/howto_css_animate_buttons.asp */
     background-color: #FF0000;
     box-shadow: 0 9px #999999, 5px 5px 10px #393D3F;
     text-shadow: 0px 1px 5px #FFFFFF;
-    margin: 0.5vw auto;
     border: 1mm groove #FF0000;
     color: #FFFFFF;
 }
@@ -482,6 +481,7 @@ of the theme.*/
     width: 100%;
     padding: 3rem;
     background: #696969;
+    overflow:auto;
 }
 
 .content-holder.black {
@@ -576,6 +576,10 @@ of the theme.*/
     justify-content: center;
 }
 
+.paginator-page-text {
+    padding: 1rem;
+}
+
 .paginate-arrows {
     color:#FFFFFF;
     text-shadow: 0px 1px 5px #000000;
@@ -650,6 +654,14 @@ ul.nav {
 
 .side-bar.nav-link {
     font-size: 60%;
+}
+
+i.nav-awesome {
+    padding: 0.5rem;
+}
+
+hr.nav-hr {
+    color:black;
 }
 
 .side-bar.nav-link:not(.display-only) {
@@ -797,6 +809,11 @@ form {
     margin-top: 1.3rem;
 }
 
+.form-label.black {
+    color: #000000;
+    text-shadow: none;
+}
+
 #customer-form {
     width: 80%;
 }
@@ -866,7 +883,7 @@ form {
 
 .item-details-container.split,
 .order-details-container.split {
-    width:30%;
+    width:45%;
     display:flex;
     flex-direction: column;
     margin: 1rem;
@@ -874,7 +891,7 @@ form {
 
 .item-details-container.split-end,
 .order-details-container.split-end {
-    width:30%;
+    width:45%;
     display:flex;
     flex-direction: column;
     align-items: flex-end;
@@ -934,4 +951,187 @@ h3.modal-title {
 .bold-warning-text {
     font-weight:bold;
     color: #FF0000;
+}
+
+#invoiceSubmit,
+#invoiceCancel {
+    width:40%;
+}
+
+@media only screen and (max-width: 1040px) {
+
+    .nav.flex-column {
+        width: 280px;
+    }
+
+    .button {
+        font-size: 2vw;
+        width:35%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .content-holder, 
+    .content-holder.centre {
+        justify-content: flex-start;
+    }
+
+    #notes-list>div.table-row.table-head>* {
+        display:none;
+    }
+
+    .note-row, #notes-list>div.table-row {
+        font-size:small;
+    }
+
+    .table-row>.col-2 {
+        width: 30%;
+        justify-content: center;
+    }
+    .table-row>.col-9 {
+        width: 60%;
+        justify-content: center;
+    }
+    .table-row>.col-1 {
+        width: 10%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .button {
+        font-size: 2.5vw;
+        width:45%;
+    }
+
+    
+    div.centre-heading>* {
+        font-size:3vw;
+    }
+
+    #customer-view-data>div {
+        width:100%;
+    }
+
+    div.table-row>div.col-3 {
+        width:40%;
+    }
+    div.table-row>div.col-1 {
+        width:20%;
+    }
+    div.table-row>div.col-5 {
+        display:none;
+        width:0%;
+    }
+    
+    #paginator-page-text {
+        display:none;
+    }
+
+    div.table-row {
+        justify-content: center;
+    }
+
+    hr.nav-hr {
+        margin: 0.2rem 0;
+    }
+
+    i.nav-awesome {
+        display: none;
+    }
+
+    /*.note-editor,
+    .note-frame,
+    .card,
+    .note-editor.note-frame.card,
+    #id_note_iframe,
+    .summernote-div {
+        width:300px;
+        height:250px;
+    }*/
+    /*.note-editor.note-frame.card {
+        width:300px;
+    }*/
+    div.summernote-div,
+    iframe.note-fullscreen,
+    iframe#id_note_iframe {
+        width: 300px !important;
+        height: 300px !important;
+    }
+
+    .note-editor.note-frame.card,
+    .note-editable.card-block,
+    .note-toolbar.card-header,
+    .note-editing-area {
+        width: 300px !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    p,
+    label,
+    legend { 
+        font-size:small;
+    }
+
+    .note-row, #notes-list>div.table-row {
+        font-size:smaller;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    #notes-list {
+        width: 100%;
+    }
+
+    #notes-list>div.table-row>.col-1 {
+        font-size:small;
+        width:50%;
+    }
+
+    #notes-list>div.table-row>.col-9 {
+        display:none;
+    }
+
+    #notes-list>div.table-row>.col-2 {
+        font-size:small;
+        width:50%;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+
+    .header-menu li { 
+        font-size:small;
+    }
+    .social-networks i {
+        font-size:25px;
+    }
+    
+    .button {
+        font-size: 4vw;
+        width:45%;
+    }
+    div.table-row.table-head>* {
+        display:none;
+    }
+    
+    #customer-list>div.table-row>div[class*="col-"]:nth-child(3) {
+        display:none;
+    }
+
+    div.table-row>div.col-3 {
+        width:80%;
+    }
+    div.col-1 {
+        width:20%;
+    }
+
+    .note-row, #notes-list>div.table-row {
+        font-size:smallest;
+    }
+
+    
 }

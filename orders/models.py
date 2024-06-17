@@ -18,7 +18,7 @@ class Order(models.Model):
     )
     cost_initial = models.DecimalField(max_digits=6, decimal_places=2)
     cost_week = models.DecimalField(max_digits=6, decimal_places=2)
-    
+
     start_date = models.DateField()
     end_date = models.DateField()
     created_on = models.DateTimeField(auto_now_add=True)
@@ -40,7 +40,7 @@ class Order(models.Model):
 
     def order_item_name(self):
         return f"{self.item.item_type.name}"
-        
+
 
 class OrderNote(models.Model):
 
@@ -65,17 +65,18 @@ class OrderNote(models.Model):
         if self.order.customer.first_name in self.null_values:
             return f"{self.order.customer.last_name}"
         else:
-            return f"{self.order.customer.first_name} {self.order.customer.last_name}"
+            return f"{self.order.customer.first_name} {
+                self.order.customer.last_name}"
 
     def created_on_by(self):
         date_to_string = self.created_on.strftime("%d-%m-%Y")
-        return f"Created on : {date_to_string}, By : {self.created_by.username}"
+        return f"{date_to_string}"
 
-    
+
 class Invoice(models.Model):
 
     null_values = [None, 'None', 'none', 'null', 'Null']
-    
+
     order = models.ForeignKey(
         Order, on_delete=models.CASCADE, related_name="invoice_order"
     )
@@ -91,17 +92,17 @@ class Invoice(models.Model):
     def __str__(self):
         return f"Invoice ID : {self.id}"
 
-    #will send a string of true/false
+    # will send a string of true/false
     def invoice_css_status(self):
-        if self.status == True or self.status == "True":
+        if self.status is True or self.status == "True":
             self = str("paid")
-        else :
+        else:
             self = str("")
         return self
-    
+
     def invoice_customer_name(self):
         if self.order.customer.first_name in self.null_values:
             return f"{self.order.customer.last_name}"
         else:
-            return f"{self.order.customer.first_name} {self.order.customer.last_name}"
-        
+            return f"{self.order.customer.first_name} {
+                self.order.customer.last_name}"

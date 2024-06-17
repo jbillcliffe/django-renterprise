@@ -15,6 +15,8 @@ import os
 import dj_database_url
 from django.contrib.messages import constants as messages
 
+# This creates an error in linting, however env does get imported in
+# testing environment.
 if os.path.isfile('env.py'):
     import env
 
@@ -27,13 +29,15 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['8000-jbillcliffe-django-rente-hzqu84wj3t.us1.codeanyapp.com']
-
-ALLOWED_HOSTS = [ ".codeanyapp.com", ".herokuapp.com", ".gitpod.io", ".codeinstitute-ide.net" ]
+ALLOWED_HOSTS = [
+    ".codeanyapp.com",
+    ".herokuapp.com",
+    ".gitpod.io",
+    ".codeinstitute-ide.net"
+]
 
 # Application definition
 
@@ -138,7 +142,8 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 # To prevent brute force attacks
 ACCOUNT_LOGIN_ATTEMPTS_LIMIT = 5
-ACCOUNT_LOGIN_ATTEMPTS_TIMEOUT = 86400 # 1 day in seconds
+# 1 day in seconds
+ACCOUNT_LOGIN_ATTEMPTS_TIMEOUT = 86400
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
@@ -154,7 +159,7 @@ LOGGING = {
             "filename": "general.log",
             "level": "DEBUG",
             "formatter": "verbose",
-        }, 
+        },
     },
     "loggers": {
         "": {
@@ -185,19 +190,20 @@ MESSAGE_TAGS = {
 TIME_ZONE = 'UTC'
 
 DATE_FORMAT = '%d/%m/%Y'
-DATE_INPUT_FORMATS =  ['%d/%m/%Y']
+DATE_INPUT_FORMATS = ['%d/%m/%Y']
 DATETIME_FORMAT = '%d/%m/%Y : %H:%M'
-DATETIME_INPUT_FORMATS =  ['%d/%m/%Y : %H:%M']
+DATETIME_INPUT_FORMATS = ['%d/%m/%Y : %H:%M']
 
 USE_I18N = True
 
 USE_TZ = True
+SUMMERNOTE_THEME = "bs5"
 
 SUMMERNOTE_CONFIG = {
     'summernote': {
         # Change editor size
-        'height': '260px',
-        'width': '450px',
+        'height': '400px',
+        'width': '400px',
     },
 }
 
@@ -205,8 +211,10 @@ SUMMERNOTE_CONFIG = {
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-#Django to use Cloudinary instead
+
+# Django to use Cloudinary instead
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 

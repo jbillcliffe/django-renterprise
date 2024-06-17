@@ -10,7 +10,7 @@
     <div class="container-fluid">
         {% include "side-nav.html" %}
         {% if user.is_authenticated %}
-            <div class="table-holder">
+            <div id="customer-list" class="table-holder">
                 <div class="centre-heading">
                     <h2>View All Customers</h2>
                     <hr class="renterprise" style="width:80%;">
@@ -22,15 +22,15 @@
                     <div class="col-1"></div>
                 </div>
                 {% for customer in customer_list %}
-                    <div class="table-row {{ customer.customer_css_status }}">
-                        <div class="col-3">{{ customer.full_name }}</div>
-                        <div class="col-5">{{ customer.address_line_one }}</div>
-                        <div class="col-3">{{ customer.postcode }}</div>
-                        <div class="col-1">
-                            <a class="button-table view"
-                               href="{% url 'customers:customer_view' customer.customer_token %}"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        </div>
+                <div class="table-row {{ customer.customer_css_status }}">
+                    <div class="col-3">{{ customer.full_name }}</div>
+                    <div class="col-5">{{ customer.address_line_one }}</div>
+                    <div class="col-3">{{ customer.postcode }}</div>
+                    <div class="col-1">
+                        <a class="button-table view"
+                            href="{% url 'customers:customer_view' customer.customer_token %}"><i class="fa-solid fa-magnifying-glass"></i></a>
                     </div>
+                </div>
                 {% endfor %}
                 {% include "paginate.html" %}
             </div>

@@ -17,7 +17,7 @@ function getCookie(name) {
 }
 const csrftoken = getCookie('csrftoken');
 
-const invoiceModal = new bootstrap.Modal(document.getElementById("invoiceModal"));
+const invoiceModal = new bootstrap.Modal(document.getElementById("invoiceModal"), {backdrop: false});
 
 //const modalContent = document.getElementById("modalBody");
 const modalId = document.getElementById("invoiceModal");
@@ -36,7 +36,10 @@ const modalInvoiceAmountRow = document.getElementById("modal-amount-row");
 const modalInvoiceTextRow = document.getElementById("modal-text-row");
 
 const invoiceTableCreateButton = document.getElementById("create-invoice-load-modal");
+const sidebarInvoiceCreateButton = document.getElementById("sidebar-add-invoice");
+
 invoiceTableCreateButton.addEventListener("click", populateInvoiceCreateModal);
+sidebarInvoiceCreateButton.addEventListener("click", populateInvoiceCreateModal);
 
 const invoiceTableButtons = document.getElementsByClassName("button-table view invoice");
 const invoiceConfirm = document.getElementById("invoiceConfirm");
@@ -52,42 +55,47 @@ for (let button of invoiceTableButtons) {
 
 function populateInvoiceCreateModal() {
 
+    sidebarInvoiceCreateButton.classList.add("active");
+
     modalInvoiceContent.innerHTML=
-    `<div id="modal-content" class="modal-content">
-        <div class="modal-header">
-            <h3 class="modal-title invoice" id="modalLabel">Create Invoice</h3>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div id="modalBody" class="modal-body">
-            <form id="invoice-create-form" name="invoiceForm" method="POST">
-                <input type="hidden" name="csrfmiddlewaretoken" value="${csrftoken}">
-                <div id="div_id_amount_paid" class="mb-3">
-                    <label for="invoice-modal-create-amount-paid" class="form-label requiredField">
-                        Amount <span class="asteriskField">*</span>
-                    </label>
-                    <input type="number" name="amount_paid" step="1.00" class="numberinput form-control" 
-                        required="" id="invoice-modal-create-amount-paid">   
+    `<div class="modal-header">
+        <h3 class="modal-title invoice" id="modalLabel">Create Invoice</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="closeInvoiceModal()" aria-label="Close"></button>
+    </div>
+    <div id="modalBody" class="modal-body">
+        <form id="invoice-create-form" name="invoiceForm" method="POST">
+            <input type="hidden" name="csrfmiddlewaretoken" value="${csrftoken}">
+            <div id="div_id_amount_paid" class="mb-3">
+                <label for="invoice-modal-create-amount-paid" class="form-label black requiredField">
+                    Amount <span class="asteriskField">*</span>
+                </label>
+                <input type="number" name="amount_paid" step="1.00" class="numberinput form-control" 
+                    required="" id="invoice-modal-create-amount-paid">   
+            </div>
+            <div id="div_id_note" class="mb-3">
+                <label for="invoice-modal-create-note" class="form-label black requiredField">
+                    Note <span class="asteriskField">*</span>
+                </label>
+                <input type="text" name="note" class="textinput form-control" 
+                    required="" id="invoice-modal-create-note">
+            </div>
+            <div class="modal-footer">
+                <div class="row" style="width:100%;">
+                    <a id="invoiceSubmit" onclick="submitInvoiceToView()" 
+                        class="button centre-align" style="width:40%;">Submit</a>
+                    <a id="invoiceCancel" href="" class="button centre-align red"
+                        data-bs-dismiss="modal" onclick="closeInvoiceModal()" style="width:40%;">Cancel</a>
+                    <a id="hidden-invoice-create-confirm" href="" id="submit-id-submit" hidden>Submit</a>
                 </div>
-                <div id="div_id_note" class="mb-3">
-                    <label for="invoice-modal-create-note" class="form-label requiredField">
-                        Note <span class="asteriskField">*</span>
-                    </label>
-                    <input type="text" name="note" class="textinput form-control" 
-                        required="" id="invoice-modal-create-note">
-                </div>
-                <div class="modal-footer">
-                    <div class="row" style="width:100%;">
-                        <a id="invoiceSubmit" onclick="submitInvoiceToView()" 
-                            class="button centre-align" style="width:75%;">Submit</a>
-                        <a id="invoiceCancel" href="" class="button centre-align red"
-                            data-bs-dismiss="modal" style="width:75%; margin-top:1.3rem;">Cancel</a>
-                        <a id="hidden-invoice-create-confirm" href="" id="submit-id-submit" hidden>Submit</a>
-                    </div>
-                </div>
-            </form>
-        </div>
+            </div>
+        </form>
     </div>`;
+
     invoiceModal.show();
+}
+
+function closeInvoiceModal() {
+    sidebarInvoiceCreateButton.classList.remove("active");
 }
 
 function populateInvoiceDetailsModal() {
@@ -114,37 +122,35 @@ function populateInvoiceDetailsModal() {
     }
 
     modalInvoiceContent.innerHTML=
-    `<div id="modal-content" class="modal-content">
-        <div class="modal-header">
-            <h3 class="modal-title invoice" id="modalLabel">Invoice Details</h3>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    `<div class="modal-header">
+        <h3 class="modal-title invoice" id="modalLabel">Invoice Details</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div id="modalBody" class="modal-body">
+        <div id="modal-id-row" class="row">
+            <h4 id="modal-id">Invoice No. : ${invoiceId}</h4>
         </div>
-        <div id="modalBody" class="modal-body">
-            <div id="modal-id-row" class="row">
-                <h4 id="modal-id">Invoice No. : ${invoiceId}</h4>
-            </div>
-            <hr>
-            <div id="modal-date-row" class="row">
-                <p id="modal-date"><b>Date</b>: ${invoiceDate}</p>
-            </div>
-            <hr>
-            <div id="modal-notes-row" class="row">
-                <p id="modal-notes-title">Notes :</p>
-                <p id="modal-note">${invoiceNote}</p>
-            </div>
-            <hr>
-            <div id="modal-amount-row" class="row">
-                <p id="modal-amount">${amountString}</p>
-            </div>
-            <div id="modal-text-row" class="row">
-                <p id="modal-text">${textString}</p>
-            </div>
-            <div class="modal-footer" style="justify-content:space-between;">
-                <a id="invoiceCancel" href="" class="btn btn-danger"
-                    data-bs-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i> Cancel </a>
-                <a id="invoiceConfirm" href="${hrefString}" class="btn
-                    btn-success"><i class="fa-solid fa-sterling-sign"></i> Change </a>
-            </div>
+        <hr>
+        <div id="modal-date-row" class="row">
+            <p id="modal-date"><b>Date</b>: ${invoiceDate}</p>
+        </div>
+        <hr>
+        <div id="modal-notes-row" class="row">
+            <p id="modal-notes-title">Notes :</p>
+            <p id="modal-note">${invoiceNote}</p>
+        </div>
+        <hr>
+        <div id="modal-amount-row" class="row">
+            <p id="modal-amount">${amountString}</p>
+        </div>
+        <div id="modal-text-row" class="row">
+            <p id="modal-text">${textString}</p>
+        </div>
+        <div class="modal-footer" style="justify-content:space-between;">
+            <a id="invoiceCancel" href="" class="btn btn-danger"
+                data-bs-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i> Cancel </a>
+            <a id="invoiceConfirm" href="${hrefString}" class="btn
+                btn-success"><i class="fa-solid fa-sterling-sign"></i> Change </a>
         </div>
     </div>`;
     invoiceModal.show();
