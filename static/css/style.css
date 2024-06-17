@@ -27,7 +27,7 @@ main {
     background-color: #7785AC; 
     padding: 1rem 0rem;
     z-index:-1;
-    height: 80vh;
+    height: 78vh;
 }
 
 /* Remove the modal background, which was intercepting the content*/
@@ -326,37 +326,64 @@ for the user account features (login,logout,view)*/
     justify-content: flex-end;
 }
 
-.navigation-list {  
-    margin: auto 3rem auto 0;
+#side-navigation-bar {  
+    margin: auto 1rem auto 0;
     display: flex;
+    flex-direction: column;
     align-items: baseline;
-    justify-content: center;
+    /*justify-content: center;*/
+    /*margin: 0;*/
+    height: 100%;
+    background: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    padding: 1rem 0;
+    width:350px;
 }
 
-/*Hidden burger button, which is actually a hidden checkbox.*/
-.burger-btn {
-    display: none;
+#side-navigation-bar>ul {
+    list-style-type:none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:100%;
 }
 
-/*This is a label which is what the user interacts with. Default invisible, 
-made visible at a particular screen width resolution in media queries*/
-.burger-icon {
-    cursor: pointer;
+#collapse-sidebar {
+    display:none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+    cursor:pointer;
+    width:100%;
+    padding-right:0;
+}
+
+span#menu-text-holder {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    padding: 15px;
-    user-select: none;
-    visibility: hidden;
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 100%;
+    align-items: center;
+    padding-right: 1rem;
+    width: 100%;
+}
+#side-menu-text {
+    width:100%;
+    color:#000000;
+    text-shadow:none;
+    text-decoration:none;
 }
 
-/*turn blue when hovering over the burger menu icon*/
-.burger-icon:hover {
-    color: #C9F0FF;
-}
+
+/*#side-navigation-bar {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    width: 25%;
+    height: 100%;
+    max-width: 350px;
+}*/
 
 /*Styling each link in the header menu (each list item). 
  List style type:none means that no bullet points are made.*/
@@ -434,9 +461,9 @@ height of the footer*/
 /*styling for the font awesome "i" tags, setting text field size, font colour
 line height to create a centring effect*/
 .social-networks i {
-    font-size: 40px;
-    height: 50px;
-    width: 50px;
+    font-size: 35px;
+    height: 40px;
+    width: 40px;
     line-height: 50px;
     color: #FFFFFF;
     text-shadow: 0px 1px 5px #000000;
@@ -641,18 +668,9 @@ of the theme.*/
     justify-content: center;
 }
 
-ul.nav {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    background: #FFFFFF;
-    border: 1px solid #D3D3D3;
-    width: 25%;
-    height: 100%;
-    max-width: 350px;
-}
 
-.side-bar.nav-link {
+
+#side-navigation-bar>ul>li>a.nav-link {
     font-size: 60%;
 }
 
@@ -664,27 +682,36 @@ hr.nav-hr {
     color:black;
 }
 
-.side-bar.nav-link:not(.display-only) {
+#side-navigation-bar>ul>li>.nav-link:not(.display-only) {
     color:#000000;
     text-shadow: none;
     text-decoration: none;
 }
 
-.side-bar.nav-link:hover:not(.display-only),
-.side-bar.nav-link.active:not(.display-only),
-.side-bar.nav-link.display-only.active {
+#side-navigation-bar>ul>li>.nav-link:hover:not(.display-only),
+#side-navigation-bar>ul>li>.nav-link.active:not(.display-only),
+#side-navigation-bar>ul>li>.nav-link.display-only.active {
     color: #FFFFFF;
     text-shadow: 0px 1px 5px #000000;
     background-color: #1b9964;
 }
 
-.side-bar.nav-link.display-only {
+#collapse-sidebar:hover {
+    background-color: #1b9964;
+}
+
+#collapse-sidebar:hover a, #collapse-sidebar:hover i {
+    color: #FFFFFF;
+    text-shadow: 0px 1px 5px #000000;
+}
+
+#side-navigation-bar>ul>li>.nav-link.display-only {
     color:#000000;
     text-shadow: none;
     text-decoration: underline;
     font-weight:bold;
 }
-.side-bar.nav-link.display-only.status {
+#side-navigation-bar>ul>li>.nav-link.display-only.status {
     color:#0000FF;
     text-shadow: none;
     text-decoration: none;
@@ -960,7 +987,7 @@ h3.modal-title {
 
 @media only screen and (max-width: 1040px) {
 
-    .nav.flex-column {
+    #side-navigation-bar {
         width: 280px;
     }
 
@@ -1005,6 +1032,10 @@ h3.modal-title {
         width:45%;
     }
 
+    #side-navigation-bar>ul>li {
+        font-size: medium;
+    }
+
     
     div.centre-heading>* {
         font-size:3vw;
@@ -1015,7 +1046,7 @@ h3.modal-title {
     }
 
     div.table-row>div.col-3 {
-        width:40%;
+        width:30%;
     }
     div.table-row>div.col-1 {
         width:20%;
@@ -1041,18 +1072,6 @@ h3.modal-title {
         display: none;
     }
 
-    /*.note-editor,
-    .note-frame,
-    .card,
-    .note-editor.note-frame.card,
-    #id_note_iframe,
-    .summernote-div {
-        width:300px;
-        height:250px;
-    }*/
-    /*.note-editor.note-frame.card {
-        width:300px;
-    }*/
     div.summernote-div,
     iframe.note-fullscreen,
     iframe#id_note_iframe {
@@ -1075,8 +1094,35 @@ h3.modal-title {
         font-size:small;
     }
 
+    #side-navigation-bar>ul>li.nav-item>a.nav-link>i {
+
+        display: none;
+    }
+
+    .social-networks i {
+        font-size:25px;
+    }
+
     .note-row, #notes-list>div.table-row {
         font-size:smaller;
+    }
+
+    #orders-list>div.table-row {
+        font-size: small;
+    }
+
+    #orders-list>div.table-row>div[class*="col-"]:nth-child(2),
+    #orders-list>div.table-row>div[class*="col-"]:nth-child(3) {
+        display:none;
+        width:0%;
+    }
+
+    #orders-list>div.table-row>div[class*="col-"]:nth-child(1) {
+        width: 70%;
+    }
+
+    #orders-list>div.table-row>div[class*="col-"]:nth-child(4) {
+        width: 30%;
     }
 }
 
@@ -1099,15 +1145,20 @@ h3.modal-title {
         font-size:small;
         width:50%;
     }
+
+    #side-navigation-bar {
+        width: 200px;
+    }
+
+    .side-bar.nav-link {
+        font-size: 50%;
+    }
 }
 
 @media only screen and (max-width: 460px) {
 
     .header-menu li { 
         font-size:small;
-    }
-    .social-networks i {
-        font-size:25px;
     }
     
     .button {
@@ -1122,9 +1173,11 @@ h3.modal-title {
         display:none;
     }
 
-    div.table-row>div.col-3 {
+    #customer-list>div.table-row>div.col-3 {
         width:80%;
     }
+
+    
     div.col-1 {
         width:20%;
     }
@@ -1132,6 +1185,36 @@ h3.modal-title {
     .note-row, #notes-list>div.table-row {
         font-size:smallest;
     }
+}
 
-    
+@media only screen and (max-width: 400px) {
+    .container-fluid {
+        flex-direction: column;
+    }
+
+    /*#side-navigation-bar {
+        width:100%;
+    }*/
+
+    #side-navigation-bar {
+        flex-direction: row !important;
+        padding: 0.3rem;
+        width:100%;
+        height:auto;
+        max-width:100%;
+        margin:0;
+    }
+
+    #collapse-sidebar {
+        display:flex;
+    }
+
+    .table-holder {
+        padding: 0.3rem;
+        width: 100%;
+    }
+
+    .nav-hr {
+        display:none;
+    }
 }

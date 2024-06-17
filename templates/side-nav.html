@@ -1,5 +1,11 @@
-<ul class="nav flex-column">
+<nav id="side-navigation-bar" class="nav flex-column">
+    <ul>
     {% with request.resolver_match.url_name as url_name %}
+        <li id="collapse-sidebar" class="nav-item collapse">
+            <span id="menu-text-holder"><a id="side-menu-text" class="side-bar nav-link">Menu</a><i class="fa-solid fa-circle-down"></i></span>
+            
+            
+        </li>
         <li class="nav-item">
             <a href="{% url 'menu:menu' %}" target="_self" class="side-bar nav-link">
                 <i class="nav-awesome fa-solid fa-house"></i> Home
@@ -227,4 +233,5 @@
             <li></li>
         {% endif %}
     {% endwith %}
-</ul>
+    </ul>
+</nav>
