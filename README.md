@@ -183,25 +183,277 @@ Although not principally designed for smaller devices such as mobile phones (it'
 
 ## Linting
 ---
+
 Given the framework involved. Using a standard linter was not strictly the best option. I did manage to install a a django specific linter called djLint which worked within the IDE, this was also combined with Flake8 and it also worked with the html templates too. No python files have any poorly formated areas of code. 
 Except for in renterprise.settings where :
 - Some setting strings are too long, but cannot be broken up and this would render them unusable.
 - In the templates. Intially, I had some inline styles, now wherever possile they are part of the css style sheet.
+- No errors arrive through the linter/template analysis.
 
 
+## Manual Testing
+---
 
+This section is broken down into the different areas of the program and to how it is expected to function.
+
+### Main Menu
+---
+
+- [x] Log out?     
+- [x] Force log in?  
+- [x] Register?            
+- [x] Functioning nav buttons?            
+- [x] Header logo back to home?
+- [x] Social Media links?            
+
+### Admin
+---
+
+- [x]  Able to edit existing entries?         
+- [x]  Can only access as a user?              
+- [x]  Force login if trying to access via url?   
+
+### Create Customer
+---
+
+- [x]  Create customer fields valid where needs to be?           
+- [x]  Validate clearly states where to edit?             
+- [x]  Feedback on submission?                   
+- [x]  Navigate to created customer on submission?        
+- [x]  Drop down for counties for future filtering?                          
+- [x]  Return to customer list button?  
+
+### View Customer
+---
+
+- [x]  All fields clearly visible?
+- [x]  Seperation of data to maximise use of space
+- [x]  Side bar shows correct options?<br>
+        1. [x] Back to customer list<br>
+        2. [x] Display Name<br>
+        3. [x] Customer Notes<br>
+        4. [x] Customer Orders<br>
+        5. [x] New Order<br>
+        6. [x] Current status<br>
+        7. [x] Change status buttons<br>
+- [x]  Status buttons restrictons if archived/deceased?
+- [x]  Status button updates customer?
+
+### Customer List
+---
+
+- [x]  Pagination?
+- [x]  List has clickable element to go to customer?
+- [x]  Hide archived customers?
+- [x]  Show customers who are deceased clearly?
+
+### Customer Notes
+---
+
+- [x]  Show notes in a list format?
+- [x]  View individual notes by permission (to then edit)?
+- [x]  Add note button to go to create note screen?
+- [x]  Pagination?
+- [x]  Return To Customer button?
+- [x]  Sidebar?<br>
+        1. [x] Home<br>
+        2. [x] Customer List (back to)<br>
+        3. [x] Display name<br>
+        4. [x] Customer Notes (active when on list screen)<br>
+        5. [x] Add Customer Note (active when on note screen)<br>
+- [x]  Return to notes list when note created
+
+### Create Order
+---
+
+- [x]  Form presented in stages?
+- [x]  Collection after delivery?
+- [x]  Item has to be selected before moving forward to price?
+- [x]  Default pricing inserted when item selected (can be changed)?
+- [x]  Reset item if dates changed to something invalid?
+- [x]  Hide create order button until all is valid?
+- [x]  Only show valid orderable items for time period?
+- [x]  Paginate items if necessary?
+- [x]  Create first invoice on submission?
+- [x]  Navigate to order view when submitted successfully.
+
+### View Order
+---
+
+- [x]  Display all data clearly?
+- [x]  Display item image?
+- [x]  Sidebar correct?<br>
+        1. [x] Home<br>
+        2. [x] Customer List (back to)<br>
+        3. [x] Display name<br>
+        4. [x] Display order number<br>
+        5. [x] Order Notes (active when on list screen)<br>
+        6. [x] Add Invoice successfully loads modal?<br>
+        7. [x] Customer orders (to order list)<br>
+- [x]  Invoice window shows all invoices?
+- [x]  Paginate invoices?
+- [x]  View/Edit invoices?
+- [x]  Create invoices?
+
+### Order Notes
+---
+
+- [x]  Show notes in a list format?
+- [x]  View individual notes by permission (to then edit)?
+- [x]  Add note button to go to create note screen?
+- [x]  Pagination?
+- [x]  Return To Order button?
+- [x]  Sidebar?<br>
+        1. [x] Home<br>
+        2. [x] Customer List (back to)<br>
+        3. [x] Display name<br>
+        4. [x] Display order number<br>
+        4. [x] Order Notes (active when on list screen)<br>
+        5. [x] Add Order Note (active when on note screen)<br>
+- [x]  Return to order notes list when note created?
+
+### Items List 
+---
+
+- [x] Show list of items?
+- [x] Paginate list of items?
+- [x] Clearly show status of items?
+- [x] Sidebar correct?<br>
+        1. [x] Home<br>
+        2. [x] Item List (active when on list)<br>
+        3. [x] New Item (active when creating item)<br>
+        4. [x] New Item Type (active when creating item type)<br>
+- [x] Can click an item to view it?
+
+### Item View
+---
+
+- [x] Show data clearly?
+- [x] Show item image?
+- [x] Return to item list button?
+- [x] Sidebar correct?<br>
+        1. [x] Home<br>
+        2. [x] Item List (active when on list)<br>
+        3. [x] Current status display<br>
+        4. [x] Edit status buttons, do not show button for current status<br>
+- [x] Status buttons pop up modal to confirm.
+- [x] Status change reloads window, showing new status
+
+### New Item
+---
+
+- [x] Validate form fields?
+- [x] Clearly display where data is required?
+- [x] On save go to item view of the item made?
+
+### New Item Type
+---
+
+- [x]  Validate fields?
+- [x]  Allow empty image (will save as placeholder)?
+- [x]  Clearly show where data required
+- [x]  Return to items list on save
+- []  Show previous categories 
+This would be in a future release
+
+
+# Deployment
+
+To deploy this project:
+
+- Fork and clone this repository to your local machine.
+- Create a new Heroku app.
+- In the Heroku dashboard, navigate to the app's settings and set the buildpacks to Python and NodeJS in that order.
+- Connect your Heroku app to the repository by linking it to your forked copy of the repository.
+- Click on the "Deploy" button in the Heroku dashboard.
+- After following these steps, the app is successfully deployed to Heroku.
+
+- NB. You would need your own Credentials from Google to operate your own google spreadsheets. Also a creds.json file would need to be implemented into your own code and added to the .gitignore.
+- This creds file would then be copied and pasted into a VALUE in the Heroku App Settings.
+
+[LIVE RENTERPRISE SOFTWARE](https://portfolio4-django-renterprise-00869e0146b8.herokuapp.com/ "Go to Renterprise")
+
+# Technologies Used
+
+## Languages
+
+- HTML5
+- CSS3
+- Python 3
+- Django Templates
+- Javascript/jQuery
+
+## Relevant Help Links
+1. Back to customers etc.
+https://stackoverflow.com/questions/524992/how-to-implement-a-back-link-on-django-templates
+
+2. How to toggle class
+//https://www.w3schools.com/howto/howto_js_toggle_class.asp
+
+3. get_context help :
+https://stackoverflow.com/questions/37370534/django-listview-where-can-i-declare-variables-that-i-want-to-have-on-template
+
+4. A useful testing tool for debugging/testing<br><br>
+import logging<br>
+logger = logging.getLogger(__name__)<br>
+logger.warning(trace) -> general.log<br>
+
+5. Bootstrap kept overriding button style when it is unwanted.
+Have to use javascript to submit the form and keep FloatingField styles
+- A request to crispy forms to remove default bootstrap styling on form buttons.
+- It was not ideal to work around. However, it was by creating the button in raw HTML
+(customers/forms.py) lines 50/51
+https://github.com/django-crispy-forms/django-crispy-forms/issues/158
+
+6. Adding pagination to a non-class ListView
+https://www.geeksforgeeks.org/how-to-add-pagination-in-django-project/
+
+7. def invoice_create<br>
+**Bug zone**<br>wsgirequest' object has no attribute 'amount_paid'<br>
+Change to same type as status change, to implement as posting form
+is causing problems. So values will be sent by URL.
+the form created by JS. JS dynamically validates the fields
+prior to submission.<br>
+<b>Main fix was in the end dynamically and manipulating javascript to create the form for the modal window and functions associated with it.</b>
+
+8. Best practice for django constants :
+https://stackoverflow.com/questions/12822847/best-practice-for-python-django-constants
+
+
+## Frameworks, Libraries & Programs Used
+
+- Font Awesome[^5]
+- Gitpod[^14]
+- Figma[^1]
+- Heroku[^7]
+- Django Frameworks[^13]
 
 # Technologies Used
 
 ## Python Libraries :
+**Sourced from PyPI**[^8]
 [^101]: django-localflavor is a package that offers additional functionality for particular countries or cultures : https://pypi.org/project/django-localflavor/
 [^102]: django-crispy-forms is a package that allows greater form manipulation and quick template tag insertion :
 https://django-crispy-forms.readthedocs.io/en/latest/
-[^103]: WYSIWYG text editor. Allows for rich text field entries.:
+[^103]: django-summernote is a "WYSIWYG" text editor. Allows for rich text field entries.:
 https://pypi.org/project/django-summernote/
-[^104]: djlint : https://open-vsx.org/extension/monosans/djlint
+[^104]: djlint a django template formatting analyser: https://open-vsx.org/extension/monosans/djlint
 [^105]: Flake8 : https://marketplace.visualstudio.com/items?itemName=ms-python.flake8
+bleach - an HTML sanitising library
+cloudinary - an image hosting service to allow uploads and downloads
+dj3-cloudinary-storage - part of the above package for hosting images
+crispy-bootstrap5 - a bootstrap 5 styling for django-crispy-forms
+gunicorn- Gunicorn is a Python WSGI HTTP Server for UNIX
+psycopg2 - Implementation of a PostgreSQL adapter for Python
+pylint-django - a python linter that incorporates django frameworks structure.
+whitenoise - implified static file serving for Python web apps
 
+*NB. There are other libraries but they were installed as part of others.
+
+## Website Tutorials/References
+- W3Schools[^10]
+- Stack Overflow[^11]
+- Pycode[^12]
 
 # References 
 [^1]: Figma is a free website for designing storyboards and wireframes : https://www.figma.com/
@@ -210,6 +462,11 @@ https://pypi.org/project/django-summernote/
 [^4]: Renterprise Portfolio 1 - My own web design I created as part of my first project for Code Institute. This software is an extension of the idea of Renterprise: https://github.com/jbillcliffe/portfolio1-renterprise/
 [^5]: Renterprise Portfolio 3 - My own python console program created as part of my third project for Code Institute. This software is an extension of the idea of Renterprise: https://github.com/jbillcliffe/portfolio3-booking-system/
 [^6]: GitHub projects - A way of creating workflows for a project and being able to manage across teams.: https://github.com/users/jbillcliffe/projects/4
-
-
+[^7]: Heroku - A place to host projects. In this case to host the python terminal. : https://www.heroku.com
+[^8]: PyPI - the package index. Containg a whole wealth of python libraries to plug in: https://pypi.org/
+[^10]: W3Schools- Invaluable for providing details on elements and their attributes and so much HTML/CSS information : https://www.w3schools.com/
+[^11]: Stack Overflow - One of the most important resources for developers : https://stackoverflow.com/
+[^12]: How to do correct formatting for PEP8 : https://peps.python.org/pep-0008/
+[^13]: Django Frameworks. The framework that allows the operation of this as an MVC model : https://www.djangoproject.com/
+[^14]: Gitpod, a cloud based IDE for developing the web application : https://www.gitpod.io
 [^15]: Font Awesome - A great source of free icons to use in many formats : https://www.fontawesome.com
