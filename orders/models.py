@@ -65,8 +65,8 @@ class OrderNote(models.Model):
         if self.order.customer.first_name in self.null_values:
             return f"{self.order.customer.last_name}"
         else:
-            return f"{self.order.customer.first_name} {
-                self.order.customer.last_name}"
+            return f"""{self.order.customer.first_name}
+            {self.order.customer.last_name}"""
 
     def created_on_by(self):
         date_to_string = self.created_on.strftime("%d-%m-%Y")
@@ -104,5 +104,5 @@ class Invoice(models.Model):
         if self.order.customer.first_name in self.null_values:
             return f"{self.order.customer.last_name}"
         else:
-            return f"{self.order.customer.first_name} {
-                self.order.customer.last_name}"
+            return f"""{self.order.customer.first_name}
+            {self.order.customer.last_name}"""
