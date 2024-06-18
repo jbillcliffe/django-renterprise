@@ -124,18 +124,19 @@ CSRF_TRUSTED_ORIGINS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
+ {
+  'NAME': 'django.contrib.auth.password_validation.'
+  'UserAttributeSimilarityValidator',
+ },
+ {
+    'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+ },
+ {
+    'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+ },
+ {
+    'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+ },
 ]
 # Prevent this as it will generate errors without a proper email server
 ACCOUNT_EMAIL_VERIFICATION = 'none'
@@ -202,9 +203,15 @@ SUMMERNOTE_THEME = "bs5"
 SUMMERNOTE_CONFIG = {
     'summernote': {
         # Change editor size
-        'height': '400px',
-        'width': '400px',
+        'height': '250px',
+        'width': '300px',
     },
+    'toolbar': [
+            ['style', ['style']],
+            ['font', ['bold', 'underline', 'clear']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['table', ['table']],
+        ],
 }
 
 # Static files (CSS, JavaScript, Images)

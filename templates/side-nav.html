@@ -1,237 +1,240 @@
 <nav id="side-navigation-bar" class="nav flex-column">
     <ul>
     {% with request.resolver_match.url_name as url_name %}
-        <li id="collapse-sidebar" class="nav-item collapse">
-            <span id="menu-text-holder"><a id="side-menu-text" class="side-bar nav-link">Menu</a><i class="fa-solid fa-circle-down"></i></span>
-            
-            
+        <li id="collapse-sidebar" class="nav-item" data-bs-toggle="collapse" data-bs-target="#rest-of-sidebar" aria-expanded="false" aria-controls="rest-of-sidebar">
+            <span id="menu-text-holder">
+                <a id="side-menu-text" class="side-bar nav-link">Menu
+                </a><i class="fa-solid fa-circle-down"></i>
+            </span>
         </li>
-        <li class="nav-item">
-            <a href="{% url 'menu:menu' %}" target="_self" class="side-bar nav-link">
-                <i class="nav-awesome fa-solid fa-house"></i> Home
-            </a>
-        </li>
-        {% if '/items/' in request.path %}
+        <div id="rest-of-sidebar" class="nav nav-list collapse show">
             <li class="nav-item">
-                <a id="item_list"
-                   href="{% url 'items:item_list' %}"
-                   class="side-bar nav-link {% if url_name == 'item_list' %}active{% endif %}">
-                    <i class="nav-awesome fa-solid fa-table-list"></i> Item List
+                <a href="{% url 'menu:menu' %}" target="_self" class="side-bar nav-link">
+                    <i class="nav-awesome fa-solid fa-house"></i> Home
                 </a>
             </li>
-            <!--url ends at .com/items/ (Item List)-->
-            {% if request.path == '/items/create/' or request.path == '/items/' %}
+            {% if '/items/' in request.path %}
                 <li class="nav-item">
-                    <a id="item_create"
-                       href="{% url 'items:item_create' %}"
-                       class="side-bar nav-link {% if url_name == 'item_create' %}active{% endif %}">
-                        <i class="nav-awesome fa-regular fa-square-plus"></i> New Item
+                    <a id="item_list"
+                    href="{% url 'items:item_list' %}"
+                    class="side-bar nav-link {% if url_name == 'item_list' %}active{% endif %}">
+                        <i class="nav-awesome fa-solid fa-table-list"></i> Item List
                     </a>
                 </li>
-            {% endif %}
-            {% if request.path == '/items/create/item_type/' or request.path == '/items/' %}
-                <li class="nav-item">
-                    <a id="item_type_create"
-                       href="{% url 'items:item_type_create' %}"
-                       class="side-bar nav-link {% if url_name == 'item_type_create' %}active{% endif %}">
-                        <i class="nav-awesome fa-regular fa-square-plus"></i> New Item Type
-                    </a>
-                </li>
-            {% endif %}
-            {% if url_name == 'item_view' %}
-                <hr class="nav-hr">
-                <li class="nav-item">
-                    <a class="side-bar nav-link display-only">Current Status :</a>
-                    <a class="side-bar nav-link display-only status">{{ item.status_str }}</a>
-                </li>
-                {% if perms.items %}
+                <!--url ends at .com/items/ (Item List)-->
+                {% if request.path == '/items/create/' or request.path == '/items/' %}
                     <li class="nav-item">
-                        <a class="side-bar nav-link display-only">Change Item Status</a>
-                    </li>
-                    <!--available-->
-                    {% for key, value in item.STATUS %}
-                        {% if key|add:"0" != item.status|add:"0" %}
-                            <li class="nav-option">
-                                <a class="status_button {{ value | lower }}"
-                                   status_value="{{ key }}"
-                                   modal_inner_text="{{ value }}">{{ value }}</a>
-                            </li>
-                        {% endif %}
-                    {% endfor %}
-                {% endif %}
-            {% endif %}
-        {% elif '/customers/' in request.path %}
-            <!--url ends at .com/customers/ (Customer List)-->
-            {% if request.path == '/customers/' or request.path == '/customers/create/' %}
-                <li class="nav-item">
-                    <a id="customer_create"
-                       href="{% url 'customers:customer_create' %}"
-                       class="side-bar nav-link {% if url_name == 'customer_create' %}active{% endif %}">
-                        <i class="nav-awesome fa-solid fa-user-plus"></i> New Customer
-                    </a>
-                </li>
-            {% endif %}
-            <li class="nav-item">
-                <a id="customer_list"
-                   href="{% url 'customers:customer_list' %}"
-                   class="side-bar nav-link {% if url_name == 'customer_list' %}active{% endif %}">
-                    <i class="nav-awesome fa-solid fa-table-list"></i> Customer List
-                </a>
-            </li>
-            {% if customer.full_name %}
-                <!-- have customer name for display purposes-->
-                <hr class="nav-hr">
-                <li class="nav-item">
-                    <a class="side-bar nav-link display-only {% if url_name == 'customer_view' %}active{% endif %}">
-                        <i class="nav-awesome fa-solid fa-image-portrait"></i>{{ customer.full_name }}</a>
-                </li>
-            {% elif customer_token_value %}
-                <hr class="nav-hr">
-                <li class="nav-item">
-                    <a class="side-bar nav-link display-only {% if url_name == 'customer_view' %}active{% endif %}">
-                        <i class="nav-awesome fa-solid fa-image-portrait"></i>{{ full_name }}</a>
-                </li>
-            {% endif %}
-            {% if url_name == 'customer_order_list' %}
-                <hr class="nav-hr">
-                <li class="nav-item">
-                    <a id="customer_order_list" href="#" class="side-bar nav-link active">
-                        <i class="nav-awesome fa-solid fa-folder-tree"></i> Customer Orders
-                    </a>
-                </li>
-                {% if customer.status == 0 %}
-                    <li class="nav-item">
-                        <a id="order_create"
-                           href="{% url 'orders:order_create' customer_token_value %}"
-                           class="side-bar nav-link">
-                            <i class="nav-awesome fa-solid fa-folder-plus"></i> New Order
+                        <a id="item_create"
+                        href="{% url 'items:item_create' %}"
+                        class="side-bar nav-link {% if url_name == 'item_create' %}active{% endif %}">
+                            <i class="nav-awesome fa-regular fa-square-plus"></i> New Item
                         </a>
                     </li>
                 {% endif %}
-            {% elif url_name == 'customer_view' %}
-                <!-- Notes, Order List, New Order-->
-                <li class="nav-item">
-                    <a id="customer_notes_list_id"
-                       href="{% url 'customers:customer_notes_list' customer_token_value %}"
-                       class="side-bar nav-link">
-                        <i class="nav-awesome fa-solid fa-comments"></i> Customer Notes
-                    </a>
-                </li>
-                <hr class="nav-hr">
-                <li class="nav-item">
-                    <a id="customer_order_list"
-                       href="{% url 'customers:customer_order_list' customer.customer_token %}"
-                       class="side-bar nav-link">
-                        <i class="nav-awesome fa-solid fa-folder-tree"></i> Customer Orders
-                    </a>
-                </li>
-                {% if customer.status == 0 %}
+                {% if request.path == '/items/create/item_type/' or request.path == '/items/' %}
                     <li class="nav-item">
-                        <a id="order_create"
-                           href="{% url 'orders:order_create' customer_token_value %}"
-                           class="side-bar nav-link">
-                            <i class="nav-awesome fa-solid fa-folder-plus"></i> New Order
+                        <a id="item_type_create"
+                        href="{% url 'items:item_type_create' %}"
+                        class="side-bar nav-link {% if url_name == 'item_type_create' %}active{% endif %}">
+                            <i class="nav-awesome fa-regular fa-square-plus"></i> New Item Type
                         </a>
                     </li>
                 {% endif %}
-                <hr class="nav-hr">
-                <li class="nav-item">
-                    <a class="side-bar nav-link display-only">Current Status :</a>
-                    <a class="side-bar nav-link display-only status" id="customer-status-id">{{ customer.status_str }}</a>
-                </li>
-                {% if customer.status != 2 %}
-                    {% if perms.customers %}
+                {% if url_name == 'item_view' %}
+                    <hr class="nav-hr">
+                    <li class="nav-item">
+                        <a class="side-bar nav-link display-only">Current Status :</a>
+                        <a class="side-bar nav-link display-only status">{{ item.status_str }}</a>
+                    </li>
+                    {% if perms.items %}
                         <li class="nav-item">
-                            <a class="side-bar nav-link display-only">Customer Status</a>
+                            <a class="side-bar nav-link display-only">Change Item Status</a>
                         </li>
-                        {% for key, value in customer.STATUS %}
-                            {% if key|add:"0" != customer.status|add:"0" %}
+                        <!--available-->
+                        {% for key, value in item.STATUS %}
+                            {% if key|add:"0" != item.status|add:"0" %}
                                 <li class="nav-option">
                                     <a class="status_button {{ value | lower }}"
-                                       status_value="{{ key }}"
-                                       modal_inner_text="{{ value }}">{{ value }}</a>
+                                    status_value="{{ key }}"
+                                    modal_inner_text="{{ value }}">{{ value }}</a>
                                 </li>
                             {% endif %}
                         {% endfor %}
                     {% endif %}
                 {% endif %}
-            {% elif url_name == 'customer_notes_list' or url_name == 'customer_add_notes' %}
+            {% elif '/customers/' in request.path %}
+                <!--url ends at .com/customers/ (Customer List)-->
+                {% if request.path == '/customers/' or request.path == '/customers/create/' %}
+                    <li class="nav-item">
+                        <a id="customer_create"
+                        href="{% url 'customers:customer_create' %}"
+                        class="side-bar nav-link {% if url_name == 'customer_create' %}active{% endif %}">
+                            <i class="nav-awesome fa-solid fa-user-plus"></i> New Customer
+                        </a>
+                    </li>
+                {% endif %}
                 <li class="nav-item">
-                    <a id="customer_notes_list"
-                       href="{% url 'customers:customer_notes_list' customer_token_value %}"
-                       class="side-bar nav-link {% if url_name == 'customer_notes_list' %}active{% endif %}">
-                        <i class="nav-awesome fa-solid fa-comments"></i> Customer Notes
+                    <a id="customer_list"
+                    href="{% url 'customers:customer_list' %}"
+                    class="side-bar nav-link {% if url_name == 'customer_list' %}active{% endif %}">
+                        <i class="nav-awesome fa-solid fa-table-list"></i> Customer List
                     </a>
                 </li>
+                {% if customer.full_name %}
+                    <!-- have customer name for display purposes-->
+                    <hr class="nav-hr">
+                    <li class="nav-item">
+                        <a class="side-bar nav-link display-only {% if url_name == 'customer_view' %}active{% endif %}">
+                            <i class="nav-awesome fa-solid fa-image-portrait"></i>{{ customer.full_name }}</a>
+                    </li>
+                {% elif customer_token_value %}
+                    <hr class="nav-hr">
+                    <li class="nav-item">
+                        <a class="side-bar nav-link display-only {% if url_name == 'customer_view' %}active{% endif %}">
+                            <i class="nav-awesome fa-solid fa-image-portrait"></i>{{ full_name }}</a>
+                    </li>
+                {% endif %}
+                {% if url_name == 'customer_order_list' %}
+                    <hr class="nav-hr">
+                    <li class="nav-item">
+                        <a id="customer_order_list" href="#" class="side-bar nav-link active">
+                            <i class="nav-awesome fa-solid fa-folder-tree"></i> Customer Orders
+                        </a>
+                    </li>
+                    {% if customer.status == 0 %}
+                        <li class="nav-item">
+                            <a id="order_create"
+                            href="{% url 'orders:order_create' customer_token_value %}"
+                            class="side-bar nav-link">
+                                <i class="nav-awesome fa-solid fa-folder-plus"></i> New Order
+                            </a>
+                        </li>
+                    {% endif %}
+                {% elif url_name == 'customer_view' %}
+                    <!-- Notes, Order List, New Order-->
+                    <li class="nav-item">
+                        <a id="customer_notes_list_id"
+                        href="{% url 'customers:customer_notes_list' customer_token_value %}"
+                        class="side-bar nav-link">
+                            <i class="nav-awesome fa-solid fa-comments"></i> Customer Notes
+                        </a>
+                    </li>
+                    <hr class="nav-hr">
+                    <li class="nav-item">
+                        <a id="customer_order_list"
+                        href="{% url 'customers:customer_order_list' customer.customer_token %}"
+                        class="side-bar nav-link">
+                            <i class="nav-awesome fa-solid fa-folder-tree"></i> Customer Orders
+                        </a>
+                    </li>
+                    {% if customer.status == 0 %}
+                        <li class="nav-item">
+                            <a id="order_create"
+                            href="{% url 'orders:order_create' customer_token_value %}"
+                            class="side-bar nav-link">
+                                <i class="nav-awesome fa-solid fa-folder-plus"></i> New Order
+                            </a>
+                        </li>
+                    {% endif %}
+                    <hr class="nav-hr">
+                    <li class="nav-item">
+                        <a class="side-bar nav-link display-only">Current Status :</a>
+                        <a class="side-bar nav-link display-only status" id="customer-status-id">{{ customer.status_str }}</a>
+                    </li>
+                    {% if customer.status != 2 %}
+                        {% if perms.customers %}
+                            <li class="nav-item">
+                                <a class="side-bar nav-link display-only">Customer Status</a>
+                            </li>
+                            {% for key, value in customer.STATUS %}
+                                {% if key|add:"0" != customer.status|add:"0" %}
+                                    <li class="nav-option">
+                                        <a class="status_button {{ value | lower }}"
+                                        status_value="{{ key }}"
+                                        modal_inner_text="{{ value }}">{{ value }}</a>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    {% endif %}
+                {% elif url_name == 'customer_notes_list' or url_name == 'customer_add_notes' %}
+                    <li class="nav-item">
+                        <a id="customer_notes_list"
+                        href="{% url 'customers:customer_notes_list' customer_token_value %}"
+                        class="side-bar nav-link {% if url_name == 'customer_notes_list' %}active{% endif %}">
+                            <i class="nav-awesome fa-solid fa-comments"></i> Customer Notes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="customer_add_notes_id"
+                        href="{% url 'customers:customer_add_notes' customer_token_value %}"
+                        class="side-bar nav-link {% if url_name == 'customer_add_notes' %}active{% endif %}">
+                            <i class="nav-awesome fa-solid fa-comment-medical"></i> Add Customer Note
+                        </a>
+                    </li>
+                {% elif url_name == 'customer_order_view' %}
+                    <li class="nav-item">
+                        <a class="side-bar nav-link display-only active">
+                            <i class="nav-awesome fa-regular fa-folder-open"></i>Order No. {{ customer_order_id }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="customer_order_note_list"
+                        href="{% url 'customers:order_notes_list' customer_token=customer_token_value order_id=customer_order_id %}"
+                        class="side-bar nav-link {% if url_name == 'order_notes_list' %}active{% endif %}">
+                            <i class="nav-awesome fa-solid fa-comments"></i> Order Notes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="sidebar-add-invoice"
+                        href="#"
+                        class="side-bar nav-link">
+                            <i class="nav-awesome fa-solid fa-sterling-sign"></i> Add Invoice
+                        </a>
+                    </li>
+                    <hr class="nav-hr">
+                    <li class="nav-item">
+                        <a id="customer_order_list"
+                        href="{% url 'customers:customer_order_list' customer_token_value %}"
+                        class="side-bar nav-link {% if url_name == 'customer_order_list' %}active{% endif %}">
+                            <i class="nav-awesome fa-solid fa-folder-tree"></i> Customer Orders
+                        </a>
+                    </li>
+                    
+                {% elif url_name == 'order_notes_list' or url_name == 'order_view_notes' or url_name == 'add_order_notes' %}
+                    <li class="nav-item">
+                        <a class="side-bar nav-link display-only">
+                            <i class="nav-awesome fa-regular fa-folder-open"></i>Order No. {{ customer_order_id }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="customer_order_note_list"
+                        href="{% url 'customers:order_notes_list' customer_token=customer_token_value order_id=customer_order_id %}"
+                        class="side-bar nav-link {% if url_name == 'order_notes_list' %}active{% endif %}">
+                            <i class="nav-awesome fa-solid fa-comments"></i> Order Notes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="customer_order_note_add"
+                        href="{% url 'customers:add_order_notes' customer_token=customer_token_value order_id=customer_order_id %}"
+                        class="side-bar nav-link {% if url_name == 'add_order_notes' %}active{% endif %}">
+                            <i class="nav-awesome fa-solid fa-comment-medical"></i> Add Order Note
+                        </a>
+                    </li>
+                {% else %}
+                {% endif %}
+            {% elif '/orders' and not '/customers' in request.path %}
                 <li class="nav-item">
-                    <a id="customer_add_notes_id"
-                       href="{% url 'customers:customer_add_notes' customer_token_value %}"
-                       class="side-bar nav-link {% if url_name == 'customer_add_notes' %}active{% endif %}">
-                        <i class="nav-awesome fa-solid fa-comment-medical"></i> Add Customer Note
-                    </a>
-                </li>
-            {% elif url_name == 'customer_order_view' %}
-                <li class="nav-item">
-                    <a class="side-bar nav-link display-only active">
-                        <i class="nav-awesome fa-regular fa-folder-open"></i>Order No. {{ customer_order_id }}
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a id="customer_order_note_list"
-                       href="{% url 'customers:order_notes_list' customer_token=customer_token_value order_id=customer_order_id %}"
-                       class="side-bar nav-link {% if url_name == 'order_notes_list' %}active{% endif %}">
-                        <i class="nav-awesome fa-solid fa-comments"></i> Order Notes
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a id="sidebar-add-invoice"
-                       href="#"
-                       class="side-bar nav-link">
-                        <i class="nav-awesome fa-solid fa-sterling-sign"></i> Add Invoice
-                    </a>
-                </li>
-                <hr class="nav-hr">
-                <li class="nav-item">
-                    <a id="customer_order_list"
-                       href="{% url 'customers:customer_order_list' customer_token_value %}"
-                       class="side-bar nav-link {% if url_name == 'customer_order_list' %}active{% endif %}">
-                        <i class="nav-awesome fa-solid fa-folder-tree"></i> Customer Orders
-                    </a>
-                </li>
-                
-            {% elif url_name == 'order_notes_list' or url_name == 'order_view_notes' or url_name == 'add_order_notes' %}
-                <li class="nav-item">
-                    <a class="side-bar nav-link display-only">
-                        <i class="nav-awesome fa-regular fa-folder-open"></i>Order No. {{ customer_order_id }}
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a id="customer_order_note_list"
-                       href="{% url 'customers:order_notes_list' customer_token=customer_token_value order_id=customer_order_id %}"
-                       class="side-bar nav-link {% if url_name == 'order_notes_list' %}active{% endif %}">
-                        <i class="nav-awesome fa-solid fa-comments"></i> Order Notes
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a id="customer_order_note_add"
-                       href="{% url 'customers:add_order_notes' customer_token=customer_token_value order_id=customer_order_id %}"
-                       class="side-bar nav-link {% if url_name == 'add_order_notes' %}active{% endif %}">
-                        <i class="nav-awesome fa-solid fa-comment-medical"></i> Add Order Note
+                    <a id="order_list"
+                    href="#"
+                    class="side-bar nav-link {% if url_name == 'order_list' %}active{% endif %}">
+                        <i class="nav-awesome fa-solid fa-folder-tree"></i> Order List
                     </a>
                 </li>
             {% else %}
-            {% endif %}
-        {% elif '/orders' and not '/customers' in request.path %}
-            <li class="nav-item">
-                <a id="order_list"
-                   href="#"
-                   class="side-bar nav-link {% if url_name == 'order_list' %}active{% endif %}">
-                    <i class="nav-awesome fa-solid fa-folder-tree"></i> Order List
-                </a>
-            </li>
-        {% else %}
-            <li></li>
+                <li></li>
         {% endif %}
+        </div>
     {% endwith %}
     </ul>
 </nav>

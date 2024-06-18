@@ -8,7 +8,7 @@
         {% if user.is_authenticated %}
         <div class="content-holder" style="display: flex; flex-direction: row;">
             <div class="order-details-customer">
-                <div class="row">
+                <div id="row-order-holder" class="row">
                     <div class="col-5" style="flex-direction:column;">
                         <div class="item-image-holder">
                             {% if "placeholder" in item.item_type.image.url %}
@@ -111,7 +111,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" style="justify-content: center;">
+                <div class="row" id="order-button-holder">
                     <div class="col-3">
                         <a class="button centre-align wide"
                            href="{% url 'customers:customer_view' customer_token_value %}">Return To Customer</a>

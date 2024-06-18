@@ -69,7 +69,6 @@ class OrderForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper(self)
-        self.helper.label_class = 'form-float-label'
         self.helper.attrs['autocomplete'] = 'off'
         self.helper.layout = Layout(
             Fieldset(
