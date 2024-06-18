@@ -1,4 +1,10 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Renterprise - The Program
+<div style="width:100%; height:100px; background-color:#1D5D40; margin-left:auto;margin-right:auto;">
+<a href="https://portfolio3-renterprise-b7869c717283.herokuapp.com/" target="_self">
+            <img class="header-logo" src="readme/logo-readme-banner.png" alt="Renterprise"
+                aria-label="Renterprise CRM software home page">
+        </a>
+</div>
 
 Welcome,
 
