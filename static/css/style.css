@@ -1283,7 +1283,7 @@ h3.modal-title {
     }
 
     .note-row, #notes-list>div.table-row {
-        font-size:smallest;
+        font-size:smaller;
     }
 }
 

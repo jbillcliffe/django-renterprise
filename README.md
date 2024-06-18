@@ -183,10 +183,12 @@ Although not principally designed for smaller devices such as mobile phones (it'
 
 ## Linting
 ---
-Given the framework involved. Using a standard linter was not strictly the best option. I did manage to install a a django specific linter which worked within the IDE and it also worked with the html templates too. No python files have any poorly formated areas of code. 
+Given the framework involved. Using a standard linter was not strictly the best option. I did manage to install a a django specific linter called djLint which worked within the IDE, this was also combined with Flake8 and it also worked with the html templates too. No python files have any poorly formated areas of code. 
 Except for in renterprise.settings where :
 - Some setting strings are too long, but cannot be broken up and this would render them unusable.
 - In the templates. Intially, I had some inline styles, now wherever possile they are part of the css style sheet.
+
+
 
 
 # Technologies Used
@@ -195,8 +197,10 @@ Except for in renterprise.settings where :
 [^101]: django-localflavor is a package that offers additional functionality for particular countries or cultures : https://pypi.org/project/django-localflavor/
 [^102]: django-crispy-forms is a package that allows greater form manipulation and quick template tag insertion :
 https://django-crispy-forms.readthedocs.io/en/latest/
-[^103]: WYSIWYG text editor. Allows for rich text field entries.  :
+[^103]: WYSIWYG text editor. Allows for rich text field entries.:
 https://pypi.org/project/django-summernote/
+[^104]: djlint : https://open-vsx.org/extension/monosans/djlint
+[^105]: Flake8 : https://marketplace.visualstudio.com/items?itemName=ms-python.flake8
 
 
 # References 
@@ -208,36 +212,4 @@ https://pypi.org/project/django-summernote/
 [^6]: GitHub projects - A way of creating workflows for a project and being able to manage across teams.: https://github.com/users/jbillcliffe/projects/4
 
 
-[^5]: Font Awesome - A great source of free icons to use in many formats : https://www.fontawesome.com
-
-## Codeanywhere Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+[^15]: Font Awesome - A great source of free icons to use in many formats : https://www.fontawesome.com
