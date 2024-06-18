@@ -170,7 +170,8 @@ LOGGING = {
     },
     "formatters": {
         "verbose": {
-            "format": "{name} {levelname} {asctime} {module} {process:d} {thread:d} {message}",
+            "format": "{name} {levelname} {asctime} {module}"
+            " {process:d} {thread:d} {message}",
             "style": "{",
         },
         "simple": {
@@ -220,7 +221,8 @@ SUMMERNOTE_CONFIG = {
 STATIC_URL = 'static/'
 
 # Django to use Cloudinary instead
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.'
+'StaticHashedCloudinaryStorage'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

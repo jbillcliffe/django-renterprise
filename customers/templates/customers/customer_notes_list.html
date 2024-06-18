@@ -13,7 +13,7 @@
                     <div class="centre-heading">
                         <h2>View All Customer Notes For</h2>
                         <h2>{{ full_name }}</h2>
-                        <hr class="renterprise" style="width:80%;">
+                        <hr class="renterprise">
                     </div>
                     {% for note in customernote_list %}
                         {% if forloop.first %}
@@ -59,7 +59,7 @@
                 </div>
             {% else %}
                 <div class="content-holder centre">
-                    <div class="row" style="width: 60%;">
+                    <div class="row wd-60">
                         {% blocktrans %}
                             <p>You need to be logged in to access the program.</p>
                             <p>Log in to continue using this application.</p>

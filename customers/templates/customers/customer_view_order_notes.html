@@ -13,7 +13,7 @@
             <div class="content-holder centre">
                 {% if perms.order.order_note %}
                     <h2>View/Edit An Order Note</h2>
-                    <hr class="renterprise" style="width: 60%;">
+                    <hr class="renterprise">
                     <form id="update-order-note-form" method="post" class="note-form">
                         {{ order_note_form | crispy }}
                         {% csrf_token %}
@@ -31,7 +31,7 @@
             {% endif %}
         {% else %}
             <div class="content-holder centre">
-                <div class="row" style="width: 20%;">
+                <div class="row wd-60">
                     {% blocktrans %}
                         <p>You need to be logged in to access the program.</p>
                         <p>Log in to continue using this application.</p>

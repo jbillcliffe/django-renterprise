@@ -6,10 +6,10 @@
     <div class="container-fluid">
         {% include "side-nav.html" %}
         {% if user.is_authenticated %}
-        <div class="content-holder" style="display: flex; flex-direction: row;">
+        <div class="content-holder order-view">
             <div class="order-details-customer">
                 <div id="row-order-holder" class="row">
-                    <div class="col-5" style="flex-direction:column;">
+                    <div class="col-5 order-view">
                         <div class="item-image-holder">
                             {% if "placeholder" in item.item_type.image.url %}
                             <img class="item-image"
@@ -125,7 +125,7 @@
         </div>
         {% else %}
         <div class="content-holder centre">
-            <div class="row" style="width: 20%;">
+            <div class="row wd-60">
                 {% blocktrans %}
                     <p>You need to be logged in to access the program.</p>
                     <p>Log in to continue using this application.</p>

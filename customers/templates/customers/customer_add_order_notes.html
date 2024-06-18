@@ -12,7 +12,7 @@
         {% if user.is_authenticated %}
             <div class="content-holder centre">
                 <h2>Add An Order Note To Order : {{ customer_order_id }}</h2>
-                <hr class="renterprise" style="width: 60%;">
+                <hr class="renterprise">
                 <form id="add-order-note-form" method="post" class="note-form">
                     {{ order_note_form | crispy }}
                     {% csrf_token %}
@@ -25,7 +25,7 @@
             </div>
         {% else %}
             <div class="content-holder centre">
-                <div class="row" style="width: 60%;">
+                <div class="row wd-60">
                     {% blocktrans %}
                         <p>You need to be logged in to access the program.</p>
                         <p>Log in to continue using this application.</p>

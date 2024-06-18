@@ -41,6 +41,18 @@ main {
     display:flex;
 } 
 
+.row.wd-60 {
+    width:60% !important;
+}
+
+.row.wd-5 {
+    width:60% !important;
+}
+
+.col-5.order-view {
+    flex-direction: column;
+}
+
 /* H TAG STYLING */
 h1 {
     font-family: 'Roboto', sans-serif;
@@ -154,6 +166,11 @@ hr.renterprise {
     border-radius: 1px;
     opacity: 1;
     box-shadow: 0px 0px 4px 0px #000000;
+    width:60%;
+}
+
+.customer-token-text {
+    display:none;
 }
 
 
@@ -537,6 +554,11 @@ of the theme.*/
 .content-holder.order-create {
     display: flex;
     flex-direction: column;
+}
+
+.content-holder.order-view {
+    display: flex;
+    flex-direction: row;
 }
 
 .table-row {

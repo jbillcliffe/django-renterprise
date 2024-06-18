@@ -21,7 +21,7 @@
                 </div>
             {% else %}
                 <div class="content-holder">
-                    <p style="display:none;">{{ customer_token_value }}</p>
+                    <p class="customer-token-text">{{ customer_token_value }}</p>
                     <div id="customer-view-data" class="row">
                         <div class="col-5">
                             <h2>{{ customer.full_name }}</h2>
@@ -70,7 +70,7 @@
             {% endif %}
         {% else %}
             <div class="content-holder centre">
-                <div class="row" style="width: 20%;">
+                <div class="row wd-60">
                 {% if customer.status == 0 or customer.status == 1 %}
                 {% blocktrans %}
                     <p>You need to be logged in to access the program.</p>
