@@ -1,10 +1,11 @@
 <nav id="side-navigation-bar" class="nav flex-column">
     <ul>
     {% with request.resolver_match.url_name as url_name %}
-        <li id="collapse-sidebar" class="nav-item" data-bs-toggle="collapse" data-bs-target="#rest-of-sidebar" aria-expanded="false" aria-controls="rest-of-sidebar">
+        <li id="collapse-sidebar" class="nav-item" data-bs-toggle="collapse"
+        data-bs-target="#rest-of-sidebar" aria-expanded="false" aria-controls="rest-of-sidebar">
             <span id="menu-text-holder">
                 <a id="side-menu-text" class="side-bar nav-link">Menu
-                </a><i class="fa-solid fa-circle-down"></i>
+                </a><i class="fa-solid fa-circle-up"></i>
             </span>
         </li>
         <div id="rest-of-sidebar" class="nav nav-list collapse show">
